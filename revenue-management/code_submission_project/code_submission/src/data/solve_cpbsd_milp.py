@@ -1,8 +1,13 @@
 import argparse
 import json
+import os
 import time
 from pathlib import Path
 from typing import Dict, Tuple
+
+# Prefer explicit academic license file when present
+if not os.environ.get("GRB_LICENSE_FILE") and Path.home().joinpath('.gurobi', 'gurobi.lic').exists():
+    os.environ["GRB_LICENSE_FILE"] = str(Path.home().joinpath('.gurobi', 'gurobi.lic'))
 
 import gurobipy as gp
 import msgpack
@@ -64,21 +69,33 @@ def load_instance_from_msgpack(path: Path) -> Tuple[np.ndarray, np.ndarray]:
     return v_kn, c_n
 
 
-def build_cpbsd_milp(v_kn: np.ndarray, c_n: np.ndarray, big_m: float = None) -> Tuple[gp.Model, Dict]:
+def build_cpbsd_milp(
+    v_kn: np.ndarray,
+    c_n: np.ndarray,
+    big_m: float = None,
+    p_ub: float = None,
+    d_ub: float = None,
+) -> Tuple[gp.Model, Dict]:
     K, N = v_kn.shape
     S = list(range(1, N + 1))
     K_idx = list(range(K))
     N_idx = list(range(N))
 
+    # Safe bounded formulation for big-M linearization
+    vmax = float(np.max(v_kn))
+    if p_ub is None:
+        p_ub = vmax
+    if d_ub is None:
+        d_ub = p_ub
     if big_m is None:
-        # sufficiently large constant for (16)
-        big_m = float(np.max(v_kn) + 1.0)
+        # Safe M for q >= p-d-M(1-x): with x=0 and q>=0, need M >= max(p-d)
+        big_m = max(0.0, p_ub)
 
     model = gp.Model("CPBSD_MILP")
 
-    # Variables
-    p = model.addVars(N_idx, lb=0.0, vtype=GRB.CONTINUOUS, name="p")
-    d = model.addVars(S, lb=0.0, vtype=GRB.CONTINUOUS, name="d")
+    # Variables (bounded)
+    p = model.addVars(N_idx, lb=0.0, ub=p_ub, vtype=GRB.CONTINUOUS, name="p")
+    d = model.addVars(S, lb=0.0, ub=d_ub, vtype=GRB.CONTINUOUS, name="d")
 
     x = model.addVars(K_idx, N_idx, S, vtype=GRB.BINARY, name="x")
     y = model.addVars(K_idx, S, vtype=GRB.BINARY, name="y")
@@ -199,14 +216,13 @@ def build_cpbsd_milp(v_kn: np.ndarray, c_n: np.ndarray, big_m: float = None) -> 
     # (22): d1 = 0
     model.addConstr(d[1] == 0.0, name="c22_d1_zero")
 
-    # Optional explicit nonnegative net price (implied by (17) + q>=0)
-    model.addConstrs((p[n] >= d[s] for n in N_idx for s in S), name="implied_p_minus_d_nonneg")
-
     meta = {
         "K": K,
         "N": N,
         "S": S,
         "big_M": big_m,
+        "p_ub": p_ub,
+        "d_ub": d_ub,
         "var_counts": {
             "p": len(N_idx),
             "d": len(S),
@@ -256,8 +272,17 @@ def extract_solution(model: gp.Model, v_kn: np.ndarray, c_n: np.ndarray) -> Dict
     }
 
 
-def solve(v_kn: np.ndarray, c_n: np.ndarray, mip_gap: float, time_limit: float, output_flag: int, big_m: float = None):
-    model, meta = build_cpbsd_milp(v_kn=v_kn, c_n=c_n, big_m=big_m)
+def solve(
+    v_kn: np.ndarray,
+    c_n: np.ndarray,
+    mip_gap: float,
+    time_limit: float,
+    output_flag: int,
+    big_m: float = None,
+    p_ub: float = None,
+    d_ub: float = None,
+):
+    model, meta = build_cpbsd_milp(v_kn=v_kn, c_n=c_n, big_m=big_m, p_ub=p_ub, d_ub=d_ub)
     model.setParam("MIPGap", mip_gap)
     model.setParam("TimeLimit", time_limit)
     model.setParam("OutputFlag", output_flag)
@@ -272,6 +297,9 @@ def solve(v_kn: np.ndarray, c_n: np.ndarray, mip_gap: float, time_limit: float, 
         "wall_time": t1 - t0,
         "runtime": model.Runtime,
         "sol_count": model.SolCount,
+        "node_count": float(model.NodeCount),
+        "mip_gap": float(model.MIPGap) if model.SolCount > 0 else None,
+        "best_bound": float(model.ObjBound) if model.SolCount > 0 else None,
     }
 
     if model.SolCount > 0:
@@ -290,6 +318,8 @@ def parse_args():
     ap.add_argument("--time-limit", type=float, default=300.0)
     ap.add_argument("--output-flag", type=int, default=1)
     ap.add_argument("--big-m", type=float, default=-1.0)
+    ap.add_argument("--p-ub", type=float, default=-1.0)
+    ap.add_argument("--d-ub", type=float, default=-1.0)
     ap.add_argument("--build-only", action="store_true", help="Only build model and print size; do not optimize")
     ap.add_argument("--save-json", type=str, default="", help="Optional output json path")
     return ap.parse_args()
@@ -306,9 +336,11 @@ def main():
         c_n = rng.uniform(0.1, 1.2, size=args.N)
 
     big_m = None if args.big_m <= 0 else args.big_m
+    p_ub = None if args.p_ub <= 0 else args.p_ub
+    d_ub = None if args.d_ub <= 0 else args.d_ub
 
     if args.build_only:
-        model, meta = build_cpbsd_milp(v_kn=v_kn, c_n=c_n, big_m=big_m)
+        model, meta = build_cpbsd_milp(v_kn=v_kn, c_n=c_n, big_m=big_m, p_ub=p_ub, d_ub=d_ub)
         model.update()
         out = {
             "build_only": True,
@@ -326,6 +358,8 @@ def main():
         time_limit=args.time_limit,
         output_flag=args.output_flag,
         big_m=big_m,
+        p_ub=p_ub,
+        d_ub=d_ub,
     )
 
     text = json.dumps(result, ensure_ascii=False, indent=2, default=lambda x: x.tolist() if isinstance(x, np.ndarray) else x)
