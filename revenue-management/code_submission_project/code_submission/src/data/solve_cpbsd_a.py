@@ -81,6 +81,36 @@ def solve_cpbsd_a(
     beta = m.addVars(K_idx, N_idx, S, lb=0.0, vtype=GRB.CONTINUOUS, name="beta")
 
     # x_expr = xhat * y
+
+    # Warm start: p=c+eps, d=0, y selects best positive size (if any)
+    eps = 1e-3
+    for n in N_idx:
+        p[n].Start = float(c_n[n] + eps)
+    for s in S:
+        d[s].Start = 0.0
+
+    z = v_kn - c_n[None, :] - eps
+    chosen_s = {}
+    for k in K_idx:
+        best_s = 0
+        best_val = 0.0
+        order = np.argsort(-z[k])
+        prefix = 0.0
+        for s in range(1, N + 1):
+            prefix += z[k, order[s-1]]
+            if prefix > best_val:
+                best_val = prefix
+                best_s = s
+        chosen_s[k] = best_s
+        for s in S:
+            y[k, s].Start = 1.0 if s == best_s and best_s > 0 else 0.0
+    # q start where xhat*y active
+    for k in K_idx:
+        s = chosen_s.get(k, 0)
+        if s > 0:
+            for n in N_idx:
+                if xhat[k, n, s] == 1:
+                    q[k, n, s].Start = float(c_n[n] + eps)
     def x_expr(k, n, s):
         if xhat[k, n, s] == 0:
             return 0.0
@@ -136,6 +166,7 @@ def solve_cpbsd_a(
         "big_M": big_m,
         "p_ub": p_ub,
         "d_ub": d_ub,
+        "warm_start_eps": eps,
         "mip_gap": float(m.MIPGap) if m.SolCount > 0 else None,
         "best_bound": float(m.ObjBound) if m.SolCount > 0 else None,
     }

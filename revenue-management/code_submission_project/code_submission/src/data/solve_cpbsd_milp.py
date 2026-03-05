@@ -249,6 +249,10 @@ def extract_solution(model: gp.Model, v_kn: np.ndarray, c_n: np.ndarray) -> Dict
     x = np.zeros((K, N, N + 1), dtype=int)
     y = np.zeros((K, N + 1), dtype=int)
     q = np.zeros((K, N, N + 1), dtype=float)
+    w = np.zeros(K, dtype=float)
+    w_s = np.zeros((K, N + 1), dtype=float)
+    alpha = np.zeros((K, N + 1), dtype=float)
+    beta = np.zeros((K, N, N + 1), dtype=float)
 
     for k in range(K):
         for s in S:
@@ -256,6 +260,10 @@ def extract_solution(model: gp.Model, v_kn: np.ndarray, c_n: np.ndarray) -> Dict
             for n in range(N):
                 x[k, n, s] = int(round(model.getVarByName(f"x[{k},{n},{s}]").X))
                 q[k, n, s] = model.getVarByName(f"q[{k},{n},{s}]").X
+                beta[k, n, s] = model.getVarByName(f"beta[{k},{n},{s}]").X
+            w_s[k, s] = model.getVarByName(f"w_s[{k},{s}]").X
+            alpha[k, s] = model.getVarByName(f"alpha[{k},{s}]").X
+        w[k] = model.getVarByName(f"w[{k}]").X
 
     objective = model.ObjVal if model.SolCount > 0 else None
 
@@ -266,6 +274,10 @@ def extract_solution(model: gp.Model, v_kn: np.ndarray, c_n: np.ndarray) -> Dict
         "x": x,
         "y": y,
         "q": q,
+        "w": w,
+        "w_s": w_s,
+        "alpha": alpha,
+        "beta": beta,
         "status": int(model.Status),
         "runtime": model.Runtime,
         "mip_gap": getattr(model, "MIPGap", None),
