@@ -1,0 +1,4260 @@
+Component Pricing with a Bundle Size Discount
+Ningyuan Chen
+Department of Management, University of Toronto Mississauga,
+Rotman School of Management, University of Toronto, Canada, ningyuan.chen@utoronto.ca
+Xiaobo Li
+Department of Industrial Systems Engineering and Management, National University of Singapore, iselix@nus.edu.sg
+Zechao Li
+School of Economics and Management, Tsinghua University, Beijing, China, lizechao19@mails.tsinghua.edu.cn
+Chun Wang
+School of Economics and Management, Tsinghua University, Beijing, China, wangchun@sem.tsinghua.edu.cn
+Firms selling multiple products usually adopt bundle pricing in their marketing strategy for the purpose of
+extracting large consumer surplus. In this paper, we propose and analyze a bundling mechanism, referred to
+as component pricing with a bundle size discount (CPBSD), which sells bundles for the summed prices of the
+included products (component pricing) minus a discount based on the number of products purchased (bundle
+size discount). CPBSD is conceptually simple and has been widely used in real-world business settings.
+Theoretically, we show that CPBSD subsumes several well-studied bundling mechanisms as special cases.
+Moreover, we find instances in which CPBSD can generate infinitely more profits than the best of other
+common mechanisms as the number of products increases. We further prove that, under a general condition,
+CPBSD attains the optimal profit asymptotically for a large number of products among all bundle pricing
+mechanisms. From a practical perspective, we formulate a mixed-integer linear program for the optimal
+pricing scheme of CPBSD, and we also develop an approximation algorithm for efficiently solving CPBSD in
+large-scale problems. Through comprehensive numerical experiments, we show thatCPBSD achieves superior
+performance in contrast to other bundling mechanisms. In particular, compared to bundle size pricing whose
+outstanding empirical performance has been extensively tested in the literature, CPBSD performs especially
+well when products are heterogeneous and the production costs are high. Furthermore, the outstanding
+performance of CPBSD is most pronounced when the potential surplus provided by products are negatively
+correlated with the product valuations. We also show that our approximation algorithm may achieve a
+performance that is very close to the optimal CPBSD. Given the theoretical guarantee and the computational
+efficiency, CPBSD presents an appealing selling mechanism for retailers to improve their profitability.
+Key words : bundle pricing, asymptotic analysis, mixed-integer programming
+1. Introduction
+Product bundling is a prevalent marketing strategy for multiproduct firms. It is well known that,
+by employing this strategy, a firm can generate more profits by offering subsets of products priced
+as bundles rather than selling them separately. Theoretically, a firm with N products could set
+a separate price for each of the 2 N possible bundles (including the non-purchase option), which
+1
+
+2
+is known as mixed bundling ( MB). However, given the exponential growth in N, MB quickly
+becomes computationally intractable as well as cognitively overwhelming for consumers who have
+to understand an astronomically large set of prices and bundles.
+Owing to the fundamental complexity of MB, the academic literature has focused on simpler
+bundling mechanisms. The three most notable ones include the following (see Chu et al. 2011).
+• Component pricing ( CP), which sets prices of products separately. Customers can purchase
+any number of products and pay the sum of their individual prices. (Whereas CP is not
+technically a bundling strategy, for analytical convenience, we discuss it among the other
+bundling mechanisms.)
+• Pure bundling (PB), which bundles all products together. Customers either purchase all prod-
+ucts by paying a price for the whole bundle or leave without purchasing anything.
+• Bundle size pricing ( BSP), which prices a bundle of products by the number of products in
+the bundle, regardless of the individual products that constitute the bundle. For example, a
+firm may set a price of $10 for a bundle of any three products and a price of $12 for a bundle
+of any four products.
+Compared to MB, these three simple mechanisms are easier to compute and more convenient to
+implement in practice. Examining these mechanisms theoretically, Babaioff et al. (2014) prove that
+combining CP and PB can attain at least 1/6 of the optimal revenue. Using numerical simulations,
+Chu et al. (2011) provide empirical evidence that BSP tends to approximate the optimal profit
+from MB in a wide range of cases.
+Despite their advantages, CP, PB, and BSP each have shortcomings that impede their broader
+use in business. Specifically, CP offers no discount for bundled products and thus cannot reap the
+benefit from bundling; PB gives customers no leeway for purchasing a subset of the products and
+hence falls short when customers have budgetary constraints; and BSP ignores the heterogeneity
+across products and may thus lead to unintended customer behaviors when products are vertically
+differentiated. Given these respective shortcomings, we are interested in whether there exists a
+bundling mechanism that preserves the benign properties of these simple mechanisms and in the
+meanwhile addresses their practical limitations.
+In this paper, we provide an affirmative answer to this question by proposing a bundling mecha-
+nism referred to as component pricing with a bundle size discount ( CPBSD). Similar to CP, it first
+sets a component price for each product. After a customer selects a bundle of products, CPBSD
+offers a discount off the sum of the individual prices, in the form of cashback or gift, based on the
+number of products purchased.
+By striking a balance between simplicity and flexibility, CPBSD presents the following benefits
+to a firm. Firstly, CPBSD is conceptually simple and hence easily understood by customers. (See
+
+3
+Section 3, which shows that the number of policy parameters under CPBSD is only twice that of
+either CP or BSP, and much smaller than that of MB.) More importantly, CPBSD integrates the
+benefits of both separate product pricing and bundling, and thereby resolves the practical limi-
+tations of the three simple mechanisms mentioned earlier. Specifically, it improves CP by offering
+a discount for bundled products; it allows customers to purchase a smaller fraction of products
+relative to PB; and it accounts for the product heterogeneity by tuning the individual prices of
+products in contrast to BSP. These advantages make CPBSD gain increasing attention from prac-
+titioners. Though not studied in the academic literature, CPBSD and its variants have been widely
+used in real-world business. Here are some applications from various industries.
+• Retailing: Figure 1 presents a coupon from H-E-B, one of the biggest supermarket chains in
+the United States. The coupon applies to more than one hundred different products under
+consideration, each with an individual price. If a customer chooses five items in the offered
+set, a $5 cashback discount will be applied.
+Figure 1 H-E-B coupon: $5 off for purchasing a bundle of any 5 products
+• Ride sharing: it is a common strategy for ride-sharing companies to offer a discount for a
+certain number of rides. See Figure 2 for an example from Uber. For instance, if a customer
+signs up with the code “NEWRIDER25”, when completing 10 rides (each ride has been
+charged individually), she will receive a cashback of $25.
+Figure 2 Uber offers different discounts for different numbers of rides
+
+4
+• Food service: some restaurants implement a card-based incentive program. For example, Nine
+Fresh Desserts ( https://ninefresh.com/) is a local brand in Singapore that specializes in
+Taiwanese desserts and operates multiple chain stores. Each customer may get a reward card
+as shown in Figure 3. Every time a customer purchases a dessert by paying its individual
+price at any Nine Fresh store, a stamp is collected on the reward card. When the first set of
+6 stamps is collected, a gift of $3 can be redeemed. After that, more gifts of $3.5 and $3.9
+are offered for the second and third sets of 6 stamps, respectively. This incentive program can
+be viewed as CPBSD that offers a discount of $3 for a size-6 bundle, a discount of $6.5 for a
+size-12 bundle, and a discount of $10.4 for a size-18 bundle.
+Figure 3 Nine Fresh reward card: redeem a free dessert/drink for every 6 stamps
+Beyond proposing CPBSD, our study makes the following contribution to the literature. First,
+from a theoretical perspective, we analyze and demonstrate the superior profitability of CPBSD.
+We show that CPBSD subsumes CP, PB, BSP, and several other well-studied bundling mechanisms
+as special cases (Proposition 1). As a result, it inherits all the theoretical guarantees across these
+mechanisms. For example, CPBSD attains at least 1/5.2 of the optimal revenue earned by the best
+selling mechanism (Corollary 1). We also find instances whereCPBSD can generate infinitely higher
+profits than other common mechanisms (Proposition 2). Moreover, by analyzing the bundling prob-
+lem for a large number of products, we show that CPBSD is asymptotically optimal in extracting
+all customers’ surplus even in the presence of heterogeneous production costs (Theorems 1 and 2).
+Second, our study provides insights into the practicality of CPBSD. Specifically, when using
+sampled customer valuations following the literature, we can formulate the optimal pricing scheme
+of CPBSD as a mixed-integer linear program (MILP). Hence, we provide an accessible framework
+for modern optimization solvers such as Gurobi that can solve an MILP but not a general integer
+programming problem.
+
+5
+Finally, through comprehensive numerical experiments, we show thatCPBSD demonstrates supe-
+rior profit performance relative to other bundling mechanisms. In particular, CPBSD is highly
+effective on heterogeneous products with high production costs. In terms of both in-sample and out-
+of-sample tests, CPBSD outperforms BSP, which has a superb, well-documented empirical profit
+performance (e.g., Chu et al. 2011). The superb performance of CPBSD is most pronounced when
+the potential surplus are negatively correlated with the valuations across products.
+The rest of the paper is organized as follows. In Section 2, we review the related literature.
+In Section 3, we describe the model setup. In Section 4, we provide an asymptotic analysis for
+the performance of CPBSD when the number of products is large. In Section 5, we formulate the
+optimal pricing scheme of CPBSD as an MILP, and develop an approximation algorithm for large-
+scale problems. In Section 6, we conduct numerical experiments to compare the profit performance
+of CPBSD with that of other bundling mechanisms. Section 7 presents our conclusion. The detailed
+proofs are included in the online appendix.
+2. Literature Review
+The study on the benefits of bundling dates back to Stigler (1963), who shows by example that
+a firm with two products can earn a higher profit by using PB rather than CP. Due to the high
+complexity of the bundling problem, the literature has mainly focused on the two-product setting
+for a long time. For example, Adams and Yellen (1976), Schmalensee (1984), and McAfee et al.
+(1989) reveal the profitability of bundling mechanism ( MB or PB) for two products. In a subse-
+quent research, Bhargava (2013) derive analytic and approximation pricing solutions for MB when
+the valuations of the two products are independent and have uniform distributions. We refer to
+Venkatesh and Mahajan (2009) for an extensive review of this stream of literature.
+In recent years, researchers have successfully extended the bundling study beyond the two-
+product setting, and there are primarily two streams of bundling literature. The first stream focuses
+on the theoretical properties of bundling mechanisms. Within this stream of literature, Bakos and
+Brynjolfsson (1999) show that PB can approximate the optimal MB revenue when the number of
+products is large, the production costs are zero, and the customer valuations are independent and
+additive. Later, Abdallah (2019) revisits the large-scale bundling problem with positive production
+costs and provides a lower bound on the profit loss from using PB. Examining the effect of context
+on PB and CP performance, Fang and Norman (2006) and Ibragimov and Walden (2010) discuss
+the conditions under which one mechanism is more profitable than the other. In addition, there are
+a number of papers investigating the performance bound of CP and PB relative to the optimal MB
+profit, including Li and Yao (2013), Babaioff et al. (2014), Hart and Nisan (2017), and Cai et al.
+(2019). Regarding BSP, Hitt and Chen (2005) find that it can outperform CP and PB in certain
+
+6
+situations. Gallego and Berbeglia (2023) examine the theoretical performance of nonpersonalized
+multiproduct pricing heuristics against personalized pricing with applications to various demand
+models. More recently, Abdallah et al. (2021) provide a framework to analyze the asymptotic per-
+formance of BSP for a large number of products. They show that BSP can yield an asymptotically
+optimal profit when products have equal costs, however, BSP becomes inefficient when products
+have different costs.
+The second stream of bundling literature focuses on computational approaches for different
+bundling mechanisms. Given samples of customer valuations, Hanson and Martin (1990) solves the
+optimal prices for MB using an MILP formulation that explicitly formulates each possible bundle.
+However, this computation of MB remains intractable for even a moderate number of products
+due to the sheer number of decision variables (recall that MB offers 2 N bundles). By contrast,
+Venkatesh and Mahajaim (1993) develop a probabilistic approach to calculate the optimal prices for
+CP and PB, while it is not immediately clear how their approach can be extended to more general
+bundling problems. Wu et al. (2008) formulate BSP in a mixed-integer nonlinear program, and
+obtain an upper bound based on Lagrangian multiplier. To make the nonlinear formulation more
+computationally feasible, they provide a heuristic that approximately solves BSP for 100 products
+and 100 customers. Later, Chu et al. (2011) propose a simulation-optimization algorithm to solve
+general bundle pricing problems. By approximating customers’ choices as continuous variables,
+they are able to use standard continuous optimization algorithms to find (local) optimal prices.
+Through a comprehensive computational study for CP, PB, BSP, and MB, they find that BSP
+closely trails the performance of MB in a wide range of cases. In a recent paper, Li et al. (2021)
+develop a novel convex optimization approach to approximately solve BSP. Their approach scales
+well with the numbers of customers and products but requires the first and second moments of
+customer valuations, which could not be applied to our setting.
+Closely related to the study on bundle pricing, there is another stream of literature on nonlinear
+pricing. (In the bundling literature, customers demand at most one unit for each product, whereas
+in the nonlinear pricing literature, customers may require multiple units for each product.) Within
+this area, Armstrong (1999) shows that a two-part tariff (TPT) policy, where customers are charged
+a fixed fee plus the production costs of purchased products, approximately achieves the optimal
+profit when the number of products tends to infinity. When production costs are zero, TPT is
+equivalent to PB and the asymptotic result is similar to that of Bakos and Brynjolfsson (1999).
+Notably, some recent papers propose and study novel bundling mechanisms. For example, Ma
+and Simchi-Levi (2021) propose “pure bundling with disposal for cost ( PBDC),” where customers
+are allowed to purchase only the grant bundle but may return any product for a refund equal to its
+production cost. Sun et al. (2021) propose “bundle recommendation and pricing,” which offers a
+
+7
+single bundle discount on top of CP in a mechanism that can be seen as a special case of MB. Chen
+et al. (2021) investigate a randomized adaptive bundling scheme called “lootbox” and analyze the
+performance. In our study, we propose and analyze another novel mechanism, namely CPBSD.
+Finally, we note that bundle pricing has also been studied in the OM community via other angles,
+such as robust optimization (Chen et al. 2022), data-drive approaches and optimization (Ettl et al.
+2020), dynamic inventory management (Song and Xue 2021), add-on discounts (Simchi-Levi et al.
+2022), personalized recommendation (Xue et al. 2016, Ettl et al. 2020), service systems (Wu and
+Yang 2018), and customer search (Wu et al. 2022).
+3. The Model
+Consider a firm selling N products to consumers, denoted by N ≜ {1, . . . , N}, with production cost
+cn for n ∈ N . We follow the common assumption in the bundling literature that each customer
+demands at most one unit of each product but can potentially purchase multiple products. Hence, a
+bundle S purchased by a consumer is a subset ofN , and there are a total of 2N bundle combinations
+(including the no-purchase option). A bundle pricing mechanism of the firm can be mathematically
+defined as a mapping 2 N → R≥0 that determines the price of the purchased bundle. In particular,
+under CPBSD, the firm first sets a price pn for each individual product n ∈ N . Once a customer
+chooses to purchase a bundle S ⊆ N that contains s = |S| products, the customer is then offered a
+discount ds that applies to each product in S, resulting in a total bundle discount of sds. Note that
+the amount of the discount ds only depends on the bundle size s but not on the specific products
+in the bundle. The price paid by the customer is thus P
+n∈S pn − sds.
+3.1. Relations to Other Bundling Mechanisms
+We first relate CPBSD to other bundle pricing mechanisms well studied in the literature.
+• CP: the firm sets component prices ( pCP
+1 , . . . , pCP
+N ). The price of a bundle S isP
+n∈S pCP
+n .
+• PB: the firm sets a single price pPB for the grand bundle. The price of a bundle S is pPB if
+S = N and +∞ otherwise.
+• BSP: the firm sets the prices ( bBSP
+1 , . . . , bBSP
+N ) for different bundle sizes. The price of a bundle
+S with s products is bBSP
+s . Note that BSP can recover PB by setting bBSP
+1 = · · ·= bBSP
+N = pPB.
+• MB: the firm sets a separate price pMB
+S for each bundle S ⊆ N .
+As introduced earlier, the three simple mechanisms CP, PB and BSP are very commonly seen in
+practice. In addition, there are two other more complicated mechanisms studied in the literature:
+• Pure bundling with disposal for cost (PBDC) (Ma and Simchi-Levi 2021): the firm sets a price
+pPBDC for the grand bundle N . When a bundle S is purchased, the customer first pays pPBDC
+for all the products and then is reimbursed for the products not in S at the production costs.
+Therefore, the price of S is pPBDC −P
+n /∈S cn.
+
+8
+• Two-part tariff ( TPT): the firm sets an entry fee t and component prices ( pTPT
+1 , . . . , pTPT
+N ) for
+each product. The price of a bundle S is t +P
+n∈S pTPT
+n . Note that TPT can recover CP by
+setting t = 0, PB by pTPT
+n = 0 and PBDC by pTPT
+n = cn and a carefully chosen t, respectively.
+In terms of flexibility, we observe that BSP subsumes PB and TPT subsumes CP, PB, and PBDC
+as special cases. Interestingly, we can show that CPBSD generalizes both BSP and TPT, thereby
+subsuming all the aforementioned mechanisms except for MB (the most flexible mechanism but
+generally intractable). We include this result in the following proposition and illustrate the relations
+between these mechanisms in Figure 4.
+Proposition 1. CP, PB, BSP, PBDC, and TPT are all special cases of CPBSD.
+Figure 4 Relationship between various bundling mechanisms
+Notes. The subsets indicate the inclusion relations aforementioned, e.g., TPT and BSP are special cases of CPBSD.
+An intersection signifies that there exist price menus satisfying the conditions of both bundling mechanisms. For
+example, pricing at cost applies to both CP (pCP
+n = cn) and PBDC (pPBDC = PN
+n=1 cn). Similarly, unit pricing applies
+to both CP (pCP
+n = p) and BSP (bBSP
+s = sp), while unit pricing with an entry fee t > 0 applies to both TPT (t and
+pTPT
+n = p) and BSP (bBSP
+s = sp + t).
+3.2. Formulation
+For a purchased bundle S ⊆ N , the profit earned by the firm from CPBSD can be represented as:
+X
+n∈S
+(pn − cn) − sds.
+In order to study the optimal pricing mechanism, we need to introduce consumers’ purchasing
+choices under a given pricing mechanism. In line with the framework studied in the bundling liter-
+ature, we adopt the following assumptions: customers independently draw random (non-negative)
+product valuations from a given joint distribution F ; and customers are additive buyers, that is,
+
+9
+the valuation of a bundle as a whole is the summed valuations of products that it contains 1.
+After observing the price menu, each customer purchases the bundle that maximizes her total
+surplus, which is the bundle valuation minus the payment. Since we may focus on a random cus-
+tomer, we let V ≜ (V1, . . . , VN) denote the random vector of valuations for N products, and x(V ) ≜
+(x1(V ), . . . , xN(V )) denote the vector of binary decision variables where xn(V ) indicates whether a
+customer with valuation V buys product n. In particular, given component prices p ≜ (p1, . . . , pN)
+and bundle size discounts d ≜ (d1, . . . , dN), a customer with valuation V makes the following choice:
+x(V ) = arg max
+(˜x1,...,˜xN )
+X
+n∈N
+(Vn − pn + ds)˜xn, s.t.
+X
+n∈N
+˜xn = s, ˜xn ∈ {0, 1}, ∀n ∈ N . (1)
+Then, the expected profit maximization problem for the firm can be formulated as follows:
+max
+p,d
+EV ∼F
+"X
+n∈N
+ 
+pn − cn − dP
+n xn(V )
+
+xn(V )
+#
+(CPBSD)
+s.t. ( p, d) ∈ P. (2)
+Similar to the literature (Ma and Simchi-Levi 2021), we assume that in (1), the tie breaks in the
+firm’s favor. In practice, this can usually be achieved by slightly adjusting the price when necessary.
+Moreover, when the valuation follows a continuous distribution, ties occur with zero probability.
+Remark 1 (Practical Constraints). Constraint (2) includes the practical requirements for
+the bundle pricing mechanism. This is aligned with the existing bundling studies such as Hanson
+and Martin (1990). For example, the prices and discounts are non-negative, i.e., pn, ds ≥ 0 for all
+n and s. Moreover, we enforce that a firm offers a higher discount for a bundle of larger size, i.e.,
+sds ≥ s1ds1 + s2ds2, ∀s1 + s2 = s, s, s 1, s2 ≥ 0.
+When a bundle pricing scheme violates this constraint, a customer may obtain a larger total dis-
+count by purchasing multiple small-size bundles versus a single large bundle. With this constraint,
+we can focus solely on the scenario where each customer purchases at most one bundle. In addition,
+we require that pn − ds ≥ 0 for all n and s, meaning that no product is offered at a negative virtual
+price. Without this constraint, there might be bundles offered at negative post-discount prices, and
+hence the firm can in theory go bankrupt if customers repetitively purchase such bundles. Finally,
+we note that d1 = 0 can be imposed without loss of generality. This is because, for d1 > 0, we can
+redefine pn = pn − d1 and ds = ds − d1 without affecting the actual bundle pricing policy. In sum,
+we represent these constraints as:
+(p, d) ∈ P ≜ {(p, d) : d1 = 0, p n, ds ≥ 0, p n − ds ≥ 0, ∀n, s,
+sds ≥ s1ds1 + s2ds2, ∀s1 + s2 = s, s, s 1, s2 ≥ 0}.
+(3)
+1 Non-additive valuations are used to model complementarity/substitutability among the products. We provide a
+discussion on non-additive valuations in Appendix G.
+
+10
+We emphasize that (3) is only imposed from practical considerations. It is not crucial for most
+theoretical results in the study. □
+Note that (CPBSD) is a bi-level optimization problem, which is generally intractable. (To clarify
+our notation in this paper, we refer to our proposed bundling mechanism as CPBSD, and the
+corresponding optimization problem as ( CPBSD) with parentheses. We use similar notations in
+our references to other bundling mechanisms.) Moreover, the inner optimization problem (1) is a
+challenging non-linear integer program since ds depends on s =P
+n∈N ˜xn. Nevertheless, as we show
+later in Section 5, given samples of customer valuations, we are still able to reformulate the profit
+maximization as an MILP, which allows us to compute the optimal prices and discounts efficiently
+using off-the-shelf solvers.
+3.3. Profitability
+Next we discuss the profitability of CPBSD. As a corollary of Proposition 1, under the same
+consumer valuation model, the profitability of CPBSD is always no less than other mechanisms
+therein. It is only outperformed by the most general but computationally intractable MB. This
+flexibility comes with little additional cost: the number of decision variables increases from N in
+the case of CP and BSP to merely 2 N, which is still much less than that of 2 N in MB.
+By combining Proposition 1 with the seminal results in Li and Yao (2013), Babaioff et al. (2014)
+and Ma and Simchi-Levi (2021), we can obtain a constant bound for the profitability of CPBSD
+relative to any selling mechanism.
+Corollary 1. For an additive buyer with independent valuations over products, the optimal
+profit of CPBSD is at least 1/5.2 of the optimal profit achieved by any selling mechanism.
+Li and Yao (2013) develop a framework to analyze the performance guarantees of CP and PB.
+Building on this, Babaioff et al. (2014) prove that the better of CP and PB can always attain
+1/6 of the optimal profit from any selling mechanism when product valuations are independent
+and production costs are zero. Furthermore, Ma and Simchi-Levi (2021) improve this bound to
+1/5.2 through a finer analysis, and demonstrate that, when replacing PB with PBDC, the bound
+still applies even with production costs (for the better of CP and PBDC). Since CPBSD subsumes
+CP, PB, and PBDC as special cases, Corollary 1 follows naturally. It is worth noting that, as a
+single policy, CPBSD can achieve a constant-factor ratio of the optimal profit without needing to
+be combined with other mechanisms. This feature makes it easier to implement in practice.
+Whereas CPBSD is in general no less profitable than most bundling mechanisms except for MB,
+the lingering question is how substantial the benefit is. After all, if CPBSD is only able to attain the
+same profitability as other simpler mechanisms, then the introduction of the additional complexity,
+albeit minimal as we have argued before Corollary 1, may not be desirable. In the rest of this
+
+11
+section, we provide evidence that the benefit can be significant, and even unbounded in certain
+cases. The analysis is based on carefully constructed instances that specify the number of products
+N, the costs (c1, . . . , cN) and the valuation distribution of V (i.e., F ). These well-designed instances
+allow us to compute and compare the optimal profits of CPBSD and other bundle pricing policies.
+In the following proposition, with a slight abuse of notation, we simply use the mechanism name
+to denote the optimal profit of the corresponding mechanism in the constructed instance.
+Proposition 2. There exist a sequence of instances indexed by N such that
+CPBSD > log N
+6 · max{TPT, BSP}.
+Recall that TPT generalizes CP, PB, and PBDC as special cases. Hence, Proposition 2 establishes
+the profitability of CPBSD relative to all mechanisms discussed earlier in the paper other thanMB in
+the order of logN. It implies that, as N → ∞, CPBSD can generate infinitely higher profits than the
+other mechanisms. This result is somewhat surprising given the seminal findings in Babaioff et al.
+(2014) and Ma and Simchi-Levi (2021), which highlight the strong performance, i.e., constant bound
+relative to any mechanism, of the combination of CP and PB (or PBDC). Nevertheless, our result
+does not lead to a theoretical contradiction because the instances we construct impose a correlation
+structure among Vn’s, differing from the independent valuation assumption in Babaioff et al. (2014)
+and Ma and Simchi-Levi (2021). To our knowledge, this is the first example demonstrating that a
+bundling mechanism (CPBSD) can outperform TPT and BSP by an infinite factor.
+The construction of the instances in Proposition 2 is highly non-trivial and may be of independent
+interest. Before delving into the details, we briefly provide insights into the design of these instances
+and outline why CPBSD outperforms other mechanisms in this context:
+• Compared to TPT (including CP, PB and PBDC as special cases), CPBSD is better able to
+mitigate the dispersion of product valuations through various bundle size discounts. In these
+instances, we consider multiple categories of customers, with each category holding positive
+valuations for a different number of products. Pricing based on bundle size enables the firm to
+extract a greater portion of, or even the entire, customer surplus by offering the most suitable
+bundle to each group.
+• Compared to BSP (including PB as a special case), CPBSD can more efficiently pass the cost
+of each individual product to customers . In these instances, we consider a high-cost product
+that is only profitable when sold to a small segment of customers who have a high valuation
+and are thus willing to pay a premium. Under BSP, any customer can include this high-cost
+product in the bundle, but the firm cannot pass the cost to them. In contrast, CPBSD can
+resolve this issue by setting a high component price for the specific product.
+
+12
+In the following, we describe the instances in Proposition 2, and we provide detailed proofs in
+Appendix A.2. We first consider instances where CPBSD and BSP can vastly outperform TPT.
+Instance 1. The instance I(1)
+N consists of N products with zero costs (c1 = . . .= cN = 0) and has
+a discrete joint valuation distribution. In particular, there are a total of N categories of customers,
+indexed by k = 1, ..., N, and the probability mass that a customer belongs to category k is
+q(1)
+k ≜
+ 1√
+k − 1√k+1 , if 1 ≤ k ≤ N − 1,
+1√
+N , if k = N.
+Given category k, a customer has a positive valuation 1√
+k for each of k randomly selected products
+and zero valuation for the remaining N − k products. Thus, this can be interpreted as
+ N
+k
+
+distinct
+customer sub-types within the category. □
+The novelty of the above construction lies in the choice of valuations and probability mass, which
+allows us, under various bundling mechanisms, to (i) find the optimal price menus satisfying both
+the incentive compatibility and practical constraints, and (ii) compute the corresponding optimal
+profits. Then, we have the following results
+Lemma 1. In instance I(1)
+N , CPBSD can extract all surplus, and the following bounds hold
+(1) CPBSD can be lower bounded by CPBSD(I(1)
+N ) = BSP(I(1)
+N ) ≥ 1
+2(log N + 1).
+(2) TPT can be upper bounded by TPT(I(1)
+N ) ≤ PB(I(1)
+N ) +CP(I(1)
+N ) < 3.
+We find that, in I(1)
+N , by selling the most profitable bundle to each customer category, both
+CPBSD and BSP can outperform TPT infinitely as N → ∞. Furthermore, CPBSD and BSP can
+extract all surplus, thereby actually achieving the maximum possible profit under any selling mech-
+anism. Despite the discrete valuation distribution, finding the optimal prices under TPT remains
+challenging due to the exponentially large solution space. To address this, we develop an upper
+bound for TPT and demonstrate that it is significantly lower than the profits from CPBSD.
+Next, we construct instances to differentiate CPBSD from BSP. To this end, we examine the
+inability of BSP to account for heterogeneous production costs.
+Instance 2. Building on I(1)
+N , the instance I(2)
+N introduces an additional product-0 with a high
+cost of c0 = 2N 2√
+N. It also includes a new customer category-0, which contains two sub-types:
+type-(0,1) and type-(0,2), with probability masses of 1
+N 3 and 1
+N 2 , respectively. Customers in type-
+(0,1) and type-(0,2) value product-0 at c0 + 1 = 2N 2√
+N + 1 and
+√
+N, respectively, and they have
+zero valuation for all other products. The original customers from I(1)
+N have zero valuation for
+product-0, and their probability mass is reduced proportionally by a factor of 1 − 1
+N 2 − 1
+N 3 . □
+Note that, in I(2)
+N , product-0 is highly unprofitable for most (but not all) customers due to its high
+cost (it only generates a positive surplus for customers in type-(0,1)). To avoid losses from selling
+product-0, BSP must set a high price for single-item bundles, making other products unsellable. In
+
+13
+contrast, CPBSD can set separate component prices, allowing it to profit from selling all products.
+Then, we have the following results
+Lemma 2. In instance I(2)
+N , CPBSD can extract all surplus, and the following bounds hold
+(1) CPBSD can be lower bounded by CPBSD(I(2)
+N ) ≥ 1
+2
+ 
+1 − 1
+N 2 − 1
+N 3
+
+(log N + 1).
+(2) TPT can be upper bounded by TPT(I(2)
+N ) < 3
+ 
+1 − 1
+N 2 − 1
+N 3
+
++ 3
+N
+√
+N , and BSP(I(2)
+N ) = 1
+N 3 .
+We can show that the sequence of instances I(2)
+N satisfy Proposition 2 for all N ≥ 2, because
+CPBSD(I(2)
+N )
+max
+
+TPT(I(2)
+N ), BSP(I(2)
+N )
+	 ≥
+1
+2
+ 
+1 − 1
+N 2 − 1
+N 3
+
+(1 + 1/log N)
+3
+ 
+1 − 1
+N 2 − 1
+N 3
+
++ 3
+N
+√
+N
+· log N > 1
+6 log N.
+4. Asymptotic Analysis
+In this section, we study the asymptotic performance of CPBSD when the firm is selling a very
+large number of products, i.e., N → ∞.
+4.1. Preliminaries
+To highlight the number of products in our analysis, we add the subscript N to the notation.
+For example, VN ≜ (V1, . . . , VN), pN ≜ (p1, . . . , pN), and cN ≜ (c1, . . . , cN) are vectors of random
+valuations, component prices, and production costs for N products, respectively. Before a discount
+is applied, these products yield a vector of surplus (or net utility) UN ≜ VN − pN to the customer.
+Let (U(1), . . . , U(N)) be the order statistic ofUN, where U(1) ≤ · · · ≤U(N). When a customer purchases
+a bundle of size s, she ranks all N products according to Un’s and then chooses the top s products
+with the largest values of U(N), . . . , U(N −s+1). Let τ : N 7→ N be a permutation function such that
+Uτ(n) = U(n) for n ∈ N . That is, the customer chooses products τ(N), . . . , τ(N − s + 1) to form
+the bundle of size s. As a result, before a discount is applied, the net utility of the bundle of
+size s is RN(s) ≜Ps−1
+n=0 U(N −n) =Ps−1
+n=0
+ 
+Vτ(N −n) − pτ(N −n)
+
+, and the price and the cost for the
+bundle are PN(s) ≜Ps−1
+n=0 pτ(N −n) and CN(s) ≜Ps−1
+n=0 cτ(N −n), respectively. Given the discount menu
+dN = (d1, . . . , dN), a customer receives a total discount sds for purchasing a bundle of size s. Note
+that, under CPBSD, the bundle size discount does not change a customer’s preference ranking
+of products, because the same amount of discount ds is applied to each product. Therefore, the
+customer chooses the bundle size that maximizes her surplus:
+ζ(VN , pN , dN) ∈ arg max
+s∈{0,1,...,N }
+{RN(s) +sds} . (4)
+Here, we set RN(0) = 0 for the no-purchase option s = 0. Then, the firm earns a realized profit
+θ(pN , dN) ≜
+NX
+s=0
+(PN(s) − sds − CN(s)) 1 {ζ(VN , pN , dN) = s} , (5)
+
+14
+where 1 {·} is the indicator function. The firm seeks for a pricing scheme ( pN , dN) to maximize the
+expected profit E [θ(pN , dN)].
+Next, we introduce the assumptions for our asymptotic analysis.
+Assumption 1 (Composition of VN). For each product n ∈ N , let Zn ≜ Vn − cn denote the
+potential surplus of product n. We assume that Zn’s are uniformly bounded random variables and
+the empirical distribution, denoted as FZ,N(·), converges weakly to some limit distribution, FZ(·):
+FZ,N(z) ≜ 1
+N
+NX
+n=1
+1 {Zn ≤ z} ⇒ FZ(z) as N → ∞.
+The empirical average also converges in probability,
+1
+N
+NX
+n=1
+Zn
+p
+→
+Z ∞
+−∞
+zdFZ(z) as N → ∞.
+Assumption 1 states that a product’s valuation is comprised of two components, i.e.,Vn = cn+Zn.
+The first component is the production cost; in general, a product with a high production cost tends
+to yield a high valuation. The second componentZn is a random term, which we refer to aspotential
+surplus. The convergence of the empirical distribution of Zn is a weak version of the Glivenko-
+Cantelli Lemma and can hold if there is sufficient mixing in the random variables (see Billingsley
+1999 for more details). A sufficient condition for Assumption 1 is thatZn’s are drawn independently
+from the same distribution FZ with a finite support. Note that, Assumption 1 may still hold when
+Zn’s are drawn from non-identical or correlated distributions. This possibility greatly generalizes
+our results, as they can be applied to heterogeneous products. Moreover, Assumption 1 allows Zn
+to depend on cn, and does not require the convergence of the cost terms (cn can be deterministic or
+random). On this dimension, Assumption 1 relaxes similar assumptions imposed in the literature.
+However, we have to assume that Zn’s are uniformly bounded. Later in the section, we establish
+that by imposing a stronger assumption, namely that Zn’s are i.i.d., as adopted in previous studies
+(Bakos and Brynjolfsson 1999, Ma and Simchi-Levi 2021), we can derive a stronger result regarding
+the profit generated by CPBSD.
+Recall that we defined RN(s), PN(s), and CN(s) as the pre-discount net utility, price, and cost
+for a bundle of size s, respectively. We now introduce the social welfare WN(s) ≜ RN(s) +PN(s) −
+CN(s), which is the sum of the consumer surplus RN(s)+ sds and the firm’s profit PN(s) − CN(s) −
+sds. Note that the social welfare is also equivalent to the sum of potential surplus over products
+in the bundle, i.e, WN(s) =Ps−1
+n=0 Zτ(N −n). In the asymptotic regime, we normalize these values by
+N and continualize s by defining ¯RN(t) = 1
+N RN(⌊N t⌋), ¯PN(t) = 1
+N PN(⌊N t⌋), ¯CN(t) = 1
+N CN(⌊N t⌋),
+and ¯WN(t) = 1
+N WN(⌊N t⌋), for t ∈ [0, 1], respectively. Here, t denotes the fraction of products that
+form the bundle, i.e., the normalized bundle size. By analyzing the convergence of these normalized
+values, we obtain the following lemma. (The detailed proof is provided in Appendix B.1.)
+
+15
+Lemma 3. For any given t ∈ [0, 1] and as N → ∞, we have
+¯WN(t) ⇒ ¯W (t) ≜
+Z t
+0
+F −1
+Z (1 − q)dq.
+Under Lemma 3, we can see that, whenN tends to infinity, the random function ¯WN(t) converges
+to ¯W (t) and hence behaves almost deterministically. As a result, if the firm charges a markup
+component price pn = cn + η for some constant η, then ¯RN(t) converges to a deterministic function
+¯R(t) ≜
+R t
+0 (F −1
+Z (1 − q) − η)dq. Since the only randomness in the customer’s choice of bundle size is
+embedded in the net utility ¯RN(t), Lemma 3 implies that CPBSD with simple mark-up component
+prices can perfectly induce a customer’s bundle size choice ζ(VN , pN , dN) in (4), regardless of the
+random realization of VN. Intuitively, as N → ∞, given a target bundle size s′, a firm can choose
+a sufficiently large markup η and a relatively small discount dN such that RN(s) +sds ≤ 0 for all
+s ̸= s′, i.e., the consumer surplus is non-positive for any bundle other than the target size. In the
+meanwhile, the firm offers a suitable discount ds′ to ensure RN(s′) + s′ds′ > 0, and therefore, the
+customer would choose the target bundle size s′. In the asymptotic region, this movement toward
+a deterministic customer gives the firm an opportunity to extract almost all the consumer surplus
+from a CPBSD transaction. (The same intuition also drives the result in Bakos and Brynjolfsson
+(1999) whereby PB can extract almost all of the consumer surplus when N is large and production
+costs are zero.)
+4.2. Asymptotic Profitability
+To study the asymptotic profit of CPBSD, we examine the pricing scheme which maximizes the
+social welfare, since this approach facilitates the technical analysis by allowing us to ignore the
+exact form of the bundle size discount. In the limit, the normalized social welfare converges to a
+simple form ¯W (t) according to Lemma 3. Hence, we consider maximizing ¯W (t) as:
+t∗ ≜ arg max
+t∈[0,1]
+¯W (t) = sup
+t∈[0,1]
+{t : F −1
+Z (1 − t) ≥ 0}, (6)
+¯W (t∗) =
+Z t∗
+0
+F −1
+Z (1 − q)dq =
+Z 1
+0
+ 
+F −1
+Z (1 − q)
++
+dq =
+Z ∞
+0
+zdFZ(z). (7)
+Here, the optimal normalized bundle size t∗ derived in (6) translates to a bundle size s∗ ≜ ⌊N t∗⌋
+for a finite N.
+To induce a customer to choose the target bundle size s∗, we choose a parameter ϵ ∈ (0, ¯W (t∗)/2)
+and set the bundle size discount using a step function:
+sds = m
+ 
+N ϵ− N ¯R(t∗)
+
+, for ms∗ ≤ s < (m + 1)s∗, ∀m = 0, 1, . . . ,⌊N/s∗⌋. (8)
+Let p∗
+N = cN + η denote the markup policy with a sufficient large η (e.g., greater than the upper
+bound of Zn for n ∈ N ), and d∗
+N denote the bundle discount derived in (8). We characterize the
+properties of the pricing scheme (p∗
+N , d∗
+N) below. (The detailed proof is provided in Appendix B.2.)
+
+16
+Theorem 1 (Asymptotic lower bound) . Under Assumption 1, for (p∗
+N , d∗
+N) and ϵ ∈
+(0, ¯W (t∗)/2), the followings hold:
+1. All customer will purchase a bundle of size s∗ with probability one as N → ∞.
+2. ( p∗
+N , d∗
+N) satisfies all of the practical constraints in (3) for any N.
+3. The asymptotic normalized profit is no less than
+lim
+N →∞
+1
+N E [θ(p∗
+N , d∗
+N)] ≥ ¯W (t∗) − ϵ.
+Part 1 of Theorem 1 demonstrates that it can precisely capture all customers’ purchases of a speci-
+fied bundle size. We note that although all customers buy the same bundle size, the composition of
+the bundles varies across customers. This illustrates the power of CPBSD in capturing customers’
+heterogeneity. Part 3 of Theorem 1 states that the optimal CPBSD policy is lower bounded by
+¯W (t∗) − ϵ, and we next show that ¯W (t∗) is also an upper bound for any bundling mechanism. Note
+that the expected profit under perfect price discrimination ( PPD), i.e., PN
+n=1 E[(Vn − cn)+], is the
+maximum possible profit that a firm may obtain under any selling mechanism. This observation
+leads us to the result in Theorem 2. (The detailed proof is provided in Appendix B.3.)
+Theorem 2 (Asymptotic upper bound) . Under Assumption 1, the asymptotically optimal
+normalized profit of any bundling mechanism is upper bounded by
+lim
+N →∞
+1
+N
+NX
+n=1
+E[(Vn − cn)+] = ¯W (t∗).
+Note that although the constructed policy ( p∗
+N , d∗
+N) depends on ϵ, it is a special (potentially
+suboptimal) policy in the class of CPBSD. As a result, combining Theorems 1 and 2, the normal-
+ized optimal profit of CPBSD is between ¯W (t∗) − ϵ and ¯W (t∗). Since ϵ can be chosen arbitrarily
+small, it implies that the optimal profit of CPBSD already reaches the profit level earned by PPD
+asymptotically and thus cannot be improved by any other bundling mechanism including MB. In
+the following, we use an example to demonstrate above analysis and provide more intuition for the
+mechanism of CPBSD.
+Example 1. Consider a firm selling a very large number of products (i.e., N → ∞). The val-
+uations Vn’s are i.i.d. random variables uniformly distributed on [0 , 1], and the production costs
+are cn = n/N + c0, for all n, where c0 ∈ [0, 1] is a constant. First, we examine the profitability of
+CPBSD. To begin, we verify that Zn = Vn − cn satisfies Assumption 1. It is clear that Zn’s are
+independent. For a given z, we have
+Var(FZ,N (z)) = Var
+ 
+1
+N
+NX
+n=1
+1 {Zn ≤ z}
+!
+= 1
+N 2
+NX
+n=1
+P {Zn ≤ z}(1 − P {Zn ≤ z}) ≤ 1
+4N ,
+
+17
+where the last inequality follows from the property of the quadratic function. Hence, we have
+limN →∞ Var(FZ,N (z)) = 0, and by Chebyshev’s inequality, we obtain the weak convergence of the
+empirical distribution of Zn’s. Moreover, since zn ∈ [−c0 − n/N,1 − c0 − n/N] and P{Zn ≤ z} =
+z + n/N + c0, the limit distribution of FZ,N is
+FZ(z) =
+ 1
+2 (z + c0)
+2
++ (z + c0) + 1
+2 , z ∈ [−1 − c0, −c0),
+− 1
+2 (z + c0)
+2
++ (z + c0) + 1
+2 , z ∈ [−c0, 1 − c0].
+Note that, in this example, Zn is not independent of cn, illustrating the generality of Assumption 1.
+By Theorem 2, the asymptotic normalized profit under PPD is
+¯W (t∗) =
+Z 1−c0
+0
+zdFZ(z) =
+Z 1−c0
+0
+z (1 − c0 − z) dz = (1 − c0)3
+6 ,
+which is an upper bound for any bundling mechanism. Therefore, according to Theorem 1, the
+pricing scheme ( p∗
+N , d∗
+N) yields a normalized profit of (1 − c0)3/6 − ϵ. By choosing a sufficiently
+small ϵ > 0, CPBSD achieves asymptotically optimal, i.e., extracting almost all of the consumer
+surplus.
+ϵ
+¯W(t*)
+¯W(t*)−ϵ
+(a) The asymptotic normalized values of social
+welfare, total discount and consumer surplus of
+a random customer given the normalized bundle
+size t. The area in the dotted square is displayed
+in an enlarged view in the right panel.
+ϵ
+¯W(t*)
+¯W(t*)−ϵ
+(b) An enlarged view around t∗, i.e., the opti-
+mal normalized bundle size, from the left panel.
+When purchasing t∗, the customer receives the
+maximum normalized consumer surplus ϵ, and
+the firm achieves a normalized profit ¯W (t∗) − ϵ.
+Figure 5 An example of the asymptotic optimality achieved by CPBSD.
+Next, to help with the understanding, we visualize the pricing scheme ( p∗
+N , d∗
+N) in Figure 5 for
+c0 = 1/3. In Figure 5(a), as N → ∞, Lemma 3 states that the normalized social welfare converges to
+¯W (t), illustrated by the red curve, and the optimal normalized bundle size is t∗ = 2/9 according to
+(6). Then, we set the bundle size discount using the step function (8), and show the normalized total
+
+18
+discount ¯D(t) ≜ limN →∞ sds/N = limN →∞ tdtN in the blue curve. Under ( p∗
+N , d∗
+N), the normalized
+consumer surplus ¯R(t) + ¯D(t) is displayed in the black curve. Now, we clearly observe that the
+customer is perfectly induced to purchase the target bundle size t∗, which yields the maximum
+consumer surplus. In Figure 5(b), we show the enlarged view around t∗, and illustrate the split of
+the total welfare into the consumer surplus and the firm’s profit.
+Finally, we examine the profitability of other bundling mechanisms. Regarding CP, it obtains
+a profit ( pn − cn)P{Vn ≥ pn} from product n, and hence the optimal component price is pCP
+n =
+(cn + 1)/2 for n ≤ N(1 − c0). ( CP cannot earn profit from products n > (1 − c0)N because the
+production cost is always higher than the valuation.) Therefore, the optimal normalized profit
+obtained by CP is
+lim
+N →∞
+1
+N
+(1−c0)NX
+n=1
+ 
+pCP
+n − cn
+ 
+1 − pCP
+n
+
+= (1 − c0)3
+12 .
+For BSP, the policy derived in Abdallah et al. (2021) can obtain an asymptotically optimal profit
+in the case of equal production costs. Given the heterogeneous production costs in this example,
+it yields a normalized profit
+E[(V1 − ¯c)+] =
+Z 1
+1
+2 +c0
+
+x − 1
+2 − c0
+
+dx = ((1/2 − c0)+)2
+2 ,
+where ¯c = c0 +1/2 is the asymptotic mean ofcN. Between CP and BSP, the former is more profitable
+for larger c0, while the latter is more profitable for small c0. However, neither CP or BSP can
+achieve asymptotic optimality as what CPBSD achieves.
+In addition, we also evaluate the consumer surplus that a customer obtains under each mecha-
+nism. For CP, the normalized consumer surplus is
+lim
+N →∞
+1
+N
+(1−c0)NX
+n=1
+Z 1
+0
+(v − p∗
+n)+dv = (1 − c0)3
+24 .
+For BSP, a customer receives zero surplus asymptotically. Therefore, the social welfare of both CP
+and BSP is less than that of PPD. Regarding CPBSD, the pricing scheme ( p∗
+N , d∗
+N) can generate
+the maximal social welfare and create an allocation of a normalized profit ¯W (t∗) − ϵ to the firm and
+a normalized surplus ϵ to the customer. A profit-maximizing firm would choose a small ϵ to garner
+the highest possible profit. However, in the case where the consumer surplus is also a consideration,
+a firm can balance the allocation of social welfare between itself and customers by tuning ϵ. For
+example, if a firm sets ϵ = (1− c0)3/24, a customer can obtain as much surplus as that in CP, while
+at the same time the firm receives a normalized profit (1 − c0)3/8, 50% higher than that in CP.
+Therefore, CPBSD includes a wide range of mechanisms that are on the efficient frontier of the
+profit/surplus split. □
+
+19
+At the end of the section, we extend the asymptotic optimality of CPBSD to a finite-sample
+result that characterizes the profitability of CPBSD relative to PPD for a finite number of products.
+There are major challenges in the extension: note that the asymptotic analysis in Theorem 1 hinges
+on the fact that, in the limit, all customers would choose a bundle of a fixed size. This significantly
+simplifies the analysis. Under finite samples, the choice of bundles is not deterministic. Typically,
+such issues are resolved with concentration inequalities, as the valuations for bundles are supposed
+to concentrate around the mean in the limit and so is the bundle choice. However, in the setting of
+bundling, there are 2 N random valuations for the bundles to concentrate, because customers are
+comparing all possible combinations out of N products to pick the favorite bundle. Even without
+accounting for the complex correlation between them, as many of the bundles include overlapping
+products, a direct application of the union bound to control for the error probability that none of
+the valuations for the bundles deviate remarkably from their means can easily fail.
+To circumvent the issue, we first apply the Dvoretzky–Kiefer–Wolfowitz inequality to bound the
+error probability of the empirical distribution function FZ,N deviating from FZ in the ℓ∞ sense.
+Since ¯WN is a continuous functional of FZ,N in terms of the ℓ∞ norm under Assumption 1, it leads
+to the concentration of ¯WN around ¯W . In other words, instead of attempting to concentrate the
+valuations of all bundles, we focus on the concentration of the random function ¯WN. With this
+building block, we bound the following two quantities under the CPBSD mechanism (p∗
+N , d∗
+N) with
+a carefully chosen ϵ = O(ln(N)N −1/2) : (1) the probability that a customer chooses a bundle whose
+normalized size is N −1/2 away from t∗; (2) the minimal profit earned by the firm when a customer
+purchases a bundle whose normalized size is close to t∗. Combining both quantities leads to a lower
+bound for the profit of CPBSD. (The detailed proof is provided in Appendix B.4.)
+Theorem 3 (Finite-sample bound for CPBSD). In addition to Assumption 1, assume that
+{Zn}N
+n=1 are i.i.d. random variables. With a chosen ϵ = O(log(N)N −1/2), there exists a constant
+N0 > 0 which such that, for any N > N0, CPBSD can achieve a normalized profit no less than
+1
+N E [θ(p∗
+N , d∗
+N)] ≥ ¯W (t∗)
+
+1 − 9
+16 log(N)N −1/2
+
+.
+To conclude this section, we compare our result with the literature, particularly Bakos and
+Brynjolfsson (1999), Abdallah et al. (2021), Ma and Simchi-Levi (2021). Although the mechanisms
+in all the papers achieve asymptotic optimality, the underlying assumptions differ. To avoid delving
+into technical nuances, we summarize the major restrictions in Table 1. From the cost perspective,
+both our study and Ma and Simchi-Levi (2021) allow for heterogeneous costs, making them the
+most general. Ma and Simchi-Levi (2021) assume independent valuations while we allow for weak
+dependence; meanwhile, we assume that the potential surplus Vn − cn is uniformly bounded. Both
+
+20
+assumptions (independence and uniform upper bound) appear to be technical and could potentially
+be relaxed via a finer analysis. However, for PB and BSP, the assumption of zero or homogeneous
+costs is fundamental, without which the asymptotic optimality cannot be achieved. In summary,
+CPBSD and PBDC can achieve asymptotic optimality under the weakest assumptions. Regarding
+the convergence rate, defined as ( PPD − profit)/N where “profit” represents the optimal profit
+under a given mechanism, we note that, aside from the logarithmic factors, N −1/2 is generally the
+best attainable rate.
+It is worth noting that the convergence rate may heavily depend on the focal mechanism.
+For instance, the O(N −1/3) rate for PB in Bakos and Brynjolfsson (1999) is later improved to
+O(log(N)1/2N −1/2) for BSP in Abdallah et al. (2021). It remains an interesting future direction to
+investigate the tightness of the rates for specific mechanisms and whether more complex mecha-
+nisms, like MB, can surpass the N −1/2 rate.
+Table 1 Summary of asymptotic optimality and the corresponding assumptions
+Bundling mechanism Assumptions on VN, cN Convergence rate
+CPBSD (this paper) Uniform upper bound for Vn − cn O(log(N)N −1/2)
+PB (Bakos and Brynjolfsson 1999) Zero costs O(N −1/3)
+PBDC (Ma and Simchi-Levi 2021) Independent Vn O(N −1/3)
+BSP (Abdallah et al. 2021) Homogeneous costs O(log(N)1/2N −1/2)
+5. Computation of CPBSD
+In this section, we study the computation of the optimal pricing scheme, i.e., prices and discounts,
+for CPBSD, and we propose an MILP formulation. In addition, we develop an approximation
+algorithm for solving large-scale problems in Appendix B.7.
+5.1. MILP Formulation
+Following the literature, we solve a sample version of the bundling problem, because the expectation
+over the continuous random valuationsV may lead to infinite constraints for (CPBSD). Specifically,
+we evaluate the expectation using a number of realized customer valuations vk ≜ (vk1, . . . , vkN),
+where vkn represents the valuation of customer k ∈ K ≜ {1, . . . , K} for product n ∈ N . Here, one
+may think that vk’s are samples of V drawn independently from the joint distribution F for each
+customer k ∈ K. As a result, we focus on the following problem:
+max
+p,d
+1
+K
+X
+k∈K
+X
+n∈N
+ 
+pn − cn − dP
+n xn(vk)
+
+xn(vk), (CPBSD-sample)
+s.t. ( p, d) ∈ P.
+
+21
+The solution to ( CPBSD-sample) can serve as a good approximate solution to ( CPBSD), especially
+when K is large.
+To begin, let xkns ∈ {0, 1} be an indicator that equals one if and only if customer k purchases
+a bundle of size s that contains product n. Given that customer k purchases a bundle of size s
+(i.e.,P
+n∈N xkns = s), to maximize her surplus, she must determine the products contained in the
+bundle by solving the following bundle content selection problem:
+max
+xkns
+X
+n∈N
+(vkn − pn + ds)xkns, (BCS)
+s.t.
+X
+n∈N
+xkns = s, x kns ∈ {0, 1}, ∀n ∈ N .
+Note that s, k, pn, ds, and vkn for n ∈ N are given for ( BCS) in the above problem.
+The binary constraint xkns ∈ {0, 1} in (BCS) can be relaxed to a linear one, 0 ≤ xkns ≤ 1, without
+affecting the optimal solution. That is, we can reframe ( BCS) as a linear program (LP):
+max
+xkns
+X
+n∈N
+(vkn − pn + ds)xkns, (BCS-LP)
+s.t.
+X
+n∈N
+xkns = s, 0 ≤ xkns ≤ 1, ∀n ∈ N .
+Furthermore, of particular importance to our formulation is the dual of ( BCS-LP) as below:
+min
+αks,βkns
+sαks +
+X
+n∈N
+βkns, (BCS-dual)
+s.t. αks + βkns ≥ vkn − pn + ds, α ks is free, β kns ≥ 0, ∀n ∈ N .
+Duality theory tells us that the objective of ( BCS-dual) is an upper bound on the optimal value
+of ( BCS-LP), and that this bound can be tight. Formally, we state the equivalence of the three
+formulations in Proposition 3. (The proof is provided in Appendix B.5.)
+Proposition 3. The optimal values of (BCS), (BCS-LP), and (BCS-dual) are equal.
+Although BCS is not hard to solve and the duality is almost trivial to obtain, its role is crucial in
+the MILP formulation. It allows us to convert the consumer’s problem into a minimization problem,
+so that we can collapse the two objectives in the bi-level optimization into a single formulation. Let
+qkns = (pn − ds)xkns denote the payment that customer k pays for purchasing product n in a bundle
+of size s. The objective of the firm is to maximize the total profitP
+k∈K
+P
+n∈N
+P
+s∈S(qkns − cnxkns).
+Here, we introduce S ≡ N to denote the set of bundle sizes for readability. Note that we use qkns
+instead of (pn − ds)xkns in the objective function to avoid bilinearity because both pn and xkns are
+decision variables. What follows is our MILP along with an explanation of the linear form.
+max 1
+K
+X
+k∈K
+X
+n∈N
+X
+s∈S
+(qkns − cnxkns), (CPBSD-MILP)
+
+22
+s.t. wk ≥ sαks +
+X
+n∈N
+βkns, ∀k ∈ K, ∀s ∈ S, (9)
+αks + βkns ≥ vkn − pn + ds, ∀k ∈ K, ∀n ∈ N , ∀s ∈ S, (10)
+αks is free, β kns ≥ 0, ∀k ∈ K, ∀n ∈ N , ∀s ∈ S, (11)
+X
+s∈S
+yks ≤ 1, ∀k ∈ K, (12)
+X
+n∈N
+xkns = syks, ∀k ∈ K, ∀s ∈ S, (13)
+X
+s∈S
+xkns ≤ 1, ∀k ∈ K, ∀n ∈ N , (14)
+xkns ≤ yks, ∀k ∈ K, ∀n ∈ N , ∀s ∈ S, (15)
+qkns ≥ pn − ds − M(1 − xkns), ∀k ∈ K, ∀n ∈ N , ∀s ∈ S, (16)
+qkns ≤ pn − ds, ∀k ∈ K, ∀n ∈ N , ∀s ∈ S, (17)
+wks =
+X
+n∈N
+(vknxkns − qkns), ∀k ∈ K, ∀s ∈ S, (18)
+wk =
+X
+s∈S
+wks, ∀k ∈ K (19)
+wk ≥
+X
+n∈N
+X
+s∈S
+(vknxjns − qjns), ∀k ∈ K, ∀j ∈ K/{k}, (20)
+sds ≥ s1ds1 + s2ds2, ∀s ∈ S, s 1 + s2 = s, s 1, s2 ≥ 0, (21)
+pn, ds, qkns, wks, wk ≥ 0, d 1 = 0 (22)
+xkns, yks ∈ {0, 1}. (23)
+In the above, note that constraints (9) through (11) utilize ( BCS-dual) to ensure that every
+customer maximizes her surplus when making her purchasing decision. For customerk, the obtained
+surplus wk is required to be no less than the objective of ( BCS-dual), which is an upper bound
+for (BCS-LP). This happens only when customer k chooses the optimal bundle size with the best
+composition of products. In this case, (9) holds at equality.
+Next, we introduce another set of indicators yks ∈ {0, 1}, which equals one if and only if customer
+k purchases a bundle of size s. Continuing with our formulation, constraint (12) states that each
+customer may either purchase one bundle or make no purchase. Constraint (13) counts the size of
+the purchased bundle. Constraint (14) indicates that a customer can purchase at most one unit of
+each product. Constraint (15) further strengthens the relationship between yks and xkns. Note that
+(14) and (15) result directly from (12) and (13) and hence are redundant in the modeling sense.
+Nonetheless, we include them in our model because they lead to a tighter LP relaxation which
+helps the branch-and-bound algorithm.
+Constraints (16) and (17) linearize the definition of qkns = (pn − ds)xkns by using the big-M
+technique, where we set M to be a sufficiently large number. When xkns = 1, (16) and (17) become
+
+23
+the equality qkns = pn − ds; when xkns = 0, because M is sufficiently large, (16) essentially becomes
+vacuous. In this latter case, as we shall see, constraints (18) and (19) force qkns to be zero.
+Constraints (16) to (19) connect a customer’s payment qkns, her choice of products xkns and
+the surplus obtained wk in linear forms. When xkns = 1 and qkns = pn − ds, customer k receives
+surplus vkn − pn + ds from purchasing product n according to the right side of (18); when xkns = 0,
+customer k receives a surplus of −qkns from product n in a bundle of size s. Given qkns ≥ 0 from
+(22), qkns must be zero when xkns = 0; otherwise it will reduce wk which conflicts with ( BCS-dual)
+imposed by constraints (9) to (11), because it fails to meet the upper bound condition for customer
+k’s realized surplus.
+Constraint (20) states that the surplus obtained by customer k from following her own decision
+must be no less than the surplus she would obtain from following another customer’s decision.
+Similar to (14) and (15), while (20) is redundant, we include it to tighten the relaxed program.
+Finally, constraint (21) guarantees a higher discount is offered to a bundle of larger size, con-
+straint (22) ensures the nonnegativity of all the variables, and constraint (23) represents the binary
+constraint for the indicators. Note that, in our model, a customer can always opt out by not
+purchasing anything, i.e., xkns = 0 and yks = 0 for all n and s.
+The above discussion can be formalized in the following theorem. (The proof is provided in
+Appendix B.6.)
+Theorem 4. In the optimal solution to the formulation (CPBSD-MILP), p and d constitute the
+optimal solution to (CPBSD-sample).
+Our formulation of (CPBSD-MILP) utilizes a novel derivation. As mentioned earlier, Hanson and
+Martin (1990) provide an MILP formulation forMB. However, their formulation needs to enumerate
+all possible bundles, which would create an exponential number of decision variables if it were used
+to derive CPBSD. Wu et al. (2008) avoid the need to list all bundles in their derivation for BSP
+by explicitly sorting each customer’s valuations for different products since customers will always
+buy their most valued products under BSP. However, under CPBSD, in addition to the product
+valuations, customer choices also depend on the component prices which are decision variables. To
+overcome the difficulty in determining customers’ selections, we incorporate (BCS) and (BCS-dual)
+into our MILP. We draw on Hanson and Martin (1990) in our linearization of the bi-linear terms in
+the objective function and constraints. While our formulation is more complicated than that of MB
+and BSP due to the selection of bundle content, our inclusion of qkns and constraints (16) to (19)
+allow us to derive our final MILP. (The formulation of BSP in Wu et al. (2008) is a mixed-integer
+nonlinear program. Using the linearization trick, we also formulate BSP as an MILP, which is much
+more computationally tractable. See Appendix C.)
+
+24
+Regarding the computational complexity, in ( CPBSD-MILP), there are O(KN 2) variables and
+O(KN 2 + K2) constraints, compared to O(K2N) variables and O(K2N) constraints in MB, and
+O(KN ) variables and O(K2 + N 2) constraints in BSP. Overall, CPBSD is slightly more expensive
+to solve than BSP, but a lot cheaper than MB, which is virtually impossible to solve for a large N
+without approximations. (It is worth pointing out that the computation time for solving an MILP
+using solvers does not depend solely on the number of constraints and variables. The tightness
+of the relaxations also contributes to the total computation time.) In our numerical experiments,
+(CPBSD-MILP) can be solved for problems with K = 50 and N = 5 in 5 minutes.
+6. Numerical Analysis and Results
+In this section, we conduct an extensive numerical study to assess the pricing performance of our
+proposed CPBSD, compared to CP, PB, BSP, PBDC, and MB. We evaluate the efficiency of CPBSD
+with the MILP formulation and the approximation algorithm in Section 6.1, and present numerical
+results on the asymptotic performance of CPBSD in Section 6.2.
+6.1. Profit Performance of CPBSD
+Experimental Setup. We largely follow the design of product valuations in Chu et al. (2011).
+Specifically, we use the same 5 families of parametric distributions, e.g., exponential, logit, lognor-
+mal, normal, and uniform, to define the marginal distribution of product valuations; we specify
+3 correlation structures: negative, independent, and positive correlations; and we use Gaussian
+copulas to build the joint distribution from the marginal distributions and make the consumer’s
+valuations correlated across products with a correlation proxy ρ ∈ {−0.5, 0, 0.5}.
+We consider three values for the number of products N ∈ {5, 10, 30}. To investigate the impact
+of heterogeneity, we test 3 levels of heterogeneity across product valuations: “none heterogeneity”,
+where the marginal distributions of valuations are identical for all products; “partial heterogeneity”,
+where 40% of products share a low-value marginal distribution and the other 60% of products share
+a high-value one; and “full heterogeneity”, where each product has a different marginal distribution
+of valuation. We also consider the heterogeneity across products from the perspective of production
+costs and potential surplus (recall that we defined Zn = Vn − cn). In particular, we investigate three
+scenarios: “zero cost”, where cn ≡ 0; “high value high margin (HVHM)”, where the cost cn grows
+more slowly than the valuation Vn across products, and hence a product with a higher Vn tends to
+have a larger potential surplus Zn; “high value low margin (HVLM)”, where, in contrast, cn grows
+faster than Vn across products, and hence a product with a higher Vn tends to have a smaller Zn.
+The detail of these settings is provided in Table 2. Given the combinations of 3 heterogeneity levels,
+3 cost scenarios, 5 demand distributions, 3 correlation structures, and 3 options of N, we have 405
+
+25
+Table 2 Settings of the product valuation Vn and cost cn
+marginal distribution of Vn
+exponential an exponential distribution with mean E[Vn]
+logit a gumble distribution with scale σ = 0.25 and location E[Vn] − 0.577σ
+lognormal a lognormal distribution with log-variance σ2 = 0.25 and log-mean log E[Vn] − 0.5σ2
+normal a normal distribution with variance σ2 = 0.25 and mean E[Vn]
+uniform an uniform distribution in [ E[Vn] − 1, E[Vn] + 1]
+mean of Vn production cost cn product
+heterogeneity E[Vn] zero cost HVHM HVLM index range
+none 1 0 0 .8 0 .1 + 1.5(n−1)
+N −1 n ∈ N
+partial 1 0 0 .8 0 .1 + 1.5(n−1)
+N −1 n = 1, . . . , N1 = 0.4N
+5 0 4 .4 4 .1 + 1.5(n−1−N1)
+N −1−N1
+n = N1 + 1, . . . , N
+full 1 + 9(n−1)
+N −1 0 0 .8 + 8.6(n−1)
+N −1 0.1 + 10.5(n−1)
+N −1 n ∈ N
+Notes. The marginal distribution of production valuation Vn is parameterized by its mean E[Vn], and becomes more
+varied across products as the heterogeneity increases. The cost cn is deterministic. “HVHM” and “HVLM” are
+abbreviations for “high value high margin” and “high value low margin”, respectively.
+setups. For each setup, we generate five problem instances, and then we have 2,025 instances in
+total (675 instances for each value of N).
+When generating problem instances, Chu et al. (2011) discretize the parameter space of valuation
+distribution and generate 220 instances on a grid for each distribution family. It is infeasible for
+us to choose parameters over a grid because we consider a larger set of products (e.g., N = 30).
+More importantly, Chu et al. (2011) mainly consider zero and identical costs, in which case BSP
+performs closely to the optimal scheme MB. Thus, there is little room for improvement in their
+settings. In this section, we are interested in examining the performance of CPBSD in the presence
+of heterogeneity among production valuations and costs, which is identified as the main source
+of inefficiency of BSP (see Abdallah et al. 2021), and choose representative parameters listed in
+Table 2. In addition to the above experimental design with fixed parameters, we also evaluate
+CPBSD by repeating the numerical experiments from Ma and Simchi-Levi (2021) where instances
+are generated using randomized parameters. For a comprehensive comparison, we report the results
+in Appendix F.
+For each instance, we draw product valuations forK = 50 customers independently from the joint
+distribution when N = 5, and we choose K = 100 for N ≥ 10. We solve each bundling mechanism
+using the K customer valuations. This is referred to as the in-sample test. We also perform an
+out-of-sample test by applying the price scheme computed from the in-sample test to another set
+of 5, 000 customer valuations, which are drawn independently from the same joint distribution.
+All bundling mechanisms are solved for N = 5. We use CPBSD to denote the result solved from
+(CPBSD-MILP), and CPBSD-A to denote that from the approximation (CPBSD-A). For comparison,
+
+26
+we solve CP, PB, BSP, PBDC, and MB using the formulations included in Appendix C. Note
+that we only solve CP, PB, BSP, PBDC, and CPBSD-A for N ≥ 10 with K = 100 due to the high
+computational costs for other mechanisms. We compute our MILPs using Gurobi 9.5.0 running on a
+laptop with an Intel(R) Core i5-1135G7 CPU (2.42 GHz) and 16GB RAM, and we impose a solving-
+time limit of 300/600/1200 seconds for each optimization problem for N=5/10/30, respectively.
+Overall Performance. We first examine the overall profit performances of all bundling mech-
+anisms for N = 5. Following Chu et al. (2011), in Figure 6, we display the profit of a pricing policy
+relative to BSP. That is, for each instance, we divide the in-sample (out-of-sample) profit of a
+pricing scheme by that of BSP (hence BSP itself is normalized to 1).
+CP PB PBDC BCBCPBSD     CPBSD-A     MB
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0 Mean
+Median
+BSP
+In-sample
+Out-of-sample
+(a) all schemes N = 5
+exponential logit  lognormal    normaluniform
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0 (b) CPBSD by distribution N = 5
+zero positive negative
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0 (c) CPBSD by correlation N = 5
+Notes. Figure 6(a) reports the performance of all schemes over 675 instances of N = 5. Figure 6(b) reports CPBSD
+across 5 distribution types (135 instances for each type). Figure 6(c) reports CPBSD across 3 correlation structures
+(225 instances for each structure). Each box plot displays the in-sample (light bar) and out-of-sample (dark bar)
+profits relative to BSP with the mean (dashed line), median (solid line), 2.5%, 25%, 75%, and 97.5% quantiles.
+Figure 6 Profit comparisons of bundling mechanisms relative to BSP for N = 5
+We first examine Figure 6(a). In terms of the in-sample performance, we replicate the observation
+in Chu et al. (2011) that BSP is always better than PB, and better than CP in a large portion
+of instances. Compared to BSP, CPBSD improves the average profit by 29.4% and reduces more
+than half of the gap to MB. We replicate the finding in Ma and Simchi-Levi (2021) as well that
+PBDC can outperform BSP in a majority of instances, and we find that CPBSD outperforms PBDC
+by 12.9% in average. We also consider a natural enhancement of BSP which allows the seller to
+pick the better one between CP and BSP (denoted as BCB in the figure), and we find that CPBSD
+still outperforms max {CP, BSP} by 9.9%. The above in-sample results validate Proposition 1 that
+CPBSD subsumes these bundling mechanisms as special cases.
+Examining our out-of-sample results, we find thatCPBSD achieves an average profit 23.7% higher
+than BSP. CPBSD and PBDC perform comparably and both outperform MB, largely due to the
+overfitting of in-sample valuations under MB.
+
+27
+From Figures 6(b) and 6(c), we observe that the improvement of CPBSD to BSP is robust across
+different distributions and different correlation structures, moreover, CPBSD performs well under
+positive correlation, which is generally known to hurt bundling benefits in the literature. Overall,
+CPBSD demonstrates superior performance in improving a firm’s profitability. We also note that
+CPBSD-A solved using the approximation algorithm performs very closely to CPBSD.
+The Impact of Product Cost and Heterogeneity. In Table 3, we divide 675 instances of
+N = 5 into 9 categories according to the scenario of production cost/potential surplus and the level
+of valuation heterogeneity. (The corresponding box-plot figures are provided in Appendix E.1.) As
+the focus of our experimental design, we next examine the pattern of profit performance across
+these categories.
+Table 3 Categorized profit comparisons of bundling mechanisms relative to BSP for N = 5
+category median of relative profit performance
+cost heterogeneity CP PB BSP max{CP, BSP} PBDC CPBSD CPBSD-A MB
+zero cost none in-s 0.78 0.99 1.00 1.00 0.99 1.02 1.00 1.03
+out-s 0.79 1.00 1.00 1.00 1.00 0.98 1.00 0.97
+partial in-s 0.88 1.00 1.00 1.00 1.00 1.01 1.00 1.01
+out-s 0.89 1.01 1.00 1.00 1.01 0.99 1.00 0.98
+full in-s 0.92 1.00 1.00 1.00 1.00 1.00 1.00 1.00
+out-s 0.91 1.01 1.00 1.00 1.01 0.99 1.00 0.98
+positive cost none in-s 0.90 0.72 1.00 1.00 0.91 1.06 1.01 1.17
+HVHM out-s 0.83 0.76 1.00 1.00 0.94 0.96 1.00 0.93
+partial in-s 0.93 0.85 1.00 1.00 0.97 1.08 1.02 1.16
+out-s 0.96 0.89 1.00 1.00 1.02 1.01 1.04 1.00
+full in-s 0.94 0.82 1.00 1.00 0.98 1.14 1.06 1.21
+out-s 0.98 0.91 1.00 1.00 1.09 1.07 1.10 1.05
+positive cost none in-s 1.12 0.62 1.00 1.12 1.17 1.38 1.33 1.41
+HVLM out-s 1.26 0.68 1.00 1.26 1.34 1.38 1.38 1.30
+partial in-s 1.38 0.69 1.00 1.38 1.38 1.63 1.48 1.67
+out-s 1.43 0.83 1.00 1.43 1.59 1.56 1.62 1.61
+full in-s 1.63 0.96 1.00 1.63 1.67 1.96 1.81 2.04
+out-s 1.63 1.00 1.00 1.63 1.75 1.81 1.83 1.74
+Notes. The 675 instances of N = 5 are divided evenly into 9 categories according to the scenario of production
+cost/potential surplus and the degree of valuation heterogeneity. We report the median profit for in-sample (in-s) and
+out-of-sample (out-s) tests over the 75 instances for each category.
+Zero Cost. The first segment of Table 3 reports results from instances of zero production cost.
+Through these outcomes, we observe that PB, BSP, PBDC, and CPBSD yield very similar profit,
+which is significantly higher than that of CP and close to that of MB across the degrees of valuation
+heterogeneity. Our finding implies that, under zero costs, the benefit of bundling is significant,
+whereas the actual format of bundling matters less. This finding corroborates the result in Bakos
+and Brynjolfsson (1999) that PB approximates the optimal profit when production cost is zero.
+
+28
+Positive Cost. As shown in the second and third segment of Table 3, under positive production
+costs, CPBSD outperforms BSP and PBDC, and closely follows MB. In contrast, PB significantly
+underperforms the rest. We also note that the absolute amount of the profit difference between
+CPBSD and BSP enlarges as the cost level increases.
+Product Heterogeneity. Since PB and BSP largely ignore the differences among products in the
+pricing scheme, their performance may deteriorate when products are highly differentiated. From
+the perspective of heterogeneity among product valuations, we indeed observe that, under positive
+cost, the relative performance of CPBSD to BSP increases substantially as the marginal distri-
+butions of valuations become more varied across products. Regarding the heterogeneity among
+production costs, Abdallah et al. (2021) identify it as the main source of inefficiency of BSP. Based
+on their findings, we provide additional insights as below: Under BSP, a customer prefers products
+with high valuation Vn; however, this purchasing preference does not benefit a firm’s profitability
+if the highly valued products are associated with high costs cn. More precisely, in addition to the
+absolute cost level, the relation between Vn and Vn − cn (i.e., the potential surplus Zn), is also
+critical for the performance of bundling. In the third segment of Table 3, where the ranking of Zn
+across products is inverse to that of Vn (HVLM), we clearly observe that BSP becomes less prof-
+itable and even underperforms CP, because the highly valued products sold under BSP yield very
+little profit. In contrast, by setting component prices, CPBSD rearranges a customer’s purchasing
+preference according to Vn − pn, which can be tuned to keep with the ranking of Zn. Therefore,
+CPBSD tends to sell products with high potential surplus. As we see, CPBSD improves the in-
+sample (out-of-sample) average profit by 9.7% (1.6%) over BSP in the HVHM scenario, and this
+improvement significantly amplifies to 65.5% (58.2%) in the HVLM scenario.
+We note that PBDC performs similarly to BSP in the HVHM scenario and outperform BSP
+in the HVLM scenario. We also note that max {CP, BSP} improves the inefficiency of BSP under
+heterogeneous costs, particularly in the HVLM scenario. Comparing to PBDC and max{CP, BSP},
+we find that CPBSD can still substantially improve profits in both scenarios in the in-sample data.
+It is worth noticing that PBDC performs very well in the out-of-sample data, similar to CPBSD.
+Combining these observations, we can see that CPBSD demonstrates superior performance in
+contrast to other bundling mechanisms. The benefit of using CPBSD is most pronounced when
+production costs are expensive and the products are highly differentiated.
+When designing our experiments, we thought the possibility that a firm may remove selling
+products of high valuation but low potential surplus, and hence the the HVLM scenario might be
+less common in practice. Whereas, this scenario may arise when customers have different tastes.
+We remark our test of this scenario by demonstrating whereby BSP becomes severely inefficient
+and CPBSD can remedy.
+
+29
+Performance of the Approximation Algorithm. In Figure 7, we report the overall profit for
+large-scale problem instances of N = 30, and we observe a similar pattern as shown in Figure 6 that
+CPBSD-A robustly outperforms PB, BSP, and PBDC, across different distributions and correlations.
+CP PB PBDC BCB CPBSD-A
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0 Mean
+Median
+BSP
+In-sample
+Out-of-sample
+(a) all schemes N = 30
+exponential logit  lognormal    normaluniform
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0 (b) CPBSD-A by distribution N = 30
+zero positive negative
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0 (c) CPBSD-A by correlation N = 30
+Notes. Figure 7(a) reports the performance of all schemes over 675 instances of N = 30. Figure 7(b) reports CPBSD-A
+across 5 distribution types (135 instances for each type). Figure 7(c) reports CPBSD-A across 3 correlation structures
+(225 instances for each structure). Each box plot displays the in-sample (light bar) and out-of-sample (dark bar)
+profits relative to BSP with the mean (dashed line), median (solid line), 2.5%, 25%, 75%, and 97.5% quantiles.
+Figure 7 Profit comparisons of bundling mechanisms relative to BSP for N = 30
+For the categorized profit comparisons for N = 30 shown in Table 4, we observe the same pattern
+as N = 5. Specifically,PB, BSP, PBDC, and CPBSD-A are almost identical under zero cost; CPBSD-
+A outperforms other schemes when costs are positive; and the relative performance of CPBSD-A
+to BSP (or PBDC) increases as products become more heterogeneous. As displayed in the second
+(third) segment of Table 4, CPBSD-A improves the in-sample average profit by 5.5% (57.4%) over
+BSP in the scenario of HVHM (HVLM). Notably, the out-of-sample improvement ofCPBSD-A over
+BSP is even larger, which is 7.8% and 61.3% in the two scenarios, respectively.
+When solving (CPBSD-A), we preset the preference ranking according to the descending order of
+vkn − cn. This specification is partially inspired by our findings in Section 4 that the markup policy
+with such ranking achieves asymptotically optimal profit, and also follows the earlier discussion
+that it is CPBSD’s advantage to induce customers to purchase products with high potential surplus.
+Combing observations from our experiments, we show that ( CPBSD-A) could serve as a good
+surrogate of CPBSD when it is computational intensive to solve ( CPBSD-MILP) optimally.
+6.2. Asymptotic Performance
+In this section, we compare the asymptotic performance of CPBSD to PB and BSP for selling a
+very large number of products. We omit the performance of PBDC because it has similar asymp-
+totic behavior as CPBSD as mentioned in Section 4.2. Following the setting described in Section
+
+30
+Table 4 Categorized profit comparisons of bundling mechanisms relative to BSP for N = 30
+category median of relative profit performance
+cost heterogeneity CP PB BSP max{CP, BSP} PBDC CPBSD-A
+zero cost none in-s 0.65 0.99 1.00 1.00 0.99 1.00
+out-s 0.63 1.00 1.00 1.00 1.00 1.00
+partial in-s 0.82 1.00 1.00 1.00 1.00 1.00
+out-s 0.83 1.00 1.00 1.00 1.00 1.00
+full in-s 0.86 1.00 1.00 1.00 1.00 1.00
+out-s 0.86 1.01 1.00 1.00 1.01 1.00
+positive cost none in-s 0.67 0.70 1.00 1.00 0.96 1.00
+HVHM out-s 0.62 0.70 1.00 1.00 0.99 1.00
+partial in-s 0.83 0.82 1.00 1.00 0.99 1.04
+out-s 0.75 0.86 1.00 1.00 1.05 1.07
+full in-s 0.87 0.89 1.00 1.00 1.04 1.13
+out-s 0.83 0.95 1.00 1.00 1.14 1.17
+positive cost none in-s 0.97 0.61 1.00 1.00 1.22 1.33
+HVLM out-s 0.94 0.64 1.00 1.00 1.26 1.35
+partial in-s 1.12 0.73 1.00 1.12 1.33 1.51
+out-s 1.12 0.78 1.00 1.12 1.44 1.57
+full in-s 1.26 0.97 1.00 1.26 1.76 1.89
+out-s 1.53 1.02 1.00 1.53 1.91 1.92
+Notes. The 675 instances of N = 30 are divided evenly into 9 categories according to the scenario of production
+cost/potential surplus and the degree of valuation heterogeneity. We report the median profit for in-sample (in-s) and
+out-of-sample (out-s) tests over the 75 instances for each category.
+6.1, we generate problem instances for N ∈ {100, 300, 1000}. When solving these very large-scale
+bundling problems, we implement CPBSD using the markup policy specified in Section 4.2 with the
+asymptotic optimal bundle size (6) and discounts (8) ( η = 2 maxk∈K,n∈N (vkn − cn) and ϵ = 10−3);
+we compute BSP using the algorithm in Abdallah et al. (2021); and we can still calculate PB
+easily using the formulation included in Appendix C. When computing these policies, we use 1,000
+in-sample data points for numerical calculation, and still use 5,000 out-of-sample data points for
+performance evaluation.
+Figure 8 reports the out-of-sample performance of PB, BSP, and CPBSD. We display the profit
+of a pricing policy relative to P
+k∈K
+P
+n∈N (vkn − cn)+, i.e, the profit under PPD. We find that,
+as the number of products grows, the profit obtained by CPBSD converges to PPD when product
+valuations have a zero or negative correlation structure. (Note that the correlation across products
+generated by Gaussian copulas with a negative correlation structure approaches zero as N → ∞.)
+In contrast, when the products exhibit positive correlation, CPBSD may not converge to PPD, yet
+still outperforms other alternatives. This confirms our Assumption 1 that a sufficient mixing in the
+random valuations (potential surplus) is critical for CPBSD to achieve asymptotic optimality.
+In Table 5, again, we find the similar pattern for the relative performance of CPBSD to PB and
+BSP to that observed in Tables 3 and 4. As shown in the first segment of Table 5, under zero costs,
+
+31
+(a) zero and negative correlation
+ (b) positive correlation
+ (c) CPBSD by different distributions
+Notes. Figure 8(a) report results from zero and negative correlated instances, Figure 8(b) reports results from positive
+correlated instances, and comparisons are across the number of products N along the horizontal axis. Figure 8(c)
+reports CPBSD across 5 distribution types for N = 1, 000. Each box plot displays the out-of-sample profits relative to
+PPD with the mean (dashed line), median (solid line), 2.5%, 25%, 75%, and 97.5% quantiles.
+Figure 8 Profit comparisons of bundling mechanisms relative to PPD in large-scale problems
+CPBSD, PB, and BSP performs almost identically and converges to PPD. Abdallah et al. (2021)
+show that BSP can achieve asymptotic optimality if the non-zero production cost is a constant.
+This result is verified in the first row of the second segment in Table 5, where both CPBSD and
+BSP converge to PPD. In other rows, as the heterogeneity among valuations increases, we find that
+CPBSD performs a lot better than BSP and converges to PPD quickly. In contrast, BSP generally
+cannot be asymptotically optimal under these circumstances, especially in the HVLM scenario.
+Table 5 Categorized profit comparisons of bundling mechanisms relative to PPD in large-scale problems
+category PB BSP CPBSD
+cost heterogeneity N : 100 300 1000 N : 100 300 1000 N : 100 300 1000
+zero cost none 0.91 0.94 0.97 0.91 0.94 0.97 0.91 0.94 0.97
+partial 0.95 0.97 0.98 0.95 0.97 0.98 0.95 0.97 0.98
+full 0.97 0.98 0.99 0.97 0.98 0.99 0.97 0.98 0.99
+positive cost none 0.45 0.50 0.55 0.77 0.85 0.91 0.77 0.85 0.91
+HVHM partial 0.65 0.72 0.77 0.76 0.83 0.88 0.81 0.88 0.93
+full 0.63 0.69 0.74 0.65 0.73 0.79 0.80 0.87 0.92
+positive cost none 0.29 0.33 0.36 0.62 0.69 0.75 0.80 0.87 0.92
+HVLM partial 0.24 0.28 0.32 0.48 0.52 0.55 0.79 0.86 0.92
+full 0.23 0.28 0.32 0.40 0.44 0.45 0.78 0.86 0.92
+Notes. For each N ∈ {100, 300, 1000}, the 450 instances of zero and negative correlations are divided evenly into 9
+categories according to the scenario of production cost/potential surplus and the degree of valuation heterogeneity.
+We report the median of out-of-sample profit performance relative to PPD over the 50 instances for each category.
+7. Conclusion
+In this study, we propose a bundling mechanism CPBSD that is commonly seen in practice. Our
+analysis shows that CPBSD is conceptually simple and subsumes CP, PB, BSP, PBDC, and TPT
+
+32
+as special cases. We further find that CPBSD attains the optimal profit asymptotically for a large
+number of products under a general condition. In addition, we propose an MILP formulation
+to solve the optimal pricing scheme of CPBSD, as well as an approximation algorithm to tackle
+large-scale problems. Examining the comparative performance of our proposed mechanism, we
+find that CPBSD yields superior profits among the bundling mechanisms and is efficiently solved,
+making it an attractive mechanism for real-world applications. Our study opens a number of
+research directions on CPBSD and other possible simple bundle pricing mechanisms, including
+asymptotic/non-asymptotic theoretical analyses, a weaker requirement on correlation structures
+for asymptotic optimality, and algorithms for problems with even larger sizes.
+References
+Abdallah T (2019) On the benefit (or cost) of large-scale bundling. Production and Operations Management
+28(4):955–969.
+Abdallah T, Asadpour A, Reed J (2021) Large-scale bundle-size pricing: A theoretical analysis. Operations
+Research 69(4):1158–1185.
+Adams WJ, Yellen JL (1976) Commodity bundling and the burden of monopoly. The Quarterly Journal of
+Economics 90(3):475–498.
+Armstrong M (1999) Price discrimination by a many-product firm. Review of Economic Studies 66(1):151–
+168.
+Babaioff M, Immorlica N, Lucier B, Weinberg SM (2014) A simple and approximately optimal mechanism
+for an additive buyer. 2014 IEEE 55th Annual Symposium on Foundations of Computer Science , 21–30
+(IEEE).
+Bakos Y, Brynjolfsson E (1999) Bundling information goods: Pricing, profits, and efficiency. Management
+science 45(12):1613–1630.
+Bhargava HK (2013) Mixed bundling of two independently valued goods. Management Science 59(9):2170–
+2185.
+Billingsley P (1999) Convergence of Probability Measures (John Wiley and Sons, New York).
+Cai Y, Devanur NR, Weinberg SM (2019) A duality-based unified approach to bayesian mechanism design.
+SIAM Journal on Computing 50(3):STOC16–160–STOC16–200.
+Chen H, Hu M, Perakis G (2022) Distribution-free pricing.Manufacturing & Service Operations Management
+24(4):1939–1958.
+Chen N, Elmachtoub AN, Hamilton ML, Lei X (2021) Loot box pricing and design. Management Science
+67(8):4809–4825.
+Chu CS, Leslie P, Sorensen A (2011) Bundle-size pricing as an approximation to mixed bundling. The
+American Economic Review 101(1):263–303.
+
+33
+Ettl M, Harsha P, Papush A, Perakis G (2020) A data-driven approach to personalized bundle pricing and
+recommendation. Manufacturing & Service Operations Management 22(3):461–480.
+Fang H, Norman P (2006) To bundle or not to bundle. The RAND Journal of Economics 37(4):946–963.
+Gallego G, Berbeglia G (2023) Bounds and heuristics for multiproduct pricing. Management Science .
+Hanson W, Martin RK (1990) Optimal bundle pricing. Management Science 36(2):155–174.
+Hart S, Nisan N (2017) Approximate revenue maximization with multiple items.Journal of Economic Theory
+172:313–347.
+Hitt LM, Chen Py (2005) Bundling with customer self-selection: A simple approach to bundling low-marginal-
+cost goods. Management Science 51(10):1481–1493.
+Ibragimov R, Walden J (2010) Optimal bundling strategies under heavy-tailed valuations. Management
+Science 56(11):1963–1976.
+Li X, Sun H, Teo CP (2021) Convex optimization for bundle size pricing problem. Management Science
+68(2):1095–1106.
+Li X, Yao ACC (2013) On revenue maximization for selling multiple independently distributed items. Pro-
+ceedings of the National Academy of Sciences 110(28):11232–11237.
+Ma W, Simchi-Levi D (2021) Reaping the benefits of bundling under high production costs. International
+Conference on Artificial Intelligence and Statistics , 1342–1350 (PMLR).
+McAfee RP, McMillan J, Whinston MD (1989) Multiproduct monopoly, commodity bundling, and correlation
+of values. The Quarterly Journal of Economics 104(2):371–383.
+Schmalensee R (1984) Gaussian demand and commodity bundling. Journal of business 57:211–230.
+Simchi-Levi D, Sun R, Zhang H (2022) Online learning and optimization for revenue management problems
+with add-on discounts. Management Science 68(10):7402–7421.
+Song JS, Xue Z (2021) Demand shaping through bundling and product configuration: A dynamic multiprod-
+uct inventory-pricing model. Operations Research 69(2):525–544.
+Stigler GJ (1963) United states v. loew’s inc.: A note on block-booking.The Supreme Court Review 1963:152–
+157.
+Sun H, Li X, Teo CP (2021) Partition and prosper: design and pricing of single bundle. Working Paper .
+Van der Vaart AW (2000) Asymptotic statistics, volume 3 (Cambridge university press).
+Venkatesh R, Mahajaim V (1993) A probabilistic approach to pricing a bundle of products or services.
+Journal of Marketing Research 30(4):494–508.
+Venkatesh R, Mahajan V (2009) The design and pricing of bundles: a review of normative guidelines and
+practical approaches. Handbook of pricing research in marketing 232.
+
+34
+Wu C, Jin C, Chen YJ (2022) Managing customer search via bundling. Manufacturing & Service Operations
+Management 24(4):1906–1925.
+Wu CA, Yang L (2018) Bundle pricing of congested services. Working Paper .
+Wu Sy, Hitt LM, Chen Py, Anandalingam G (2008) Customized bundle pricing for information goods: A
+nonlinear mixed-integer programming approach. Management Science 54(3):608–622.
+Xue Z, Wang Z, Ettl M (2016) Pricing personalized bundles: A new approach and an empirical study.
+Manufacturing & Service Operations Management 18(1):51–68.
+
+35
+Online Appendices of
+Component Pricing with a Bundle Size Discount
+Appendix A: Proofs in Section 3
+A.1. Proof of Proposition 1
+In CPBSD, the price menu includes the component price vector ( p1, p2, . . . , pN) and the bundle size
+discount vector (d1, d2, . . . , dN). Next, we show that CPBSD can replicate CP, BSP, PB, PBDC and
+TPT, by specifying the price menu, respectively.
+CP. Given a CP with a price pCP
+n for product n, we consider the price menu of CPBSD such that
+pn = pCP
+n and ds = 0 for all n, s= 1, 2, . . . , N. Then, CPBSD degenerates to CP.
+BSP. Given a BSP with a bundle size price vector (bBSP
+1 , bBSP
+2 , . . . , bBSP
+N ) with bBSP
+1 ≤ bBSP
+2 ≤ . . .≤ bBSP
+N ,
+we consider the price menu of CPBSD such that p1 = p2 = . . .= pN = bBSP
+N and ds = bBSP
+N − bBSP
+s /s ≥ 0
+for s = 1, 2, . . . , N. Then, for a bundle S ⊆ N with |S| = s, one can rapidly verify that the bundle
+price isP
+n∈S pn − sds = bBSP
+s , that is, bundles with the same size s have the same price bBSP
+s . CPBSD
+degenerates to BSP.
+PB. Given a PB with a grand bundle price pPB, we start from BSP and let bBSP
+s = pPB for all s
+in BSP. Since the valuations are non-negative, all customers prefer the grand bundle than other
+bundle sizes. Thus, BSP, a special case of CPBSD, degenerates to PB.
+TPT. Given a TPT with fixed fee t and component prices ( pTPT
+1 , . . . , pTPT
+N ), we consider the price
+menu of CPBSD such that pn = pTPT
+n + t and sds = (s − 1)t for all n, s = 1, 2, . . . , N. Then, for a
+bundle S ⊆ N with |S| = s, its price isP
+n∈S pn − |S|d|S| =P
+n∈S pTPT
+n + st −(s −1)t =P
+n∈S pTPT
+n + t.
+CPBSD degenerates to TPT.
+PBDC. Given a PBDC with a grand bundle price pPBDC, we consider the price menu of CPBSD
+such that pn = cn + pPBDC and sds = (s − 1)pPBDC +PN
+n=1 cn for all n, s = 1, 2, . . . , N. Then, for a
+bundle S ⊆ N with |S| = s, its price isP
+n∈S pn − |S|d|S| = pPBDC −P
+n /∈S cn. CPBSD becomes PBDC.
+Note that PBDC is a special case of TPT where pTPT
+n = cn and t = pPBDC −PN
+n=1 cn. □
+A.2. Proofs in Section 3.3
+In this section, for simplicity, we use the mechanism name to denote the optimal profit of the
+corresponding bundling mechanism in the constructed instance. We first present two technical
+results which facilitate the following analysis, and then provide the main proofs.
+A.2.1. Preliminaries
+Lemma A.1 (An Upper Bound for TPT). Given the product valuation distribution F and
+production cost c, let PB0 be the optimal pure bundling profit for products with the same valuation
+distribution but zero production costs. Then, TPT ≤ PB0 + CP.
+
+36
+Proof of Lemma A.1. For TPT, suppose that the optimal entry fee and component prices are
+tTPT and {pTPT
+n }n∈N , respectively. Then, the optimal profit is given by
+TPT =
+X
+S⊆N
+ 
+tTPT +
+X
+n∈S
+(pTPT
+n − cn)
+!
+· P(S is chosen)
+=tTPT ·
+X
+S⊆N
+P(S is chosen) +
+X
+S⊆N
+ X
+n∈S
+(pTPT
+n − cn)
+!
+· P(S is chosen)
+≤ tTPT · P
+ X
+n∈N
+Vn ≥ tTPT
+!
+| {z }
+term-1
++
+X
+S⊆N
+ X
+n∈S
+(pTPT
+n − cn)
+!
+· P(S is chosen)
+| {z }
+term-2
+. (A-1)
+Inequality (A-1) holds because the event P
+S⊆N P(S is chosen) (a purchase is made under TPT) is
+a subset of the event P
+n∈N Vn ≥ tTPT (the grand bundle valuation is no less than the entry fee).
+In (A-1), term-1 can be upper bounded by PB0 = supp
+
+p · P(P
+n∈N Vn ≥ p)
+	
+, which, by definition,
+is the optimal pure bundling profit for products with the same valuations but zero costs. Next,
+we show that term-2 can be upper bounded by the optimal profit under CP. Under TPT, since
+tTPT ≥ 0, the probability that a bundle S is purchased can be upper bounded by
+P(S is chosen) =P
+ X
+n∈S
+Vn − pTPT
+n ≥ tTPT,
+X
+n∈S
+Vn − pTPT
+n ≥
+X
+n∈S′
+Vn − pTPT
+n ∀S′ ̸= S
+!
+≤P
+ X
+n∈S
+Vn − pTPT
+n ≥ 0,
+X
+n∈S
+Vn − pTPT
+n ≥
+X
+n∈S′
+Vn − pTPT
+n ∀S′ ̸= S
+!
+.
+Hence, by substituting the bound above for P(S is chosen), we can upper bound term-2 by
+X
+S⊆N
+ X
+n∈S
+(pTPT
+n − cn)
+!
+· P
+ X
+n∈S
+Vn − pTPT
+n ≥ 0,
+X
+n∈S
+Vn − pTPT
+n ≥
+X
+n∈S′
+Vn − pTPT
+n ∀S′ ̸= S
+!
+. (A-2)
+Note that (A-2) is exactly the profit under CP with component prices {pTPT
+n }n∈N , and thus (A-2)
+must be no more than the optimal profit under CP.
+For (A-1), we have term-1 ≤ PB0 and term-2 ≤ CP. Therefore, TPT ≤ PB0 + CP. □
+In the following, it naturally assumes N ≥ 2 products for bundling.
+Lemma A.2. It holds that
+1
+2 (log(N + 1)− 1) <
+NX
+k=1
+√
+k ·
+ 1√
+k
+− 1√
+k + 1
+
+< 1
+2 (log(N) + 1) . (A-3)
+Proof of Lemma A.2. For all k = 1, . . . , N, we have
+√
+k ·
+ 1√
+k
+− 1√
+k + 1
+
+=
+√
+k + 1−
+√
+k√
+k + 1 = 1√
+k + 1(
+√
+k + 1 +
+√
+k)
+, and
+1
+2(k + 1) < 1√
+k + 1(
+√
+k + 1 +
+√
+k)
+< 1
+2k . (A-4)
+
+37
+Moreover, we have the following two integral inequalities
+NX
+k=1
+1
+k + 1 =
+ N+1X
+k=1
+1
+k
+!
+− 1 ≥
+Z N+2
+1
+1
+xdx − 1 = log(N + 2)− 1 > log(N + 1)− 1. (A-5)
+NX
+k=1
+1
+k =
+ N −1X
+k=1
+1
+k + 1
+!
++ 1≤
+Z N
+1
+1
+xdx + 1 = log(N) + 1. (A-6)
+Combining (A-5) and (A-6) with (A-4), we obtain (A-3). This completes the proof. □
+A.2.2. Main Proofs
+Proof of Lemma 1 We first recall the construction of the instance I(1)
+N . There are N products
+with zero costs ( c1 = . . .= cN = 0). There are also a total of N categories of customers, indexed by
+k = 1, ..., N, and the probability mass that a customer belongs to category k is
+q(1)
+k =
+ 1√
+k − 1√k+1 , if 1 ≤ k ≤ N − 1,
+1√
+N , if k = N.
+Within category k, each customer has a positive valuation 1√
+k for each of a group of k products and
+zero valuation for the other N − k products. More specifically, given that there are
+ N
+k
+
+possible
+combinations for choosing k items out of N products, we evenly distribute customers of category k
+into
+ N
+k
+
+sub-types, where each sub-type positively values a unique combination of k products. The
+design of sub-types eases the profit analysis by making products “symmetric”, i.e., each product
+is same valued at 1√
+k by the same proportion k
+N of customers in any category k = 1, ..., N.
+In the following, we analyze the optimal prices and profits under CPBSD, BSP and TPT in I(1)
+N .
+CPBSD. Consider a price menu of CPBSD below:
+pn = cn + 1 and sds = s − √s for 0 ≤ n ≤ N, 1 ≤ s ≤ N + 1. (A-7)
+This price menu always satisfies the practical constraints of CPBSD defined in (3). Specifically, we
+have pn = cn + 1> 0, sds = s − √s ≥ 0, sds ≥ s1ds1 + s2ds2 due to √s ≤ √s1 + √s1 for all s1, s2 ≥ 0
+such that s = s1 + s2, d1 = 0, and pn − ds = cn + 1− (s − √s)/s ≥ √s/s ≥ 0. In I(1)
+N , for any bundle
+S ⊆ N that contains s products, since cn = 0, the bundle price under (A-7) is
+X
+n∈S
+pn − sds = √s +
+X
+n∈S
+cn = √s. (A-8)
+Note that, in I(1)
+N , the CPBSD bundle price (A-8) actually reduces to the scheme of BSP, where
+the bundle price only depends on the bundle size.
+Next, we analyze customers’ bundle choice under (A-7). We can show that, within any category
+k = 1, ..., N, each customer will purchase a bundle of size k. Recall that a customer has a positive
+valuation 1√
+k for k products and zero valuation for others, and hence we have the following three
+cases when a customer chooses products.
+
+38
+(a) If choosing a bundle of size k, the bundle price is
+√
+k, and the largest bundle value isk · 1√
+k =
+√
+k
+by including exactly the k products that the customer positively values. Hence, the customer
+receives zero surplus when purchasing this bundle.
+(b) If choosing a bundle of size k′ > k, the bundle price is
+√
+k′, and the largest bundle value is
+k · 1√
+k +( k′ − k) ·0 =
+√
+k. Hence, the customer will not purchase since the surplus is
+√
+k −
+√
+k′ <
+0.
+(c) If choosing a bundle of size k′ < k, the bundle price is
+√
+k′, and the largest bundle value is
+k′ · 1√
+k. Hence, the customer will not purchase since the surplus is k′
+√
+k −
+√
+k′ < k′
+√
+k′ −
+√
+k′ = 0.
+To maximize the surplus, the customer prefers case (a).
+Given the above bundle choice, the expected profit (over all N categories of customers) under
+(A-7) can be computed, and lower bounded by applying inequality (A-3) in Lemma A.2 as below.
+NX
+k=1
+√
+k · q(1)
+k =
+N −1X
+k=1
+√
+k ·
+ 1√
+k
+− 1√
+k + 1
+
++
+√
+N · 1√
+N
+≥ 1
+2 (log(N) + 1) . (A-9)
+Since (A-7) is a feasible price menu for the scheme of CPBSD (and BSP), (A-9) provides a lower
+bound for the optimal profit under CPBSD (and BSP). Also note that, for each customer, (A-7)
+sells all positively valued products out and leaves no surplus. That says, by using (A-7) in I(1)
+N ,
+CPBSD (and BSP) can extract all customer surplus, and hence obtain the maximum possible profit
+under any selling mechanism. To conclude, we have CPBSD(I(1)
+N ) = BSP(I(1)
+N ) ≥ 1
+2 log(N) + 1
+2.
+TPT. Since all products are of zero cost in I(1)
+N , we have TPT(I(1)
+N ) ≤ PB(I(1)
+N )+ CP(I(1)
+N ) according
+to Lemma A.1. Next, we upper bound PB(I(1)
+N ) and CP(I(1)
+N ), respectively.
+• For PB, the optimal grand bundle price should be chosen from the support set of the grand
+bundle valuation, which includes k · 1√
+k + (N − k) · 0 =
+√
+k for categories k = 1, ..., N. If choosing
+pPB =
+√
+k, only customers in categories k′ ≥ k have a grand bundle valuation
+√
+k′ ≥ pPB and will
+buy. Then, the firm receives a profit
+pPB ·
+NX
+k′=k
+q(1)
+k =
+√
+k ·
+ N −1X
+k′=k
+ 1√
+k′
+− 1√
+k′ + 1
+
++ 1√
+N
+!
+=
+√
+k · 1√
+k
+= 1, (A-10)
+which remains same across k = 1, ..., N. It implies that PB(I(1)
+N ) = 1.
+• For CP, we need to compute the optimal profit of each product under its marginal value
+distribution and then sum them together. Recall that each product is valued at 1√
+k by the same
+proportion k
+N of customers in any category k = 1, ..., N. Since all products are symmetric, they
+have the same optimal profit under CP. Hence, it suffices to calculate product-1. The optimal price
+should be chosen from the support set of valuation, which includes 0 and 1√
+k for k = 1, ..., N. Setting
+pCP
+1 = 0 garners zero profit due to zero cost. When choosing pCP
+1 = 1√
+k, we have two cases below.
+
+39
+(a) If 1 ≤ k ≤ N − 1, only in each category k′ ≤ k, a proportion k′
+N of customers have a valuation
+1√
+k′ ≥ pCP
+1 = 1√
+k and will buy product-1. Hence, the probability that product-1 is purchased
+can be upper bounded by
+P
+
+V1 ≥ 1√
+k
+
+=
+kX
+k′=1
+k′
+N ·
+ 1√
+k′
+− 1√
+k′ + 1
+
+=
+kX
+k′=1
+k′
+N · 1p
+k′(k′ + 1)(
+√
+k′ +
+√
+k′ + 1)
+= 1
+N ·
+kX
+k′=1
+√
+k′
+√
+k′ + 1(
+√
+k′ +
+√
+k′ + 1)
+< 1
+N ·
+kX
+k′=1
+1√
+k′ + 1 <
+√
+k
+N , (A-11)
+where the last inequality is due to Pk
+k′=1
+1√
+k′+1 <
+R k
+1
+1√xdx =
+√
+k − 1 <
+√
+k for all k ≥ 1.
+(b) If k = N, similarly, its purchasing probability can be upper bounded by
+P
+
+V1 ≥ 1√
+N
+
+=
+N −1X
+k′=1
+k′
+N ·
+ 1√
+k′
+− 1√
+k′ + 1
+
++ 1√
+N
+<
+√
+N − 1
+N + 1√
+N
+< 2√
+N
+. (A-12)
+Then, the optimal profit of product-1 can be upper bounded by
+CP(product-1) = max
+1≤k≤N
+
+pCP
+1 · P
+
+V1 ≥ 1√
+k
+
+< max
+(
+1√
+k
+·
+√
+k
+N , 1√
+N
+· 2√
+N
+)
+= 2
+N . (A-13)
+Now, we have CP(I(1)
+N ) = N · CP(product-1) < 2. Combining with PB(I(1)
+N ) = 1, we obtain
+TPT(I(1)
+N ) ≤ PB(I(1)
+N ) +CP(I(1)
+N ) < 3.
+This completes the proof. □
+Proof of Lemma 2 We first recall the construction of instance I(2)
+N . Building on I(1)
+N , we include
+an additional product-0 with cost c0 = 2N 2√
+N. We also introduce a new customer category-0,
+which contains two sub-types denoted by type-(0,1) and type-(0,2) with probability mass 1
+N 3 and
+1
+N 2 , respectively. Customers in type-(0 , 1) and type-(0 , 2) value product-0 at c0 + 1 = 2N 2√
+N + 1
+and
+√
+N, respectively, and they have zero valuation for all other products. The original customers
+in categories k = 1, .., N from I(1)
+N have zero valuation for product-0, and their probability mass
+shrinks proportionally by a factor of 1 − 1
+N 2 − 1
+N 3 .
+In the following, we analyze the optimal prices and profits under CPBSD, BSP and TPT in I(2)
+N .
+We focus on the customers’ purchasing decision in the newly added category-0, where customers
+will only consider purchasing product-0 because they have zero valuation for other products.
+
+40
+CPBSD. Recall the price menu of CPBSD defined in (A-7):
+pn = cn + 1 and sds = s − √s for 0 ≤ n ≤ N, 1 ≤ s ≤ N + 1. (A-7)
+In I(2)
+N , for any bundle S ⊆ N that contains s products, the bundle price under (A-7) is
+X
+n∈S
+pn − sds = √s +
+X
+n∈S
+cn. (A-14)
+Next, we analyze customers’ bundle choice under (A-7), and we have the following three cases
+(a) Customers in category-0 will only consider purchasing product-0 because they have zero val-
+uation for other products and the bundle price increases with size. The bundle price (A-14)
+of a single product-0 is 1 + c0. Customers in type-(0,1) value product-0 at 1 + c0, hence they
+buy product-0 and receive zero surplus. Then, the expected profit from these customers is
+(1 +c0 − c0) · 1
+N 3 = 1
+N 3 .
+In contrast, customers in type-(0,2) do not buy anything, because their valuation on product-0
+is lower than the price, i.e.,
+√
+N < 1 +c0 = 2N 2√
+N + 1.
+(b) For original customers from I(1)
+N (categories k = 1, .., N), their bundle choices remain the
+same as the analysis in Lemma 1, i.e, choosing the k positively valued products, because (i)
+the bundle price (A-14) is still √s when applying to original products with cn = 0; and (ii)
+customers do not include product-0 in their purchased bundle due to its zero valuation and
+the increasing bundle price with size. Then, the expected profit from these customers can be
+calculated and lower bounded by shrinking (A-9) with a factor 1 − 1
+N 2 − 1
+N 3 .
+Since (A-7) is a feasible CPBSD price menu, it provides a lower bound for the optimal profit
+under CPBSD. Also note that, by using (A-7) in I(2)
+N , CPBSD can still extract all surplus from
+the original customers of I(1)
+N , and only sell the high-cost product-0 to the profitable customers of
+type-(0,1) leaving no surplus as well. Therefore, CPBSD still obtains the maximum possible profit
+under any selling mechanism. Combining the two cases above, we obtain
+CPBSD(I(2)
+N ) ≥ 1
+N 3 +
+
+1 − 1
+N 2 − 1
+N 3
+ 1
+2 (log(N) + 1)
+
+≥ 1
+2
+
+1 − 1
+N 2 − 1
+N 3
+
+(log N + 1).
+BSP. We focus on the bundle price bBSP
+1 of a single product.
+(a) If choosing bBSP
+1 >
+√
+N, customers in type-(0,2) and the original customers from I(1)
+N will not
+buy anything, because the BSP bundle price is non-decreasing with size, and bBSP
+1 is even larger
+than their grand bundle valuation (customers in type-(0,2) only value product-0 at
+√
+N, and
+customers in any category k = 1, ..., N have a grand bundle valuation k · 1√
+k =
+√
+k). Since only
+customers in type-(0,1) possibly buy, the largest profit is obtained by setting bBSP
+1 = c0 + 1 at
+their valuation on production-0. Then, the profit is
+ 
+bBSP
+1 − c0
+
+· 1
+N 3 = (c0 + 1− c0) · 1
+N 3 = 1
+N 3 .
+
+41
+(b) If choosing bBSP
+1 ≤
+√
+N, customers in type-(0,1) and -(0,2) will always buy product-0. However,
+even setting bBSP
+1 =
+√
+N at the high level, the firm still suffers a loss from selling product-0
+due to its high cost. The loss can be bounded by
+ 
+bBSP
+1 − c0
+
+·
+ 1
+N 3 + 1
+N 2
+
+=
+√
+N − 2N 2√
+N
+
+·
+ 1
+N 3 + 1
+N 2
+
+= 1
+N 2
+√
+N
++ 1
+N
+√
+N
+− 2√
+N
+− 2
+√
+N
+= − 1√
+N
+
+2 − 1
+N 2 − 1
+N
+
+− 2
+√
+N < −2
+√
+N .
+The profit from the original customers in categories k = 1, ..., N can be upper bounded by
+their total valuation by applying the right inequality of (A-3) in Lemma A.2 as below.
+ N −1X
+k=1
+√
+k ·
+ 1√
+k
+− 1√
+k + 1
+
++
+√
+N · 1√
+N
+!
+·
+
+1 − 1
+N 3 − 1
+N 2
+
+<
+N −1X
+k=1
+√
+k ·
+ 1√
+k
+− 1√
+k + 1
+
++ 1< 1
+2 log N + 3
+2 .
+Combining the above bounds for loss and profit, we always have −2
+√
+N + 1
+2 log N + 3
+2 < 0.
+That says the firm will lose money if choosing bBSP
+1 ≤
+√
+N.
+Hence, the firm prefers case (a) and the optimal profit is BSP(I(2)
+N ) = 1
+N 3 .
+TPT. The analysis for TPT(I(2)
+N ) largely follows the proof of Lemma 1. According to Lemma A.1,
+we have TPT(I(2)
+N ) ≤ PB0(I(2)
+N ) +CP(I(2)
+N ).
+• For PB0(I(2)
+N ), assume product-0 has zero cost. The optimal grand bundle price should be
+chosen from the support set of the grand bundle valuation, which includes 2 N 2√
+N + 1,
+√
+N,
+and
+√
+k for customers in type-(0,1), type-(0,2), and categories k = 1, ..., N, respectively.
+(a) If choosing pPB0 = 2N 2√
+N + 1, only customers in type-(0,1) will buy. Then, the profit is
+pPB0 · 1
+N 3 =
+
+2N 2√
+N + 1
+
+· 1
+N 3 = 2√
+N
++ 1
+N 3 .
+(b) If choosing pPB0 =
+√
+k ≤
+√
+N for k = 1, ..., N, (A-10) shows that the profit is 1 for selling
+a grand bundle in I(1)
+N , hence the corresponding pure bundling profit from the original
+customers in I(2)
+N is 1 − 1
+N 2 − 1
+N 3 . In the meanwhile, customers in type-(0,1) and type-(0,2)
+also buy the grand bundle. Then, the pure bundling profit from all customers is
+
+1 − 1
+N 2 − 1
+N 3
+
++
+√
+k ·
+ 1
+N 3 + 1
+N 2
+
+<
+
+1 − 1
+N 2 − 1
+N 3
+
++ 2
+N
+√
+N
+.
+Choosing the largest profit from the two cases above, we can upper bounded PB0(I(2)
+N ) by
+PB0(I(2)
+N ) < max
+
+1 − 1
+N 2 − 1
+N 3
+
++ 2
+N
+√
+N
+, 2√
+N
++ 1
+N 3
+
+<
+
+1 − 1
+N 2 − 1
+N 3
+
++ 3
+N
+√
+N
+− 1
+N 3 .
+(A-15)
+
+42
+• For CP(I(2)
+N ), we first consider product-0, where the optimal price should be chosen from the
+support set of its valuation, which includes 2 N 2√
+N + 1,
+√
+N and 0. Note that the price can
+only be larger than the cost by choosing pCP
+0 = 2N 2√
+N + 1 =c0 + 1, hence the profit is
+ 
+pCP
+0 − c0
+
+· 1
+N 3 = (c0 + 1− c0) · 1
+N 3 = 1
+N 3 .
+For other products, customers in type-(0,1) and type-(0,2) do not buy. Then, the total profit
+from selling them to the original customers can not exceed CP(I(1)
+N )
+ 
+1 − 1
+N 2 − 1
+N 3
+
+. Adding
+profits from product-0 and other products together, we have
+CP(I(2)
+N ) < 1
+N 3 + 2·
+
+1 − 1
+N 2 − 1
+N 3
+
+. (A-16)
+Hence, combining (A-15) and (A-16), TPT(I(2)
+N ) can be upper bounded by
+TPT(I(2)
+N ) < PB0(I(2)
+N ) +CP(I(2)
+N ) < 3
+
+1 − 1
+N 2 − 1
+N 3
+
++ 3
+N
+√
+N
+. (A-17)
+This completes the proof. □
+Proof of Proposition 2 We can show that the sequence of instances I(2)
+N satisfy Proposition 2 for
+all N ≥ 2, because
+CPBSD(I(2)
+N )
+max
+
+TPT(I(2)
+N ), BSP(I(2)
+N )
+	 ≥
+1
+2
+ 
+1 − 1
+N 2 − 1
+N 3
+
+(1 + 1/log N)
+3
+ 
+1 − 1
+N 2 − 1
+N 3
+
++ 3
+N
+√
+N
+· log N ≥ 1
+6 log N.
+□
+
+43
+Appendix B: Proofs in Section 4 and Section 5
+B.1. Proof of Lemma 3
+Recall that τ is the permutation function which returns the order statistic corresponding to the
+elements of UN. The result in Section 21 of Van der Vaart (2000) shows that Zτ(N −n) = F−1
+Z,N(1 − q)
+for q ∈
+  N −n−1
+N , N −n
+N
+
+, where F−1
+Z,N is the empirical quantile function. Thus, by the definition of
+¯WN(t) (i.e., the normalized social welfare), we have that, for any t ∈ [0, 1],
+¯WN(t) = 1
+N WN(⌊N t⌋) = 1
+N
+⌊N t⌋−1X
+n=0
+Zτ(N −n) = 1
+N
+⌊N t⌋−1X
+n=0
+F−1
+Z,N(1 − qn) =
+Z t
+0
+F−1
+Z,N(1 − q)dq
+where the second last equality holds for any qn ∈
+  N −n−1
+N , N −n
+N
+
+and n = 1, ..., N.
+Let F −1
+Z (q) ≜ inf{z ≥ 0 : FZ(z) ≥ q}. Assumption 1 gives that
+1
+N
+NX
+n=1
+Zn ⇒
+Z +∞
+−∞
+zdFZ(z) =
+Z 1
+0
+F −1
+Z (1 − q)dq as N → ∞.
+Hence, for t = 1, we have
+¯WN(1) =
+NX
+n=1
+Zn/N ⇒
+Z 1
+0
+F −1
+Z (1 − q)dq = ¯W (1) as N → ∞. (B-18)
+For 0 < t ≤ 1, we have
+ ¯WN(1) − ¯WN(t) −
+Z 1
+t
+F −1
+Z (1 − q)dq
+ ≤
+
+Z 1
+t
+ 
+F−1
+Z,N(1 − q) − F −1
+Z (1 − q)
+
+dq
+
+≤
+Z 1
+t
+F−1
+Z,N(1 − q) − F −1
+Z (1 − q)
+ dq
+By Lemma 21.2 in Van der Vaart (2000) and Assumption 1, we can obtain F−1
+Z,N(t) ⇒ F −1
+Z (t) for
+any continuous point t of F −1
+Z (t), for 0 < t < 1. Moreover, F −1
+Z has at most a countable number of
+discontinuities because it is a non-decreasing function. Therefore, as N → ∞, we have
+ ¯WN(1) − ¯WN(t) −
+Z 1
+t
+F −1
+Z (1 − q)dq
+ ⇒ 0,
+which implies that, for 0 < t ≤ 1,
+¯WN(1) − ¯WN(t) ⇒
+Z 1
+t
+F −1
+Z (1 − q)dq. (B-19)
+Combining (B-18) and (B-19), we obtain that ¯WN(t) ⇒ ¯W (t) for any t ∈ [0, 1]. This completes the
+proof. □
+
+44
+B.2. Proof of Theorem 1
+For Part 1., we examine ¯RN(t). By Assumption 1, Zn is uniformly bounded, and hence we assume
+Zn ∈ [zl, zu] for all n. Let η > zu, then, for any 0 ≤ t ≤ 1, we have
+¯RN(t) = 1
+N
+⌊N t⌋−1X
+k=0
+(Zτ(N −n) − η) ≤ ⌊N t⌋
+N (zu − η) < 0;
+for any 0 ≤ t < t′ ≤ 1, denoting s = ⌊N t⌋ and s′ = ⌊N t′⌋, we also have
+¯RN(t′) − ¯RN(t) = 1
+N
+s′−1X
+n=0
+(Zτ(N −n) − η) − 1
+N
+s−1X
+n=0
+(Zτ(N −n) − η)
+= 1
+N
+
+
+s′−1X
+n=s
+Zτ(N −k) − (s′ − s)η
+
+
+≤ 1
+N
+ 
+(s′ − s) zu − (s′ − s) η
+
+= 1
+N (s′ − s) (zu − η) < 0.
+Therefore, we find that ¯RN(t) is negative and decreasing in t ∈ [0, 1] if η > zu. In the rest, let η > zu.
+Next, we examine a customer’s bundle choice under (p∗
+N , d∗
+N). The surplus obtained by a customer
+from purchasing a bundle of size s is
+gN(s) ≜ RN(s) +sds = N ¯RN (s/N) + sds.
+As N → ∞, we examine gN(s) for each discount region specified in the step function (8). First,
+for s < s ∗ (i.e., m = 0 in (8)), we have gN(s) = N ¯RN(t) < 0 as showing above, where s = ⌊N t⌋.
+Next, for s = s∗, we have sds = N ϵ − N ¯R(t∗), and therefore, lim N →∞ gN(s)/N = ϵ > 0 with prob-
+ability one, i.e., a bundle of size s∗ definitely yields a positive surplus for a consumer. For any
+s ∈ (ms∗, (m + 1)s∗) and m = 1, 2, . . ., we havegN(s) ≤ gN(ms∗). It is because ¯RN(s/N) is a decreas-
+ing function and sds remains constant for s in that region. Finally, to show that a customer will
+purchase a bundle of size s∗, we just need to ensure that a customer will not choose bundle sizes
+ms∗ for any m ≥ 2, when s∗ ≤ N/2, i.e., t∗ ≤ 1/2. Given ¯RN(t) = ¯WN(t) − tη, we have that
+lim
+N →∞
+gN(ms∗)/N = lim
+N →∞
+
+¯WN(ms∗/N) − ms∗η/N − m ¯R(t∗) +mϵ
+
+= ¯W (mt∗) − m ¯W (t∗) +mϵ
+< ¯W (t∗) − m ¯W (t∗) +m1
+2
+¯W (t∗) ≤ 0.
+The inequality holds because t∗ maximizes ¯W (t) and ϵ < ¯W (t∗)/2. This completes the proof of the
+first statement.
+For Part 2., we first examine the non-negative constraint, i.e.,pn, ds ≥ 0. Notice that pn = cn + η >
+0 and ds = m(N ϵ − N ¯R(t∗))/s > 0 since ¯R(t∗) < 0 for η > z u. The non-negative constraint holds.
+
+45
+Also, the discount definition given by (8) tells that sds = ⌊s/s∗⌋ s∗ds∗; thus, for two bundle sizes s1
+and s2, we have
+s1ds1 + s2ds2 = (⌊s1/s∗⌋ + ⌊s2/s∗⌋) s∗ds∗ ≤ ⌊(s1 + s2)/s∗⌋ s∗ds∗ = (s1 + s2)ds1+s2.
+Besides, (8) also gives ds = s−1 ⌊s/s∗⌋
+ 
+N ϵ− N ¯R(t∗)
+
+, and hence we have, for any N ∈ N ,
+pn − ds =cn + η − s−1 ⌊s/s∗⌋ N
+ 
+ϵ − ¯W (t∗) + η
+
+≥ cn + η − N/s∗ ·
+ 
+ϵ − ¯W (t∗) + t∗η
+
+≥cn + η − 1/t∗ ·
+ 
+ϵ − ¯W (t∗) + t∗η
+
+= cn + 1/t∗ ·
+  ¯W (t∗) − ϵ
+
+≥ 0,
+where the first inequality is due to ⌊x⌋ ≤ x for any real number x, the second inequality is because
+s∗ = ⌊N t∗⌋ ≤ N t∗, and the last inequality is due to 0 < ϵ < ¯W (t∗)/2. This completes the proof of
+the second statement.
+Next we show Part 3. By Part 2., we can obtain that, as N → ∞, P{ζ(VN , p∗
+N , d∗
+N) = s∗} → 1
+and P{ζ(VN , p∗
+N , d∗
+N) = s, ∀s ̸= s∗} → 0. Therefore,
+lim
+N →∞
+1
+N E [θ(p∗
+N , d∗
+N)] = lim
+N →∞
+NX
+s=0
+E
+
+¯PN(s) − sds
+N − ¯CN(s)
+
+× 1 {ζ(VN , p∗
+N , d∗
+N) = s}
+
+= lim
+N →∞
+NX
+s=0
+ sη
+N − sds
+N
+
+P {ζ(VN , p∗
+N , d∗
+N) = s}
+= ¯R(t∗) +t∗η − ϵ = ¯W (t∗) − ϵ.
+(B-20)
+This completes the proof. □
+B.3. Proof of Theorem 2
+Notice that
+1
+N
+NX
+n=1
+E[(Vn − cn)+] = E
+"
+1
+N
+NX
+n=1
+Z+
+n
+#
+= E
+"
+1
+N
+NX
+n=1
+Z+
+τ(N −n)
+#
+= E
+Z 1
+0
+ 
+F−1
+Z,N(1 − q)
++
+dq
+
+. (B-21)
+By Lemma 3, we have that, as N → ∞,
+
+Z 1
+0
+ 
+F−1
+Z,N(1 − q)
++
+dq −
+Z 1
+0
+ 
+F −1
+Z (1 − q)
++
+dq
+ ≤
+Z 1
+0
+(F−1
+Z,N(1 − q))+ − (F −1
+Z (1 − q))+ dq
+≤
+Z 1
+0
+F−1
+Z (1 − q) − F −1
+Z (1 − q)
+ dq ⇒ 0.
+By Assumption 1, Zn is uniformly bounded, and thus
+E
+Z 1
+0
+ 
+F−1
+Z,N(1 − q)
++
+dq
+
+⇒ E
+Z 1
+0
+ 
+F −1
+Z (1 − q)
++
+dq
+
+=
+Z ∞
+0
+zdFZ(z). (B-22)
+Combine (B-21) and (B-22) completes the proof. □
+
+46
+B.4. Proof of Theorem 3
+In this section, we establish the finite-sample lower bound for CPBSD in two steps. The first
+step is a refined version of Dvoretzky–Kiefer–Wolfowitz inequality which helps us to bound the
+error probability of the empirical distribution FZ,N deviating from the FZ. To utilize Dvoret-
+zky–Kiefer–Wolfowitz inequality in our setting, we present the following lemma.
+Lemma B.3. By Assumption 1, we denote 0 < zu < ∞ as the uniform upper bound of Zns, and
+thus zu = min{t : FZ(t) = 1} is finite. Under assumptions in Theorem 3, the following holds: for a
+positive real number a,
+Pr
+ 
+sup
+t∈[0,1]
+| ¯RN(t) − ¯R(t)| > a
+!
+< exp
+n
+−2N (a/zu)
+2
+o
+.
+Proof of Lemma B.3: Notice that
+sup
+t∈[0,1]
+| ¯RN(t) − ¯R(t)| = sup
+t∈[0,1]
+
+Z t
+0
+F−1
+Z,N(1 − q) − F −1
+Z (1 − q)dq
+
+≤ sup
+t∈[0,1]
+Z t
+0
+F−1
+Z,N(1 − q) − F −1
+Z (1 − q)
+dq =
+Z 1
+0
+F−1
+Z,N(1 − q) − F −1
+Z (1 − q)
+dq
+=
+Z 1
+0
+Z zu
+0
+1
+
+F −1
+Z (1 − q) ≤ x ≤ F−1
+Z,N(1 − q)
+	
+dxdq +
+Z 1
+0
+Z zu
+0
+1
+
+F −1
+Z (1 − q) ≥ x ≥ F−1
+Z,N(1 − q)
+	
+dxdq.
+Note that for a CDF F (·), by the definition of the inverse, we have F −1(q) ≤ x ⇐ ⇒ q ≤ F (x).
+Therefore, the above expression can be further simplified as
+Z 1
+0
+Z zu
+0
+1 {FZ,N(x) ≤ 1 − q ≤ FZ(x)} dxdq +
+Z 1
+0
+Z zu
+0
+1 {FZ,N(x) ≥ 1 − q ≥ FZ(x)} dxdq
+=
+Z zu
+0
+Z 1
+0
+1 {1 − FZ,N(x) ≥ q ≥ 1 − FZ(x)} dqdx +
+Z zu
+0
+Z 1
+0
+1 {1 − FZ,N(x) ≤ q ≤ 1 − FZ(x)} dqdx
+=
+Z zu
+0
+FZ,N(x) − FZ(x)
+dx ≤ zu · sup
+x∈R
+|FZ,N(x) − FZ(x)|.
+Since {Zn}N
+n=1 are i.i.d. random variables, by the Dvoretzky–Kiefer–Wolfowitz inequality, we can
+obtain that, for a > 0,
+Pr
+ 
+sup
+t∈[0,1]
+| ¯RN(t) − ¯R(t)| > a
+!
+≤ Pr
+
+sup
+z∈Z
+|FZ,N(z) − FZ(z)| > a/zu
+
+≤ exp
+n
+−2N (a/zu)
+2
+o
+.
+This completes the proof. □
+B.4.1. The main proof of Theorem 3. Consider the CPBSD policy with price menu ( p∗
+N , d∗
+N)
+such that, for n ∈ {1, 2, · · · , N} and some positive number η > zu, p∗
+n = cn + η and
+sd∗
+s = m
+ 
+N ϵ− N ¯R(t∗)
+
+, for ms∗ ≤ s < (m + 1)s∗, ∀m = 0, 1, . . . ,⌊N/s∗⌋, (B-23)
+
+47
+where s∗ = ⌊N t∗⌋ and t∗ = supt∈[0,1]{t : F −1
+Z (1 − t) ≥ 0}. We will choose ϵ explicitly later.
+Next, we establish a lower bound for 1
+N E [θ(p∗
+N , d∗
+N)]. In particular,
+1
+N E [θ(p∗
+N , d∗
+N)] =
+NX
+s=0
+E
+h rs
+N × 1 {ζ(VN , p∗
+N , d∗
+N) = s}
+i
+=
+NX
+s=0
+rs
+N · P {ζ(VN , p∗
+N , d∗
+N) = s} ≥
+X
+s∈[s∗−δ,s∗+δ]
+rs
+N · P {ζ(VN , p∗
+N , d∗
+N) = s} , (B-24)
+where rs = PN(s) − CN(s) − sds = sη − sds is the profit of selling a bundle of size s.
+Step 1. Lower bound for marginal profit in the neighborhood. Notice that, for any δ > 0
+and s ∈ [s∗ − δ, s∗ + δ],
+rs
+N = s
+N η − sds
+N = s
+N η − m
+ 
+ϵ − ¯R(t∗)
+
+= s
+N η + ⌊ s
+s∗ ⌋
+  ¯R(t∗) − ϵ
+
+= s
+N η + ⌊ s
+s∗ ⌋
+
+¯W (t∗) − s∗
+N η − ϵ
+
+≥ ⌊ s
+s∗ ⌋
+  ¯W (t∗) − ϵ
+
+≥
+
+1 − ⌊ δ
+s∗ ⌋
+  ¯W (t∗) − ϵ
+
+,
+where the first equality is because of Eq. (B-23), the second equality is because m = ⌊ s
+s∗ ⌋, the third
+equality is due to the definition of ¯R(t∗) and ¯W (t∗), the first inequality is because ⌊ s
+s∗ ⌋ ≤ s
+s∗ , and
+the last inequality holds for ϵ < ¯W (t∗). Thus, we can obtain that, for s ∈ [s∗ − δ, s∗ + δ],
+rs
+N ≥
+
+1 − ⌊ δ
+s∗ ⌋
+  ¯W (t∗) − ϵ
+
+. (B-25)
+Substituting Eq. (B-25) into Eq. (B-24), we have that
+1
+N E [θ(p∗
+N , d∗
+N)] ≥
+
+1 − ⌊ δ
+s∗ ⌋
+  ¯W (t∗) − ϵ
+
+· P {ζ(VN , p∗
+N , d∗
+N) ∈ [s∗ − δ, s∗ + δ]} . (B-26)
+Next we will bound the probability term in (B-26), the probability that the consumer chooses a
+bundle size in the neighborhood, from below.
+Step 2. Lower bound for the probability of choosing a bundle in the neighborhood.
+To bound the probability, we consider two events:
+A :={at least one bundle in the neighborhood has a positive consumer surplus }
+= {∃s ∈ [s∗ − δ, s∗ + δ] s.t. RN(s) +sds > 0}
+B :={all bundles out of the neighborhood have a negative consumer surplus }
+= {∀s /∈ [s∗ − δ, s∗ + δ] s.t. RN(s) +sds < 0}
+Notice that A ∩ B implies choosing a bundle in the neighborhood. That is,
+P {ζ(VN , p∗
+N , d∗
+N) ∈ [s∗ − δ, s∗ + δ]} ≥ Pr(A ∩ B) ≥ Pr(A) + Pr(B) − 1.
+Next, we bound Pr( A) and Pr( B) from below respectively.
+
+48
+Lower bound for Pr(A). It suffices to show that the consumer surplus choosing bundle with size
+s∗ is positive with high probability. In particular,
+Pr(A) ≥P {RN(s∗/N) +s∗ds∗ > 0} = P
+
+¯RN(s∗) + s∗ds∗
+N > 0
+
+=P
+(
+sup
+s∈[s∗−δ,s∗+δ]
+¯RN(s/N) − ¯R(s/N) + ¯R(s/N) + sds
+N > 0
+)
+≥P
+(
+sup
+s∈[s∗−δ,s∗+δ]
+¯RN(s/N) − ¯R(s/N) + ¯R(s∗/N) + s∗ds∗
+N > 0
+)
+=P
+(
+sup
+s∈[s∗−δ,s∗+δ]
+¯RN(s/N) − ¯R(s/N) +ϵ > 0
+)
+≥ P
+(
+sup
+s∈[s∗−δ,s∗+δ]
+| ¯RN(s/N) − ¯R(s/N)| < ϵ
+)
+≥P
+
+sup
+s∈N
+| ¯RN(s/N) − ¯R(s/N)| < ϵ
+
+≥ 1 − exp
+(
+−2N
+ ϵ
+zu
+2)
+,
+where the first inequality is because the event A implies the event that the s∗ size bundle offers a
+positive consumer surplus; the first equality is because of the normalization; the second inequality
+is because s∗-size bundle offers the highest consumer surplus under price menu (B-23); the last
+inequality is because of Lemma B.3. Thus,
+Pr(A) ≥ 1 − exp
+(
+−2N
+ ϵ
+zu
+2)
+(B-27)
+Lower bound for Pr(B). By our choice of (p∗
+N , d∗
+N), when s ∈ [0, s∗ − δ), the discount ds = 0. The
+consumer surplus is exactly ¯RN(s), which is almost surely negative because of the large markup
+η > zu. That is,
+¯RN(s) = 1
+N
+s−1X
+n=0
+(Zτ(N −n) − η) ≤ s
+N (zu − η) < 0.
+Therefore,
+Pr(B) =P
+
+¯RN(s) + sds
+N < 0, ∀s ∈ [0, s∗ − δ)
+
+∩
+
+¯RN(s) + sds
+N < 0, ∀s ∈ (s∗ + δ, N]
+
+=P
+
+¯RN(s) + sds
+N < 0, ∀s ∈ (s∗ + δ, N]
+
+=P
+(
+sup
+s∈(s∗+δ,N]
+¯RN(s) − ¯R(s) +
+
+¯R(s) + sds
+N
+
+< 0
+)
+. (B-28)
+We next show that sups∈(s∗+δ,N] ¯R(s)+ sds/N < 2ϵ − ¯W (t∗) < 0. Notice that, for s ∈ (ms∗, (m+1) s∗)
+and m = 2, 3, · · · , ⌊ N
+s∗ ⌋,
+¯R(s) + sds
+N ≤ ¯R(ms∗) + ms∗dms∗
+N = ¯R(ms∗) +m
+ 
+ϵ − ¯R(s∗)
+
+= ¯W (ms∗) +m
+ 
+ϵ − ¯W (s∗)
+
+≤ ¯W (2s∗) + 2
+ 
+ϵ − ¯W (s∗)
+
+< 0,
+
+49
+where the last inequality is because ¯W (ms∗) decreases in m by definition and m
+ 
+ϵ − ¯W (s∗)
+
+decreases in m by ϵ < ¯W (t∗). On the other hand, for s ∈ (s∗ + δ,2s∗) (we let δ < s∗), we have
+¯R(s) + sds
+N ≤ ¯R(s∗ + δ) + (s∗ + δ)ds∗+δ
+N = ¯R(s∗ + δ) + (ϵ − ¯R(s∗)).
+The inequality is because of the fact that ¯R(s) is a decreasing function and sds remains constant
+in the range (see Figure 5 for an illustration). Thus, we have that
+sup
+s∈(s∗+δ,N]
+¯R(s) + sds
+N = max
+ ¯R(s∗ + δ) + (ϵ − ¯R(s∗)), ¯W (2t∗) + 2
+ 
+ϵ − ¯W (t∗)
+	
+.
+We next choose ϵ, η and δ more specifically such that ¯R(s∗ + δ) + (ϵ − ¯R(s∗)) ≤ ¯W (2t∗) + 2(ϵ −
+¯W (t∗)). In particular, we consider
+ϵ < ¯W (t∗)/2, η = 2 ¯W (t∗) − ¯W (2t∗)
+s∗ + zu > zu and δ = 2 ¯W (t∗) − ¯W (2t∗) − ϵ
+η − zu
+∈ (0, s∗).
+We then have
+¯R(s∗ + δ) + (ϵ − ¯R(s∗)) − ¯W (2t∗) − 2
+ 
+ϵ − ¯W (t∗)
+
+= ¯R(s∗ + δ) − ¯R(s∗) + 2¯W (t∗) − ¯W (2t∗) − ϵ
+= − ηδ +
+Z t+δ
+t
+F −1
+Z (1 − q)dq + 2 ¯W (t∗) − ¯W (2t∗) − ϵ ≤ δ(zu − η) + 2¯W (t∗) − ¯W (2t∗) − ϵ = 0,
+where the inequality follows from F −1
+Z (·) ≤ zu. Thus, we can obtain that
+sup
+s∈(s∗+δ,N]
+¯R(s) + sds
+N = ¯W (2t∗) + 2
+ 
+ϵ − ¯W (t∗)
+
+≤ 2ϵ − ¯W (t∗) < 0 (B-29)
+Therefore,
+P
+(
+sup
+s∈(s∗+δ,N]
+¯RN(s) + sds
+N < 0
+)
+=P
+(
+sup
+s∈(s∗+δ,N]
+¯RN(s) − ¯R(s) +
+
+¯R(s) + sds
+N
+
+< 0
+)
+≥P
+(
+sup
+s∈(s∗+δ,N]
+¯RN(s) − ¯R(s) + 2ϵ − ¯W (t∗) < 0
+)
+≥P
+(
+sup
+s∈(s∗+δ,N]
+| ¯RN(s) − ¯R(s)| < ¯W (t∗) − 2ϵ
+)
+≥1 − exp
+(
+−2N
+ ¯W (t∗) − 2ϵ
+zu
+2)
+,
+where the first inequality is due to Eq. (B-29), the last inequality is due to Lemma B.3. Substituting
+it into (B-28), we can obtain the lower bound for Pr( B):
+Pr(B) ≥ 1 − exp
+(
+−2N
+ ¯W (t∗) − 2ϵ
+zu
+2)
+(B-30)
+
+50
+Step 3. Lower bound for expected profit under CPBSD. Combining Eq.(B-26), Eq.(B-27)
+and Eq.(B-30) together, we can obtain that
+1
+N E [θ(p∗
+N , d∗
+N)] ≥
+  ¯W (t∗) − ϵ
+
+·
+ 
+1 − exp
+(
+−2N
+ ϵ
+zu
+2)
+− exp
+(
+−2N
+ ¯W (t∗) − 2ϵ
+zu
+2)!
+| {z }
+:=1−G
+Let ϵ =
+¯W(t∗)
+2 · ln N√
+N . We have that ϵ <
+¯W(t∗)
+2 due to ln N <
+√
+N for N ≥ 1; furthermore, we can
+verify that, given a constant C1 = ( ¯W(t∗))2
+2z2u
+, there exists N0 > 0 such that (N ln N)
+−C1
+< 1
+32 N −1/2 ln N
+and e−4C1(
+√
+N −ln N)2
+< 1
+32 N −1/2 ln N for all N > N0. Thus, for any N > N0, we can obtain that
+G = exp
+
+−( ¯W ∗)2
+2z2
+u
+ln2 N
+
++ exp
+
+−2( ¯W ∗)2
+z2
+u
+(
+√
+N − ln N)2
+
+=
+ 
+N ln N−C1
++ e−4C1(
+√
+N −ln N)2
+≤ 1
+16 N −1/2 ln N.
+Thus, the lower bound is given by
+1
+N E [θ(p∗
+N , d∗
+N)] ≥
+
+¯W (t∗) −
+¯W (t∗)
+2 · N −1/2 ln N
+
+·
+
+1 − 1
+16 N −1/2 ln N
+
+≥ ¯W (t∗)
+
+1 − 9
+16 N −1/2 ln N
+
+,
+where the last inequality is because ¯W (t∗)(N −1/2 ln N)2 > 0. This completes the proof. □
+B.5. Proof of Proposition 3
+It is easy to verify the equivalence between ( BCS) and ( BCS-LP), because there always exists an
+integer optimal solution to (BCS-LP). Since both (BCS-LP) and (BCS-dual) have feasible solutions,
+their optimal values are equal due to the strong duality of linear programming. □
+B.6. Proof of Theorem 4
+Table B-1 summarizes notations used in the MILP Formulation of CPBSD.
+We first show that for any (p, d) ∈ P, maximizing over other variables in (CPBSD-MILP) including
+xkns, yks, wks, wk, qkns, αks and βkns yields the optimal value equal to that of ( CPBSD-sample)
+using (p, d). By ( BCS-dual), constraints (9) to (11) guarantee that wk is no less than the surplus
+of customer k when she is making the best bundle/product choice under the pricing scheme.
+Constraints (12) to (15) enforce that for each customer k, the binary variables xkns are zero except
+for at most one s ∈ S. For such s, xkns = 1 for exactly s values of n ∈ N . This is consistent with
+the possible choices made by customer k. As a result, for the products in the chosen bundle of
+customer k, qkns = pn − ds from constraints (16) and (17). Combined with (18), it guarantees that
+wks is the surplus of customer k when she chooses a bundle of size s. Since wks ≤ 0 when s is not
+
+51
+Table B-1 Definitions of the parameters and variables
+Notation Definition
+Parameters
+N: the number of products
+K: the number of customers
+vkn: the valuation of product n to customer k
+cn: the cost of product n
+Sets and indices
+N , n : the set and the index of products, n ∈ N ≜ {1, ..., N}
+K, k : the set and the index of customers, k ∈ K ≜ {1, ..., K}
+S, s : the set and the index of bundle sizes offered, s ∈ S ≜ {1, ..., S}
+Decision variables and intermediate variables
+pn: the price of product n
+ds: the discount per product for a customer purchasing a bundle of size s
+xkns: one if customer k buys product n in a bundle of size s, and zero otherwise
+yks: one if customer k buys a bundle of size s, and zero otherwise
+wks: the surplus obtained by customer k from a bundle of size s
+wk: the surplus obtained by customer k
+qkns: the payment by customer k for purchasing product n in a bundle of size s
+αks, βkns: dual variables
+the bundle size chosen by customer k (note that xkns = 0 and qkns ≥ 0 by constraint (22)), the
+equality (19) combined with the fact that wk is the upper bound of surplus ensures that customer
+k must be choosing the bundle size and included products optimally. Moreover, it forces wks = 0
+when customer k does not choose a bundle of size s, which in turn forces qkns = 0 for such k and s.
+In this case, the objective of ( CPBSD-MILP) is precisely the total profit earned by the firm. Note
+that the condition pn − ds ≥ 0 ensures the feasibility of qkns from constraints (17) and (22).
+It remains to be shown that for the optimal solution to ( CPBSD-MILP), the implied pricing
+policy always generates the same profit in ( CPBSD-sample) as the resulting optimal value of
+(CPBSD-MILP). The proof follows the same argument as above. Thus, combining the two facts,
+we have shown that the optimal solution to ( CPBSD-MILP) must also imply the optimal CPBSD
+pricing policy. □
+B.7. Approximation Algorithm Based on Preset Preference Rankings
+While (CPBSD-MILP) allows us to solve (CPBSD-sample) optimally, the computation becomes quite
+expensive as the scale of the problem grows. In particular, the embedded ( BCS) problem creates a
+computational bottleneck that the bundle composition of each customer needs to be examined for
+every candidate pricing scheme.
+To alleviate this issue, we propose an algorithm that approximately solves ( CPBSD-sample) by
+using a heuristic to determine the bundle composition. Let πk ≜ {πk1, . . . , πkN } be a permutation of
+(1, . . . , N) that denotes a preset preference ranking for each customer k ∈ K. In this case, when pur-
+chasing a bundle of size s, customer k simply chooses the s top-ranked products, i.e., {πk1, . . . , πks},
+
+52
+according to her ranking πk, and does not need to solve ( BCS) as a subroutine. Hence, the corre-
+sponding bundle valuation vks ≜Ps
+j=1 vkπkj and the bundle cost cks ≜Ps
+j=1 ckπkj can be computed
+in advance for all k ∈ K and s ∈ S. The optimization problem of the approximation algorithm can
+now be formulated as follows.
+max 1
+K
+X
+k∈K
+X
+s∈S
+(qks − cksyks) ( CPBSD-A)
+s.t. pks =
+sX
+j=1
+pπkj − sds, ∀k ∈ K, ∀s ∈ S, (B-31)
+vkπkj − pπkj ≥ vkπk,j+1 − pπk,j+1, ∀k ∈ K, j = 1, . . . , N− 1, (B-32)
+wk ≥ vks − pks, ∀k ∈ K, ∀s ∈ S,
+X
+s∈S
+yks ≤ 1, ∀k ∈ K,
+qks ≥ pks − M(1 − yks), ∀k ∈ K, ∀s ∈ S,
+qks ≤ pks, ∀k ∈ K, ∀s ∈ S,
+wks = vksyks − qks, ∀k ∈ K, ∀s ∈ S,
+wk =
+X
+s∈S
+wks, ∀k ∈ K,
+sds ≥ s1ds1 + s2ds2, ∀s ∈ S, s 1 + s2 = s, s 1, s2 ≥ 0,
+pn, pks, qks, wks, wk ≥ 0, y ks ∈ {0, 1}.
+In the above formulation, for customer k’s bundle of size s, the post-discount bundle price pks
+is specified in constraint (B-31), yks ∈ {0, 1} is the indicator of purchase, and qks = pksyks is the
+amount customer k pays. Note that the actual preference ranking of customer k depends on the
+solution of prices and thus can be different than πk. Therefore, to preserve the preset preference
+ranking, we impose constraint (B-32) which ensures that customer k receives more surplus by
+including product πkj rather than product πk,j+1 in her bundle.
+Compared to ( CPBSD-MILP), our approximation algorithm uses preset preference rankings to
+specify bundle components, and hence could remove ( BCS) and the per-product variables (i.e.,
+xkns and qkns). Finally, we obtain a more compact MILP, namely (CPBSD-A), of O(KN ) variables
+and constraints. We are able to solve (CPBSD-A) with as many as 30 products and 100 customers,
+reaching to the computational capacity of BSP.
+If the preference ranking is properly chosen, for example, when set close to the ranking yielded
+by the optimal solution to ( CPBSD-MILP), it is reasonable to expect that ( CPBSD-A) achieves
+a high-quality approximation. Through comprehensive experiments (see Section 6), we find that,
+using a ranking in the descending order of vkn − cn, (CPBSD-A) generates almost the same amount
+of profit as the optimal ( CPBSD-MILP) in a wide range of conditions.
+
+53
+Appendix C: Formulation of Benchmark Polices
+• Component Pricing ( CP). The firm sets each product a separate price, i.e., pn for product
+n ∈ N . The optimal price for product n must be in the set P CP
+n = {vkn | ∀ k ∈ K}S{cn}, and
+can be computed as following
+pn = arg max
+p∈PCPn
+(
+(p − cn)
+X
+k∈K
+1 {vkn ≥ p}
+)
+, ∀n ∈ N . (CP)
+The total profit yielded by ( CP) isP
+n∈N (pn − cn)P
+k∈K 1 {vkn ≥ pn} .
+• Pure Bundling (PB). The firm sets a single price for a whole bundle which contains all products.
+The production cost of this bundle isc =P
+n∈N cn, and the valuation of this bundle to customer
+k is vk =P
+n∈N vkn. The optimal price for PB must be in the set P PB = {vk | ∀ k ∈ K}S{c},
+and can be computed as following
+p = arg max
+p∈PPB
+(
+(p − c)
+X
+k∈K
+1 {vk ≥ p}
+)
+. (PB)
+The total profit yielded by ( PB) is ( p − c)P
+k∈K 1 {vk ≥ p} .
+• Mixed Bundling ( MB). Hanson and Martin (1990) propose the following MILP formulation
+to MB. There are L = 2N − 1 bundles which are possibly made from N products. Let L ≜
+{1, ..., L} denote the index set of bundles, and let B(l) denote the set of products which are
+contained in bundle l. Let vkl =P
+n∈B(l) vkn denote the valuation of bundle l to customer k
+and cl =P
+n∈B(l) cn denote the production cost of bundle l. Decision variables are pl which
+denotes the price of bundle l set by the firm, ykl ∈ {0, 1} which is one if and only if customer
+k purchases bundle l, and qkl which denotes the price paid by customer k for bundle l, i.e.,
+qkl = plykl. The optimal prices for MB can be computed as following
+max 1
+K
+X
+k∈K
+X
+l∈L
+(qkl − clykl) ( MB)
+s.t. wk ≥ vkl − pl, ∀k ∈ K, ∀l ∈ L,
+X
+l∈L
+ykl ≤ 1, ∀k ∈ K,
+qkl ≥ pl − M(1 − ykl), ∀k ∈ K, ∀l ∈ L,
+qkl ≤ pl, ∀k ∈ K, ∀l ∈ L,
+wk =
+X
+l∈L
+(vklykl − qkl), ∀k ∈ K,
+wk ≥
+X
+l∈L
+(vklyjl − qjl) , ∀k ∈ K, ∀j ∈ K/{k},
+pl ≤
+X
+j∈J
+pj, s.t.
+[
+j∈J
+B(j) = B(l), ∀l ∈ L,
+pl, qkl, wk ≥ 0, y kl ∈ {0, 1}.
+
+54
+Note that the last two constraints are the practical requirement similar to (3) for CPBSD.
+• Bundle Size Pricing (BSP). Let vks denote customer k’s maximum valuation from a bundle of
+size s, where she selects the top s products with the largest values of vkn, and let cks denote
+the cost of that bundle. Decision variables are ps which denotes the price set by the firm for a
+bundle of size s, yks ∈ {0, 1} which is one if and only if customer k purchases a bundle of size
+s , and qks which denotes the price paid by customer k for a bundle of size s, i.e., qks = psyks.
+The optimal prices for BSP can be computed from the following MILP,
+max 1
+K
+X
+k∈K
+X
+s∈S
+(qks − cksyks) ( BSP)
+s.t. wk ≥ vks − ps, ∀k ∈ K, ∀s ∈ S,
+X
+s∈S
+yks ≤ 1, ∀k ∈ K,
+qks ≥ ps − M(1 − yks), ∀k ∈ K, ∀s ∈ S,
+qks ≤ ps, ∀k ∈ K, ∀s ∈ S,
+wks = rksyks − qks, ∀k ∈ K, ∀s ∈ S,
+wk =
+X
+s∈S
+wks, ∀k ∈ K,
+wk ≥
+X
+s∈S
+(vksyjs − qjs), ∀k ∈ K, ∀j ∈ K/{k},
+ps ≤ ps1 + ps2, ∀s ∈ S, s 1 + s2 = s, s 1, s2 ≥ 0,
+ps1 ≤ ps2, ∀s1, s2 ∈ S, s 1 < s2,
+ps, qks, wks, wk ≥ 0, y ks ∈ {0, 1}.
+Note that the last three constraints are the practical requirement similar to (3) for CPBSD.
+
+55
+Appendix D: Convex Optimization for CPBSD with Constant Markups
+The mixed integer programming formulation is not scalable when the number of products is large.
+In CPBSD, if the markup is constant, i.e., pn = cn + z. Then the problem can be written as:
+max
+d,z
+X
+s∈S
+[(zs − ds) qs] (CPBSD-CM)
+s.t. qs = P
+ 
+s = arg max
+t∈S∪{0}
+ws(V ) − zs + ds
+!
+, ∀s ∈ S,
+where ws(V ) =Ps
+i=1(V(i) − c(i)) is the order statistics of V − c, i.e.,
+V(1) − c(1) ≥ V(2) − c(2) ≥ · · · ≥V(N) − c(N).
+It is clear that this problem is equivalent to a BSP problem where the customer valuation is equal
+to V − c, the cost is set to zero, and the bundle size price corresponds to zs − ds. Using the
+technique developed in Li et al. (2021), we can extract the first and second moments of ws(V ) and
+approximately calculate z and d. More precisely, the following procedure can be applied:
+1. Generate samples V , and estimate the first and second moments of w(V ) =
+(w1(V ), w2(V ), · · · , wS(V )). Denote µ = E [w(V )], Σ = Cov(w(V )).
+2. Solve the following program:
+max
+q∈∆
+qT µ + 1
+2 qT diag
+ 
+Σ1/2(T (q))−1/2Σ1/2
+− qTΣ1/2(T (q))−1/2Σ1/2q
+where ∆ ≜ {x|eT x ≤ 1, xs ≥ 0, ∀s ∈ S}, T (q) =Σ1/2 (Diag(x) − xxT ) Σ1/2. Due to Theorem
+2 in Li et al. (2021), this is a convex optimization program and can be solved very efficiently
+even if N is large.
+3. Let
+p = µ + 1
+2diag
+ 
+Σ1/2(T (q))−1/2Σ1/2
+− Σ1/2(T (q))−1/2Σ1/2q
+be the bundle size price for the equivalent BSP. Then find ( z, d) ∈ P such that ps = zs − ds
+for all s ∈ S.
+It is important to note that the although the algorithm in Li et al. (2021) can be applied, it
+doesn’t imply that BSP and CPBSD with constant markups achieve the same profit. Indeed, in
+Section 4, we have shown that CPBSD with constant markups can achieve the asymptotically
+optimal profit when the costs of the products are not identical. This is not possible under BSP.
+Therefore, the transformation provided in this section provides a computational rather than a
+theoretical framework.
+
+56
+Appendix E: Additional Results for Numerical Experiments of Section 6
+E.1. Additional Figures and Tables
+In Section 6, we have reported the profit comparisons for N = 5 and N = 30. In this section, we
+report the results for N = 10 in Figure E-1 and Table E-2.
+CP PB PBDC BCB CPBSD-A
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0 Mean
+Median
+BSP
+In-sample
+Out-of-sample
+(a) all schemes N = 10
+exponential logit  lognormal    normaluniform
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0 (b) CPBSD-A by distribution N = 10
+zero positive negative
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0 (c) CPBSD-A by correlation N = 10
+Notes. Figure E-1(a) reports the performance of all schemes over 675 instances of N = 10. Figure E-1(b) reports
+CPBSD-A across 5 distribution types (135 instances for each type). Figure E-1(c) reportsCPBSD-A across 3 correlation
+structures (225 instances for each structure). Each box plot displays the in-sample (light bar) and out-of-sample (dark
+bar) profits relative to BSP with the mean (dashed line), median (solid line), 2.5%, 25%, 75%, and 97.5% quantiles.
+Figure E-1 Profit comparisons of bundling mechanisms relative to BSP for N = 10
+Table E-2 Categorized profit comparisons of bundling mechanisms relative to BSP for N = 10
+category median of relative profit performance
+cost heterogeneity CP PB BSP max{CP, BSP} PBDC CPBSD-A
+zero cost none in-s 0.71 0.99 1.00 1.00 0.99 1.00
+out-s 0.71 1.00 1.00 1.00 1.00 1.00
+partial in-s 0.86 1.00 1.00 1.00 1.00 1.00
+out-s 0.87 1.00 1.00 1.00 1.00 1.00
+full in-s 0.88 1.00 1.00 1.00 1.00 1.00
+out-s 0.88 1.00 1.00 1.00 1.00 1.00
+positive cost none in-s 0.79 0.68 1.00 1.00 0.92 1.00
+HVHM out-s 0.75 0.70 1.00 1.00 0.97 1.00
+partial in-s 0.90 0.84 1.00 1.00 0.98 1.04
+out-s 0.88 0.85 1.00 1.00 1.01 1.03
+full in-s 0.96 0.87 1.00 1.00 1.01 1.10
+out-s 0.97 0.92 1.00 1.00 1.15 1.16
+positive cost none in-s 1.02 0.62 1.00 1.02 1.14 1.25
+HVLM out-s 1.07 0.64 1.00 1.07 1.23 1.37
+partial in-s 1.24 0.67 1.00 1.24 1.37 1.44
+out-s 1.30 0.73 1.00 1.30 1.56 1.64
+full in-s 1.46 0.97 1.00 1.46 1.66 1.74
+out-s 1.49 1.01 1.00 1.49 1.79 1.86
+Notes. The 675 instances of N = 10 are divided evenly into 9 categories according to the scenario of production
+cost/potential surplus and the degree of valuation. We report the median profit for in-sample (in-s) and out-of-sample
+(out-s) tests over the 75 instances for each category.
+
+57
+Figures E-2 reports the categorized box-plot profit comparison for N = 5. (The medians are
+reported in Table 3 of Section 6.)
+CP PB PBDC BCBCPBSD     CPBSD-A     MB
+0.00
+0.25
+0.50
+0.75
+1.00
+1.25
+1.50
+1.75Zero Cost
+None Heterogeneity
+Mean
+Median
+BSP
+In-sample
+Out-of-sample
+CP PB PBDC BCBCPBSD     CPBSD-A     MB
+0.00
+0.25
+0.50
+0.75
+1.00
+1.25
+1.50
+1.75
+Partial Heterogeneity
+CP PB PBDC BCBCPBSD     CPBSD-A     MB
+0.00
+0.25
+0.50
+0.75
+1.00
+1.25
+1.50
+1.75
+Full Heterogeneity
+CP PB PBDC BCBCPBSD     CPBSD-A     MB
+0.00
+0.25
+0.50
+0.75
+1.00
+1.25
+1.50
+1.75Positive Cost with HVHM
+CP PB PBDC BCBCPBSD     CPBSD-A     MB
+0.00
+0.25
+0.50
+0.75
+1.00
+1.25
+1.50
+1.75
+CP PB PBDC BCBCPBSD     CPBSD-A     MB
+0.00
+0.25
+0.50
+0.75
+1.00
+1.25
+1.50
+1.75
+CP PB PBDC BCBCPBSD     CPBSD-A     MB
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0
+Positive Cost with HVLM
+CP PB PBDC BCBCPBSD     CPBSD-A     MB
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0
+CP PB PBDC BCBCPBSD     CPBSD-A     MB
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0
+Notes. The 675 instances of N = 5 are divided evenly into 9 categories according to the scenario of production
+cost/potential surplus and the degree of valuation heterogeneity. Each box plot displays the in-sample and out-of-
+sample profits relative to BSP over 75 instances of the category. “HVHM” and “HVLM” are abbreviations for “high
+value high margin” and “high value low margin”, respectively.
+Figure E-2 Categorized profit comparisons of bundling mechanisms relative to BSP for N = 5
+
+58
+Figures E-3 reports the categorized box-plot profit comparison for N = 10. (The medians are
+reported in Table E-2.)
+CP PB PBDC BCB CPBSD-A
+0.00
+0.25
+0.50
+0.75
+1.00
+1.25
+1.50
+1.75Zero Cost
+None Heterogeneity
+Mean
+Median
+BSP
+In-sample
+Out-of-sample
+CP PB PBDC BCB CPBSD-A
+0.00
+0.25
+0.50
+0.75
+1.00
+1.25
+1.50
+1.75
+Partial Heterogeneity
+CP PB PBDC BCB CPBSD-A
+0.00
+0.25
+0.50
+0.75
+1.00
+1.25
+1.50
+1.75
+Full Heterogeneity
+CP PB PBDC BCB CPBSD-A
+0.00
+0.25
+0.50
+0.75
+1.00
+1.25
+1.50
+1.75Positive Cost with HVHM
+CP PB PBDC BCB CPBSD-A
+0.00
+0.25
+0.50
+0.75
+1.00
+1.25
+1.50
+1.75
+CP PB PBDC BCB CPBSD-A
+0.00
+0.25
+0.50
+0.75
+1.00
+1.25
+1.50
+1.75
+CP PB PBDC BCB CPBSD-A
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0
+Positive Cost with HVLM
+CP PB PBDC BCB CPBSD-A
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0
+CP PB PBDC BCB CPBSD-A
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0
+Notes. The 675 instances of N = 10 are divided evenly into 9 categories according to the scenario of production
+cost/potential surplus and the degree of valuation heterogeneity. Each box plot displays the in-sample and out-of-
+sample profits relative to BSP over 75 instances of the category. “HVHM” and “HVLM” are abbreviations for “high
+value high margin” and “high value low margin”, respectively.
+Figure E-3 Categorized profit comparisons of bundling mechanisms relative to BSP for N = 10
+
+59
+Figures E-4 reports the categorized box-plot profit comparison for N = 30. (The medians are
+reported in Table 4 of Section 6.)
+CP PB PBDC BCB CPBSD-A
+0.00
+0.25
+0.50
+0.75
+1.00
+1.25
+1.50
+1.75Zero Cost
+None Heterogeneity
+Mean
+Median
+BSP
+In-sample
+Out-of-sample
+CP PB PBDC BCB CPBSD-A
+0.00
+0.25
+0.50
+0.75
+1.00
+1.25
+1.50
+1.75
+Partial Heterogeneity
+CP PB PBDC BCB CPBSD-A
+0.00
+0.25
+0.50
+0.75
+1.00
+1.25
+1.50
+1.75
+Full Heterogeneity
+CP PB PBDC BCB CPBSD-A
+0.00
+0.25
+0.50
+0.75
+1.00
+1.25
+1.50
+1.75Positive Cost with HVHM
+CP PB PBDC BCB CPBSD-A
+0.00
+0.25
+0.50
+0.75
+1.00
+1.25
+1.50
+1.75
+CP PB PBDC BCB CPBSD-A
+0.00
+0.25
+0.50
+0.75
+1.00
+1.25
+1.50
+1.75
+CP PB PBDC BCB CPBSD-A
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0
+Positive Cost with HVLM
+CP PB PBDC BCB CPBSD-A
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0
+CP PB PBDC BCB CPBSD-A
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0
+Notes. The 675 instances of N = 30 are divided evenly into 9 categories according to the scenario of production
+cost/potential surplus and the degree of valuation heterogeneity. Each box plot displays the in-sample and out-of-
+sample profits relative to BSP over 75 instances of the category. “HVHM” and “HVLM” are abbreviations for “high
+value high margin” and “high value low margin”, respectively.
+Figure E-4 Categorized profit comparisons of bundling mechanisms relative to BSP for N = 30
+
+60
+Figures E-5 reports the categorized box-plot profit comparison for asymptotic performance. (The
+medians are reported in Table 5 of Section 6.)
+100 300 1000
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0Zero Cost
+None Heterogeneity
+Mean
+Median
+PPD
+PB
+BSP
+CPBSD
+100 300 1000
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+Partial Heterogeneity
+100 300 1000
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+Full Heterogeneity
+100 300 1000
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0Positive Cost with HVHM
+100 300 1000
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+100 300 1000
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+100 300 1000
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0Positive Cost with HVLM
+100 300 1000
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+100 300 1000
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+Notes. Comparisons are across the number of products N along the horizontal axis. For each N ∈ {100, 300, 1000},
+the 450 instances of zero and negative correlation are divided evenly into 9 categories according to the scenario of
+production cost/potential surplus and the degree of valuation heterogeneity. Each box plot displays the profits relative
+to PPD over 50 instances in the category. “HVHM” and “HVLM” are abbreviations for “high value high margin”
+and “high value low margin”, respectively.
+Figure E-5 Categorized profit comparisons of bundling mechanisms relative to PPD in large-scale problems
+
+61
+E.2. Assorted and Clustered Bundle-Size Pricing
+Abdallah et al. (2021) propose two variants of BSP that can help improve its efficiency when
+production costs are heterogeneous.
+Assorted Bundle-Size Pricing. In assorted BSP, the firm only allows customers to purchase
+from a prespecified subset of its products, and hence avoids selling high-cost products at a relatively
+low average price in a bundle. We note that CPBSD subsumes assorted BSP by setting sufficiently
+high component prices on certain products and thus effectively removing them from the menu.
+Clustered Bundle-Size Pricing. In clustered BSP, the firm clusters products with equal
+production costs and applies BSP to each cluster separately. Notes that clustered BSP degenerates
+to CP when production costs are highly heterogeneous, e.g., each product has a different cost.
+Table E-3 Categorized profit comparisons of bundling mechanisms relative to BSP for N = 5
+category median of relative profit performance
+cost heterogeneity BSP Assorted BSP lustered BSP CPBSD CPBSD-A MB
+positive cost partial in-s 1.00 1.00 1.02 1.08 1.02 1.16
+HVHM out-s 1.00 1.00 1.02 1.01 1.04 1.00
+full in-s 1.00 1.00 — 1.14 1.06 1.21
+out-s 1.00 1.00 — 1.07 1.10 1.05
+positive cost partial in-s 1.00 1.00 1.09 1.63 1.48 1.67
+HVLM out-s 1.00 1.00 1.10 1.56 1.62 1.61
+full in-s 1.00 1.32 — 1.96 1.81 2.04
+out-s 1.00 1.33 — 1.81 1.83 1.74
+Notes. This table is derived from Table 3. Two new columns of “Assorted BSP” and “Clustered BSP” are added, and
+columns of CP, PB, and PBDC are omitted for simplicity. Clustered BSP degenerates to CP under full heterogeneity
+and hence is not displayed. “HVHM” and “HVLM” are abbreviations for “high value high margin” and “high value
+low margin”, respectively.
+Following the experiments in Section 6, we evaluate assorted BSP and clustered BSP in problem
+instances with positive and heterogeneous cost, and we report the categorized profit comparisons in
+Table E-3. We find that assortedBSP improves the profitability of BSP by approximately 1/3 in the
+category of HVLM and full heterogeneity (the last category in Table E-3). Under this circumstance,
+assorted BSP can remove products of high costs and low potential surplus from the assortment
+offered. In other categories, assorted BSP performs almost identically to BSP since the best sales
+menu is to offer all products in most instances. This observation is similar to the empirical finding
+of Abdallah et al. (2021) that assorted BSP reduces to BSP when production costs are not very
+high. Clustered BSP improves BSP by a few percentages in the category of partial heterogeneity,
+where there are two types of products. It degenerates to CP under full heterogeneity. Note that
+both CPBSD and its approximation CPBSD-A outperform assorted BSP and Clustered BSP in all
+categories.
+
+62
+Appendix F: Additional Numerical Experiments
+Ma and Simchi-Levi (2021) designed experiments using randomized parameters and hence has the
+advantage of not depending on the fixed parameters (e.g., our specification in Table 2 of Section 6).
+For a consistent and comprehensive comparison, in this section, we report the results of repeating
+their numerical experiments and adding CPBSD to be evaluated.
+For readers’ convenience, we restate the experiment setting of Ma and Simchi-Levi (2021) (the
+contents below are cited from their section 4.1). They use 5 families of parametric distributions, e.g.,
+exponential, logit, lognormal, normal, and uniform, and assume that valuations are independent
+across products. The ranges of parameters for these distributions are outlined in Table F-4.
+Table F-4 Ranges of parameters from Ma and Simchi-Levi (2021)
+description of marginal distribution of Vn
+exponential an exponential distribution with mean chosen uniformly from [0.2, 2].
+logit a gumble distribution with scale σ = 0.25 and means chosen uniformly from [0, 2.5],
+and thus the location µ is in [ −0.25γ, 2.5 − 0.25γ] ≈ [−0.14, 2.36].
+lognormal a lognormal distribution with log-variance σ2 = 0.25 and log-mean chosen uniformly from [-1.5, 1],
+and thus the original valuation has mean in [ e−1.5+0.125, e1+0.125] ≈ [0.25, 3.08].
+normal a normal distribution with mean chosen uniformly from [ −1, 2.5]
+and variances chosen uniformly from [0 .25, 1.75].
+uniform an uniform distribution in [0 , b], where b is chosen uniformly from [0.4, 4],
+and thus the mean is in [0.2, 2].
+They consider three scenarios for production costs:
+1. Heterogeneous Items: in this scenario, valuation distributions fluctuate in accordance to Table
+F-4. The cost of each item is set to 0.2, except in the case of uniform distributions, where it is
+set to half the item’s mean valuation. These are the same numbers used in Chu et al. (2011).
+2. Heterogeneous Costs: in this scenario, valuation distributions are identical while costs fluctu-
+ate. In the cases of the exponential, logit, lognormal, or normal distributions, the valuation
+is fixed to have mean 1 .25, 1 .5, e0.5+0.125 ≈ 1.87, or 1 .5 (with fixed variance 1) respectively;
+the costs are chosen uniformly from [0 , 2.5], approximately the same range as the means. In
+the case of the uniform distribution, the costs are chosen uniformly from 0 to 0 .75 times the
+maximum valuation b drawn according to Table F-4.
+3. Heterogeneous Items and Costs : in this scenario, both valuation distributions and costs fluc-
+tuate (independently) as described in the preceding scenarios.
+We consider N = 5 products. For each combination of the 3 cost scenarios and 5 demand distri-
+butions, we randomly generate 200 instances, resulting in 3,000 total instances. For each instance,
+
+63
+we evaluate bundling mechanisms using approaches described in Section 6.1, and normalize the
+profit performance of each mechanism relative to BSP. In Table F-5, we report the median profit
+performance of every mechanism across the 200 instances of each distribution family.
+Table F-5 Profit comparisons of bundling mechanisms relative to BSP
+category median of relative profit performance
+cost scenario heterogeneity CP PB BSP max{CP, BSP} PBDC CPBSD CPBSD-A MB
+1 exponential in-s 0.83 0.93 1.00 1.00 0.97 1.05 1.00 1.12
+out-s 0.78 0.98 1.00 1.00 1.01 0.99 1.00 0.95
+logit in-s 0.86 0.96 1.00 1.00 0.99 1.01 1.00 1.01
+out-s 0.86 0.99 1.00 1.00 1.01 0.99 1.00 0.97
+lognormal in-s 0.78 0.99 1.00 1.00 0.99 1.03 1.00 1.04
+out-s 0.76 1.00 1.00 1.00 1.01 0.98 1.00 0.97
+normal in-s 0.87 0.84 1.00 1.00 0.94 1.05 1.00 1.09
+out-s 0.87 0.89 1.00 1.00 0.99 0.98 1.00 0.96
+uniform in-s 0.95 0.84 1.00 1.00 0.97 1.14 1.05 1.23
+out-s 0.98 0.90 1.00 1.00 1.04 1.08 1.06 1.05
+2 exponential in-s 1.01 0.46 1.00 1.01 1.00 1.21 1.10 1.31
+out-s 0.96 0.48 1.00 1.00 1.17 1.07 1.15 1.04
+logit in-s 1.39 0.77 1.00 1.39 1.52 1.63 1.60 1.66
+out-s 1.69 0.90 1.00 1.69 1.98 1.94 1.94 1.89
+lognormal in-s 0.94 0.80 1.00 1.00 1.07 1.20 1.15 1.26
+out-s 0.93 0.87 1.00 1.00 1.19 1.13 1.16 1.08
+normal in-s 0.97 0.54 1.00 1.00 1.03 1.19 1.12 1.29
+out-s 1.00 0.58 1.00 1.00 1.13 1.12 1.16 1.06
+uniform in-s 0.93 0.55 1.00 1.00 0.95 1.10 1.05 1.21
+out-s 0.95 0.57 1.00 1.00 1.04 1.05 1.06 0.99
+3 exponential in-s 1.06 0.37 1.00 1.06 1.02 1.22 1.09 1.31
+out-s 1.03 0.36 1.00 1.03 1.18 1.10 1.14 1.06
+logit in-s 1.07 0.15 1.00 1.07 1.14 1.22 1.18 1.22
+out-s 1.12 0.16 1.00 1.12 1.21 1.15 1.20 1.15
+lognormal in-s 1.09 0.25 1.00 1.09 1.09 1.26 1.15 1.28
+out-s 1.14 0.18 1.00 1.14 1.28 1.16 1.22 1.20
+normal in-s 1.03 0.15 1.00 1.03 1.02 1.18 1.10 1.22
+out-s 1.07 0.13 1.00 1.07 1.16 1.08 1.17 1.07
+uniform in-s 1.09 0.68 1.00 1.09 1.09 1.29 1.18 1.37
+out-s 1.19 0.75 1.00 1.19 1.23 1.26 1.22 1.23
+Notes. We report the median profit for in-sample (in-s) and out-of-sample (out-s) tests relative to BSP over the 200
+instances for each category.
+Scenario 1 shares the same experimental setting as Chu et al. (2011) which choose identical
+production costs. In this scenario, we replicate their finding that BSP is within a few percent of
+the optimal pricing scheme MB. While there is minimal room for improvement under Scenario 1,
+we see CPBSD can still increase the in-sample profitability and thus reduce the gap to MB.
+
+64
+Scenarios 2 and 3 allow costs to vary randomly among products. They are similar to our exper-
+iment on heterogeneous production costs. In these two scenarios, we replicate the finding of Ma
+and Simchi-Levi (2021) that PBDC achieves higher profits than BSP, and we also find that CPBSD
+outperform BSP substantially. We note that CPBSD outperforms PBDC in the in-sample data and
+performs comparably in the out-of-sample data. These observations are consistent with our findings
+from the main experiments of Section 6.
+Appendix G: Discussion on Non-additive Valuations
+In this section, we provide a brief discussion on non-additive valuations underCPBSD, including the
+asymptotic analysis and MILP formulation. Non-additive valuations are used to model complemen-
+tarity/substitutability among the products. Although not modeled in our framework, one general
+approach to incorporating complementarity/substitutability in an additive utility framework is to
+introduce an interaction term when a pair of products are purchased together. Specifically, the
+valuation of a bundle S is X
+n∈S
+Vn +
+X
+i,j∈S, i ̸=j
+αij,
+where αij represents the additional utility if products i and j are purchased together. Clearly,
+products i and j are complementary if αij > 0 and otherwise substitutable if αij < 0.
+Regarding the asymptotic optimality, it is in general difficult to derive theories if αij’s are het-
+erogeneous due to complex product interactions. However, for the special case where αij ≡ α for
+all i and j, it is possible to obtain similar theoretical results. The main reason is that, under this
+special case, the valuation of a bundle of size s increases by αs(s − 1)/2, which does not depend
+on the bundle’s composition. As a result, the main technical lemma (Lemma 3), which establishes
+the deterministic behavior of customer surplus, remains unaffected. Therefore, it is still optimal
+to offer a single bundle size in this case. Compared to the additive case, the optimal bundle size
+decreases if α < 0 (substitutability) and increases if α > 0 (complementarity).
+For the MILP formulation, this valuation model can be expressed as
+X
+n∈S
+Vn +
+X
+i,j∈S, i ̸=j
+αijxixj,
+where xi’s are binary variables indicating whether the customer buys the corresponding product.
+The nonlinear term xixj, which captures products i and j being purchased together, can be easily
+linearized by introducing ψij and applying the following linear constraints:
+ψij ∈ {0, 1}, ψ ij ≤ xi, ψ ij ≤ xj, ψ ij ≥ xi + xj − 1.
+Therefore, the ( CPBSD-MILP) formulation developed in Section 5 can be readily extended to
+accommodate this more general case.

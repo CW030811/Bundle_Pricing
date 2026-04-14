@@ -1,0 +1,704 @@
+COMMAND:
+/Applications/Xcode.app/Contents/Developer/usr/bin/python3 /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py --instance /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/mb_oos_drop_grid_n5_n10_t300/instances/n5/cpbsd_instance_001_N5_K50_logit_rho0.5_partial_hvlm.msgpack --method mb --time-limit 300.0 --mip-gap 0.01 --output-flag 0 --save-json /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/mb_oos_drop_grid_n5_n10_t300/results/n5/cpbsd_instance_001_N5_K50_logit_rho0.5_partial_hvlm__mb.json
+
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:302: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:302: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:302: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+Set parameter LicenseID to value 2784353
+{
+  "solver_status": 2,
+  "feasible": true,
+  "mb_formulation_version": 6,
+  "runtime": 23.739614009857178,
+  "wall_time": 23.739770889282227,
+  "mip_gap": 0.009561726088486709,
+  "objective": 1.7916311741457496,
+  "revenue_in_sample": 1.7916311741452995,
+  "model_num_vars": 6281,
+  "model_num_binvars": 1550,
+  "model_num_constrs": 10471,
+  "bundle_space_size": 32,
+  "subadditivity_mode": "full_partition",
+  "policy_scope": "full_bundle_prices",
+  "bundle_prices": {
+    "20": 5.710348695570947,
+    "28": 6.585578970145027,
+    "30": 11.793881195944557,
+    "31": 17.36579748247496
+  },
+  "bundle_prices_full": {
+    "0": 0.0,
+    "1": 19.04269747363902,
+    "2": 18.025022137002914,
+    "3": 18.025022137002914,
+    "4": 12.744999765987556,
+    "5": 19.04269747363902,
+    "6": 18.025022137002914,
+    "7": 19.04269747363902,
+    "8": 1.0176753366361062,
+    "9": 19.04269747363903,
+    "10": 19.04269747363902,
+    "11": 19.04269747363902,
+    "12": 13.762675102623662,
+    "13": 19.04269747363902,
+    "14": 19.04269747363902,
+    "15": 16.58400332915554,
+    "16": 1.1054334413793194,
+    "17": 18.025022137002914,
+    "18": 6.297697707651464,
+    "19": 19.04269747363902,
+    "20": 5.710348695570947,
+    "21": 11.229075832628151,
+    "22": 19.04269747363902,
+    "23": 19.04269747363902,
+    "24": 1.9593386762291298,
+    "25": 19.04269747363902,
+    "26": 7.31537304428757,
+    "27": 19.04269747363902,
+    "28": 6.585578970145027,
+    "29": 12.246751169264257,
+    "30": 11.793881195944557,
+    "31": 17.36579748247496
+  },
+  "bundle_prices_selected": {
+    "20": 5.710348695570947,
+    "28": 6.585578970145027,
+    "30": 11.793881195944557,
+    "31": 17.36579748247496
+  },
+  "chosen_bundle_idx_by_customer": [
+    28,
+    28,
+    30,
+    30,
+    28,
+    30,
+    20,
+    0,
+    30,
+    28,
+    28,
+    30,
+    28,
+    20,
+    31,
+    20,
+    28,
+    30,
+    28,
+    28,
+    30,
+    28,
+    31,
+    28,
+    30,
+    30,
+    28,
+    20,
+    28,
+    30,
+    0,
+    28,
+    28,
+    30,
+    30,
+    28,
+    0,
+    28,
+    31,
+    20,
+    30,
+    28,
+    28,
+    28,
+    0,
+    20,
+    0,
+    28,
+    30,
+    28
+  ],
+  "chosen_product_matrix": [
+    [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0
+    ]
+  ],
+  "assortments": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  ]
+}
+
+EXIT_CODE:0

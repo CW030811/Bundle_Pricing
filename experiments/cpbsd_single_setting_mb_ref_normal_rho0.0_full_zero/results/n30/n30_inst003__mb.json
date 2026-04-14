@@ -1,0 +1,8 @@
+{
+  "solver_status": -2,
+  "status_text": "SKIPPED_INTRACTABLE",
+  "error": "Skipped full MB for N=30: full bundle-space MILP requires 2^N bundles (1073741824 bundles) and is treated as intractable for the main experiment.",
+  "bundle_space_size": 1073741824,
+  "estimated_theta_binvars": 53687091150,
+  "wall_time": 0.0
+}

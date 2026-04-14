@@ -1,0 +1,172 @@
+[
+  {
+    "n": 5,
+    "method": "BSP",
+    "method_label": "BSP",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 1.030236005783081,
+    "runtime_median": 1.030236005783081,
+    "runtime_min": 1.030236005783081,
+    "runtime_max": 1.030236005783081,
+    "revenue_in_sample_mean": 25.599847288437807,
+    "revenue_out_sample_mean": 23.033685801658613,
+    "ratio_to_bsp_in_sample_mean": 1.0,
+    "ratio_to_bsp_out_sample_mean": 1.0
+  },
+  {
+    "n": 5,
+    "method": "CPBSD-A",
+    "method_label": "CPBSD-A",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 2.2577099800109863,
+    "runtime_median": 2.2577099800109863,
+    "runtime_min": 2.2577099800109863,
+    "runtime_max": 2.2577099800109863,
+    "revenue_in_sample_mean": 25.599847288437807,
+    "revenue_out_sample_mean": 23.101157503466222,
+    "ratio_to_bsp_in_sample_mean": 1.0,
+    "ratio_to_bsp_out_sample_mean": 1.0029292620550876
+  },
+  {
+    "n": 5,
+    "method": "CPBSD-MILP",
+    "method_label": "CPBSD",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 9.292922973632812,
+    "runtime_median": 9.292922973632812,
+    "runtime_min": 9.292922973632812,
+    "runtime_max": 9.292922973632812,
+    "revenue_in_sample_mean": 25.517128178931607,
+    "revenue_out_sample_mean": 23.19830462300253,
+    "ratio_to_bsp_in_sample_mean": 0.9967687655096458,
+    "ratio_to_bsp_out_sample_mean": 1.007146872748089
+  },
+  {
+    "n": 5,
+    "method": "FCP-pruned-MB",
+    "method_label": "FCP-MB",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 0.718878984451294,
+    "runtime_median": 0.718878984451294,
+    "runtime_min": 0.718878984451294,
+    "runtime_max": 0.718878984451294,
+    "revenue_in_sample_mean": 25.879669223105214,
+    "revenue_out_sample_mean": 23.209397200914232,
+    "ratio_to_bsp_in_sample_mean": 1.0109306095272603,
+    "ratio_to_bsp_out_sample_mean": 1.0076284534211613
+  },
+  {
+    "n": 5,
+    "method": "MB",
+    "method_label": "MB",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 5.813132047653198,
+    "runtime_median": 5.813132047653198,
+    "runtime_min": 5.813132047653198,
+    "runtime_max": 5.813132047653198,
+    "revenue_in_sample_mean": 25.879669223124964,
+    "revenue_out_sample_mean": 21.425455185822564,
+    "ratio_to_bsp_in_sample_mean": 1.0109306095280317,
+    "ratio_to_bsp_out_sample_mean": 0.9301791893106294
+  },
+  {
+    "n": 10,
+    "method": "BSP",
+    "method_label": "BSP",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 0.7020649909973145,
+    "runtime_median": 0.7020649909973145,
+    "runtime_min": 0.7020649909973145,
+    "runtime_max": 0.7020649909973145,
+    "revenue_in_sample_mean": 51.59735272060213,
+    "revenue_out_sample_mean": 49.17753570241572,
+    "ratio_to_bsp_in_sample_mean": 1.0,
+    "ratio_to_bsp_out_sample_mean": 1.0
+  },
+  {
+    "n": 10,
+    "method": "CPBSD-A",
+    "method_label": "CPBSD-A",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 1.5598750114440918,
+    "runtime_median": 1.5598750114440918,
+    "runtime_min": 1.5598750114440918,
+    "runtime_max": 1.5598750114440918,
+    "revenue_in_sample_mean": 50.20802522852137,
+    "revenue_out_sample_mean": 48.86588428831448,
+    "ratio_to_bsp_in_sample_mean": 0.9730736671781609,
+    "ratio_to_bsp_out_sample_mean": 0.9936627281206788
+  },
+  {
+    "n": 10,
+    "method": "CPBSD-MILP",
+    "method_label": "CPBSD",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 221.9313199520111,
+    "runtime_median": 221.9313199520111,
+    "runtime_min": 221.9313199520111,
+    "runtime_max": 221.9313199520111,
+    "revenue_in_sample_mean": 47.93596543391223,
+    "revenue_out_sample_mean": 46.37461634075342,
+    "ratio_to_bsp_in_sample_mean": 0.9290392414797677,
+    "ratio_to_bsp_out_sample_mean": 0.9430040704230609
+  },
+  {
+    "n": 10,
+    "method": "FCP-pruned-MB",
+    "method_label": "FCP-MB",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 4.173191070556641,
+    "runtime_median": 4.173191070556641,
+    "runtime_min": 4.173191070556641,
+    "runtime_max": 4.173191070556641,
+    "revenue_in_sample_mean": 52.80055915277791,
+    "revenue_out_sample_mean": 46.63748475198812,
+    "ratio_to_bsp_in_sample_mean": 1.0233191504744652,
+    "ratio_to_bsp_out_sample_mean": 0.9483493649255218
+  },
+  {
+    "n": 10,
+    "method": "MB",
+    "method_label": "MB",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.86954617500305,
+    "runtime_median": 300.86954617500305,
+    "runtime_min": 300.86954617500305,
+    "runtime_max": 300.86954617500305,
+    "revenue_in_sample_mean": 1.1940311979991471,
+    "revenue_out_sample_mean": 0.11940311979991472,
+    "ratio_to_bsp_in_sample_mean": 0.02314132673559406,
+    "ratio_to_bsp_out_sample_mean": 0.002428001283400001
+  }
+]

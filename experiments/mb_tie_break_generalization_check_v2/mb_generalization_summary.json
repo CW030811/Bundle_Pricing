@@ -1,0 +1,26 @@
+{
+  "setup": {
+    "n_products": 5,
+    "k_samples": 200,
+    "dist_family": "normal",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost_scenario": "hvhm",
+    "seed": 20260309
+  },
+  "solver_status": 9,
+  "status_text": "TIME_LIMIT",
+  "feasible": true,
+  "runtime": 300.1218259334564,
+  "mip_gap": 0.09681894931301033,
+  "objective_raw": 1.445119523293154,
+  "policy_scope": "full_bundle_prices",
+  "bundle_space_size": 32,
+  "bundle_price_count_full": 32,
+  "bundle_price_count_selected": 27,
+  "revenue_in_sample_k200": 1.4477120344100383,
+  "revenue_out_sample_k1000": 1.283645127887286,
+  "revenue_out_sample_k5000": 1.2687540988634716,
+  "generalization_ratio_k1000_over_in": 0.8866715875649872,
+  "generalization_ratio_k5000_over_in": 0.8763856821709061
+}

@@ -1,0 +1,70 @@
+[
+  {
+    "n": 20,
+    "method": "CPBSD-A",
+    "method_label": "CPBSD-A",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 5.002154111862183,
+    "runtime_median": 5.002154111862183,
+    "runtime_min": 5.002154111862183,
+    "runtime_max": 5.002154111862183,
+    "revenue_in_sample_mean": 104.74200041606493,
+    "revenue_out_sample_mean": 103.37013061115042,
+    "ratio_to_mb_in_sample_mean": null,
+    "ratio_to_mb_out_sample_mean": null
+  },
+  {
+    "n": 20,
+    "method": "CPBSD-MILP",
+    "method_label": "CPBSD",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 5.0128278732299805,
+    "runtime_median": 5.0128278732299805,
+    "runtime_min": 5.0128278732299805,
+    "runtime_max": 5.0128278732299805,
+    "revenue_in_sample_mean": 0.0,
+    "revenue_out_sample_mean": 0.27682979340117797,
+    "ratio_to_mb_in_sample_mean": null,
+    "ratio_to_mb_out_sample_mean": null
+  },
+  {
+    "n": 20,
+    "method": "FCP-pruned-MB",
+    "method_label": "FCP-MB",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 5.011176109313965,
+    "runtime_median": 5.011176109313965,
+    "runtime_min": 5.011176109313965,
+    "runtime_max": 5.011176109313965,
+    "revenue_in_sample_mean": 105.34011727462673,
+    "revenue_out_sample_mean": 101.6291648145051,
+    "ratio_to_mb_in_sample_mean": null,
+    "ratio_to_mb_out_sample_mean": null
+  },
+  {
+    "n": 20,
+    "method": "MB",
+    "method_label": "MB",
+    "instances": 1,
+    "status_counts": {
+      "SKIPPED_INTRACTABLE": 1
+    },
+    "runtime_mean": null,
+    "runtime_median": null,
+    "runtime_min": null,
+    "runtime_max": null,
+    "revenue_in_sample_mean": null,
+    "revenue_out_sample_mean": null,
+    "ratio_to_mb_in_sample_mean": null,
+    "ratio_to_mb_out_sample_mean": null
+  }
+]

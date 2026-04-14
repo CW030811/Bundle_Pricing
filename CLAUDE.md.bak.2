@@ -1,0 +1,61 @@
+# CPBSD / Revenue Management Project Guide
+
+## Scope
+This Claude session is for the revenue-management domain only.
+
+Main directories:
+- project-root: stable code, paper materials, references, prior results
+- experiment: active CPBSD-GCN acceleration experiments
+
+## Directory Roles
+- Read from `project-root` when understanding prior implementation, paper logic, references, or archived results.
+- Make code changes primarily in `experiment` unless explicitly instructed otherwise.
+- Do not modify reference papers, archived outputs, or unrelated historical files.
+- Treat `project-root` as reference-first and `experiment` as execution-first.
+
+## Working Style
+- Prefer minimal changes over refactoring.
+- Before editing training logic, first compare the old and new data structures.
+- Do not rewrite large blocks unless necessary.
+- Do not silently broaden the task scope.
+- If the requested change may affect multiple modules, first explain the affected files.
+
+## Experiment Rules
+For CPBSD-GCN acceleration tasks:
+- keep the bipartite graph structure unchanged unless explicitly instructed
+- do not change the training loop, loss function, or output format unless explicitly instructed
+- focus first on adapting node features, edge features, data loading, and compatibility layers
+- run the smallest possible smoke test before any larger experiment
+- avoid launching long full experiments unless explicitly requested
+
+## File Safety
+- Default editable area: `experiment`
+- Reference-only area by default: `project-root`
+- If a change in `project-root` is truly needed, explain:
+  1. why `experiment` is insufficient
+  2. which exact file will be changed
+  3. what downstream risk exists
+
+## Response Requirements
+After each coding task, report:
+- Summary
+- Files changed
+- Purpose of each change
+- Validation performed
+- Remaining risks / next step
+
+Before each edit, state:
+- target file(s)
+- why they need to change
+- whether the change is minimal or structural
+
+## Validation
+For each coding task:
+1. run the smallest possible smoke test first
+2. preserve existing outputs unless instructed otherwise
+3. if a test fails, diagnose before expanding the scope of edits
+4. do not claim success without showing the validation command and result
+
+## Important Paths
+- /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root
+- /Users/sensen/.openclaw/workspace/domains/revenue-management/experiment

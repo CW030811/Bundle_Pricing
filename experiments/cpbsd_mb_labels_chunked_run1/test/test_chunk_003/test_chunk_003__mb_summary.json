@@ -1,0 +1,13 @@
+{
+  "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/test/test_chunk_003.csv",
+  "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/test/test_chunk_003",
+  "count": 100,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "has_solution_count": 100,
+  "status_counts": {
+    "2": 86,
+    "9": 14
+  },
+  "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/test/test_chunk_003/test_chunk_003__mb_results.csv"
+}

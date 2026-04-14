@@ -1,0 +1,209 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans SC',sans-serif;line-height:1.72;max-width:980px;margin:36px auto;padding:0 22px;color:#111;}
+h1,h2,h3{line-height:1.28;margin-top:1.2em}
+pre,code{background:#f6f8fa}
+pre{padding:10px;border-radius:8px;overflow:auto} code{padding:2px 4px;border-radius:4px}
+table{border-collapse:collapse;width:100%;margin:14px 0}th,td{border:1px solid #ccc;padding:6px 8px}
+blockquote{border-left:4px solid #ccc;padding-left:10px;color:#444}
+.math-block{display:block;margin:12px 0;overflow-x:auto} .math-inline{display:inline-block;vertical-align:middle}
+math{font-size:1.05em}
+</style></head><body><h1>CPBSD 方法深度整理 + 与我们 GCN Bundle Pricing 的关键差异</h1>
+<blockquote>
+<p>子项目：<code>domains/revenue-management/project-root/CPBSD_GCN_acceleration_study</code></p>
+<p>目标：调研 <strong>CPBSD (Component Pricing with a Bundle Size Discount)</strong> 能否由我们的 GCN 方法加速。</p>
+</blockquote>
+<hr />
+<h2>0) 本次阅读范围与说明</h2>
+<ul>
+<li>文献 A（重点，严格参考原文）：</li>
+<li><code>参考文献目录/Bundle Pricing/Component Pricing_Bundle Size Discount:Component Pricing with a Bundle Size Discount.pdf</code></li>
+<li>文献 B（对照）：</li>
+<li><code>自己的Paper更新进展/Bundle Pricing_GCN:GCN-Based Bundle Pricing Strategies and Experiments.pdf</code></li>
+</ul>
+<p>说明：
+- 对 CPBSD 的 Problem Definition 与 Method Formulation 以下内容均基于原文 Section 3 与 Section 5（含公式编号）进行整理。
+- 对我们 GCN 文档的对照，依据该文稿中“背景/策略设计/实验”部分的显式描述。</p>
+<hr />
+<h2>1) 两篇 Paper 的关键差异（你指定的三条主线）</h2>
+<h2>1.1 问题背景差异：Mixed Bundling vs. Random Valuation</h2>
+<ul>
+<li><strong>CPBSD（文献A）</strong>：</li>
+<li>背景是经典多产品捆绑定价（bundle pricing）框架下，面对 MB（Mixed Bundling）在 <code>2^N</code> 级别上的复杂度问题，提出结构化机制 CPBSD。</li>
+<li>核心是：<ul>
+<li>产品级价格 <code>p_n</code>（component pricing）</li>
+<li>加上仅依赖 bundle size 的折扣 <code>d_s</code>（bundle size discount）</li>
+</ul>
+</li>
+<li>
+<p>需求侧建模是 <strong>随机估值向量</strong> <code>V=(V_1,...,V_N)</code>，来自联合分布 <code>F</code>，客户在给定价格菜单下做最优购买。</p>
+</li>
+<li>
+<p><strong>我们 GCN 文稿（文献B）</strong>：</p>
+</li>
+<li>背景是把 Bundle Pricing 的组合爆炸问题交给“学习 + 优化”混合范式，尤其用 GCN 预测候选关系/概率，再做 MILP/LP/局部搜索加速。</li>
+<li>关注点更偏“<strong>求解加速与可扩展</strong>”：TPM/MPM/PPM/LPLS 等策略对可行空间剪枝与替代求解。</li>
+<li>仍然依赖随机估值/分群收益建模作为底层优化输入，但文章主贡献是算法工程与计算效率而非新机制定义。</li>
+</ul>
+<p>一句话：
+- CPBSD 是“<strong>机制层创新</strong>（pricing form）”；
+- 我们 GCN 是“<strong>求解层创新</strong>（solver acceleration）”。</p>
+<h2>1.2 Setting/Assumption 差异：Nonadditive vs Additive</h2>
+<ul>
+<li><strong>CPBSD 主体理论（文献A）</strong>：</li>
+<li>在主模型中采用 <strong>additive buyer</strong> 假设：bundle valuation 为所含产品估值之和。</li>
+<li>购买决策是 utility-maximization，且默认 tie-break in firm’s favor。</li>
+<li>原文还在扩展讨论中提到可引入 pairwise interaction 项</li>
+</ul>
+<div class="math-block"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><munder><mo>&#x02211;</mo><mrow><mi>n</mi><mo>&#x02208;</mo><mi>S</mi></mrow></munder><msub><mi>V</mi><mi>n</mi></msub><mo>&#x0002B;</mo><munder><mo>&#x02211;</mo><mrow><mi>i</mi><mo>&#x0002C;</mo><mi>j</mi><mo>&#x02208;</mo><mi>S</mi><mo>&#x0002C;</mo><mi>i</mi><mo>&#x02260;</mo><mi>j</mi></mrow></munder><msub><mi>&#x003B1;</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>&#x0002C;</mo></mrow></math></div>
+
+<pre><code>其中 `α_ij&gt;0` 补性、`α_ij&lt;0` 替代性；但这属于扩展场景，不是主干理论的基础假设。
+</code></pre>
+<ul>
+<li><strong>我们 GCN 文稿（文献B）</strong>：</li>
+<li>方法上更强调图结构对“产品/segment关系”的表达能力，可在学习层面对复杂关联（潜在 non-additive interaction）做近似编码。</li>
+<li>但文稿当前呈现的优化骨架，仍与传统 bundle pricing 的 segment-valuation 框架兼容，未给出像 CPBSD 那样完整可证的非加性理论体系。</li>
+</ul>
+<p>结论：
+- CPBSD 主干是 <strong>Additive+随机估值+机制约束</strong>；
+- 我们 GCN 更像 <strong>Data-driven approximation layer</strong>，有潜力承接 non-additive 结构，但目前更多是计算策略而非完整行为理论闭环。</p>
+<h2>1.3 解决方法差异：Mechanism Optimization vs Learning-to-Optimize</h2>
+<ul>
+<li><strong>CPBSD（文献A）</strong>：</li>
+<li>先定义机制（<code>p_n</code>,<code>d_s</code>）</li>
+<li>再写出 firm-level expected profit optimization（CPBSD）</li>
+<li>用 sample approximation 把期望问题离散化</li>
+<li>推导 customer bundle-content selection 的 LP / Dual</li>
+<li>构造单层 MILP（CPBSD-MILP）并给出约束组(9)~(23)</li>
+<li>
+<p>外加大规模近似算法（附录）</p>
+</li>
+<li>
+<p><strong>我们 GCN（文献B）</strong>：</p>
+</li>
+<li>用 GCN 预测产品-分群相关性/入选概率</li>
+<li>通过阈值/Top-k/百分比剪枝构造候选 bundle space</li>
+<li>结合 MILP 或 LP+local search 求价格</li>
+<li>以“收入-时间”权衡评估方案</li>
+</ul>
+<p>本质上：
+- CPBSD：先有机制，再做优化；
+- 我们 GCN：先做学习降维，再做优化。</p>
+<hr />
+<h2>2) CPBSD 的 Problem Definition（严格对应原文）</h2>
+<blockquote>
+<p>对应原文 Section 3（The Model）与 3.2（Formulation）</p>
+</blockquote>
+<h2>2.1 基本集合与决策</h2>
+<ul>
+<li>产品集合：<span class="math-inline"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="script">N</mi><mo>&#x0003D;</mo><mo stretchy="false">&#x0007B;</mo><mn>1</mn><mo>&#x0002C;</mo><mo>&#x02026;</mo><mo>&#x0002C;</mo><mi>N</mi><mo stretchy="false">&#x0007D;</mo></mrow></math></span></li>
+<li>成本：<span class="math-inline"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>c</mi><mi>n</mi></msub></mrow></math></span></li>
+<li>客户可购买任意子集 <span class="math-inline"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>S</mi><mo>&#x02286;</mo><mi mathvariant="script">N</mi></mrow></math></span>，每个产品最多 1 件</li>
+<li>CPBSD 价格菜单：</li>
+<li>产品级价格 <span class="math-inline"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>p</mi><mi>n</mi></msub></mrow></math></span></li>
+<li>按 bundle size 的折扣 <span class="math-inline"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>d</mi><mi>s</mi></msub></mrow></math></span>，其中 <span class="math-inline"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>s</mi><mo>&#x0003D;</mo><mo stretchy="false">&#x0007C;</mo><mi>S</mi><mo stretchy="false">&#x0007C;</mo></mrow></math></span></li>
+</ul>
+<p>客户购买 bundle <span class="math-inline"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>S</mi></mrow></math></span> 时支付：</p>
+<div class="math-block"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtext>Pay</mtext><mo stretchy="false">&#x00028;</mo><mi>S</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0003D;</mo><munder><mo>&#x02211;</mo><mrow><mi>n</mi><mo>&#x02208;</mo><mi>S</mi></mrow></munder><msub><mi>p</mi><mi>n</mi></msub><mo>&#x02212;</mo><mi>s</mi><msub><mi>d</mi><mi>s</mi></msub></mrow></math></div>
+
+<p>企业对 bundle <span class="math-inline"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>S</mi></mrow></math></span> 的利润：</p>
+<div class="math-block"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>&#x003A0;</mi><mo stretchy="false">&#x00028;</mo><mi>S</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0003D;</mo><munder><mo>&#x02211;</mo><mrow><mi>n</mi><mo>&#x02208;</mo><mi>S</mi></mrow></munder><mo stretchy="false">&#x00028;</mo><msub><mi>p</mi><mi>n</mi></msub><mo>&#x02212;</mo><msub><mi>c</mi><mi>n</mi></msub><mo stretchy="false">&#x00029;</mo><mo>&#x02212;</mo><mi>s</mi><msub><mi>d</mi><mi>s</mi></msub><mo>&#x0002E;</mo></mrow></math></div>
+
+<h2>2.2 需求与行为假设</h2>
+<ul>
+<li>客户估值向量 <span class="math-inline"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>V</mi><mo>&#x0003D;</mo><mo stretchy="false">&#x00028;</mo><msub><mi>V</mi><mn>1</mn></msub><mo>&#x0002C;</mo><mo>&#x0002E;</mo><mo>&#x0002E;</mo><mo>&#x0002E;</mo><mo>&#x0002C;</mo><msub><mi>V</mi><mi>N</mi></msub><mo stretchy="false">&#x00029;</mo><mi>&#x0007E;</mi><mi>F</mi></mrow></math></span>，<code>F</code> 为联合分布</li>
+<li>主模型为 additive valuation</li>
+<li>客户在给定 <span class="math-inline"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">&#x00028;</mo><mi>p</mi><mo>&#x0002C;</mo><mi>d</mi><mo stretchy="false">&#x00029;</mo></mrow></math></span> 下选择最大化总剩余（valuation-payment）的 bundle</li>
+</ul>
+<p>原文给出的选择问题（记 <span class="math-inline"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">&#x00028;</mo><mi>V</mi><mo stretchy="false">&#x00029;</mo><mo>&#x02208;</mo><mo stretchy="false">&#x0007B;</mo><mn>0</mn><mo>&#x0002C;</mo><mn>1</mn><mo stretchy="false">&#x0007D;</mo></mrow></math></span>）可写作：</p>
+<div class="math-block"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>x</mi><mo stretchy="false">&#x00028;</mo><mi>V</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0003D;</mo><mi>\arg</mi><msub><mo>max</mo><mrow><mover><mi>x</mi><mo stretchy="false">&#x0007E;</mo></mover></mrow></msub><munder><mo>&#x02211;</mo><mrow><mi>n</mi><mo>&#x02208;</mo><mi mathvariant="script">N</mi></mrow></munder><mo stretchy="false">&#x00028;</mo><msub><mi>V</mi><mi>n</mi></msub><mo>&#x02212;</mo><msub><mi>p</mi><mi>n</mi></msub><mo>&#x0002B;</mo><msub><mi>d</mi><mi>s</mi></msub><mo stretchy="false">&#x00029;</mo><msub><mover><mi>x</mi><mo stretchy="false">&#x0007E;</mo></mover><mi>n</mi></msub></mrow></math></div>
+
+<p>subject to</p>
+<div class="math-block"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><munder><mo>&#x02211;</mo><mrow><mi>n</mi><mo>&#x02208;</mo><mi mathvariant="script">N</mi></mrow></munder><msub><mover><mi>x</mi><mo stretchy="false">&#x0007E;</mo></mover><mi>n</mi></msub><mo>&#x0003D;</mo><mi>s</mi><mo>&#x0002C;</mo><mspace width="1em" /><msub><mover><mi>x</mi><mo stretchy="false">&#x0007E;</mo></mover><mi>n</mi></msub><mo>&#x02208;</mo><mo stretchy="false">&#x0007B;</mo><mn>0</mn><mo>&#x0002C;</mo><mn>1</mn><mo stretchy="false">&#x0007D;</mo><mo>&#x0002E;</mo></mrow></math></div>
+
+<h2>2.3 Firm 的期望利润问题（CPBSD）</h2>
+<p>原文目标（等式(2)附近）可概括为：</p>
+<div class="math-block"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mo>max</mo><mrow><mi>p</mi><mo>&#x0002C;</mo><mi>d</mi></mrow></msub><mspace width="0.278em" /><msub><mi mathvariant="double-struck">E</mi><mrow><mi>V</mi><mi>&#x0007E;</mi><mi>F</mi></mrow></msub><mo minsize="2.470em" maxsize="2.470em">[</mo><munder><mo>&#x02211;</mo><mrow><mi>n</mi><mo>&#x02208;</mo><mi mathvariant="script">N</mi></mrow></munder><mo minsize="1.2em" maxsize="1.2em">(</mo><msub><mi>p</mi><mi>n</mi></msub><mo>&#x02212;</mo><msub><mi>c</mi><mi>n</mi></msub><mo>&#x02212;</mo><msub><mi>d</mi><mrow><msub><mo>&#x02211;</mo><mi>n</mi></msub><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">&#x00028;</mo><mi>V</mi><mo stretchy="false">&#x00029;</mo></mrow></msub><mo minsize="1.2em" maxsize="1.2em">)</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">&#x00028;</mo><mi>V</mi><mo stretchy="false">&#x00029;</mo><mo minsize="2.470em" maxsize="2.470em">]</mo></mrow></math></div>
+
+<p>并满足 practical constraints 集合 <span class="math-inline"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="script">P</mi></mrow></math></span>。</p>
+<p>关键 practical constraint（原文强调）包括：
+- 非负：<span class="math-inline"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>p</mi><mi>n</mi></msub><mo>&#x02265;</mo><mn>0</mn><mo>&#x0002C;</mo><mtext>&#x000A0;</mtext><msub><mi>d</mi><mi>s</mi></msub><mo>&#x02265;</mo><mn>0</mn></mrow></math></span>
+- 折扣随 bundle size 的一致性/次可加性限制（避免拆单套利）：</p>
+<div class="math-block"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>s</mi><msub><mi>d</mi><mi>s</mi></msub><mo>&#x02265;</mo><msub><mi>s</mi><mn>1</mn></msub><msub><mi>d</mi><mrow><msub><mi>s</mi><mn>1</mn></msub></mrow></msub><mo>&#x0002B;</mo><msub><mi>s</mi><mn>2</mn></msub><msub><mi>d</mi><mrow><msub><mi>s</mi><mn>2</mn></msub></mrow></msub><mo>&#x0002C;</mo><mspace width="1em" /><msub><mi>s</mi><mn>1</mn></msub><mo>&#x0002B;</mo><msub><mi>s</mi><mn>2</mn></msub><mo>&#x0003D;</mo><mi>s</mi><mo>&#x0002E;</mo></mrow></math></div>
+
+<hr />
+<h2>3) CPBSD 的 Method Formulation（严格对应原文 MILP）</h2>
+<blockquote>
+<p>对应原文 Section 5.1（MILP Formulation）</p>
+</blockquote>
+<h2>3.1 样本化问题（CPBSD-sample）</h2>
+<p>为避免连续分布期望导致的无限约束，原文使用 <code>K</code> 个客户样本估值
+<span class="math-inline"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>v</mi><mi>k</mi></msup><mo>&#x0003D;</mo><mo stretchy="false">&#x00028;</mo><msubsup><mi>v</mi><mn>1</mn><mi>k</mi></msubsup><mo>&#x0002C;</mo><mo>&#x0002E;</mo><mo>&#x0002E;</mo><mo>&#x0002E;</mo><mo>&#x0002C;</mo><msubsup><mi>v</mi><mi>N</mi><mi>k</mi></msubsup><mo stretchy="false">&#x00029;</mo></mrow></math></span>，转为样本平均利润最大化：</p>
+<div class="math-block"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mo>max</mo><mrow><mi>p</mi><mo>&#x0002C;</mo><mi>d</mi></mrow></msub><mfrac><mn>1</mn><mi>K</mi></mfrac><munder><mo>&#x02211;</mo><mrow><mi>k</mi><mo>&#x02208;</mo><mi mathvariant="script">K</mi></mrow></munder><munder><mo>&#x02211;</mo><mrow><mi>n</mi><mo>&#x02208;</mo><mi mathvariant="script">N</mi></mrow></munder><mo minsize="1.2em" maxsize="1.2em">(</mo><msub><mi>p</mi><mi>n</mi></msub><mo>&#x02212;</mo><msub><mi>c</mi><mi>n</mi></msub><mo>&#x02212;</mo><msub><mi>d</mi><mrow><msub><mo>&#x02211;</mo><mi>n</mi></msub><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">&#x00028;</mo><msup><mi>v</mi><mi>k</mi></msup><mo stretchy="false">&#x00029;</mo></mrow></msub><mo minsize="1.2em" maxsize="1.2em">)</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">&#x00028;</mo><msup><mi>v</mi><mi>k</mi></msup><mo stretchy="false">&#x00029;</mo><mo>&#x0002C;</mo></mrow></math></div>
+
+<div class="math-block"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtext>s.t.&#x000A0;</mtext><mo stretchy="false">&#x00028;</mo><mi>p</mi><mo>&#x0002C;</mo><mi>d</mi><mo stretchy="false">&#x00029;</mo><mo>&#x02208;</mo><mi mathvariant="script">P</mi><mo>&#x0002E;</mo></mrow></math></div>
+
+<h2>3.2 客户子问题 BCS / BCS-LP / BCS-dual</h2>
+<p>定义 <span class="math-inline"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>x</mi><mrow><mi>k</mi><mi>n</mi><mi>s</mi></mrow></msub><mo>&#x02208;</mo><mo stretchy="false">&#x0007B;</mo><mn>0</mn><mo>&#x0002C;</mo><mn>1</mn><mo stretchy="false">&#x0007D;</mo></mrow></math></span>：客户 <code>k</code> 在购买 size <code>s</code> bundle 时，是否选择产品 <code>n</code>。</p>
+<p><strong>BCS（bundle content selection）</strong>：</p>
+<div class="math-block"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mo>max</mo><mrow><msub><mi>x</mi><mrow><mi>k</mi><mi>n</mi><mi>s</mi></mrow></msub></mrow></msub><munder><mo>&#x02211;</mo><mi>n</mi></munder><mo stretchy="false">&#x00028;</mo><msubsup><mi>v</mi><mi>n</mi><mi>k</mi></msubsup><mo>&#x02212;</mo><msub><mi>p</mi><mi>n</mi></msub><mo>&#x0002B;</mo><msub><mi>d</mi><mi>s</mi></msub><mo stretchy="false">&#x00029;</mo><msub><mi>x</mi><mrow><mi>k</mi><mi>n</mi><mi>s</mi></mrow></msub></mrow></math></div>
+
+<div class="math-block"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtext>s.t.&#x000A0;</mtext><munder><mo>&#x02211;</mo><mi>n</mi></munder><msub><mi>x</mi><mrow><mi>k</mi><mi>n</mi><mi>s</mi></mrow></msub><mo>&#x0003D;</mo><mi>s</mi><mo>&#x0002C;</mo><mtext>&#x000A0;</mtext><msub><mi>x</mi><mrow><mi>k</mi><mi>n</mi><mi>s</mi></mrow></msub><mo>&#x02208;</mo><mo stretchy="false">&#x0007B;</mo><mn>0</mn><mo>&#x0002C;</mo><mn>1</mn><mo stretchy="false">&#x0007D;</mo><mo>&#x0002E;</mo></mrow></math></div>
+
+<p>其 LP relax（BCS-LP）把二元改为 <span class="math-inline"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0</mn><mo>&#x02264;</mo><msub><mi>x</mi><mrow><mi>k</mi><mi>n</mi><mi>s</mi></mrow></msub><mo>&#x02264;</mo><mn>1</mn></mrow></math></span>。</p>
+<p>其对偶（BCS-dual）：</p>
+<div class="math-block"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mo>min</mo><mrow><msub><mi>&#x003B1;</mi><mrow><mi>k</mi><mi>s</mi></mrow></msub><mo>&#x0002C;</mo><msub><mi>&#x003B2;</mi><mrow><mi>k</mi><mi>n</mi><mi>s</mi></mrow></msub></mrow></msub><mspace width="0.278em" /><mi>s</mi><msub><mi>&#x003B1;</mi><mrow><mi>k</mi><mi>s</mi></mrow></msub><mo>&#x0002B;</mo><munder><mo>&#x02211;</mo><mi>n</mi></munder><msub><mi>&#x003B2;</mi><mrow><mi>k</mi><mi>n</mi><mi>s</mi></mrow></msub></mrow></math></div>
+
+<div class="math-block"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtext>s.t.&#x000A0;</mtext><msub><mi>&#x003B1;</mi><mrow><mi>k</mi><mi>s</mi></mrow></msub><mo>&#x0002B;</mo><msub><mi>&#x003B2;</mi><mrow><mi>k</mi><mi>n</mi><mi>s</mi></mrow></msub><mo>&#x02265;</mo><msubsup><mi>v</mi><mi>n</mi><mi>k</mi></msubsup><mo>&#x02212;</mo><msub><mi>p</mi><mi>n</mi></msub><mo>&#x0002B;</mo><msub><mi>d</mi><mi>s</mi></msub><mo>&#x0002C;</mo><mtext>&#x000A0;</mtext><msub><mi>&#x003B1;</mi><mrow><mi>k</mi><mi>s</mi></mrow></msub><mtext>&#x000A0;free</mtext><mo>&#x0002C;</mo><mtext>&#x000A0;</mtext><msub><mi>&#x003B2;</mi><mrow><mi>k</mi><mi>n</mi><mi>s</mi></mrow></msub><mo>&#x02265;</mo><mn>0</mn><mo>&#x0002E;</mo></mrow></math></div>
+
+<p>原文 Proposition 3：三者最优值相同（BCS = BCS-LP = BCS-dual）。</p>
+<h2>3.3 单层 MILP 的核心思想</h2>
+<p>为避免双层 + 双线性，原文引入：
+- <span class="math-inline"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>q</mi><mrow><mi>k</mi><mi>n</mi><mi>s</mi></mrow></msub><mo>&#x0003D;</mo><mo stretchy="false">&#x00028;</mo><msub><mi>p</mi><mi>n</mi></msub><mo>&#x02212;</mo><msub><mi>d</mi><mi>s</mi></msub><mo stretchy="false">&#x00029;</mo><msub><mi>x</mi><mrow><mi>k</mi><mi>n</mi><mi>s</mi></mrow></msub></mrow></math></span>：客户 <code>k</code> 在 size <code>s</code> 选择产品 <code>n</code> 的支付变量
+- <span class="math-inline"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>y</mi><mrow><mi>k</mi><mi>s</mi></mrow></msub><mo>&#x02208;</mo><mo stretchy="false">&#x0007B;</mo><mn>0</mn><mo>&#x0002C;</mo><mn>1</mn><mo stretchy="false">&#x0007D;</mo></mrow></math></span>：客户 <code>k</code> 是否选择 size <code>s</code>
+- <span class="math-inline"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>w</mi><mrow><mi>k</mi><mi>s</mi></mrow></msub><mo>&#x0002C;</mo><msub><mi>w</mi><mi>k</mi></msub></mrow></math></span>：客户 surplus 相关变量</p>
+<p>并用 big-M 线性化：
+- <code>q_{kns} &gt;= p_n-d_s-M(1-x_{kns})</code>
+- <code>q_{kns} &lt;= p_n-d_s</code></p>
+<p>再配合：
+- 每位客户最多选一个 bundle size
+- bundle size 与 <code>x_{kns}</code> 一致
+- 顾客最优性由 (BCS-dual) 上界约束与 surplus 约束共同保证
+- practical constraints（折扣结构、非负、二元）</p>
+<p>原文完整 MILP 约束编号为 (9)~(23)，并在 Theorem 4 证明该 MILP 对应样本问题最优解。</p>
+<h2>3.4 复杂度与可解性（原文）</h2>
+<p>原文给出数量级：
+- CPBSD-MILP 变量/约束约为 <span class="math-inline"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>O</mi><mo stretchy="false">&#x00028;</mo><mi>K</mi><msup><mi>N</mi><mn>2</mn></msup><mo stretchy="false">&#x00029;</mo></mrow></math></span> 与 <span class="math-inline"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>O</mi><mo stretchy="false">&#x00028;</mo><mi>K</mi><msup><mi>N</mi><mn>2</mn></msup><mo>&#x0002B;</mo><msup><mi>K</mi><mn>2</mn></msup><mo stretchy="false">&#x00029;</mo></mrow></math></span>
+- 相比 MB（指数级 bundle 枚举）显著更可解；
+- 比 BSP 稍重，但在规模上可接受；并给出数值实验可解时间表现。</p>
+<hr />
+<h2>4) 对“能否用 GCN 加速 CPBSD”的直接研判</h2>
+<p>可以，而且切入点明确：</p>
+<ol>
+<li><strong>加速点 A：候选 bundle content 降维</strong></li>
+<li>CPBSD 难点之一是 <code>x_{kns}</code> 的组合搜索。</li>
+<li>
+<p>可用 GCN 先预测“客户k-产品n”相关分数，构造每个 <code>k,s</code> 的候选产品池，减少 MILP 变量数。</p>
+</li>
+<li>
+<p><strong>加速点 B：warm-start dual/size decisions</strong></p>
+</li>
+<li>
+<p>对 <code>y_{ks}</code>（size选择）和部分 <code>x_{kns}</code> 做 warm start，可显著减少 B&amp;B 节点。</p>
+</li>
+<li>
+<p><strong>加速点 C：近似算法的学习化替代</strong></p>
+</li>
+<li>原文附录已有 approximation algorithm；可把其规则替换为学习策略（policy network/GCN scorer），再用 MILP 修复可行性。</li>
+</ol>
+<p>但要注意一致性：
+- 不能破坏 CPBSD 的机制结构（<code>p_n</code>,<code>d_s</code>）和关键 practical constraints；
+- 学习模块应作为“候选生成/剪枝/初值”层，而不是直接绕过机制最优性约束。</p>
+<hr />
+<h2>5) 建议下一步（可直接执行）</h2>
+<ul>
+<li>在本子项目新增：</li>
+<li><code>data_schema.md</code>：定义 CPBSD 训练样本（<code>v^k,c_n,p_n,d_s,x_{kns},y_{ks},q_{kns}</code>）</li>
+<li><code>gcn_acceleration_design.md</code>：给出 <code>A/B/C</code> 三条加速路线的变量映射</li>
+<li><code>milp_reduced_form.md</code>：把“GCN候选集约束”写成可直接跑的 reduced MILP</li>
+</ul>
+<p>如果你同意，我下一步直接把这 3 个文件也建好，并给你第一版可跑伪代码。</p></body></html>

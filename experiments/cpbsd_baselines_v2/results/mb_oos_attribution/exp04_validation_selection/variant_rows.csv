@@ -1,0 +1,6 @@
+instance,method,param,revenue_in,revenue_out,drop_pct,buy_rate_in,buy_rate_out,ratio_in_to_bsp,ratio_out_to_bsp
+inst001,Validation-Based Candidate Selection,baseline,1.77688,1.136169,36.058248,0.88,0.602,1.321609,1.091967
+inst002,Validation-Based Candidate Selection,baseline,1.575781,1.118545,29.016428,0.8,0.6704,1.450956,1.014374
+inst003,Validation-Based Candidate Selection,baseline,1.624647,1.223328,24.701899,0.92,0.804,1.221518,1.062829
+inst004,Validation-Based Candidate Selection,baseline,1.517831,1.144405,24.602611,0.78,0.7034,1.363815,1.003838
+inst005,Validation-Based Candidate Selection,baseline,1.564739,1.176785,24.793492,0.82,0.6832,1.357452,1.125634

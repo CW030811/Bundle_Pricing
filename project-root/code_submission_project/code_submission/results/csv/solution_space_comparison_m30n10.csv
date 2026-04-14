@@ -1,0 +1,4 @@
+﻿Strategy,Bundle Space Size,Total Variables,Total Constraints,Subadditivity Constraints,Model Build Time (s)
+MILP,1024,123934,187567,32977,21.214956283569336
+FCP,28,3418,10026,4866,2.0872066020965576
+PCP,161,19511,268196,243056,7.593461990356445

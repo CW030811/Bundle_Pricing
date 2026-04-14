@@ -1,0 +1,206 @@
+{
+  "search_strategy": "global_topk",
+  "topk_k": 8,
+  "max_neighbors_per_iteration": 16,
+  "search_time_limit_per_eval": 2.0,
+  "search_mip_gap": 0.1,
+  "max_iterations": 10,
+  "tolerance": 0.0001,
+  "initial_objective": 3.4316697517973043,
+  "initial_bundle_space_size": 37,
+  "iterations": [
+    {
+      "iteration": 1,
+      "neighbor_count": 16,
+      "neighbor_generation_timing": {
+        "add_candidate_time": 0.00012111663818359375,
+        "drop_candidate_time": 0.00013899803161621094,
+        "neighbor_generation_time": 0.0008661746978759766,
+        "convert_time": 8.320808410644531e-05
+      },
+      "evaluations": [
+        {
+          "neighbor_index": 1,
+          "objective": 3.4308127351030464,
+          "bundle_space_size": 37,
+          "solver_status": 2,
+          "runtime": 1.7662200927734375,
+          "wall_time_search_eval": 2.374752998352051,
+          "mip_gap": 0.08287592762512011,
+          "from_cache": false
+        },
+        {
+          "neighbor_index": 2,
+          "objective": 3.3875328058968868,
+          "bundle_space_size": 36,
+          "solver_status": 2,
+          "runtime": 1.7442240715026855,
+          "wall_time_search_eval": 2.295912981033325,
+          "mip_gap": 0.087473796461234,
+          "from_cache": false
+        },
+        {
+          "neighbor_index": 3,
+          "objective": 3.406603672641238,
+          "bundle_space_size": 37,
+          "solver_status": 2,
+          "runtime": 1.4756929874420166,
+          "wall_time_search_eval": 2.0736000537872314,
+          "mip_gap": 0.09819764793013358,
+          "from_cache": false
+        },
+        {
+          "neighbor_index": 4,
+          "objective": 3.4155603478416325,
+          "bundle_space_size": 37,
+          "solver_status": 2,
+          "runtime": 1.4762768745422363,
+          "wall_time_search_eval": 2.582092761993408,
+          "mip_gap": 0.0977825704498623,
+          "from_cache": false
+        },
+        {
+          "neighbor_index": 5,
+          "objective": 3.4316697517973043,
+          "bundle_space_size": 37,
+          "solver_status": 9,
+          "runtime": 2.0229530334472656,
+          "wall_time_search_eval": 2.650999069213867,
+          "mip_gap": 0.08415916984308343,
+          "from_cache": true
+        },
+        {
+          "neighbor_index": 6,
+          "objective": 3.3789466069893606,
+          "bundle_space_size": 37,
+          "solver_status": 9,
+          "runtime": 2.004829168319702,
+          "wall_time_search_eval": 3.001167058944702,
+          "mip_gap": 0.11404884321483257,
+          "from_cache": false
+        },
+        {
+          "neighbor_index": 7,
+          "objective": 3.4187607927278627,
+          "bundle_space_size": 37,
+          "solver_status": 2,
+          "runtime": 1.4851808547973633,
+          "wall_time_search_eval": 2.198511838912964,
+          "mip_gap": 0.094101429528871,
+          "from_cache": false
+        },
+        {
+          "neighbor_index": 8,
+          "objective": 3.3683155629979664,
+          "bundle_space_size": 37,
+          "solver_status": 9,
+          "runtime": 2.0066418647766113,
+          "wall_time_search_eval": 2.880518913269043,
+          "mip_gap": 0.11203734164269254,
+          "from_cache": false
+        },
+        {
+          "neighbor_index": 9,
+          "objective": 3.369591043007174,
+          "bundle_space_size": 37,
+          "solver_status": 9,
+          "runtime": 2.018281936645508,
+          "wall_time_search_eval": 2.9341979026794434,
+          "mip_gap": 0.10959538715354437,
+          "from_cache": false
+        },
+        {
+          "neighbor_index": 10,
+          "objective": 3.2777739062567535,
+          "bundle_space_size": 37,
+          "solver_status": 9,
+          "runtime": 2.011491060256958,
+          "wall_time_search_eval": 3.0512607097625732,
+          "mip_gap": 0.14234615640863968,
+          "from_cache": false
+        },
+        {
+          "neighbor_index": 11,
+          "objective": 3.3192333919093517,
+          "bundle_space_size": 37,
+          "solver_status": 9,
+          "runtime": 2.010364055633545,
+          "wall_time_search_eval": 2.964423179626465,
+          "mip_gap": 0.12617946005914493,
+          "from_cache": false
+        },
+        {
+          "neighbor_index": 12,
+          "objective": 3.3377782945212555,
+          "bundle_space_size": 37,
+          "solver_status": 9,
+          "runtime": 2.0020089149475098,
+          "wall_time_search_eval": 2.9824271202087402,
+          "mip_gap": 0.12279038494604311,
+          "from_cache": false
+        },
+        {
+          "neighbor_index": 13,
+          "objective": 3.4316697517973043,
+          "bundle_space_size": 37,
+          "solver_status": 9,
+          "runtime": 2.0229530334472656,
+          "wall_time_search_eval": 2.650999069213867,
+          "mip_gap": 0.08415916984308343,
+          "from_cache": true
+        },
+        {
+          "neighbor_index": 14,
+          "objective": 3.409850744402688,
+          "bundle_space_size": 38,
+          "solver_status": 2,
+          "runtime": 1.386303186416626,
+          "wall_time_search_eval": 1.966552734375,
+          "mip_gap": 0.09817722629920805,
+          "from_cache": false
+        },
+        {
+          "neighbor_index": 15,
+          "objective": 3.4011608128695134,
+          "bundle_space_size": 37,
+          "solver_status": 2,
+          "runtime": 1.5980110168457031,
+          "wall_time_search_eval": 2.214724063873291,
+          "mip_gap": 0.09946561422196669,
+          "from_cache": false
+        },
+        {
+          "neighbor_index": 16,
+          "objective": 3.3875328058968868,
+          "bundle_space_size": 36,
+          "solver_status": 2,
+          "runtime": 1.7442240715026855,
+          "wall_time_search_eval": 2.295912981033325,
+          "mip_gap": 0.087473796461234,
+          "from_cache": true
+        }
+      ],
+      "accepted_neighbor_index": null,
+      "accepted_objective": null,
+      "accepted_bundle_space_size": null,
+      "iteration_wall_time": 33.52637314796448
+    }
+  ],
+  "accepted_objective_path": [
+    3.4316697517973043
+  ],
+  "accepted_bundle_space_sizes": [
+    37
+  ],
+  "accepted_elapsed_time_path": [
+    0.0
+  ],
+  "neighbor_evaluations": 17,
+  "cache_hits": 3,
+  "unique_space_evaluations": 14,
+  "search_wall_time": 33.52638006210327,
+  "final_search_objective": 3.4316697517973043,
+  "final_bundle_space_size": 37,
+  "iteration_count": 1,
+  "improvement_count": 0
+}

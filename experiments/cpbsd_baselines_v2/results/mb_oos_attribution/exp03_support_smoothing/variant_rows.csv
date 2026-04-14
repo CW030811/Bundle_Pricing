@@ -1,0 +1,6 @@
+instance,method,param,revenue_in,revenue_out,drop_pct,buy_rate_in,buy_rate_out,ratio_in_to_bsp,ratio_out_to_bsp
+inst001,Support-Aware Price Smoothing,0,1.77688,1.136169,36.058248,0.88,0.602,1.321609,1.091967
+inst002,Support-Aware Price Smoothing,0,1.575781,1.111413,29.469066,0.8,0.6704,1.450956,1.007906
+inst003,Support-Aware Price Smoothing,0,1.624647,1.216291,25.135046,0.92,0.804,1.221518,1.056715
+inst004,Support-Aware Price Smoothing,0,1.517831,1.136856,25.099946,0.78,0.6716,1.363815,0.997216
+inst005,Support-Aware Price Smoothing,0,1.523374,1.150765,24.459483,0.86,0.6902,1.321567,1.100744

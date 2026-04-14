@@ -1,0 +1,52 @@
+[start] seed=20260321 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_fcp_pruned_mb_compare_n10k50_10inst_strict300/runs/seed_20260321
+[start] seed=20260322 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_fcp_pruned_mb_compare_n10k50_10inst_strict300/runs/seed_20260322
+[start] seed=20260323 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_fcp_pruned_mb_compare_n10k50_10inst_strict300/runs/seed_20260323
+[done] seed=20260321 rc=0 elapsed=410.4s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_fcp_pruned_mb_compare_n10k50_10inst_strict300/logs/seed_20260321.log
+[done] seed=20260323 rc=0 elapsed=410.3s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_fcp_pruned_mb_compare_n10k50_10inst_strict300/logs/seed_20260323.log
+[start] seed=20260324 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_fcp_pruned_mb_compare_n10k50_10inst_strict300/runs/seed_20260324
+[start] seed=20260325 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_fcp_pruned_mb_compare_n10k50_10inst_strict300/runs/seed_20260325
+[done] seed=20260322 rc=0 elapsed=620.5s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_fcp_pruned_mb_compare_n10k50_10inst_strict300/logs/seed_20260322.log
+[start] seed=20260326 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_fcp_pruned_mb_compare_n10k50_10inst_strict300/runs/seed_20260326
+[done] seed=20260324 rc=0 elapsed=600.5s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_fcp_pruned_mb_compare_n10k50_10inst_strict300/logs/seed_20260324.log
+[start] seed=20260327 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_fcp_pruned_mb_compare_n10k50_10inst_strict300/runs/seed_20260327
+[done] seed=20260325 rc=0 elapsed=610.5s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_fcp_pruned_mb_compare_n10k50_10inst_strict300/logs/seed_20260325.log
+[start] seed=20260328 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_fcp_pruned_mb_compare_n10k50_10inst_strict300/runs/seed_20260328
+[done] seed=20260326 rc=0 elapsed=610.5s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_fcp_pruned_mb_compare_n10k50_10inst_strict300/logs/seed_20260326.log
+[start] seed=20260329 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_fcp_pruned_mb_compare_n10k50_10inst_strict300/runs/seed_20260329
+[done] seed=20260327 rc=0 elapsed=450.3s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_fcp_pruned_mb_compare_n10k50_10inst_strict300/logs/seed_20260327.log
+[start] seed=20260330 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_fcp_pruned_mb_compare_n10k50_10inst_strict300/runs/seed_20260330
+[done] seed=20260328 rc=0 elapsed=495.4s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_fcp_pruned_mb_compare_n10k50_10inst_strict300/logs/seed_20260328.log
+[done] seed=20260329 rc=0 elapsed=390.3s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_fcp_pruned_mb_compare_n10k50_10inst_strict300/logs/seed_20260329.log
+[done] seed=20260330 rc=0 elapsed=470.5s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_fcp_pruned_mb_compare_n10k50_10inst_strict300/logs/seed_20260330.log
+{
+  "summary_json": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_fcp_pruned_mb_compare_n10k50_10inst_strict300/comparison_summary_all.json",
+  "summary_csv": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_fcp_pruned_mb_compare_n10k50_10inst_strict300/comparison_summary_all.csv",
+  "aggregate_json": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_fcp_pruned_mb_compare_n10k50_10inst_strict300/aggregate_metrics.json",
+  "aggregate": {
+    "BSP": {
+      "count": 10,
+      "avg_revenue_in_sample": 2.725996188743791,
+      "avg_revenue_out_sample": 2.3028881237413104,
+      "avg_solver_runtime": 12.073150396347046,
+      "avg_ratio_to_bsp": 1.0,
+      "avg_ratio_to_cpbsd_a": 0.8811007735588914
+    },
+    "CPBSD-A": {
+      "count": 10,
+      "avg_revenue_in_sample": 3.0934237226695838,
+      "avg_revenue_out_sample": 2.8190540657853775,
+      "avg_solver_runtime": 300.2277415513992,
+      "avg_ratio_to_bsp": 1.135507071558843,
+      "avg_ratio_to_cpbsd_a": 1.0
+    },
+    "FCP-pruned-MB": {
+      "count": 10,
+      "avg_revenue_in_sample": 3.2073300439108166,
+      "avg_revenue_out_sample": 2.358966643890723,
+      "avg_solver_runtime": 188.6269636631012,
+      "avg_ratio_to_bsp": 1.1772512534109436,
+      "avg_ratio_to_cpbsd_a": 1.036820197101415
+    }
+  },
+  "row_count": 30
+}

@@ -1,0 +1,70 @@
+[
+  {
+    "n": 5,
+    "method": "CPBSD-A",
+    "method_label": "CPBSD-A",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 0.3800640106201172,
+    "runtime_median": 0.3800640106201172,
+    "runtime_min": 0.3800640106201172,
+    "runtime_max": 0.3800640106201172,
+    "revenue_in_sample_mean": 25.599847288437807,
+    "revenue_out_sample_mean": 23.101157503466222,
+    "ratio_to_mb_in_sample_mean": 0.9891875768475,
+    "ratio_to_mb_out_sample_mean": 1.0782108152713827
+  },
+  {
+    "n": 5,
+    "method": "CPBSD-MILP",
+    "method_label": "CPBSD",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 2.0813119411468506,
+    "runtime_median": 2.0813119411468506,
+    "runtime_min": 2.0813119411468506,
+    "runtime_max": 2.0813119411468506,
+    "revenue_in_sample_mean": 25.517128178931607,
+    "revenue_out_sample_mean": 23.19830462300253,
+    "ratio_to_mb_in_sample_mean": 0.9859912798317605,
+    "ratio_to_mb_out_sample_mean": 1.0827450068996938
+  },
+  {
+    "n": 5,
+    "method": "FCP-pruned-MB",
+    "method_label": "FCP-MB",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 0.16974902153015137,
+    "runtime_median": 0.16974902153015137,
+    "runtime_min": 0.16974902153015137,
+    "runtime_max": 0.16974902153015137,
+    "revenue_in_sample_mean": 25.87966922310522,
+    "revenue_out_sample_mean": 23.20939720091425,
+    "ratio_to_mb_in_sample_mean": 0.9999999999992372,
+    "ratio_to_mb_out_sample_mean": 1.083262735826128
+  },
+  {
+    "n": 5,
+    "method": "MB",
+    "method_label": "MB",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 1.0709078311920166,
+    "runtime_median": 1.0709078311920166,
+    "runtime_min": 1.0709078311920166,
+    "runtime_max": 1.0709078311920166,
+    "revenue_in_sample_mean": 25.879669223124964,
+    "revenue_out_sample_mean": 21.425455185822564,
+    "ratio_to_mb_in_sample_mean": 1.0,
+    "ratio_to_mb_out_sample_mean": 1.0
+  }
+]

@@ -1,0 +1,37 @@
+# CPBSD / Revenue Management Project Guide
+
+## Scope
+This Claude session is for the revenue-management domain only.
+
+Main directories:
+- project-root: stable code, paper materials, references, prior results
+- experiment: active CPBSD-GCN acceleration experiments
+
+## Working Rules
+- Read from `project-root` when understanding prior implementation or references.
+- Make code changes primarily in `experiment` unless explicitly instructed otherwise.
+- Do not modify reference papers, archived outputs, or unrelated historical files.
+- Prefer minimal changes over refactoring.
+- Before editing training logic, first compare old and new data structures.
+- After each code change, report:
+  - changed files
+  - purpose of each change
+  - validation performed
+  - remaining risks
+
+## Validation
+For each coding task:
+1. run the smallest possible smoke test first
+2. avoid full experiments unless explicitly requested
+3. preserve existing outputs unless instructed otherwise
+
+## Output Format
+When finishing a task, use:
+- Summary
+- Files changed
+- Validation
+- Risks / next step
+
+## Important Paths
+- /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root
+- /Users/sensen/.openclaw/workspace/domains/revenue-management/experiment

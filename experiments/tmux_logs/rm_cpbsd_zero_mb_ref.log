@@ -1,0 +1,53 @@
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/generate_data_CPBSD.py:106: RuntimeWarning: divide by zero encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/generate_data_CPBSD.py:106: RuntimeWarning: overflow encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/generate_data_CPBSD.py:106: RuntimeWarning: invalid value encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+Set parameter LicenseID to value 2784353
+Set parameter MIPGap to value 0.001
+Set parameter TimeLimit to value 300
+Set parameter MIPGap to value 0.001
+Set parameter TimeLimit to value 300
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:261: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:261: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:261: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+Set parameter MIPGap to value 0.001
+Set parameter TimeLimit to value 300
+Set parameter MIPGap to value 0.001
+Set parameter TimeLimit to value 300
+Set parameter MIPGap to value 0.001
+Set parameter TimeLimit to value 300
+Set parameter MIPGap to value 0.001
+Set parameter TimeLimit to value 300
+Set parameter MIPGap to value 0.001
+Set parameter TimeLimit to value 300
+Set parameter MIPGap to value 0.001
+Set parameter TimeLimit to value 300
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:259: RuntimeWarning: divide by zero encountered in matmul
+  bundle_cost = (assortments @ c_n).reshape(1, -1)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:259: RuntimeWarning: overflow encountered in matmul
+  bundle_cost = (assortments @ c_n).reshape(1, -1)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:259: RuntimeWarning: invalid value encountered in matmul
+  bundle_cost = (assortments @ c_n).reshape(1, -1)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:77: RuntimeWarning: divide by zero encountered in matmul
+  bundle_cost = assortments @ c_n
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:77: RuntimeWarning: overflow encountered in matmul
+  bundle_cost = assortments @ c_n
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:77: RuntimeWarning: invalid value encountered in matmul
+  bundle_cost = assortments @ c_n
+Set parameter MIPGap to value 0.001
+Set parameter TimeLimit to value 300
+Set parameter MIPGap to value 0.001
+Set parameter TimeLimit to value 300
+Set parameter MIPGap to value 0.001
+Set parameter TimeLimit to value 300
+Set parameter MIPGap to value 0.001
+Set parameter TimeLimit to value 300
+Set parameter MIPGap to value 0.001
+Set parameter TimeLimit to value 600
+Set parameter MIPGap to value 0.001
+Set parameter TimeLimit to value 600

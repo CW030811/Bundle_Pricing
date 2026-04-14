@@ -1,0 +1,45 @@
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/run_mb_oos_drop_grid_n5_n10.py:171: RuntimeWarning: overflow encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/run_mb_oos_drop_grid_n5_n10.py:171: RuntimeWarning: divide by zero encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/run_mb_oos_drop_grid_n5_n10.py:171: RuntimeWarning: invalid value encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+[PROGRESS] 10/270 completed elapsed=666.5s last=cpbsd_instance_001_N5_K50_exponential_rho0.0_none_hvhm status=OPTIMAL
+[PROGRESS] 20/270 completed elapsed=1082.5s last=cpbsd_instance_001_N5_K50_exponential_rho0.5_none_hvlm status=OPTIMAL
+[PROGRESS] 30/270 completed elapsed=1258.5s last=cpbsd_instance_001_N5_K50_logit_rho-0.5_partial_hvlm status=OPTIMAL
+[PROGRESS] 40/270 completed elapsed=1566.1s last=cpbsd_instance_001_N5_K50_logit_rho0.0_full_zero status=OPTIMAL
+[PROGRESS] 50/270 completed elapsed=1867.8s last=cpbsd_instance_001_N5_K50_logit_rho0.0_full_hvhm status=TIME_LIMIT
+[PROGRESS] 60/270 completed elapsed=2303.2s last=cpbsd_instance_001_N5_K50_lognormal_rho-0.5_full_hvhm status=OPTIMAL
+[PROGRESS] 70/270 completed elapsed=2907.1s last=cpbsd_instance_001_N5_K50_lognormal_rho0.0_partial_hvlm status=TIME_LIMIT
+[PROGRESS] 80/270 completed elapsed=3341.0s last=cpbsd_instance_001_N5_K50_normal_rho-0.5_none_hvhm status=OPTIMAL
+[PROGRESS] 90/270 completed elapsed=3544.9s last=cpbsd_instance_001_N5_K50_normal_rho0.0_none_zero status=OPTIMAL
+[PROGRESS] 100/270 completed elapsed=3918.5s last=cpbsd_instance_001_N5_K50_normal_rho0.5_partial_zero status=OPTIMAL
+[PROGRESS] 110/270 completed elapsed=4220.8s last=cpbsd_instance_001_N5_K50_normal_rho0.5_partial_hvhm status=TIME_LIMIT
+[PROGRESS] 120/270 completed elapsed=4410.8s last=cpbsd_instance_001_N5_K50_uniform_rho0.0_partial_hvhm status=OPTIMAL
+[PROGRESS] 130/270 completed elapsed=4607.9s last=cpbsd_instance_001_N5_K50_uniform_rho0.5_full_zero status=OPTIMAL
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:77: RuntimeWarning: divide by zero encountered in matmul
+  bundle_cost = assortments @ c_n
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:77: RuntimeWarning: overflow encountered in matmul
+  bundle_cost = assortments @ c_n
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:77: RuntimeWarning: invalid value encountered in matmul
+  bundle_cost = assortments @ c_n
+[PROGRESS] 140/270 completed elapsed=5491.9s last=cpbsd_instance_001_N10_K50_exponential_rho-0.5_partial_hvhm status=TIME_LIMIT
+[PROGRESS] 150/270 completed elapsed=6174.5s last=cpbsd_instance_001_N10_K50_exponential_rho0.0_partial_zero status=TIME_LIMIT
+[PROGRESS] 160/270 completed elapsed=7214.9s last=cpbsd_instance_001_N10_K50_exponential_rho0.5_full_hvlm status=TIME_LIMIT
+[PROGRESS] 170/270 completed elapsed=7907.0s last=cpbsd_instance_001_N10_K50_logit_rho-0.5_full_hvhm status=TIME_LIMIT
+[PROGRESS] 180/270 completed elapsed=8820.4s last=cpbsd_instance_001_N10_K50_logit_rho0.0_full_hvlm status=TIME_LIMIT
+[PROGRESS] 190/270 completed elapsed=9543.7s last=cpbsd_instance_001_N10_K50_lognormal_rho-0.5_none_zero status=TIME_LIMIT
+[PROGRESS] 200/270 completed elapsed=10516.6s last=cpbsd_instance_001_N10_K50_lognormal_rho0.0_none_hvhm status=TIME_LIMIT
+[PROGRESS] 210/270 completed elapsed=11218.0s last=cpbsd_instance_001_N10_K50_lognormal_rho0.5_none_hvlm status=TIME_LIMIT
+[PROGRESS] 220/270 completed elapsed=12212.4s last=cpbsd_instance_001_N10_K50_normal_rho-0.5_partial_zero status=TIME_LIMIT
+[PROGRESS] 230/270 completed elapsed=12909.2s last=cpbsd_instance_001_N10_K50_normal_rho0.0_partial_hvhm status=TIME_LIMIT
+[PROGRESS] 240/270 completed elapsed=13912.4s last=cpbsd_instance_001_N10_K50_normal_rho0.5_partial_hvlm status=TIME_LIMIT
+[PROGRESS] 250/270 completed elapsed=14643.5s last=cpbsd_instance_001_N10_K50_uniform_rho-0.5_full_zero status=TIME_LIMIT
+[PROGRESS] 260/270 completed elapsed=15636.4s last=cpbsd_instance_001_N10_K50_uniform_rho0.0_full_hvhm status=TIME_LIMIT
+[PROGRESS] 270/270 completed elapsed=16361.3s last=cpbsd_instance_001_N10_K50_uniform_rho0.5_full_hvlm status=TIME_LIMIT
+{
+  "root": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/mb_oos_drop_grid_n5_n10_t300",
+  "details_csv": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/mb_oos_drop_grid_n5_n10_t300/details.csv",
+  "summary_csv": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/mb_oos_drop_grid_n5_n10_t300/summary.csv",
+  "readme": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/mb_oos_drop_grid_n5_n10_t300/README.md"
+}
