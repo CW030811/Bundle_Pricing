@@ -1,0 +1,29 @@
+
+Gurobi 12.0.3 (mac64[arm]) logging started Mon Apr 13 22:40:13 2026
+
+Set parameter LogFile to value "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/phase3_oos_bsp_completion_infeasibility_diag_n10_normal_rho0.0_full_hvhm_inst001/variant_a_gurobi.log"
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 25.2.0 25C56)
+
+CPU model: Apple M4
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+Optimize a model with 524899 rows, 22 columns and 1234632 nonzeros
+Model fingerprint: 0x1d846d9b
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [6e-01, 9e+01]
+Presolve removed 3000 rows and 0 columns
+Presolve time: 0.09s
+
+Solved in 0 iterations and 0.09 seconds (0.07 work units)
+Infeasible model
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (mac64[arm] - Darwin 25.2.0 25C56)
+
+CPU model: Apple M4
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+
+
+IIS computed: 2 constraints and 0 bounds
+IIS runtime: 0.01 seconds (0.00 work units)

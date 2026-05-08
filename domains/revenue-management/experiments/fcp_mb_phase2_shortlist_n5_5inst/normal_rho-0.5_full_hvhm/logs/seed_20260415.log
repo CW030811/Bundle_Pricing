@@ -1,0 +1,98 @@
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:302: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:302: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:302: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+Set parameter LicenseID to value 2784353
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/generate_data_CPBSD.py:106: RuntimeWarning: divide by zero encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/generate_data_CPBSD.py:106: RuntimeWarning: overflow encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/generate_data_CPBSD.py:106: RuntimeWarning: invalid value encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+Set parameter MIPGap to value 0.001
+Set parameter TimeLimit to value 300
+{
+  "root": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho-0.5_full_hvhm/runs/seed_20260415",
+  "summary_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho-0.5_full_hvhm/runs/seed_20260415/comparison_summary.json",
+  "csv_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho-0.5_full_hvhm/runs/seed_20260415/comparison_summary.csv",
+  "aggregate": {
+    "BSP": {
+      "count": 1,
+      "avg_revenue_in_sample": 1.271176885412056,
+      "avg_revenue_out_sample": 1.2258452447226584,
+      "avg_runtime": 3.6549301147460938
+    },
+    "CPBSD-A": {
+      "count": 1,
+      "avg_revenue_in_sample": 1.4206905857234022,
+      "avg_revenue_out_sample": 1.3547468015151798,
+      "avg_runtime": 78.52863621711731
+    },
+    "FCP-pruned-MB": {
+      "count": 1,
+      "avg_revenue_in_sample": 1.5045180203530433,
+      "avg_revenue_out_sample": 1.2923028337891276,
+      "avg_runtime": 14.24213194847107
+    }
+  },
+  "rows": [
+    {
+      "instance_id": "cpbsd_instance_001_N5_K50_normal_rho-0.5_full_hvhm",
+      "seed": 20260415,
+      "n": 5,
+      "k": 50,
+      "method": "FCP-pruned-MB",
+      "revenue_in_sample": 1.5045180203530433,
+      "revenue_out_sample": 1.2923028337891276,
+      "solver_runtime": 14.24213194847107,
+      "status_code": 2,
+      "result_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho-0.5_full_hvhm/runs/seed_20260415/results/cpbsd_instance_001_N5_K50_normal_rho-0.5_full_hvhm__fcp_pruned_mb.json",
+      "gcn_inference_time": 0.22969603538513184,
+      "candidate_generation_time": 9.298324584960938e-05,
+      "bundle_space_size": 14,
+      "bundle_space_fraction": 0.4375,
+      "full_bundle_space_size": 32,
+      "raw_customer_bundle_count": 50,
+      "unique_threshold_bundle_count": 14,
+      "threshold": 0.5,
+      "ratio_to_bsp": 1.1835630726288333,
+      "ratio_to_cpbsd_a": 1.0590047090281498
+    },
+    {
+      "instance_id": "cpbsd_instance_001_N5_K50_normal_rho-0.5_full_hvhm",
+      "seed": 20260415,
+      "n": 5,
+      "k": 50,
+      "method": "BSP",
+      "revenue_in_sample": 1.271176885412056,
+      "revenue_out_sample": 1.2258452447226584,
+      "solver_runtime": 3.6549301147460938,
+      "status_code": 2,
+      "result_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho-0.5_full_hvhm/runs/seed_20260415/results/cpbsd_instance_001_N5_K50_normal_rho-0.5_full_hvhm__bsp.json",
+      "bundle_space_size": null,
+      "bundle_space_fraction": null,
+      "full_bundle_space_size": 32,
+      "ratio_to_bsp": 1.0,
+      "ratio_to_cpbsd_a": 0.8947598429849415
+    },
+    {
+      "instance_id": "cpbsd_instance_001_N5_K50_normal_rho-0.5_full_hvhm",
+      "seed": 20260415,
+      "n": 5,
+      "k": 50,
+      "method": "CPBSD-A",
+      "revenue_in_sample": 1.4206905857234022,
+      "revenue_out_sample": 1.3547468015151798,
+      "solver_runtime": 78.52863621711731,
+      "status_code": 2,
+      "result_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho-0.5_full_hvhm/runs/seed_20260415/results/cpbsd_instance_001_N5_K50_normal_rho-0.5_full_hvhm__cpbsd_a.json",
+      "bundle_space_size": null,
+      "bundle_space_fraction": null,
+      "full_bundle_space_size": 32,
+      "ratio_to_bsp": 1.1176183283594563,
+      "ratio_to_cpbsd_a": 1.0
+    }
+  ]
+}
