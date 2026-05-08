@@ -1,0 +1,19 @@
+{
+  "root": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm",
+  "setting": {
+    "N": 5,
+    "K": 50,
+    "dist": "normal",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost": "hvhm",
+    "seed": 20260310
+  },
+  "counts": {
+    "instances_total": 5000,
+    "train": 4000,
+    "eval": 500,
+    "test": 500
+  },
+  "all_instances_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances"
+}

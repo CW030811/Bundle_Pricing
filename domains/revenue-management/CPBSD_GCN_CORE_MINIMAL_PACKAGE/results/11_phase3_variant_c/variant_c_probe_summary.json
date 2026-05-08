@@ -1,0 +1,29 @@
+{
+  "instance_id": "cpbsd_instance_001_N10_K50_normal_rho0.0_full_hvhm",
+  "setup_key": "normal_rho0.0_full_hvhm",
+  "anchor_bundle_count": 37,
+  "full_bundle_count": 1024,
+  "baseline": {
+    "restricted_in_sample_revenue": 3.5618720363522725,
+    "restricted_oos_revenue": 2.399032113204915
+  },
+  "variant_c": {
+    "name": "Variant-C-Hybrid-Fixed-Anchors",
+    "feasible": false,
+    "solver_status": 3,
+    "runtime": 0.056845903396606445,
+    "mip_gap": null,
+    "mixed_split_count": 4683,
+    "repaired_in_sample_revenue": null,
+    "repaired_oos_revenue": null,
+    "delta_oos_vs_restricted": null,
+    "anchor_preserved": false,
+    "hybrid_subadditivity": {
+      "violation_count": -1,
+      "max_violation": -1.0,
+      "checked_constraint_count": 0
+    },
+    "size_prices": null,
+    "completed_prices": null
+  }
+}

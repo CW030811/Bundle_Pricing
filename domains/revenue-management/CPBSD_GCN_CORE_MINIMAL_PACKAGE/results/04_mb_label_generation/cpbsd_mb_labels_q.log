@@ -1,0 +1,2308 @@
+=== START SPLIT train chunks 1-20 ===
+RUN: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/run_cpbsd_mb_chunk_queue.py --python-bin /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python --manifest-root /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests --out-root /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1 --split train --start 1 --end 20 --time-limit 300.0 --mip-gap 0.01 --output-flag 0
+=== START train_chunk_001 ===
+RUN: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/label_cpbsd_mb_from_manifest.py --manifest /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_001.csv --out-dir /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_001 --time-limit 300.0 --mip-gap 0.01 --output-flag 0
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:193: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:193: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:193: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+Set parameter LicenseID to value 2784353
+[10/200] labeled cpbsd_instance_010_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=1175.7s
+[20/200] labeled cpbsd_instance_020_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=2471.5s
+[30/200] labeled cpbsd_instance_030_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=3576.3s
+[40/200] labeled cpbsd_instance_040_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=5891.7s
+[50/200] labeled cpbsd_instance_050_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=7416.6s
+[60/200] labeled cpbsd_instance_060_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=9081.8s
+[70/200] labeled cpbsd_instance_070_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=10591.5s
+[80/200] labeled cpbsd_instance_080_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=12170.2s
+[90/200] labeled cpbsd_instance_090_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=13300.3s
+[100/200] labeled cpbsd_instance_1000_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=15280.4s
+[110/200] labeled cpbsd_instance_100_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=16884.6s
+[120/200] labeled cpbsd_instance_1019_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=18020.8s
+[130/200] labeled cpbsd_instance_1028_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=19681.8s
+[140/200] labeled cpbsd_instance_1037_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=21578.6s
+[150/200] labeled cpbsd_instance_1046_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=23688.0s
+[160/200] labeled cpbsd_instance_1055_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=25135.4s
+[170/200] labeled cpbsd_instance_1064_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=26709.6s
+[180/200] labeled cpbsd_instance_1073_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=28081.4s
+[190/200] labeled cpbsd_instance_1082_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=29616.8s
+[200/200] labeled cpbsd_instance_1091_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=31061.6s
+{
+  "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_001.csv",
+  "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_001",
+  "count": 200,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "has_solution_count": 200,
+  "status_counts": {
+    "2": 161,
+    "9": 39
+  },
+  "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_001/train_chunk_001__mb_results.csv"
+}
+=== END train_chunk_001 returncode=0 elapsed=31061.8s ===
+=== START train_chunk_002 ===
+RUN: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/label_cpbsd_mb_from_manifest.py --manifest /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_002.csv --out-dir /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_002 --time-limit 300.0 --mip-gap 0.01 --output-flag 0
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:193: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:193: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:193: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+Set parameter LicenseID to value 2784353
+[10/200] labeled cpbsd_instance_1100_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=1846.8s
+[20/200] labeled cpbsd_instance_110_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=3466.8s
+[30/200] labeled cpbsd_instance_1119_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=5439.3s
+[40/200] labeled cpbsd_instance_1128_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=6759.5s
+[50/200] labeled cpbsd_instance_1137_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=8533.9s
+[60/200] labeled cpbsd_instance_1146_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=10579.9s
+[70/200] labeled cpbsd_instance_1155_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=11926.7s
+[80/200] labeled cpbsd_instance_1164_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=14216.0s
+[90/200] labeled cpbsd_instance_1173_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=15974.2s
+[100/200] labeled cpbsd_instance_1182_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=17536.5s
+[110/200] labeled cpbsd_instance_1191_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=18877.3s
+[120/200] labeled cpbsd_instance_1200_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=20144.8s
+[130/200] labeled cpbsd_instance_120_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=22182.9s
+[140/200] labeled cpbsd_instance_1219_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=23424.2s
+[150/200] labeled cpbsd_instance_1228_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=25083.1s
+[160/200] labeled cpbsd_instance_1237_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=26723.4s
+[170/200] labeled cpbsd_instance_1246_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=28126.6s
+[180/200] labeled cpbsd_instance_1255_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=30056.7s
+[190/200] labeled cpbsd_instance_1264_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=30982.0s
+[200/200] labeled cpbsd_instance_1273_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=32548.3s
+{
+  "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_002.csv",
+  "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_002",
+  "count": 200,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "has_solution_count": 200,
+  "status_counts": {
+    "9": 43,
+    "2": 157
+  },
+  "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_002/train_chunk_002__mb_results.csv"
+}
+=== END train_chunk_002 returncode=0 elapsed=32548.5s ===
+=== START train_chunk_003 ===
+RUN: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/label_cpbsd_mb_from_manifest.py --manifest /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_003.csv --out-dir /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_003 --time-limit 300.0 --mip-gap 0.01 --output-flag 0
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:193: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:193: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:193: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+Set parameter LicenseID to value 2784353
+[10/200] labeled cpbsd_instance_1282_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=1610.6s
+[20/200] labeled cpbsd_instance_1291_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=2719.1s
+[30/200] labeled cpbsd_instance_1300_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=3904.1s
+[40/200] labeled cpbsd_instance_130_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=5793.0s
+[50/200] labeled cpbsd_instance_1319_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=7603.8s
+[60/200] labeled cpbsd_instance_1328_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=9320.9s
+[70/200] labeled cpbsd_instance_1337_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=10819.0s
+[80/200] labeled cpbsd_instance_1346_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=12200.1s
+[90/200] labeled cpbsd_instance_1355_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=13650.8s
+[100/200] labeled cpbsd_instance_1364_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=15532.5s
+[110/200] labeled cpbsd_instance_1373_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=17432.3s
+[120/200] labeled cpbsd_instance_1382_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=18914.3s
+[130/200] labeled cpbsd_instance_1391_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=21237.1s
+[140/200] labeled cpbsd_instance_1400_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=23146.8s
+[150/200] labeled cpbsd_instance_140_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=24429.1s
+[160/200] labeled cpbsd_instance_1419_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=26117.9s
+[170/200] labeled cpbsd_instance_1428_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=27865.0s
+[180/200] labeled cpbsd_instance_1437_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=29368.6s
+[190/200] labeled cpbsd_instance_1446_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=30785.7s
+[200/200] labeled cpbsd_instance_1455_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=32124.6s
+{
+  "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_003.csv",
+  "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_003",
+  "count": 200,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "has_solution_count": 200,
+  "status_counts": {
+    "9": 45,
+    "2": 155
+  },
+  "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_003/train_chunk_003__mb_results.csv"
+}
+=== END train_chunk_003 returncode=0 elapsed=32124.7s ===
+=== START train_chunk_004 ===
+RUN: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/label_cpbsd_mb_from_manifest.py --manifest /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_004.csv --out-dir /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_004 --time-limit 300.0 --mip-gap 0.01 --output-flag 0
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:193: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:193: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:193: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+Set parameter LicenseID to value 2784353
+[10/200] labeled cpbsd_instance_1464_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=1500.3s
+[20/200] labeled cpbsd_instance_1473_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=2697.6s
+[30/200] labeled cpbsd_instance_1482_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=3910.6s
+[40/200] labeled cpbsd_instance_1491_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=6138.4s
+[50/200] labeled cpbsd_instance_1500_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=7585.4s
+[60/200] labeled cpbsd_instance_150_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=9180.3s
+[70/200] labeled cpbsd_instance_1519_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=10629.7s
+[80/200] labeled cpbsd_instance_1528_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=11630.1s
+[90/200] labeled cpbsd_instance_1537_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=12957.5s
+[100/200] labeled cpbsd_instance_1546_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=14803.2s
+[110/200] labeled cpbsd_instance_1555_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=16326.9s
+[120/200] labeled cpbsd_instance_1564_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=17752.9s
+[130/200] labeled cpbsd_instance_1573_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=19713.3s
+[140/200] labeled cpbsd_instance_1582_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=21629.0s
+[150/200] labeled cpbsd_instance_1591_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=22648.0s
+[160/200] labeled cpbsd_instance_1600_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=23793.7s
+[170/200] labeled cpbsd_instance_160_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=25440.0s
+[180/200] labeled cpbsd_instance_1619_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=26541.7s
+[190/200] labeled cpbsd_instance_1628_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=28039.1s
+[200/200] labeled cpbsd_instance_1637_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=30182.2s
+{
+  "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_004.csv",
+  "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_004",
+  "count": 200,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "has_solution_count": 200,
+  "status_counts": {
+    "2": 163,
+    "9": 37
+  },
+  "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_004/train_chunk_004__mb_results.csv"
+}
+=== END train_chunk_004 returncode=0 elapsed=30182.3s ===
+=== START train_chunk_005 ===
+RUN: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/label_cpbsd_mb_from_manifest.py --manifest /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_005.csv --out-dir /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_005 --time-limit 300.0 --mip-gap 0.01 --output-flag 0
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:193: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:193: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:193: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+Set parameter LicenseID to value 2784353
+[10/200] labeled cpbsd_instance_1646_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=971.1s
+[20/200] labeled cpbsd_instance_1655_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=2268.9s
+[30/200] labeled cpbsd_instance_1664_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=3631.2s
+[40/200] labeled cpbsd_instance_1673_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=5237.9s
+[50/200] labeled cpbsd_instance_1682_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=6241.4s
+[60/200] labeled cpbsd_instance_1691_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=7496.3s
+[70/200] labeled cpbsd_instance_1700_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=9678.0s
+[80/200] labeled cpbsd_instance_170_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=11016.9s
+[90/200] labeled cpbsd_instance_1719_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=12777.2s
+[100/200] labeled cpbsd_instance_1728_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=14000.2s
+[110/200] labeled cpbsd_instance_1737_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=16002.4s
+[120/200] labeled cpbsd_instance_1746_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=18109.7s
+[130/200] labeled cpbsd_instance_1755_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=20072.0s
+[140/200] labeled cpbsd_instance_1764_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=21518.0s
+[150/200] labeled cpbsd_instance_1773_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=23213.3s
+[160/200] labeled cpbsd_instance_1782_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=24799.0s
+[170/200] labeled cpbsd_instance_1791_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=26558.8s
+[180/200] labeled cpbsd_instance_1800_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=28465.0s
+[190/200] labeled cpbsd_instance_180_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=29842.3s
+[200/200] labeled cpbsd_instance_1819_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=31596.4s
+{
+  "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_005.csv",
+  "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_005",
+  "count": 200,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "has_solution_count": 200,
+  "status_counts": {
+    "9": 47,
+    "2": 153
+  },
+  "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_005/train_chunk_005__mb_results.csv"
+}
+=== END train_chunk_005 returncode=0 elapsed=31596.5s ===
+=== START train_chunk_006 ===
+RUN: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/label_cpbsd_mb_from_manifest.py --manifest /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_006.csv --out-dir /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_006 --time-limit 300.0 --mip-gap 0.01 --output-flag 0
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+Set parameter LicenseID to value 2784353
+[10/200] labeled cpbsd_instance_1828_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=1265.8s
+[20/200] labeled cpbsd_instance_1837_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=2677.5s
+[30/200] labeled cpbsd_instance_1846_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=3893.5s
+[40/200] labeled cpbsd_instance_1855_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=6090.0s
+[50/200] labeled cpbsd_instance_1864_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=7633.4s
+[60/200] labeled cpbsd_instance_1873_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=9236.8s
+[70/200] labeled cpbsd_instance_1882_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=10844.9s
+[80/200] labeled cpbsd_instance_1891_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=12199.2s
+[90/200] labeled cpbsd_instance_1900_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=13472.2s
+[100/200] labeled cpbsd_instance_190_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=15115.4s
+[110/200] labeled cpbsd_instance_1919_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=16405.0s
+[120/200] labeled cpbsd_instance_1928_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=17999.4s
+[130/200] labeled cpbsd_instance_1937_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=19802.4s
+[140/200] labeled cpbsd_instance_1946_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=21666.9s
+[150/200] labeled cpbsd_instance_1955_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=23070.4s
+[160/200] labeled cpbsd_instance_1964_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=24992.6s
+[170/200] labeled cpbsd_instance_1973_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=26889.4s
+[180/200] labeled cpbsd_instance_1982_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=28311.2s
+[190/200] labeled cpbsd_instance_1991_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=30033.7s
+[200/200] labeled cpbsd_instance_2000_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=31321.9s
+{
+  "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_006.csv",
+  "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_006",
+  "count": 200,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "has_solution_count": 200,
+  "status_counts": {
+    "2": 165,
+    "9": 35
+  },
+  "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_006/train_chunk_006__mb_results.csv"
+}
+=== END train_chunk_006 returncode=0 elapsed=31322.1s ===
+=== START train_chunk_007 ===
+RUN: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/label_cpbsd_mb_from_manifest.py --manifest /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_007.csv --out-dir /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_007 --time-limit 300.0 --mip-gap 0.01 --output-flag 0
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+Set parameter LicenseID to value 2784353
+[10/200] labeled cpbsd_instance_200_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=1780.2s
+[20/200] labeled cpbsd_instance_2019_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=3451.7s
+[30/200] labeled cpbsd_instance_2028_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=4830.6s
+[40/200] labeled cpbsd_instance_2037_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=6384.3s
+[50/200] labeled cpbsd_instance_2046_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=7463.1s
+[60/200] labeled cpbsd_instance_2055_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=8551.7s
+[70/200] labeled cpbsd_instance_2064_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=10148.2s
+[80/200] labeled cpbsd_instance_2073_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=11866.8s
+[90/200] labeled cpbsd_instance_2082_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=13715.9s
+[100/200] labeled cpbsd_instance_2091_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=15061.1s
+[110/200] labeled cpbsd_instance_2100_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=17336.1s
+[120/200] labeled cpbsd_instance_210_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=19132.4s
+[130/200] labeled cpbsd_instance_2119_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=20783.5s
+[140/200] labeled cpbsd_instance_2128_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=22299.5s
+[150/200] labeled cpbsd_instance_2137_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=24080.5s
+[160/200] labeled cpbsd_instance_2146_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=25758.0s
+[170/200] labeled cpbsd_instance_2155_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=27285.6s
+[180/200] labeled cpbsd_instance_2164_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=28659.4s
+[190/200] labeled cpbsd_instance_2173_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=29805.6s
+[200/200] labeled cpbsd_instance_2182_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=31413.9s
+{
+  "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_007.csv",
+  "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_007",
+  "count": 200,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "has_solution_count": 200,
+  "status_counts": {
+    "2": 161,
+    "9": 39
+  },
+  "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_007/train_chunk_007__mb_results.csv"
+}
+=== END train_chunk_007 returncode=0 elapsed=31414.0s ===
+=== START train_chunk_008 ===
+RUN: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/label_cpbsd_mb_from_manifest.py --manifest /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_008.csv --out-dir /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_008 --time-limit 300.0 --mip-gap 0.01 --output-flag 0
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+Set parameter LicenseID to value 2784353
+[10/200] labeled cpbsd_instance_2191_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=2143.2s
+[20/200] labeled cpbsd_instance_2200_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=3622.9s
+[30/200] labeled cpbsd_instance_220_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=5427.2s
+[40/200] labeled cpbsd_instance_2219_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=6833.2s
+[50/200] labeled cpbsd_instance_2228_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=8354.7s
+[60/200] labeled cpbsd_instance_2237_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=10456.7s
+[70/200] labeled cpbsd_instance_2246_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=12327.7s
+[80/200] labeled cpbsd_instance_2255_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=14029.3s
+[90/200] labeled cpbsd_instance_2264_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=15624.9s
+[100/200] labeled cpbsd_instance_2273_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=16628.2s
+[110/200] labeled cpbsd_instance_2282_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=17984.0s
+[120/200] labeled cpbsd_instance_2291_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=19465.2s
+[130/200] labeled cpbsd_instance_2300_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=21196.5s
+[140/200] labeled cpbsd_instance_230_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=22725.8s
+[150/200] labeled cpbsd_instance_2319_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=24147.8s
+[160/200] labeled cpbsd_instance_2328_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=25597.9s
+[170/200] labeled cpbsd_instance_2337_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=27308.6s
+[180/200] labeled cpbsd_instance_2346_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=28632.9s
+[190/200] labeled cpbsd_instance_2355_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=30426.6s
+[200/200] labeled cpbsd_instance_2364_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=31832.5s
+{
+  "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_008.csv",
+  "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_008",
+  "count": 200,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "has_solution_count": 200,
+  "status_counts": {
+    "2": 155,
+    "9": 45
+  },
+  "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_008/train_chunk_008__mb_results.csv"
+}
+=== END train_chunk_008 returncode=0 elapsed=31832.7s ===
+=== START train_chunk_009 ===
+RUN: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/label_cpbsd_mb_from_manifest.py --manifest /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_009.csv --out-dir /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_009 --time-limit 300.0 --mip-gap 0.01 --output-flag 0
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+Set parameter LicenseID to value 2784353
+[10/200] labeled cpbsd_instance_2373_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=1861.9s
+[20/200] labeled cpbsd_instance_2382_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=3215.4s
+[30/200] labeled cpbsd_instance_2391_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=4074.1s
+[40/200] labeled cpbsd_instance_2400_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=5598.1s
+[50/200] labeled cpbsd_instance_240_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=6474.9s
+[60/200] labeled cpbsd_instance_2419_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=7863.0s
+[70/200] labeled cpbsd_instance_2428_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=9598.6s
+[80/200] labeled cpbsd_instance_2437_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=11085.2s
+[90/200] labeled cpbsd_instance_2446_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=12465.0s
+[100/200] labeled cpbsd_instance_2455_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=13378.7s
+[110/200] labeled cpbsd_instance_2464_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=14806.0s
+[120/200] labeled cpbsd_instance_2473_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=16604.8s
+[130/200] labeled cpbsd_instance_2482_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=18425.0s
+[140/200] labeled cpbsd_instance_2491_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=19396.3s
+[150/200] labeled cpbsd_instance_2500_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=20982.8s
+[160/200] labeled cpbsd_instance_250_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=22717.8s
+[170/200] labeled cpbsd_instance_2519_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=23896.2s
+[180/200] labeled cpbsd_instance_2528_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=25328.2s
+[190/200] labeled cpbsd_instance_2537_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=27041.0s
+[200/200] labeled cpbsd_instance_2546_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=28820.4s
+{
+  "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_009.csv",
+  "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_009",
+  "count": 200,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "has_solution_count": 200,
+  "status_counts": {
+    "2": 170,
+    "9": 30
+  },
+  "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_009/train_chunk_009__mb_results.csv"
+}
+=== END train_chunk_009 returncode=0 elapsed=28820.6s ===
+=== START train_chunk_010 ===
+RUN: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/label_cpbsd_mb_from_manifest.py --manifest /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_010.csv --out-dir /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_010 --time-limit 300.0 --mip-gap 0.01 --output-flag 0
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+Set parameter LicenseID to value 2784353
+[10/200] labeled cpbsd_instance_2555_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=1245.3s
+[20/200] labeled cpbsd_instance_2564_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=2851.4s
+[30/200] labeled cpbsd_instance_2573_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=4714.1s
+[40/200] labeled cpbsd_instance_2582_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=5977.1s
+[50/200] labeled cpbsd_instance_2591_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=7351.7s
+[60/200] labeled cpbsd_instance_2600_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=9045.5s
+[70/200] labeled cpbsd_instance_260_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=10589.8s
+[80/200] labeled cpbsd_instance_2619_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=12177.9s
+[90/200] labeled cpbsd_instance_2628_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=13378.5s
+[100/200] labeled cpbsd_instance_2637_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=14805.1s
+[110/200] labeled cpbsd_instance_2646_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=16149.5s
+[120/200] labeled cpbsd_instance_2655_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=17939.0s
+[130/200] labeled cpbsd_instance_2664_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=19688.7s
+[140/200] labeled cpbsd_instance_2673_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=21819.3s
+[150/200] labeled cpbsd_instance_2682_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=23038.3s
+[160/200] labeled cpbsd_instance_2691_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=24235.1s
+[170/200] labeled cpbsd_instance_2700_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=26169.0s
+[180/200] labeled cpbsd_instance_270_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=27260.6s
+[190/200] labeled cpbsd_instance_2719_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=29206.2s
+[200/200] labeled cpbsd_instance_2728_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=30579.4s
+{
+  "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_010.csv",
+  "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_010",
+  "count": 200,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "has_solution_count": 200,
+  "status_counts": {
+    "2": 159,
+    "9": 41
+  },
+  "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_010/train_chunk_010__mb_results.csv"
+}
+=== END train_chunk_010 returncode=0 elapsed=30579.5s ===
+=== START train_chunk_011 ===
+RUN: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/label_cpbsd_mb_from_manifest.py --manifest /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_011.csv --out-dir /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_011 --time-limit 300.0 --mip-gap 0.01 --output-flag 0
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+Set parameter LicenseID to value 2784353
+[10/200] labeled cpbsd_instance_2737_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=1089.1s
+[20/200] labeled cpbsd_instance_2746_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=2703.5s
+[30/200] labeled cpbsd_instance_2755_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=4293.8s
+[40/200] labeled cpbsd_instance_2764_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=5861.8s
+[50/200] labeled cpbsd_instance_2773_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=7374.2s
+[60/200] labeled cpbsd_instance_2782_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=9133.4s
+[70/200] labeled cpbsd_instance_2791_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=10876.0s
+[80/200] labeled cpbsd_instance_2800_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=12145.5s
+[90/200] labeled cpbsd_instance_280_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=14126.3s
+[100/200] labeled cpbsd_instance_2819_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=15717.9s
+[110/200] labeled cpbsd_instance_2828_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=17031.6s
+[120/200] labeled cpbsd_instance_2837_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=18728.5s
+[130/200] labeled cpbsd_instance_2846_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=20695.5s
+[140/200] labeled cpbsd_instance_2855_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=22309.3s
+[150/200] labeled cpbsd_instance_2864_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=23697.3s
+[160/200] labeled cpbsd_instance_2873_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=24966.1s
+[170/200] labeled cpbsd_instance_2882_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=26866.7s
+[180/200] labeled cpbsd_instance_2891_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=28153.5s
+[190/200] labeled cpbsd_instance_2900_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=29696.2s
+[200/200] labeled cpbsd_instance_290_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=31690.5s
+{
+  "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_011.csv",
+  "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_011",
+  "count": 200,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "has_solution_count": 200,
+  "status_counts": {
+    "2": 161,
+    "9": 39
+  },
+  "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_011/train_chunk_011__mb_results.csv"
+}
+=== END train_chunk_011 returncode=0 elapsed=31690.6s ===
+=== START train_chunk_012 ===
+RUN: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/label_cpbsd_mb_from_manifest.py --manifest /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_012.csv --out-dir /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_012 --time-limit 300.0 --mip-gap 0.01 --output-flag 0
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+Set parameter LicenseID to value 2784353
+[10/200] labeled cpbsd_instance_2919_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=1308.9s
+[20/200] labeled cpbsd_instance_2928_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=3180.4s
+[30/200] labeled cpbsd_instance_2937_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=4561.6s
+[40/200] labeled cpbsd_instance_2946_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=6195.6s
+[50/200] labeled cpbsd_instance_2955_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=7470.8s
+[60/200] labeled cpbsd_instance_2964_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=9504.1s
+[70/200] labeled cpbsd_instance_2973_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=11093.4s
+[80/200] labeled cpbsd_instance_2982_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=12588.3s
+[90/200] labeled cpbsd_instance_2991_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=13732.1s
+[100/200] labeled cpbsd_instance_3000_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=15203.6s
+[110/200] labeled cpbsd_instance_300_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=17081.8s
+[120/200] labeled cpbsd_instance_3019_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=18809.8s
+[130/200] labeled cpbsd_instance_3028_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=20150.3s
+[140/200] labeled cpbsd_instance_3037_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=21356.5s
+[150/200] labeled cpbsd_instance_3046_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=23037.2s
+[160/200] labeled cpbsd_instance_3055_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=24399.4s
+[170/200] labeled cpbsd_instance_3064_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=25782.1s
+[180/200] labeled cpbsd_instance_3073_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=27363.3s
+[190/200] labeled cpbsd_instance_3082_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=28777.0s
+[200/200] labeled cpbsd_instance_3091_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=30034.8s
+{
+  "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_012.csv",
+  "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_012",
+  "count": 200,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "has_solution_count": 200,
+  "status_counts": {
+    "2": 162,
+    "9": 38
+  },
+  "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_012/train_chunk_012__mb_results.csv"
+}
+=== END train_chunk_012 returncode=0 elapsed=30034.9s ===
+=== START train_chunk_013 ===
+RUN: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/label_cpbsd_mb_from_manifest.py --manifest /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_013.csv --out-dir /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_013 --time-limit 300.0 --mip-gap 0.01 --output-flag 0
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+Set parameter LicenseID to value 2784353
+[10/200] labeled cpbsd_instance_3100_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=1795.8s
+[20/200] labeled cpbsd_instance_310_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=3566.1s
+[30/200] labeled cpbsd_instance_3119_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=5144.9s
+[40/200] labeled cpbsd_instance_3128_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=6397.2s
+[50/200] labeled cpbsd_instance_3137_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=7995.9s
+[60/200] labeled cpbsd_instance_3146_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=9578.3s
+[70/200] labeled cpbsd_instance_3155_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=11344.8s
+[80/200] labeled cpbsd_instance_3164_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=12434.8s
+[90/200] labeled cpbsd_instance_3173_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=13861.8s
+[100/200] labeled cpbsd_instance_3182_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=15740.6s
+[110/200] labeled cpbsd_instance_3191_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=17144.2s
+[120/200] labeled cpbsd_instance_3200_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=18779.0s
+[130/200] labeled cpbsd_instance_320_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=20132.2s
+[140/200] labeled cpbsd_instance_3219_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=21290.7s
+[150/200] labeled cpbsd_instance_3228_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=22923.2s
+[160/200] labeled cpbsd_instance_3237_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=23986.3s
+[170/200] labeled cpbsd_instance_3246_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=25291.8s
+[180/200] labeled cpbsd_instance_3255_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=26685.3s
+[190/200] labeled cpbsd_instance_3264_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=28146.1s
+[200/200] labeled cpbsd_instance_3273_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=29376.4s
+{
+  "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_013.csv",
+  "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_013",
+  "count": 200,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "has_solution_count": 200,
+  "status_counts": {
+    "9": 31,
+    "2": 169
+  },
+  "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_013/train_chunk_013__mb_results.csv"
+}
+=== END train_chunk_013 returncode=0 elapsed=29376.6s ===
+=== START train_chunk_014 ===
+RUN: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/label_cpbsd_mb_from_manifest.py --manifest /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_014.csv --out-dir /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_014 --time-limit 300.0 --mip-gap 0.01 --output-flag 0
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+Set parameter LicenseID to value 2784353
+[10/200] labeled cpbsd_instance_3282_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=1169.5s
+[20/200] labeled cpbsd_instance_3291_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=2656.2s
+[30/200] labeled cpbsd_instance_3300_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=4190.8s
+[40/200] labeled cpbsd_instance_330_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=5352.2s
+[50/200] labeled cpbsd_instance_3319_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=6853.4s
+[60/200] labeled cpbsd_instance_3328_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=8938.0s
+[70/200] labeled cpbsd_instance_3337_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=10593.6s
+[80/200] labeled cpbsd_instance_3346_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=12049.8s
+[90/200] labeled cpbsd_instance_3355_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=13705.1s
+[100/200] labeled cpbsd_instance_3364_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=14748.3s
+[110/200] labeled cpbsd_instance_3373_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=16232.2s
+[120/200] labeled cpbsd_instance_3382_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=17355.3s
+[130/200] labeled cpbsd_instance_3391_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=18538.5s
+[140/200] labeled cpbsd_instance_3400_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=20928.6s
+[150/200] labeled cpbsd_instance_340_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=22696.8s
+[160/200] labeled cpbsd_instance_3419_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=24015.9s
+[170/200] labeled cpbsd_instance_3428_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=25360.3s
+[180/200] labeled cpbsd_instance_3437_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=27057.3s
+[190/200] labeled cpbsd_instance_3446_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=28920.9s
+[200/200] labeled cpbsd_instance_3455_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=30768.4s
+{
+  "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_014.csv",
+  "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_014",
+  "count": 200,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "has_solution_count": 200,
+  "status_counts": {
+    "2": 163,
+    "9": 37
+  },
+  "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_014/train_chunk_014__mb_results.csv"
+}
+=== END train_chunk_014 returncode=0 elapsed=30768.5s ===
+=== START train_chunk_015 ===
+RUN: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/label_cpbsd_mb_from_manifest.py --manifest /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_015.csv --out-dir /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_015 --time-limit 300.0 --mip-gap 0.01 --output-flag 0
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+Set parameter LicenseID to value 2784353
+[10/200] labeled cpbsd_instance_3464_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=1052.2s
+[20/200] labeled cpbsd_instance_3473_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=2758.8s
+[30/200] labeled cpbsd_instance_3482_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=4199.4s
+[40/200] labeled cpbsd_instance_3491_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=5279.0s
+[50/200] labeled cpbsd_instance_3500_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=7180.5s
+[60/200] labeled cpbsd_instance_350_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=8259.1s
+[70/200] labeled cpbsd_instance_3519_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=10280.0s
+[80/200] labeled cpbsd_instance_3528_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=11816.5s
+[90/200] labeled cpbsd_instance_3537_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=13407.6s
+[100/200] labeled cpbsd_instance_3546_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=14658.7s
+[110/200] labeled cpbsd_instance_3555_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=16527.0s
+[120/200] labeled cpbsd_instance_3564_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=18076.4s
+[130/200] labeled cpbsd_instance_3573_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=19750.9s
+[140/200] labeled cpbsd_instance_3582_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=21421.6s
+[150/200] labeled cpbsd_instance_3591_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=22617.0s
+[160/200] labeled cpbsd_instance_3600_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=23758.0s
+[170/200] labeled cpbsd_instance_360_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=25507.6s
+[180/200] labeled cpbsd_instance_3619_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=27273.1s
+[190/200] labeled cpbsd_instance_3628_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=28960.5s
+[200/200] labeled cpbsd_instance_3637_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=30631.8s
+{
+  "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_015.csv",
+  "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_015",
+  "count": 200,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "has_solution_count": 200,
+  "status_counts": {
+    "2": 168,
+    "9": 32
+  },
+  "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_015/train_chunk_015__mb_results.csv"
+}
+=== END train_chunk_015 returncode=0 elapsed=30632.0s ===
+=== START train_chunk_016 ===
+RUN: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/label_cpbsd_mb_from_manifest.py --manifest /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_016.csv --out-dir /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_016 --time-limit 300.0 --mip-gap 0.01 --output-flag 0
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+Set parameter LicenseID to value 2784353
+[10/200] labeled cpbsd_instance_3646_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=1581.1s
+[20/200] labeled cpbsd_instance_3655_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=2708.6s
+[30/200] labeled cpbsd_instance_3664_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=4468.4s
+[40/200] labeled cpbsd_instance_3673_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=5658.5s
+[50/200] labeled cpbsd_instance_3682_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=7064.9s
+[60/200] labeled cpbsd_instance_3691_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=9001.4s
+[70/200] labeled cpbsd_instance_3700_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=11010.8s
+[80/200] labeled cpbsd_instance_370_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=11989.2s
+[90/200] labeled cpbsd_instance_3719_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=13115.9s
+[100/200] labeled cpbsd_instance_3728_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=14836.0s
+[110/200] labeled cpbsd_instance_3737_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=16270.4s
+[120/200] labeled cpbsd_instance_3746_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=17359.3s
+[130/200] labeled cpbsd_instance_3755_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=18832.3s
+[140/200] labeled cpbsd_instance_3764_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=20572.0s
+[150/200] labeled cpbsd_instance_3773_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=21915.1s
+[160/200] labeled cpbsd_instance_3782_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=22970.6s
+[170/200] labeled cpbsd_instance_3791_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=24437.8s
+[180/200] labeled cpbsd_instance_3800_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=26226.6s
+[190/200] labeled cpbsd_instance_380_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=27784.8s
+[200/200] labeled cpbsd_instance_3819_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=29629.1s
+{
+  "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_016.csv",
+  "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_016",
+  "count": 200,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "has_solution_count": 200,
+  "status_counts": {
+    "2": 170,
+    "9": 30
+  },
+  "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_016/train_chunk_016__mb_results.csv"
+}
+=== END train_chunk_016 returncode=0 elapsed=29629.2s ===
+=== START train_chunk_017 ===
+RUN: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/label_cpbsd_mb_from_manifest.py --manifest /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_017.csv --out-dir /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_017 --time-limit 300.0 --mip-gap 0.01 --output-flag 0
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+Set parameter LicenseID to value 2784353
+[10/200] labeled cpbsd_instance_3828_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=1789.1s
+[20/200] labeled cpbsd_instance_3837_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=3459.0s
+[30/200] labeled cpbsd_instance_3846_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=5024.8s
+[40/200] labeled cpbsd_instance_3855_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=6375.8s
+[50/200] labeled cpbsd_instance_3864_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=7351.9s
+[60/200] labeled cpbsd_instance_3873_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=8570.7s
+[70/200] labeled cpbsd_instance_3882_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=10389.3s
+[80/200] labeled cpbsd_instance_3891_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=11302.3s
+[90/200] labeled cpbsd_instance_3900_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=12969.9s
+[100/200] labeled cpbsd_instance_390_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=14336.0s
+[110/200] labeled cpbsd_instance_3919_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=16191.2s
+[120/200] labeled cpbsd_instance_3928_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=17307.3s
+[130/200] labeled cpbsd_instance_3937_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=18823.4s
+[140/200] labeled cpbsd_instance_3946_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=19753.5s
+[150/200] labeled cpbsd_instance_3955_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=20881.7s
+[160/200] labeled cpbsd_instance_3964_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=22539.6s
+[170/200] labeled cpbsd_instance_3973_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=23881.6s
+[180/200] labeled cpbsd_instance_3982_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=25161.2s
+[190/200] labeled cpbsd_instance_3991_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=27419.0s
+[200/200] labeled cpbsd_instance_4000_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=29154.5s
+{
+  "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_017.csv",
+  "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_017",
+  "count": 200,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "has_solution_count": 200,
+  "status_counts": {
+    "2": 165,
+    "9": 35
+  },
+  "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_017/train_chunk_017__mb_results.csv"
+}
+=== END train_chunk_017 returncode=0 elapsed=29154.7s ===
+=== START train_chunk_018 ===
+RUN: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/label_cpbsd_mb_from_manifest.py --manifest /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_018.csv --out-dir /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_018 --time-limit 300.0 --mip-gap 0.01 --output-flag 0
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+Set parameter LicenseID to value 2784353
+[10/200] labeled cpbsd_instance_400_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=1560.5s
+[20/200] labeled cpbsd_instance_4019_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=3277.3s
+[30/200] labeled cpbsd_instance_4028_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=4801.7s
+[40/200] labeled cpbsd_instance_4037_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=6355.2s
+[50/200] labeled cpbsd_instance_4046_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=8033.8s
+[60/200] labeled cpbsd_instance_4055_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=9487.3s
+[70/200] labeled cpbsd_instance_4064_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=10525.0s
+[80/200] labeled cpbsd_instance_4073_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=11901.0s
+[90/200] labeled cpbsd_instance_4082_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=13510.7s
+[100/200] labeled cpbsd_instance_4091_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=14661.5s
+[110/200] labeled cpbsd_instance_4100_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=16260.5s
+[120/200] labeled cpbsd_instance_410_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=18016.6s
+[130/200] labeled cpbsd_instance_4119_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=19169.4s
+[140/200] labeled cpbsd_instance_4128_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=20686.8s
+[150/200] labeled cpbsd_instance_4137_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=22038.6s
+[160/200] labeled cpbsd_instance_4146_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=23766.5s
+[170/200] labeled cpbsd_instance_4155_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=25504.9s
+[180/200] labeled cpbsd_instance_4164_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=27716.4s
+[190/200] labeled cpbsd_instance_4173_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=29854.5s
+[200/200] labeled cpbsd_instance_4182_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=31019.5s
+{
+  "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_018.csv",
+  "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_018",
+  "count": 200,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "has_solution_count": 200,
+  "status_counts": {
+    "2": 159,
+    "9": 41
+  },
+  "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_018/train_chunk_018__mb_results.csv"
+}
+=== END train_chunk_018 returncode=0 elapsed=31019.6s ===
+=== START train_chunk_019 ===
+RUN: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/label_cpbsd_mb_from_manifest.py --manifest /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_019.csv --out-dir /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_019 --time-limit 300.0 --mip-gap 0.01 --output-flag 0
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+Set parameter LicenseID to value 2784353
+[10/200] labeled cpbsd_instance_4191_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=1403.5s
+[20/200] labeled cpbsd_instance_4200_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=3115.8s
+[30/200] labeled cpbsd_instance_420_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=4434.7s
+[40/200] labeled cpbsd_instance_4219_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=5337.8s
+[50/200] labeled cpbsd_instance_4228_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=6835.9s
+[60/200] labeled cpbsd_instance_4237_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=8310.0s
+[70/200] labeled cpbsd_instance_4246_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=9784.4s
+[80/200] labeled cpbsd_instance_4255_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=11174.0s
+[90/200] labeled cpbsd_instance_4264_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=12918.3s
+[100/200] labeled cpbsd_instance_4273_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=14258.0s
+[110/200] labeled cpbsd_instance_4282_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=15656.5s
+[120/200] labeled cpbsd_instance_4291_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=17078.7s
+[130/200] labeled cpbsd_instance_4300_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=18325.9s
+[140/200] labeled cpbsd_instance_430_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=20268.3s
+[150/200] labeled cpbsd_instance_4319_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=21564.7s
+[160/200] labeled cpbsd_instance_4328_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=23437.9s
+[170/200] labeled cpbsd_instance_4337_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=25040.7s
+[180/200] labeled cpbsd_instance_4346_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=26255.2s
+[190/200] labeled cpbsd_instance_4355_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=28189.4s
+[200/200] labeled cpbsd_instance_4364_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=29670.7s
+{
+  "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_019.csv",
+  "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_019",
+  "count": 200,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "has_solution_count": 200,
+  "status_counts": {
+    "9": 37,
+    "2": 163
+  },
+  "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_019/train_chunk_019__mb_results.csv"
+}
+=== END train_chunk_019 returncode=0 elapsed=29670.8s ===
+=== START train_chunk_020 ===
+RUN: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/label_cpbsd_mb_from_manifest.py --manifest /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_020.csv --out-dir /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_020 --time-limit 300.0 --mip-gap 0.01 --output-flag 0
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+Set parameter LicenseID to value 2784353
+[10/200] labeled cpbsd_instance_4373_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=1660.8s
+[20/200] labeled cpbsd_instance_4382_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=3134.2s
+[30/200] labeled cpbsd_instance_4391_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=4580.6s
+[40/200] labeled cpbsd_instance_4400_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=6149.5s
+[50/200] labeled cpbsd_instance_440_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=7336.5s
+[60/200] labeled cpbsd_instance_4419_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=8516.5s
+[70/200] labeled cpbsd_instance_4428_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=9800.0s
+[80/200] labeled cpbsd_instance_4437_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=11295.3s
+[90/200] labeled cpbsd_instance_4446_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=12731.1s
+[100/200] labeled cpbsd_instance_4455_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=14602.0s
+[110/200] labeled cpbsd_instance_4464_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=15639.8s
+[120/200] labeled cpbsd_instance_4473_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=17130.8s
+[130/200] labeled cpbsd_instance_4482_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=18799.8s
+[140/200] labeled cpbsd_instance_4491_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=20156.0s
+[150/200] labeled cpbsd_instance_4500_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=21338.8s
+[160/200] labeled cpbsd_instance_450_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=22542.7s
+[170/200] labeled cpbsd_instance_4519_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=24033.9s
+[180/200] labeled cpbsd_instance_4528_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=25253.0s
+[190/200] labeled cpbsd_instance_4537_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=26936.6s
+[200/200] labeled cpbsd_instance_4546_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=28765.5s
+{
+  "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_020.csv",
+  "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_020",
+  "count": 200,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "has_solution_count": 200,
+  "status_counts": {
+    "2": 163,
+    "9": 37
+  },
+  "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_020/train_chunk_020__mb_results.csv"
+}
+=== END train_chunk_020 returncode=0 elapsed=28765.7s ===
+{
+  "split": "train",
+  "start": 1,
+  "end": 20,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "chunks": [
+    {
+      "chunk_index": 1,
+      "chunk_name": "train_chunk_001",
+      "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_001.csv",
+      "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_001",
+      "returncode": 0,
+      "elapsed": 31061.805145978928,
+      "summary": {
+        "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_001.csv",
+        "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_001",
+        "count": 200,
+        "time_limit": 300.0,
+        "mip_gap": 0.01,
+        "has_solution_count": 200,
+        "status_counts": {
+          "2": 161,
+          "9": 39
+        },
+        "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_001/train_chunk_001__mb_results.csv"
+      }
+    },
+    {
+      "chunk_index": 2,
+      "chunk_name": "train_chunk_002",
+      "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_002.csv",
+      "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_002",
+      "returncode": 0,
+      "elapsed": 32548.488087892532,
+      "summary": {
+        "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_002.csv",
+        "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_002",
+        "count": 200,
+        "time_limit": 300.0,
+        "mip_gap": 0.01,
+        "has_solution_count": 200,
+        "status_counts": {
+          "9": 43,
+          "2": 157
+        },
+        "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_002/train_chunk_002__mb_results.csv"
+      }
+    },
+    {
+      "chunk_index": 3,
+      "chunk_name": "train_chunk_003",
+      "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_003.csv",
+      "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_003",
+      "returncode": 0,
+      "elapsed": 32124.73890686035,
+      "summary": {
+        "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_003.csv",
+        "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_003",
+        "count": 200,
+        "time_limit": 300.0,
+        "mip_gap": 0.01,
+        "has_solution_count": 200,
+        "status_counts": {
+          "9": 45,
+          "2": 155
+        },
+        "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_003/train_chunk_003__mb_results.csv"
+      }
+    },
+    {
+      "chunk_index": 4,
+      "chunk_name": "train_chunk_004",
+      "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_004.csv",
+      "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_004",
+      "returncode": 0,
+      "elapsed": 30182.340065717697,
+      "summary": {
+        "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_004.csv",
+        "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_004",
+        "count": 200,
+        "time_limit": 300.0,
+        "mip_gap": 0.01,
+        "has_solution_count": 200,
+        "status_counts": {
+          "2": 163,
+          "9": 37
+        },
+        "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_004/train_chunk_004__mb_results.csv"
+      }
+    },
+    {
+      "chunk_index": 5,
+      "chunk_name": "train_chunk_005",
+      "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_005.csv",
+      "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_005",
+      "returncode": 0,
+      "elapsed": 31596.494425296783,
+      "summary": {
+        "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_005.csv",
+        "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_005",
+        "count": 200,
+        "time_limit": 300.0,
+        "mip_gap": 0.01,
+        "has_solution_count": 200,
+        "status_counts": {
+          "9": 47,
+          "2": 153
+        },
+        "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_005/train_chunk_005__mb_results.csv"
+      }
+    },
+    {
+      "chunk_index": 6,
+      "chunk_name": "train_chunk_006",
+      "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_006.csv",
+      "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_006",
+      "returncode": 0,
+      "elapsed": 31322.075817108154,
+      "summary": {
+        "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_006.csv",
+        "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_006",
+        "count": 200,
+        "time_limit": 300.0,
+        "mip_gap": 0.01,
+        "has_solution_count": 200,
+        "status_counts": {
+          "2": 165,
+          "9": 35
+        },
+        "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_006/train_chunk_006__mb_results.csv"
+      }
+    },
+    {
+      "chunk_index": 7,
+      "chunk_name": "train_chunk_007",
+      "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_007.csv",
+      "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_007",
+      "returncode": 0,
+      "elapsed": 31413.990402936935,
+      "summary": {
+        "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_007.csv",
+        "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_007",
+        "count": 200,
+        "time_limit": 300.0,
+        "mip_gap": 0.01,
+        "has_solution_count": 200,
+        "status_counts": {
+          "2": 161,
+          "9": 39
+        },
+        "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_007/train_chunk_007__mb_results.csv"
+      }
+    },
+    {
+      "chunk_index": 8,
+      "chunk_name": "train_chunk_008",
+      "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_008.csv",
+      "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_008",
+      "returncode": 0,
+      "elapsed": 31832.677163124084,
+      "summary": {
+        "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_008.csv",
+        "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_008",
+        "count": 200,
+        "time_limit": 300.0,
+        "mip_gap": 0.01,
+        "has_solution_count": 200,
+        "status_counts": {
+          "2": 155,
+          "9": 45
+        },
+        "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_008/train_chunk_008__mb_results.csv"
+      }
+    },
+    {
+      "chunk_index": 9,
+      "chunk_name": "train_chunk_009",
+      "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_009.csv",
+      "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_009",
+      "returncode": 0,
+      "elapsed": 28820.58052587509,
+      "summary": {
+        "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_009.csv",
+        "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_009",
+        "count": 200,
+        "time_limit": 300.0,
+        "mip_gap": 0.01,
+        "has_solution_count": 200,
+        "status_counts": {
+          "2": 170,
+          "9": 30
+        },
+        "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_009/train_chunk_009__mb_results.csv"
+      }
+    },
+    {
+      "chunk_index": 10,
+      "chunk_name": "train_chunk_010",
+      "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_010.csv",
+      "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_010",
+      "returncode": 0,
+      "elapsed": 30579.511587142944,
+      "summary": {
+        "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_010.csv",
+        "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_010",
+        "count": 200,
+        "time_limit": 300.0,
+        "mip_gap": 0.01,
+        "has_solution_count": 200,
+        "status_counts": {
+          "2": 159,
+          "9": 41
+        },
+        "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_010/train_chunk_010__mb_results.csv"
+      }
+    },
+    {
+      "chunk_index": 11,
+      "chunk_name": "train_chunk_011",
+      "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_011.csv",
+      "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_011",
+      "returncode": 0,
+      "elapsed": 31690.592015981674,
+      "summary": {
+        "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_011.csv",
+        "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_011",
+        "count": 200,
+        "time_limit": 300.0,
+        "mip_gap": 0.01,
+        "has_solution_count": 200,
+        "status_counts": {
+          "2": 161,
+          "9": 39
+        },
+        "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_011/train_chunk_011__mb_results.csv"
+      }
+    },
+    {
+      "chunk_index": 12,
+      "chunk_name": "train_chunk_012",
+      "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_012.csv",
+      "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_012",
+      "returncode": 0,
+      "elapsed": 30034.93228983879,
+      "summary": {
+        "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_012.csv",
+        "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_012",
+        "count": 200,
+        "time_limit": 300.0,
+        "mip_gap": 0.01,
+        "has_solution_count": 200,
+        "status_counts": {
+          "2": 162,
+          "9": 38
+        },
+        "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_012/train_chunk_012__mb_results.csv"
+      }
+    },
+    {
+      "chunk_index": 13,
+      "chunk_name": "train_chunk_013",
+      "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_013.csv",
+      "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_013",
+      "returncode": 0,
+      "elapsed": 29376.558089971542,
+      "summary": {
+        "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_013.csv",
+        "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_013",
+        "count": 200,
+        "time_limit": 300.0,
+        "mip_gap": 0.01,
+        "has_solution_count": 200,
+        "status_counts": {
+          "9": 31,
+          "2": 169
+        },
+        "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_013/train_chunk_013__mb_results.csv"
+      }
+    },
+    {
+      "chunk_index": 14,
+      "chunk_name": "train_chunk_014",
+      "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_014.csv",
+      "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_014",
+      "returncode": 0,
+      "elapsed": 30768.515639066696,
+      "summary": {
+        "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_014.csv",
+        "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_014",
+        "count": 200,
+        "time_limit": 300.0,
+        "mip_gap": 0.01,
+        "has_solution_count": 200,
+        "status_counts": {
+          "2": 163,
+          "9": 37
+        },
+        "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_014/train_chunk_014__mb_results.csv"
+      }
+    },
+    {
+      "chunk_index": 15,
+      "chunk_name": "train_chunk_015",
+      "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_015.csv",
+      "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_015",
+      "returncode": 0,
+      "elapsed": 30631.984961032867,
+      "summary": {
+        "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_015.csv",
+        "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_015",
+        "count": 200,
+        "time_limit": 300.0,
+        "mip_gap": 0.01,
+        "has_solution_count": 200,
+        "status_counts": {
+          "2": 168,
+          "9": 32
+        },
+        "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_015/train_chunk_015__mb_results.csv"
+      }
+    },
+    {
+      "chunk_index": 16,
+      "chunk_name": "train_chunk_016",
+      "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_016.csv",
+      "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_016",
+      "returncode": 0,
+      "elapsed": 29629.249484062195,
+      "summary": {
+        "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_016.csv",
+        "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_016",
+        "count": 200,
+        "time_limit": 300.0,
+        "mip_gap": 0.01,
+        "has_solution_count": 200,
+        "status_counts": {
+          "2": 170,
+          "9": 30
+        },
+        "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_016/train_chunk_016__mb_results.csv"
+      }
+    },
+    {
+      "chunk_index": 17,
+      "chunk_name": "train_chunk_017",
+      "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_017.csv",
+      "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_017",
+      "returncode": 0,
+      "elapsed": 29154.680929899216,
+      "summary": {
+        "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_017.csv",
+        "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_017",
+        "count": 200,
+        "time_limit": 300.0,
+        "mip_gap": 0.01,
+        "has_solution_count": 200,
+        "status_counts": {
+          "2": 165,
+          "9": 35
+        },
+        "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_017/train_chunk_017__mb_results.csv"
+      }
+    },
+    {
+      "chunk_index": 18,
+      "chunk_name": "train_chunk_018",
+      "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_018.csv",
+      "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_018",
+      "returncode": 0,
+      "elapsed": 31019.649426937103,
+      "summary": {
+        "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_018.csv",
+        "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_018",
+        "count": 200,
+        "time_limit": 300.0,
+        "mip_gap": 0.01,
+        "has_solution_count": 200,
+        "status_counts": {
+          "2": 159,
+          "9": 41
+        },
+        "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_018/train_chunk_018__mb_results.csv"
+      }
+    },
+    {
+      "chunk_index": 19,
+      "chunk_name": "train_chunk_019",
+      "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_019.csv",
+      "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_019",
+      "returncode": 0,
+      "elapsed": 29670.81601381302,
+      "summary": {
+        "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_019.csv",
+        "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_019",
+        "count": 200,
+        "time_limit": 300.0,
+        "mip_gap": 0.01,
+        "has_solution_count": 200,
+        "status_counts": {
+          "9": 37,
+          "2": 163
+        },
+        "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_019/train_chunk_019__mb_results.csv"
+      }
+    },
+    {
+      "chunk_index": 20,
+      "chunk_name": "train_chunk_020",
+      "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_020.csv",
+      "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_020",
+      "returncode": 0,
+      "elapsed": 28765.651453971863,
+      "summary": {
+        "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_020.csv",
+        "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_020",
+        "count": 200,
+        "time_limit": 300.0,
+        "mip_gap": 0.01,
+        "has_solution_count": 200,
+        "status_counts": {
+          "2": 163,
+          "9": 37
+        },
+        "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_020/train_chunk_020__mb_results.csv"
+      }
+    }
+  ],
+  "started_at": 1773321558.375194,
+  "updated_at": 1773933783.731402,
+  "finished_at": 1773933783.732335
+}
+=== END SPLIT train returncode=0 elapsed=612225.4s ===
+=== START SPLIT eval chunks 1-3 ===
+RUN: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/run_cpbsd_mb_chunk_queue.py --python-bin /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python --manifest-root /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests --out-root /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1 --split eval --start 1 --end 3 --time-limit 300.0 --mip-gap 0.01 --output-flag 0
+=== START eval_chunk_001 ===
+RUN: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/label_cpbsd_mb_from_manifest.py --manifest /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/eval/eval_chunk_001.csv --out-dir /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/eval/eval_chunk_001 --time-limit 300.0 --mip-gap 0.01 --output-flag 0
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+Set parameter LicenseID to value 2784353
+[10/200] labeled cpbsd_instance_4555_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=1532.0s
+[20/200] labeled cpbsd_instance_4564_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=3208.5s
+[30/200] labeled cpbsd_instance_4573_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=4655.7s
+[40/200] labeled cpbsd_instance_4582_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=5694.0s
+[50/200] labeled cpbsd_instance_4591_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=7618.7s
+[60/200] labeled cpbsd_instance_4600_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=8873.5s
+[70/200] labeled cpbsd_instance_460_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=10534.8s
+[80/200] labeled cpbsd_instance_4619_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=12197.7s
+[90/200] labeled cpbsd_instance_4628_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=13551.7s
+[100/200] labeled cpbsd_instance_4637_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=15375.9s
+[110/200] labeled cpbsd_instance_4646_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=17228.1s
+[120/200] labeled cpbsd_instance_4655_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=18836.7s
+[130/200] labeled cpbsd_instance_4664_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=20166.6s
+[140/200] labeled cpbsd_instance_4673_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=21157.8s
+[150/200] labeled cpbsd_instance_4682_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=22561.4s
+[160/200] labeled cpbsd_instance_4691_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=24222.1s
+[170/200] labeled cpbsd_instance_4700_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=25783.3s
+[180/200] labeled cpbsd_instance_470_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=27134.0s
+[190/200] labeled cpbsd_instance_4719_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=28694.7s
+[200/200] labeled cpbsd_instance_4728_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=30444.7s
+{
+  "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/eval/eval_chunk_001.csv",
+  "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/eval/eval_chunk_001",
+  "count": 200,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "has_solution_count": 200,
+  "status_counts": {
+    "2": 161,
+    "9": 39
+  },
+  "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/eval/eval_chunk_001/eval_chunk_001__mb_results.csv"
+}
+=== END eval_chunk_001 returncode=0 elapsed=30444.8s ===
+=== START eval_chunk_002 ===
+RUN: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/label_cpbsd_mb_from_manifest.py --manifest /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/eval/eval_chunk_002.csv --out-dir /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/eval/eval_chunk_002 --time-limit 300.0 --mip-gap 0.01 --output-flag 0
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+Set parameter LicenseID to value 2784353
+[10/200] labeled cpbsd_instance_4737_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=1602.7s
+[20/200] labeled cpbsd_instance_4746_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=3169.4s
+[30/200] labeled cpbsd_instance_4755_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=4422.0s
+[40/200] labeled cpbsd_instance_4764_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=5581.2s
+[50/200] labeled cpbsd_instance_4773_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=7306.4s
+[60/200] labeled cpbsd_instance_4782_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=8672.1s
+[70/200] labeled cpbsd_instance_4791_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=9799.8s
+[80/200] labeled cpbsd_instance_4800_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=11260.9s
+[90/200] labeled cpbsd_instance_480_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=13078.4s
+[100/200] labeled cpbsd_instance_4819_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=14744.0s
+[110/200] labeled cpbsd_instance_4828_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=16010.2s
+[120/200] labeled cpbsd_instance_4837_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=17655.2s
+[130/200] labeled cpbsd_instance_4846_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=19399.3s
+[140/200] labeled cpbsd_instance_4855_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=20915.1s
+[150/200] labeled cpbsd_instance_4864_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=22435.8s
+[160/200] labeled cpbsd_instance_4873_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=24123.2s
+[170/200] labeled cpbsd_instance_4882_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=25627.4s
+[180/200] labeled cpbsd_instance_4891_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=27259.1s
+[190/200] labeled cpbsd_instance_4900_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=29265.9s
+[200/200] labeled cpbsd_instance_490_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=30780.3s
+{
+  "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/eval/eval_chunk_002.csv",
+  "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/eval/eval_chunk_002",
+  "count": 200,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "has_solution_count": 200,
+  "status_counts": {
+    "2": 162,
+    "9": 38
+  },
+  "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/eval/eval_chunk_002/eval_chunk_002__mb_results.csv"
+}
+=== END eval_chunk_002 returncode=0 elapsed=30780.4s ===
+=== START eval_chunk_003 ===
+RUN: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/label_cpbsd_mb_from_manifest.py --manifest /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/eval/eval_chunk_003.csv --out-dir /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/eval/eval_chunk_003 --time-limit 300.0 --mip-gap 0.01 --output-flag 0
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+Set parameter LicenseID to value 2784353
+[10/100] labeled cpbsd_instance_4919_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=970.1s
+[20/100] labeled cpbsd_instance_4928_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=2648.9s
+[30/100] labeled cpbsd_instance_4937_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=4092.5s
+[40/100] labeled cpbsd_instance_4946_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=5551.5s
+[50/100] labeled cpbsd_instance_4955_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=7156.8s
+[60/100] labeled cpbsd_instance_4964_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=8885.4s
+[70/100] labeled cpbsd_instance_4973_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=10218.0s
+[80/100] labeled cpbsd_instance_4982_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=11098.0s
+[90/100] labeled cpbsd_instance_4991_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=12434.8s
+[100/100] labeled cpbsd_instance_5000_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=14253.7s
+{
+  "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/eval/eval_chunk_003.csv",
+  "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/eval/eval_chunk_003",
+  "count": 100,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "has_solution_count": 100,
+  "status_counts": {
+    "9": 17,
+    "2": 83
+  },
+  "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/eval/eval_chunk_003/eval_chunk_003__mb_results.csv"
+}
+=== END eval_chunk_003 returncode=0 elapsed=14253.9s ===
+{
+  "split": "eval",
+  "start": 1,
+  "end": 3,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "chunks": [
+    {
+      "chunk_index": 1,
+      "chunk_name": "eval_chunk_001",
+      "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/eval/eval_chunk_001.csv",
+      "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/eval/eval_chunk_001",
+      "returncode": 0,
+      "elapsed": 30444.78818297386,
+      "summary": {
+        "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/eval/eval_chunk_001.csv",
+        "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/eval/eval_chunk_001",
+        "count": 200,
+        "time_limit": 300.0,
+        "mip_gap": 0.01,
+        "has_solution_count": 200,
+        "status_counts": {
+          "2": 161,
+          "9": 39
+        },
+        "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/eval/eval_chunk_001/eval_chunk_001__mb_results.csv"
+      }
+    },
+    {
+      "chunk_index": 2,
+      "chunk_name": "eval_chunk_002",
+      "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/eval/eval_chunk_002.csv",
+      "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/eval/eval_chunk_002",
+      "returncode": 0,
+      "elapsed": 30780.398702144623,
+      "summary": {
+        "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/eval/eval_chunk_002.csv",
+        "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/eval/eval_chunk_002",
+        "count": 200,
+        "time_limit": 300.0,
+        "mip_gap": 0.01,
+        "has_solution_count": 200,
+        "status_counts": {
+          "2": 162,
+          "9": 38
+        },
+        "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/eval/eval_chunk_002/eval_chunk_002__mb_results.csv"
+      }
+    },
+    {
+      "chunk_index": 3,
+      "chunk_name": "eval_chunk_003",
+      "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/eval/eval_chunk_003.csv",
+      "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/eval/eval_chunk_003",
+      "returncode": 0,
+      "elapsed": 14253.882135152817,
+      "summary": {
+        "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/eval/eval_chunk_003.csv",
+        "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/eval/eval_chunk_003",
+        "count": 100,
+        "time_limit": 300.0,
+        "mip_gap": 0.01,
+        "has_solution_count": 100,
+        "status_counts": {
+          "9": 17,
+          "2": 83
+        },
+        "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/eval/eval_chunk_003/eval_chunk_003__mb_results.csv"
+      }
+    }
+  ],
+  "started_at": 1773933783.780519,
+  "updated_at": 1774009262.8515232,
+  "finished_at": 1774009262.8518898
+}
+=== END SPLIT eval returncode=0 elapsed=75479.1s ===
+=== START SPLIT test chunks 1-3 ===
+RUN: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/run_cpbsd_mb_chunk_queue.py --python-bin /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python --manifest-root /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests --out-root /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1 --split test --start 1 --end 3 --time-limit 300.0 --mip-gap 0.01 --output-flag 0
+=== START test_chunk_001 ===
+RUN: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/label_cpbsd_mb_from_manifest.py --manifest /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/test/test_chunk_001.csv --out-dir /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/test/test_chunk_001 --time-limit 300.0 --mip-gap 0.01 --output-flag 0
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+Set parameter LicenseID to value 2784353
+[10/200] labeled cpbsd_instance_509_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=1222.9s
+[20/200] labeled cpbsd_instance_519_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=3264.5s
+[30/200] labeled cpbsd_instance_529_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=4299.3s
+[40/200] labeled cpbsd_instance_539_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=5164.8s
+[50/200] labeled cpbsd_instance_549_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=7141.4s
+[60/200] labeled cpbsd_instance_559_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=8749.8s
+[70/200] labeled cpbsd_instance_569_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=10067.1s
+[80/200] labeled cpbsd_instance_579_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=11796.0s
+[90/200] labeled cpbsd_instance_589_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=13612.9s
+[100/200] labeled cpbsd_instance_599_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=15585.6s
+[110/200] labeled cpbsd_instance_609_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=17256.9s
+[120/200] labeled cpbsd_instance_619_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=18496.6s
+[130/200] labeled cpbsd_instance_629_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=20160.2s
+[140/200] labeled cpbsd_instance_639_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=21408.8s
+[150/200] labeled cpbsd_instance_649_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=22763.8s
+[160/200] labeled cpbsd_instance_659_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=24059.7s
+[170/200] labeled cpbsd_instance_669_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=25354.4s
+[180/200] labeled cpbsd_instance_679_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=26578.8s
+[190/200] labeled cpbsd_instance_689_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=27806.7s
+[200/200] labeled cpbsd_instance_699_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=29495.7s
+{
+  "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/test/test_chunk_001.csv",
+  "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/test/test_chunk_001",
+  "count": 200,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "has_solution_count": 200,
+  "status_counts": {
+    "2": 169,
+    "9": 31
+  },
+  "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/test/test_chunk_001/test_chunk_001__mb_results.csv"
+}
+=== END test_chunk_001 returncode=0 elapsed=29495.9s ===
+=== START test_chunk_002 ===
+RUN: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/label_cpbsd_mb_from_manifest.py --manifest /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/test/test_chunk_002.csv --out-dir /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/test/test_chunk_002 --time-limit 300.0 --mip-gap 0.01 --output-flag 0
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+Set parameter LicenseID to value 2784353
+[10/200] labeled cpbsd_instance_709_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=1180.9s
+[20/200] labeled cpbsd_instance_719_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=2927.7s
+[30/200] labeled cpbsd_instance_729_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=4037.7s
+[40/200] labeled cpbsd_instance_739_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=5532.6s
+[50/200] labeled cpbsd_instance_749_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=6959.6s
+[60/200] labeled cpbsd_instance_759_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=7870.6s
+[70/200] labeled cpbsd_instance_769_N5_K50_normal_rho0.0_full_hvhm | status=9 | feasible=True | elapsed=9264.4s
+[80/200] labeled cpbsd_instance_779_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=11419.8s
+[90/200] labeled cpbsd_instance_789_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=13049.5s
+[100/200] labeled cpbsd_instance_799_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=14347.1s
+[110/200] labeled cpbsd_instance_809_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=16359.0s
+[120/200] labeled cpbsd_instance_819_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=17837.9s
+[130/200] labeled cpbsd_instance_829_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=19153.8s
+[140/200] labeled cpbsd_instance_839_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=20645.6s
+[150/200] labeled cpbsd_instance_849_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=21781.5s
+[160/200] labeled cpbsd_instance_859_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=23430.3s
+[170/200] labeled cpbsd_instance_869_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=24411.0s
+[180/200] labeled cpbsd_instance_879_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=25825.0s
+[190/200] labeled cpbsd_instance_889_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=27807.6s
+[200/200] labeled cpbsd_instance_899_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=29973.2s
+{
+  "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/test/test_chunk_002.csv",
+  "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/test/test_chunk_002",
+  "count": 200,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "has_solution_count": 200,
+  "status_counts": {
+    "2": 170,
+    "9": 30
+  },
+  "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/test/test_chunk_002/test_chunk_002__mb_results.csv"
+}
+=== END test_chunk_002 returncode=0 elapsed=29973.3s ===
+=== START test_chunk_003 ===
+RUN: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/label_cpbsd_mb_from_manifest.py --manifest /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/test/test_chunk_003.csv --out-dir /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/test/test_chunk_003 --time-limit 300.0 --mip-gap 0.01 --output-flag 0
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:180: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+Set parameter LicenseID to value 2784353
+[10/100] labeled cpbsd_instance_909_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=1880.0s
+[20/100] labeled cpbsd_instance_919_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=3830.6s
+[30/100] labeled cpbsd_instance_929_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=4900.6s
+[40/100] labeled cpbsd_instance_939_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=6228.4s
+[50/100] labeled cpbsd_instance_949_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=7358.2s
+[60/100] labeled cpbsd_instance_959_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=8311.3s
+[70/100] labeled cpbsd_instance_969_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=9758.2s
+[80/100] labeled cpbsd_instance_979_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=11238.8s
+[90/100] labeled cpbsd_instance_989_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=12717.7s
+[100/100] labeled cpbsd_instance_999_N5_K50_normal_rho0.0_full_hvhm | status=2 | feasible=True | elapsed=14162.6s
+{
+  "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/test/test_chunk_003.csv",
+  "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/test/test_chunk_003",
+  "count": 100,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "has_solution_count": 100,
+  "status_counts": {
+    "2": 86,
+    "9": 14
+  },
+  "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/test/test_chunk_003/test_chunk_003__mb_results.csv"
+}
+=== END test_chunk_003 returncode=0 elapsed=14162.7s ===
+{
+  "split": "test",
+  "start": 1,
+  "end": 3,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "chunks": [
+    {
+      "chunk_index": 1,
+      "chunk_name": "test_chunk_001",
+      "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/test/test_chunk_001.csv",
+      "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/test/test_chunk_001",
+      "returncode": 0,
+      "elapsed": 29495.857561826706,
+      "summary": {
+        "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/test/test_chunk_001.csv",
+        "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/test/test_chunk_001",
+        "count": 200,
+        "time_limit": 300.0,
+        "mip_gap": 0.01,
+        "has_solution_count": 200,
+        "status_counts": {
+          "2": 169,
+          "9": 31
+        },
+        "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/test/test_chunk_001/test_chunk_001__mb_results.csv"
+      }
+    },
+    {
+      "chunk_index": 2,
+      "chunk_name": "test_chunk_002",
+      "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/test/test_chunk_002.csv",
+      "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/test/test_chunk_002",
+      "returncode": 0,
+      "elapsed": 29973.313520908356,
+      "summary": {
+        "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/test/test_chunk_002.csv",
+        "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/test/test_chunk_002",
+        "count": 200,
+        "time_limit": 300.0,
+        "mip_gap": 0.01,
+        "has_solution_count": 200,
+        "status_counts": {
+          "2": 170,
+          "9": 30
+        },
+        "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/test/test_chunk_002/test_chunk_002__mb_results.csv"
+      }
+    },
+    {
+      "chunk_index": 3,
+      "chunk_name": "test_chunk_003",
+      "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/test/test_chunk_003.csv",
+      "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/test/test_chunk_003",
+      "returncode": 0,
+      "elapsed": 14162.737253904343,
+      "summary": {
+        "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/test/test_chunk_003.csv",
+        "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/test/test_chunk_003",
+        "count": 100,
+        "time_limit": 300.0,
+        "mip_gap": 0.01,
+        "has_solution_count": 100,
+        "status_counts": {
+          "2": 86,
+          "9": 14
+        },
+        "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/test/test_chunk_003/test_chunk_003__mb_results.csv"
+      }
+    }
+  ],
+  "started_at": 1774009262.89803,
+  "updated_at": 1774082894.812226,
+  "finished_at": 1774082894.813231
+}
+=== END SPLIT test returncode=0 elapsed=73632.0s ===
+{
+  "manifest_root": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests",
+  "out_root": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1",
+  "python_bin": "/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python",
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "output_flag": 0,
+  "splits": [
+    {
+      "split": "train",
+      "start": 1,
+      "end": 20,
+      "returncode": 0,
+      "elapsed": 612225.3892951012,
+      "status_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train_queue_status.json",
+      "status": {
+        "split": "train",
+        "start": 1,
+        "end": 20,
+        "time_limit": 300.0,
+        "mip_gap": 0.01,
+        "chunks": [
+          {
+            "chunk_index": 1,
+            "chunk_name": "train_chunk_001",
+            "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_001.csv",
+            "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_001",
+            "returncode": 0,
+            "elapsed": 31061.805145978928,
+            "summary": {
+              "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_001.csv",
+              "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_001",
+              "count": 200,
+              "time_limit": 300.0,
+              "mip_gap": 0.01,
+              "has_solution_count": 200,
+              "status_counts": {
+                "2": 161,
+                "9": 39
+              },
+              "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_001/train_chunk_001__mb_results.csv"
+            }
+          },
+          {
+            "chunk_index": 2,
+            "chunk_name": "train_chunk_002",
+            "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_002.csv",
+            "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_002",
+            "returncode": 0,
+            "elapsed": 32548.488087892532,
+            "summary": {
+              "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_002.csv",
+              "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_002",
+              "count": 200,
+              "time_limit": 300.0,
+              "mip_gap": 0.01,
+              "has_solution_count": 200,
+              "status_counts": {
+                "9": 43,
+                "2": 157
+              },
+              "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_002/train_chunk_002__mb_results.csv"
+            }
+          },
+          {
+            "chunk_index": 3,
+            "chunk_name": "train_chunk_003",
+            "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_003.csv",
+            "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_003",
+            "returncode": 0,
+            "elapsed": 32124.73890686035,
+            "summary": {
+              "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_003.csv",
+              "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_003",
+              "count": 200,
+              "time_limit": 300.0,
+              "mip_gap": 0.01,
+              "has_solution_count": 200,
+              "status_counts": {
+                "9": 45,
+                "2": 155
+              },
+              "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_003/train_chunk_003__mb_results.csv"
+            }
+          },
+          {
+            "chunk_index": 4,
+            "chunk_name": "train_chunk_004",
+            "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_004.csv",
+            "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_004",
+            "returncode": 0,
+            "elapsed": 30182.340065717697,
+            "summary": {
+              "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_004.csv",
+              "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_004",
+              "count": 200,
+              "time_limit": 300.0,
+              "mip_gap": 0.01,
+              "has_solution_count": 200,
+              "status_counts": {
+                "2": 163,
+                "9": 37
+              },
+              "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_004/train_chunk_004__mb_results.csv"
+            }
+          },
+          {
+            "chunk_index": 5,
+            "chunk_name": "train_chunk_005",
+            "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_005.csv",
+            "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_005",
+            "returncode": 0,
+            "elapsed": 31596.494425296783,
+            "summary": {
+              "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_005.csv",
+              "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_005",
+              "count": 200,
+              "time_limit": 300.0,
+              "mip_gap": 0.01,
+              "has_solution_count": 200,
+              "status_counts": {
+                "9": 47,
+                "2": 153
+              },
+              "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_005/train_chunk_005__mb_results.csv"
+            }
+          },
+          {
+            "chunk_index": 6,
+            "chunk_name": "train_chunk_006",
+            "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_006.csv",
+            "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_006",
+            "returncode": 0,
+            "elapsed": 31322.075817108154,
+            "summary": {
+              "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_006.csv",
+              "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_006",
+              "count": 200,
+              "time_limit": 300.0,
+              "mip_gap": 0.01,
+              "has_solution_count": 200,
+              "status_counts": {
+                "2": 165,
+                "9": 35
+              },
+              "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_006/train_chunk_006__mb_results.csv"
+            }
+          },
+          {
+            "chunk_index": 7,
+            "chunk_name": "train_chunk_007",
+            "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_007.csv",
+            "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_007",
+            "returncode": 0,
+            "elapsed": 31413.990402936935,
+            "summary": {
+              "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_007.csv",
+              "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_007",
+              "count": 200,
+              "time_limit": 300.0,
+              "mip_gap": 0.01,
+              "has_solution_count": 200,
+              "status_counts": {
+                "2": 161,
+                "9": 39
+              },
+              "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_007/train_chunk_007__mb_results.csv"
+            }
+          },
+          {
+            "chunk_index": 8,
+            "chunk_name": "train_chunk_008",
+            "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_008.csv",
+            "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_008",
+            "returncode": 0,
+            "elapsed": 31832.677163124084,
+            "summary": {
+              "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_008.csv",
+              "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_008",
+              "count": 200,
+              "time_limit": 300.0,
+              "mip_gap": 0.01,
+              "has_solution_count": 200,
+              "status_counts": {
+                "2": 155,
+                "9": 45
+              },
+              "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_008/train_chunk_008__mb_results.csv"
+            }
+          },
+          {
+            "chunk_index": 9,
+            "chunk_name": "train_chunk_009",
+            "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_009.csv",
+            "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_009",
+            "returncode": 0,
+            "elapsed": 28820.58052587509,
+            "summary": {
+              "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_009.csv",
+              "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_009",
+              "count": 200,
+              "time_limit": 300.0,
+              "mip_gap": 0.01,
+              "has_solution_count": 200,
+              "status_counts": {
+                "2": 170,
+                "9": 30
+              },
+              "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_009/train_chunk_009__mb_results.csv"
+            }
+          },
+          {
+            "chunk_index": 10,
+            "chunk_name": "train_chunk_010",
+            "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_010.csv",
+            "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_010",
+            "returncode": 0,
+            "elapsed": 30579.511587142944,
+            "summary": {
+              "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_010.csv",
+              "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_010",
+              "count": 200,
+              "time_limit": 300.0,
+              "mip_gap": 0.01,
+              "has_solution_count": 200,
+              "status_counts": {
+                "2": 159,
+                "9": 41
+              },
+              "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_010/train_chunk_010__mb_results.csv"
+            }
+          },
+          {
+            "chunk_index": 11,
+            "chunk_name": "train_chunk_011",
+            "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_011.csv",
+            "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_011",
+            "returncode": 0,
+            "elapsed": 31690.592015981674,
+            "summary": {
+              "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_011.csv",
+              "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_011",
+              "count": 200,
+              "time_limit": 300.0,
+              "mip_gap": 0.01,
+              "has_solution_count": 200,
+              "status_counts": {
+                "2": 161,
+                "9": 39
+              },
+              "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_011/train_chunk_011__mb_results.csv"
+            }
+          },
+          {
+            "chunk_index": 12,
+            "chunk_name": "train_chunk_012",
+            "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_012.csv",
+            "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_012",
+            "returncode": 0,
+            "elapsed": 30034.93228983879,
+            "summary": {
+              "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_012.csv",
+              "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_012",
+              "count": 200,
+              "time_limit": 300.0,
+              "mip_gap": 0.01,
+              "has_solution_count": 200,
+              "status_counts": {
+                "2": 162,
+                "9": 38
+              },
+              "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_012/train_chunk_012__mb_results.csv"
+            }
+          },
+          {
+            "chunk_index": 13,
+            "chunk_name": "train_chunk_013",
+            "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_013.csv",
+            "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_013",
+            "returncode": 0,
+            "elapsed": 29376.558089971542,
+            "summary": {
+              "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_013.csv",
+              "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_013",
+              "count": 200,
+              "time_limit": 300.0,
+              "mip_gap": 0.01,
+              "has_solution_count": 200,
+              "status_counts": {
+                "9": 31,
+                "2": 169
+              },
+              "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_013/train_chunk_013__mb_results.csv"
+            }
+          },
+          {
+            "chunk_index": 14,
+            "chunk_name": "train_chunk_014",
+            "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_014.csv",
+            "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_014",
+            "returncode": 0,
+            "elapsed": 30768.515639066696,
+            "summary": {
+              "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_014.csv",
+              "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_014",
+              "count": 200,
+              "time_limit": 300.0,
+              "mip_gap": 0.01,
+              "has_solution_count": 200,
+              "status_counts": {
+                "2": 163,
+                "9": 37
+              },
+              "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_014/train_chunk_014__mb_results.csv"
+            }
+          },
+          {
+            "chunk_index": 15,
+            "chunk_name": "train_chunk_015",
+            "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_015.csv",
+            "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_015",
+            "returncode": 0,
+            "elapsed": 30631.984961032867,
+            "summary": {
+              "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_015.csv",
+              "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_015",
+              "count": 200,
+              "time_limit": 300.0,
+              "mip_gap": 0.01,
+              "has_solution_count": 200,
+              "status_counts": {
+                "2": 168,
+                "9": 32
+              },
+              "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_015/train_chunk_015__mb_results.csv"
+            }
+          },
+          {
+            "chunk_index": 16,
+            "chunk_name": "train_chunk_016",
+            "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_016.csv",
+            "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_016",
+            "returncode": 0,
+            "elapsed": 29629.249484062195,
+            "summary": {
+              "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_016.csv",
+              "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_016",
+              "count": 200,
+              "time_limit": 300.0,
+              "mip_gap": 0.01,
+              "has_solution_count": 200,
+              "status_counts": {
+                "2": 170,
+                "9": 30
+              },
+              "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_016/train_chunk_016__mb_results.csv"
+            }
+          },
+          {
+            "chunk_index": 17,
+            "chunk_name": "train_chunk_017",
+            "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_017.csv",
+            "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_017",
+            "returncode": 0,
+            "elapsed": 29154.680929899216,
+            "summary": {
+              "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_017.csv",
+              "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_017",
+              "count": 200,
+              "time_limit": 300.0,
+              "mip_gap": 0.01,
+              "has_solution_count": 200,
+              "status_counts": {
+                "2": 165,
+                "9": 35
+              },
+              "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_017/train_chunk_017__mb_results.csv"
+            }
+          },
+          {
+            "chunk_index": 18,
+            "chunk_name": "train_chunk_018",
+            "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_018.csv",
+            "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_018",
+            "returncode": 0,
+            "elapsed": 31019.649426937103,
+            "summary": {
+              "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_018.csv",
+              "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_018",
+              "count": 200,
+              "time_limit": 300.0,
+              "mip_gap": 0.01,
+              "has_solution_count": 200,
+              "status_counts": {
+                "2": 159,
+                "9": 41
+              },
+              "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_018/train_chunk_018__mb_results.csv"
+            }
+          },
+          {
+            "chunk_index": 19,
+            "chunk_name": "train_chunk_019",
+            "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_019.csv",
+            "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_019",
+            "returncode": 0,
+            "elapsed": 29670.81601381302,
+            "summary": {
+              "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_019.csv",
+              "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_019",
+              "count": 200,
+              "time_limit": 300.0,
+              "mip_gap": 0.01,
+              "has_solution_count": 200,
+              "status_counts": {
+                "9": 37,
+                "2": 163
+              },
+              "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_019/train_chunk_019__mb_results.csv"
+            }
+          },
+          {
+            "chunk_index": 20,
+            "chunk_name": "train_chunk_020",
+            "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_020.csv",
+            "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_020",
+            "returncode": 0,
+            "elapsed": 28765.651453971863,
+            "summary": {
+              "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/train/train_chunk_020.csv",
+              "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_020",
+              "count": 200,
+              "time_limit": 300.0,
+              "mip_gap": 0.01,
+              "has_solution_count": 200,
+              "status_counts": {
+                "2": 163,
+                "9": 37
+              },
+              "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/train/train_chunk_020/train_chunk_020__mb_results.csv"
+            }
+          }
+        ],
+        "started_at": 1773321558.375194,
+        "updated_at": 1773933783.731402,
+        "finished_at": 1773933783.732335
+      }
+    },
+    {
+      "split": "eval",
+      "start": 1,
+      "end": 3,
+      "returncode": 0,
+      "elapsed": 75479.11619496346,
+      "status_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/eval_queue_status.json",
+      "status": {
+        "split": "eval",
+        "start": 1,
+        "end": 3,
+        "time_limit": 300.0,
+        "mip_gap": 0.01,
+        "chunks": [
+          {
+            "chunk_index": 1,
+            "chunk_name": "eval_chunk_001",
+            "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/eval/eval_chunk_001.csv",
+            "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/eval/eval_chunk_001",
+            "returncode": 0,
+            "elapsed": 30444.78818297386,
+            "summary": {
+              "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/eval/eval_chunk_001.csv",
+              "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/eval/eval_chunk_001",
+              "count": 200,
+              "time_limit": 300.0,
+              "mip_gap": 0.01,
+              "has_solution_count": 200,
+              "status_counts": {
+                "2": 161,
+                "9": 39
+              },
+              "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/eval/eval_chunk_001/eval_chunk_001__mb_results.csv"
+            }
+          },
+          {
+            "chunk_index": 2,
+            "chunk_name": "eval_chunk_002",
+            "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/eval/eval_chunk_002.csv",
+            "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/eval/eval_chunk_002",
+            "returncode": 0,
+            "elapsed": 30780.398702144623,
+            "summary": {
+              "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/eval/eval_chunk_002.csv",
+              "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/eval/eval_chunk_002",
+              "count": 200,
+              "time_limit": 300.0,
+              "mip_gap": 0.01,
+              "has_solution_count": 200,
+              "status_counts": {
+                "2": 162,
+                "9": 38
+              },
+              "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/eval/eval_chunk_002/eval_chunk_002__mb_results.csv"
+            }
+          },
+          {
+            "chunk_index": 3,
+            "chunk_name": "eval_chunk_003",
+            "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/eval/eval_chunk_003.csv",
+            "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/eval/eval_chunk_003",
+            "returncode": 0,
+            "elapsed": 14253.882135152817,
+            "summary": {
+              "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/eval/eval_chunk_003.csv",
+              "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/eval/eval_chunk_003",
+              "count": 100,
+              "time_limit": 300.0,
+              "mip_gap": 0.01,
+              "has_solution_count": 100,
+              "status_counts": {
+                "9": 17,
+                "2": 83
+              },
+              "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/eval/eval_chunk_003/eval_chunk_003__mb_results.csv"
+            }
+          }
+        ],
+        "started_at": 1773933783.780519,
+        "updated_at": 1774009262.8515232,
+        "finished_at": 1774009262.8518898
+      }
+    },
+    {
+      "split": "test",
+      "start": 1,
+      "end": 3,
+      "returncode": 0,
+      "elapsed": 73631.96580410004,
+      "status_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/test_queue_status.json",
+      "status": {
+        "split": "test",
+        "start": 1,
+        "end": 3,
+        "time_limit": 300.0,
+        "mip_gap": 0.01,
+        "chunks": [
+          {
+            "chunk_index": 1,
+            "chunk_name": "test_chunk_001",
+            "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/test/test_chunk_001.csv",
+            "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/test/test_chunk_001",
+            "returncode": 0,
+            "elapsed": 29495.857561826706,
+            "summary": {
+              "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/test/test_chunk_001.csv",
+              "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/test/test_chunk_001",
+              "count": 200,
+              "time_limit": 300.0,
+              "mip_gap": 0.01,
+              "has_solution_count": 200,
+              "status_counts": {
+                "2": 169,
+                "9": 31
+              },
+              "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/test/test_chunk_001/test_chunk_001__mb_results.csv"
+            }
+          },
+          {
+            "chunk_index": 2,
+            "chunk_name": "test_chunk_002",
+            "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/test/test_chunk_002.csv",
+            "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/test/test_chunk_002",
+            "returncode": 0,
+            "elapsed": 29973.313520908356,
+            "summary": {
+              "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/test/test_chunk_002.csv",
+              "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/test/test_chunk_002",
+              "count": 200,
+              "time_limit": 300.0,
+              "mip_gap": 0.01,
+              "has_solution_count": 200,
+              "status_counts": {
+                "2": 170,
+                "9": 30
+              },
+              "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/test/test_chunk_002/test_chunk_002__mb_results.csv"
+            }
+          },
+          {
+            "chunk_index": 3,
+            "chunk_name": "test_chunk_003",
+            "manifest_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/test/test_chunk_003.csv",
+            "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/test/test_chunk_003",
+            "returncode": 0,
+            "elapsed": 14162.737253904343,
+            "summary": {
+              "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm_chunked_manifests/test/test_chunk_003.csv",
+              "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/test/test_chunk_003",
+              "count": 100,
+              "time_limit": 300.0,
+              "mip_gap": 0.01,
+              "has_solution_count": 100,
+              "status_counts": {
+                "2": 86,
+                "9": 14
+              },
+              "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_mb_labels_chunked_run1/test/test_chunk_003/test_chunk_003__mb_results.csv"
+            }
+          }
+        ],
+        "started_at": 1774009262.89803,
+        "updated_at": 1774082894.812226,
+        "finished_at": 1774082894.813231
+      }
+    }
+  ],
+  "started_at": 1773321558.347351,
+  "updated_at": 1774082894.8239,
+  "finished_at": 1774082894.8258638
+}

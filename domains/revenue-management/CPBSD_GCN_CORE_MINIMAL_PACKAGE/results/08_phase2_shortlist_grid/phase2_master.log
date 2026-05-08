@@ -1,0 +1,276 @@
+[2026-04-13 16:54:41] Phase 2 batch start
+Output root: /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst
+Runner: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/run_cpbsd_fcp_pruned_mb_compare_parallel.py
+Python: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python
+
+[2026-04-13 16:54:41] START normal_rho0.0_full_zero
+[start] seed=20260413 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.0_full_zero/runs/seed_20260413
+[start] seed=20260414 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.0_full_zero/runs/seed_20260414
+[start] seed=20260415 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.0_full_zero/runs/seed_20260415
+[done] seed=20260413 rc=0 elapsed=10.0s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.0_full_zero/logs/seed_20260413.log
+[done] seed=20260414 rc=0 elapsed=10.0s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.0_full_zero/logs/seed_20260414.log
+[done] seed=20260415 rc=0 elapsed=10.0s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.0_full_zero/logs/seed_20260415.log
+[start] seed=20260416 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.0_full_zero/runs/seed_20260416
+[start] seed=20260417 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.0_full_zero/runs/seed_20260417
+[done] seed=20260416 rc=0 elapsed=5.0s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.0_full_zero/logs/seed_20260416.log
+[done] seed=20260417 rc=0 elapsed=5.0s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.0_full_zero/logs/seed_20260417.log
+{
+  "summary_json": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.0_full_zero/comparison_summary_all.json",
+  "summary_csv": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.0_full_zero/comparison_summary_all.csv",
+  "aggregate_json": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.0_full_zero/aggregate_metrics.json",
+  "aggregate": {
+    "BSP": {
+      "count": 5,
+      "avg_revenue_in_sample": 25.40253869399166,
+      "avg_revenue_out_sample": 24.30696634955629,
+      "avg_solver_runtime": 0.2919276714324951,
+      "avg_ratio_to_bsp": 1.0,
+      "avg_ratio_to_cpbsd_a": 0.9999487078121504
+    },
+    "CPBSD-A": {
+      "count": 5,
+      "avg_revenue_in_sample": 25.403836902393376,
+      "avg_revenue_out_sample": 24.33262839339581,
+      "avg_solver_runtime": 0.309938383102417,
+      "avg_ratio_to_bsp": 1.0000513053456668,
+      "avg_ratio_to_cpbsd_a": 1.0
+    },
+    "FCP-pruned-MB": {
+      "count": 5,
+      "avg_revenue_in_sample": 25.421922564433906,
+      "avg_revenue_out_sample": 24.192252349232433,
+      "avg_solver_runtime": 0.5105942726135254,
+      "avg_ratio_to_bsp": 1.0007661040396527,
+      "avg_ratio_to_cpbsd_a": 1.0007146137015646
+    }
+  },
+  "row_count": 15
+}
+[2026-04-13 16:55:01] DONE normal_rho0.0_full_zero
+
+[2026-04-13 16:55:01] START normal_rho0.0_full_hvhm
+[start] seed=20260413 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.0_full_hvhm/runs/seed_20260413
+[start] seed=20260414 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.0_full_hvhm/runs/seed_20260414
+[start] seed=20260415 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.0_full_hvhm/runs/seed_20260415
+[done] seed=20260415 rc=0 elapsed=30.0s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.0_full_hvhm/logs/seed_20260415.log
+[start] seed=20260416 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.0_full_hvhm/runs/seed_20260416
+[done] seed=20260413 rc=0 elapsed=35.0s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.0_full_hvhm/logs/seed_20260413.log
+[start] seed=20260417 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.0_full_hvhm/runs/seed_20260417
+[done] seed=20260414 rc=0 elapsed=80.1s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.0_full_hvhm/logs/seed_20260414.log
+[done] seed=20260417 rc=0 elapsed=45.1s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.0_full_hvhm/logs/seed_20260417.log
+[done] seed=20260416 rc=0 elapsed=65.1s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.0_full_hvhm/logs/seed_20260416.log
+{
+  "summary_json": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.0_full_hvhm/comparison_summary_all.json",
+  "summary_csv": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.0_full_hvhm/comparison_summary_all.csv",
+  "aggregate_json": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.0_full_hvhm/aggregate_metrics.json",
+  "aggregate": {
+    "BSP": {
+      "count": 5,
+      "avg_revenue_in_sample": 1.3474551643695094,
+      "avg_revenue_out_sample": 1.1313247099287937,
+      "avg_solver_runtime": 2.225889205932617,
+      "avg_ratio_to_bsp": 1.0,
+      "avg_ratio_to_cpbsd_a": 0.9139204449380873
+    },
+    "CPBSD-A": {
+      "count": 5,
+      "avg_revenue_in_sample": 1.475434863515688,
+      "avg_revenue_out_sample": 1.288578161862521,
+      "avg_solver_runtime": 22.97399730682373,
+      "avg_ratio_to_bsp": 1.0967361141872076,
+      "avg_ratio_to_cpbsd_a": 1.0
+    },
+    "FCP-pruned-MB": {
+      "count": 5,
+      "avg_revenue_in_sample": 1.5011206063647033,
+      "avg_revenue_out_sample": 1.1787681547643403,
+      "avg_solver_runtime": 20.924999952316284,
+      "avg_ratio_to_bsp": 1.115967504694922,
+      "avg_ratio_to_cpbsd_a": 1.018319400147736
+    }
+  },
+  "row_count": 15
+}
+[2026-04-13 16:56:41] DONE normal_rho0.0_full_hvhm
+
+[2026-04-13 16:56:41] START logit_rho0.0_full_zero
+[start] seed=20260413 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/logit_rho0.0_full_zero/runs/seed_20260413
+[start] seed=20260414 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/logit_rho0.0_full_zero/runs/seed_20260414
+[start] seed=20260415 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/logit_rho0.0_full_zero/runs/seed_20260415
+[done] seed=20260413 rc=0 elapsed=5.0s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/logit_rho0.0_full_zero/logs/seed_20260413.log
+[done] seed=20260414 rc=0 elapsed=5.0s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/logit_rho0.0_full_zero/logs/seed_20260414.log
+[done] seed=20260415 rc=0 elapsed=5.0s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/logit_rho0.0_full_zero/logs/seed_20260415.log
+[start] seed=20260416 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/logit_rho0.0_full_zero/runs/seed_20260416
+[start] seed=20260417 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/logit_rho0.0_full_zero/runs/seed_20260417
+[done] seed=20260416 rc=0 elapsed=5.0s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/logit_rho0.0_full_zero/logs/seed_20260416.log
+[done] seed=20260417 rc=0 elapsed=5.0s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/logit_rho0.0_full_zero/logs/seed_20260417.log
+{
+  "summary_json": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/logit_rho0.0_full_zero/comparison_summary_all.json",
+  "summary_csv": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/logit_rho0.0_full_zero/comparison_summary_all.csv",
+  "aggregate_json": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/logit_rho0.0_full_zero/aggregate_metrics.json",
+  "aggregate": {
+    "BSP": {
+      "count": 5,
+      "avg_revenue_in_sample": 26.265300107068743,
+      "avg_revenue_out_sample": 25.049626018939716,
+      "avg_solver_runtime": 0.17426581382751466,
+      "avg_ratio_to_bsp": 1.0,
+      "avg_ratio_to_cpbsd_a": 1.000016458257814
+    },
+    "CPBSD-A": {
+      "count": 5,
+      "avg_revenue_in_sample": 26.264860274708138,
+      "avg_revenue_out_sample": 25.050354148277513,
+      "avg_solver_runtime": 0.1770486831665039,
+      "avg_ratio_to_bsp": 0.9999835430964458,
+      "avg_ratio_to_cpbsd_a": 1.0
+    },
+    "FCP-pruned-MB": {
+      "count": 5,
+      "avg_revenue_in_sample": 26.265300107070118,
+      "avg_revenue_out_sample": 24.910625169750812,
+      "avg_solver_runtime": 0.1346057415008545,
+      "avg_ratio_to_bsp": 1.0000000000000524,
+      "avg_ratio_to_cpbsd_a": 1.0000164582578663
+    }
+  },
+  "row_count": 15
+}
+[2026-04-13 16:56:57] DONE logit_rho0.0_full_zero
+
+[2026-04-13 16:56:57] START logit_rho0.0_full_hvhm
+[start] seed=20260413 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/logit_rho0.0_full_hvhm/runs/seed_20260413
+[start] seed=20260414 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/logit_rho0.0_full_hvhm/runs/seed_20260414
+[start] seed=20260415 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/logit_rho0.0_full_hvhm/runs/seed_20260415
+[done] seed=20260414 rc=0 elapsed=50.1s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/logit_rho0.0_full_hvhm/logs/seed_20260414.log
+[done] seed=20260415 rc=0 elapsed=50.1s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/logit_rho0.0_full_hvhm/logs/seed_20260415.log
+[start] seed=20260416 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/logit_rho0.0_full_hvhm/runs/seed_20260416
+[start] seed=20260417 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/logit_rho0.0_full_hvhm/runs/seed_20260417
+[done] seed=20260413 rc=0 elapsed=55.1s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/logit_rho0.0_full_hvhm/logs/seed_20260413.log
+[done] seed=20260417 rc=0 elapsed=45.0s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/logit_rho0.0_full_hvhm/logs/seed_20260417.log
+[done] seed=20260416 rc=0 elapsed=50.1s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/logit_rho0.0_full_hvhm/logs/seed_20260416.log
+{
+  "summary_json": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/logit_rho0.0_full_hvhm/comparison_summary_all.json",
+  "summary_csv": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/logit_rho0.0_full_hvhm/comparison_summary_all.csv",
+  "aggregate_json": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/logit_rho0.0_full_hvhm/aggregate_metrics.json",
+  "aggregate": {
+    "BSP": {
+      "count": 5,
+      "avg_revenue_in_sample": 1.2879935581226583,
+      "avg_revenue_out_sample": 1.1160532674509012,
+      "avg_solver_runtime": 3.0780813694000244,
+      "avg_ratio_to_bsp": 1.0,
+      "avg_ratio_to_cpbsd_a": 0.9899460906773637
+    },
+    "CPBSD-A": {
+      "count": 5,
+      "avg_revenue_in_sample": 1.3013844173618911,
+      "avg_revenue_out_sample": 1.1494819429820797,
+      "avg_solver_runtime": 22.164642572402954,
+      "avg_ratio_to_bsp": 1.010690520183823,
+      "avg_ratio_to_cpbsd_a": 1.0
+    },
+    "FCP-pruned-MB": {
+      "count": 5,
+      "avg_revenue_in_sample": 1.3347990741087568,
+      "avg_revenue_out_sample": 1.088756631985039,
+      "avg_solver_runtime": 20.905183410644533,
+      "avg_ratio_to_bsp": 1.0373579609904542,
+      "avg_ratio_to_cpbsd_a": 1.0259630295189006
+    }
+  },
+  "row_count": 15
+}
+[2026-04-13 16:58:42] DONE logit_rho0.0_full_hvhm
+
+[2026-04-13 16:58:42] START normal_rho0.5_full_zero
+[start] seed=20260413 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.5_full_zero/runs/seed_20260413
+[start] seed=20260414 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.5_full_zero/runs/seed_20260414
+[start] seed=20260415 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.5_full_zero/runs/seed_20260415
+[done] seed=20260413 rc=0 elapsed=5.0s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.5_full_zero/logs/seed_20260413.log
+[done] seed=20260414 rc=0 elapsed=5.0s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.5_full_zero/logs/seed_20260414.log
+[done] seed=20260415 rc=0 elapsed=5.0s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.5_full_zero/logs/seed_20260415.log
+[start] seed=20260416 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.5_full_zero/runs/seed_20260416
+[start] seed=20260417 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.5_full_zero/runs/seed_20260417
+[done] seed=20260416 rc=0 elapsed=5.0s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.5_full_zero/logs/seed_20260416.log
+[done] seed=20260417 rc=0 elapsed=5.0s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.5_full_zero/logs/seed_20260417.log
+{
+  "summary_json": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.5_full_zero/comparison_summary_all.json",
+  "summary_csv": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.5_full_zero/comparison_summary_all.csv",
+  "aggregate_json": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho0.5_full_zero/aggregate_metrics.json",
+  "aggregate": {
+    "BSP": {
+      "count": 5,
+      "avg_revenue_in_sample": 25.017189308895077,
+      "avg_revenue_out_sample": 22.925356081577746,
+      "avg_solver_runtime": 0.3024094581604004,
+      "avg_ratio_to_bsp": 1.0,
+      "avg_ratio_to_cpbsd_a": 0.9998831418427414
+    },
+    "CPBSD-A": {
+      "count": 5,
+      "avg_revenue_in_sample": 25.02006451277489,
+      "avg_revenue_out_sample": 22.961856537402376,
+      "avg_solver_runtime": 0.40817060470581057,
+      "avg_ratio_to_bsp": 1.0001169264763214,
+      "avg_ratio_to_cpbsd_a": 1.0
+    },
+    "FCP-pruned-MB": {
+      "count": 5,
+      "avg_revenue_in_sample": 25.01272604587252,
+      "avg_revenue_out_sample": 22.988171070832145,
+      "avg_solver_runtime": 0.4156615734100342,
+      "avg_ratio_to_bsp": 0.9998185055845283,
+      "avg_ratio_to_cpbsd_a": 0.999701579108207
+    }
+  },
+  "row_count": 15
+}
+[2026-04-13 16:58:57] DONE normal_rho0.5_full_zero
+
+[2026-04-13 16:58:57] START normal_rho-0.5_full_zero
+[start] seed=20260413 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho-0.5_full_zero/runs/seed_20260413
+[start] seed=20260414 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho-0.5_full_zero/runs/seed_20260414
+[start] seed=20260415 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho-0.5_full_zero/runs/seed_20260415
+[done] seed=20260413 rc=0 elapsed=5.0s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho-0.5_full_zero/logs/seed_20260413.log
+[done] seed=20260414 rc=0 elapsed=5.0s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho-0.5_full_zero/logs/seed_20260414.log
+[done] seed=20260415 rc=0 elapsed=5.0s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho-0.5_full_zero/logs/seed_20260415.log
+[start] seed=20260416 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho-0.5_full_zero/runs/seed_20260416
+[start] seed=20260417 root=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho-0.5_full_zero/runs/seed_20260417
+[done] seed=20260416 rc=0 elapsed=5.0s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho-0.5_full_zero/logs/seed_20260416.log
+[done] seed=20260417 rc=0 elapsed=5.0s log=/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho-0.5_full_zero/logs/seed_20260417.log
+{
+  "summary_json": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho-0.5_full_zero/comparison_summary_all.json",
+  "summary_csv": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho-0.5_full_zero/comparison_summary_all.csv",
+  "aggregate_json": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/fcp_mb_phase2_shortlist_n5_5inst/normal_rho-0.5_full_zero/aggregate_metrics.json",
+  "aggregate": {
+    "BSP": {
+      "count": 5,
+      "avg_revenue_in_sample": 26.09268648149878,
+      "avg_revenue_out_sample": 25.36288590149232,
+      "avg_solver_runtime": 0.2188596248626709,
+      "avg_ratio_to_bsp": 1.0,
+      "avg_ratio_to_cpbsd_a": 1.0000000000000617
+    },
+    "CPBSD-A": {
+      "count": 5,
+      "avg_revenue_in_sample": 26.09268648149716,
+      "avg_revenue_out_sample": 25.19710969851365,
+      "avg_solver_runtime": 0.19013614654541017,
+      "avg_ratio_to_bsp": 0.9999999999999382,
+      "avg_ratio_to_cpbsd_a": 1.0
+    },
+    "FCP-pruned-MB": {
+      "count": 5,
+      "avg_revenue_in_sample": 26.0913472501917,
+      "avg_revenue_out_sample": 25.018267784784413,
+      "avg_solver_runtime": 0.34450206756591795,
+      "avg_ratio_to_bsp": 0.9999487521517777,
+      "avg_ratio_to_cpbsd_a": 0.9999487521518393
+    }
+  },
+  "row_count": 15
+}
+[2026-04-13 16:59:12] DONE normal_rho-0.5_full_zero
+
+[2026-04-13 16:59:12] Phase 2 batch finished

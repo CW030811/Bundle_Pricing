@@ -1,0 +1,58 @@
+{
+  "instance_id": "cpbsd_instance_001_N10_K50_normal_rho0.0_full_hvhm",
+  "setup_key": "normal_rho0.0_full_hvhm",
+  "anchor_bundle_count": 37,
+  "full_bundle_count": 1024,
+  "baseline": {
+    "restricted_in_sample_revenue": 3.5618720363522725,
+    "restricted_oos_revenue": 2.399032113204915
+  },
+  "bsp_all_prices": {
+    "solver_status": 2,
+    "feasible": true,
+    "runtime": 11.521646976470947,
+    "wall_time": 11.52262282371521,
+    "objective": 3.0667372248986373,
+    "size_prices_all": {
+      "0": 0.0,
+      "1": 19.917395572120522,
+      "2": 19.9173955721205,
+      "3": 27.322818578787235,
+      "4": 34.20846736584759,
+      "5": 40.34110944548172,
+      "6": 45.037073206030065,
+      "7": 48.83689621998285,
+      "8": 52.207780688943295,
+      "9": 53.56580450400532,
+      "10": 54.48899733449856
+    }
+  },
+  "variant_a": {
+    "name": "Variant-A-Anchored-BSP-Projection",
+    "feasible": false,
+    "runtime": 0.10321187973022461,
+    "objective": null,
+    "size_prices": null,
+    "repaired_in_sample_revenue": null,
+    "repaired_oos_revenue": null,
+    "anchor_preserved": false,
+    "subadditivity": {
+      "violation_count": -1,
+      "max_violation": -1.0
+    }
+  },
+  "variant_b": {
+    "name": "Variant-B-Reduced-Coupling-BSP-Projection",
+    "feasible": false,
+    "runtime": 0.000308990478515625,
+    "objective": null,
+    "size_prices": null,
+    "repaired_in_sample_revenue": null,
+    "repaired_oos_revenue": null,
+    "anchor_preserved": false,
+    "subadditivity": {
+      "violation_count": -1,
+      "max_violation": -1.0
+    }
+  }
+}
