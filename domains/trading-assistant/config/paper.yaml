@@ -1,0 +1,5 @@
+mode: paper
+okx:
+  demo_trading: true
+execution:
+  live_enabled: false

@@ -1,0 +1,604 @@
+version: 1
+updated_at: '2026-05-28'
+scope: Bitcoin and BTC-adjacent cryptocurrency quantitative strategies
+selection_principles:
+- Prefer clear economic logic over opaque curve fitting.
+- Prefer data available from OKX/public OHLCV/funding/order book feeds.
+- Require confirmed candles and next-bar execution in backtests.
+- Track fees, slippage, regime behavior, failure modes, and reproducibility difficulty.
+strategies:
+- id: btc_time_series_momentum
+  name: Bitcoin time-series momentum / trend following
+  family: trend_following
+  priority: high
+  implementation_status: implemented_single_asset
+  implemented_as: trend_mr
+  report_name: strategy_sweep
+  source_type: research_paper
+  sources:
+  - title: A Decade of Evidence of Trend Following Investing in Cryptocurrencies
+    url: https://arxiv.org/abs/2009.12155
+  - title: Dynamic time series momentum of cryptocurrencies
+    url: https://www.sciencedirect.com/science/article/pii/S1062940821000590
+  logic: Go long BTC when medium-term returns or moving-average trend are positive;
+    stay flat or short only where instrument rules allow.
+  data_requirements:
+  - BTC/USDT OHLCV
+  - confirmed candles
+  - fee schedule
+  signal_construction: EMA/return trend filter; optional RSI overbought guard.
+  entry_rules: Enter long after trend confirmation on a closed bar; execute next bar.
+  exit_rules: Exit when trend turns neutral/negative or risk breaker fires.
+  position_sizing: Target percentage capped by risk config; volatility adjustment
+    is recommended for production.
+  risk_management:
+  - max symbol exposure
+  - daily loss cap
+  - drawdown breaker
+  - kill switch
+  suitable_market_regimes:
+  - persistent bull trends
+  - post-breakout drift
+  failure_conditions:
+  - sideways chop
+  - fee-heavy whipsaws
+  - late trend reversals
+  reproducibility_difficulty: low
+  backtest_status: partial
+  research_pipeline_stage: strategy_research
+  factor_pipeline_status: factor_pipeline_ready
+  strategy_pipeline_status: strategy_backtested_partial
+  promotion_status: baseline_only
+  pipeline_notes: Migrated to FactorBuilder as btc_time_series_momentum_336h for
+    baseline IC screening; strategy remains a baseline rather than paper candidate.
+  recommendation: Keep as baseline; compare against buy-and-hold and adaptive trend.
+- id: crypto_cross_sectional_momentum
+  name: Cross-sectional crypto momentum
+  family: cross_sectional_momentum
+  priority: high
+  implementation_status: implemented_portfolio
+  implemented_as: cross_sectional_momentum
+  report_name: cross_sectional_momentum_walk_forward
+  source_type: research_paper
+  sources:
+  - title: 'Momentum in the Cryptocurrency Market: A Comprehensive Analysis under
+      Realistic Assumptions'
+    url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4675565
+  - title: Cryptocurrencies and momentum
+    url: https://www.sciencedirect.com/science/article/pii/S0165176519301077
+  logic: Rank liquid crypto assets by past return and hold the strongest names; BTC
+    is part of the comparison universe.
+  data_requirements:
+  - multi-asset OHLCV
+  - liquidity filter
+  - confirmed candles
+  signal_construction: lookback return rank across symbols.
+  entry_rules: Buy top ranked symbols after rebalance close.
+  exit_rules: Exit symbols falling out of the selected set or when circuit breakers
+    fire.
+  position_sizing: Equal or capped allocation across top N, constrained by max symbol
+    exposure and turnover budget.
+  risk_management:
+  - turnover cap
+  - rebalance cooldown
+  - stale data guard
+  - portfolio drawdown breaker
+  suitable_market_regimes:
+  - dispersion
+  - rotational alt rallies
+  - broad risk-on trends
+  failure_conditions:
+  - sharp reversals
+  - crowded momentum unwind
+  - thin/liquidity-fragmented names
+  reproducibility_difficulty: medium
+  backtest_status: walk_forward_and_costs_done
+  research_pipeline_stage: strategy_research
+  factor_pipeline_status: factor_pipeline_ready
+  strategy_pipeline_status: strategy_validated
+  promotion_status: primary_paper_candidate
+  pipeline_notes: Migrated to FactorBuilder as cross_sectional_momentum_720h;
+    remains the strongest strategy-level candidate after walk-forward and cost validation.
+  recommendation: Current primary paper strategy; require clean 24h+ service window
+    before live consideration.
+- id: adaptive_trend_portfolio
+  name: Adaptive trend portfolio
+  family: adaptive_trend
+  priority: high
+  implementation_status: implemented_portfolio
+  implemented_as: adaptive_trend
+  report_name: adaptive_trend_walk_forward
+  source_type: recent_research
+  sources:
+  - title: Systematic Trend-Following with Adaptive Portfolio Construction
+    url: https://arxiv.org/abs/2602.11708
+  logic: Combine trend participation with volatility/risk-adjusted allocation and
+    walk-forward parameter selection.
+  data_requirements:
+  - multi-asset OHLCV
+  - realistic fees/slippage
+  signal_construction: rolling return quality plus EMA trend filter and volatility
+    target.
+  entry_rules: Enter selected assets that pass trend and risk filters.
+  exit_rules: Exit when trend filter fails, ranking weakens, or risk budget is exhausted.
+  position_sizing: Volatility-targeted weights capped by max_weight.
+  risk_management:
+  - volatility targeting
+  - max weight
+  - drawdown breaker
+  suitable_market_regimes:
+  - trending but volatile markets
+  - mixed crypto regimes
+  failure_conditions:
+  - low volatility compression before break
+  - parameter instability
+  reproducibility_difficulty: medium
+  backtest_status: walk_forward_and_costs_done
+  research_pipeline_stage: strategy_research
+  factor_pipeline_status: factor_pipeline_ready
+  strategy_pipeline_status: strategy_validated
+  promotion_status: backup_paper_candidate
+  pipeline_notes: Migrated to FactorBuilder as adaptive_trend_quality; strategy
+    remains low-drawdown backup after walk-forward and cost validation.
+  recommendation: Keep as low-drawdown backup candidate.
+- id: donchian_breakout_btc
+  name: Donchian channel breakout on BTC
+  family: breakout
+  priority: medium
+  implementation_status: implemented_single_asset
+  implemented_as: donchian_breakout
+  report_name: strategy_sweep
+  source_type: foundational_rule
+  sources:
+  - title: Classic Donchian/Turtle-style breakout rule
+    url: https://en.wikipedia.org/wiki/Donchian_channel
+  logic: Buy BTC when close breaks above prior N-bar high; exit on shorter low channel.
+  data_requirements:
+  - BTC/USDT OHLCV
+  signal_construction: prior high/low channel excluding current bar.
+  entry_rules: Close above previous lookback high.
+  exit_rules: Close below exit channel low or risk stop.
+  position_sizing: ATR or fixed risk fraction; current implementation uses target
+    exposure.
+  risk_management:
+  - ATR stop candidate
+  - max exposure
+  - fee/slippage model
+  suitable_market_regimes:
+  - breakout trends
+  - post-consolidation expansion
+  failure_conditions:
+  - false breakouts
+  - range-bound markets
+  reproducibility_difficulty: low
+  backtest_status: partial
+  research_pipeline_stage: strategy_research
+  factor_pipeline_status: factor_pipeline_ready
+  strategy_pipeline_status: strategy_backtested_partial
+  promotion_status: research_only
+  pipeline_notes: Implemented as a single-asset technical strategy; needs BTC-only
+    factor/backtest normalization before promotion.
+  recommendation: Re-run BTC-only with ATR sizing and regime split.
+- id: rsi_bollinger_btc_reversion
+  name: BTC RSI + Bollinger mean reversion
+  family: mean_reversion
+  priority: medium
+  implementation_status: implemented_single_asset
+  implemented_as: rsi_bollinger_reversion
+  report_name: strategy_sweep
+  source_type: technical_blog_pattern
+  sources:
+  - title: RSI and Bollinger Bands technical-analysis family
+    url: https://www.frontiersin.org/journals/big-data/articles/10.3389/fdata.2024.1369895/pdf
+  logic: Buy oversold BTC when price is below lower band and RSI is weak; exit on
+    normalization.
+  data_requirements:
+  - BTC/USDT OHLCV
+  signal_construction: RSI plus Bollinger z-score style filter.
+  entry_rules: Close below lower band and RSI below threshold.
+  exit_rules: Return to neutral band, overbought condition, or risk stop.
+  position_sizing: Small fixed target exposure; avoid leverage.
+  risk_management:
+  - trend filter recommended
+  - max daily loss
+  - stop after consecutive losses
+  suitable_market_regimes:
+  - sideways volatile markets
+  - liquidity flush mean reversion
+  failure_conditions:
+  - crash continuation
+  - bear trend knife-catching
+  reproducibility_difficulty: low
+  backtest_status: partial
+  research_pipeline_stage: strategy_research
+  factor_pipeline_status: factor_pipeline_pending
+  strategy_pipeline_status: strategy_backtested_partial
+  promotion_status: research_only
+  pipeline_notes: Implemented as a single-asset technical strategy; mean-reversion
+    z-score factors can be migrated after regime filters are defined.
+  recommendation: Use only with regime filter; not a standalone live candidate yet.
+- id: volatility_adjusted_btc_trend
+  name: Volatility-adjusted BTC trend
+  family: trend_following
+  priority: medium
+  implementation_status: implemented_single_asset
+  implemented_as: vol_trend
+  report_name: strategy_sweep
+  source_type: foundational_quant_pattern
+  sources:
+  - title: Time-series momentum / volatility scaling family
+    url: https://www.sciencedirect.com/science/article/pii/S1062940821000590
+  logic: Scale trend exposure down when ATR/realized volatility is high.
+  data_requirements:
+  - BTC/USDT OHLCV
+  - ATR or realized volatility
+  signal_construction: EMA spread normalized by ATR percentage.
+  entry_rules: Positive volatility-adjusted trend score.
+  exit_rules: Trend score neutral/negative or volatility/risk cap breach.
+  position_sizing: Target exposure proportional to trend/volatility score.
+  risk_management:
+  - volatility cap
+  - max leverage
+  - drawdown breaker
+  suitable_market_regimes:
+  - persistent BTC trends with changing volatility
+  failure_conditions:
+  - volatility spikes with gap risk
+  - EMA lag
+  reproducibility_difficulty: low
+  backtest_status: partial
+  research_pipeline_stage: strategy_research
+  factor_pipeline_status: factor_pipeline_pending
+  strategy_pipeline_status: strategy_backtested_partial
+  promotion_status: research_only
+  pipeline_notes: Migrated to FactorBuilder as volatility_adjusted_btc_trend for
+    baseline risk-adjusted trend IC screening.
+  recommendation: Good baseline for BTC-only low-complexity strategy.
+- id: btc_grid_trading
+  name: BTC range grid trading
+  family: grid_market_making
+  priority: medium
+  implementation_status: candidate
+  implemented_as: null
+  report_name: null
+  source_type: open_source_project
+  sources:
+  - title: jordantete/grid_trading_bot
+    url: https://github.com/jordantete/grid_trading_bot
+  logic: Place staggered buy/sell levels around a price range to harvest oscillation.
+  data_requirements:
+  - BTC/USDT OHLCV
+  - tick/lot constraints
+  - fee schedule
+  signal_construction: range bounds, grid spacing, and inventory state.
+  entry_rules: Start grid only when volatility/range filter says BTC is non-trending.
+  exit_rules: Stop grid on breakout, max inventory, or drawdown limit.
+  position_sizing: Small per-grid notional; inventory cap mandatory.
+  risk_management:
+  - inventory cap
+  - breakout stop
+  - fee sensitivity
+  - kill switch
+  suitable_market_regimes:
+  - sideways range
+  - mean-reverting chop
+  failure_conditions:
+  - one-way trend
+  - large gaps
+  - fees exceed grid edge
+  reproducibility_difficulty: medium
+  backtest_status: not_started
+  research_pipeline_stage: not_started
+  factor_pipeline_status: factor_pipeline_not_primary
+  strategy_pipeline_status: not_started
+  promotion_status: not_started
+  pipeline_notes: Inventory/order-state strategy; not a primary V1 IC factor-pipeline
+    candidate.
+  recommendation: Implement only after adding order-state/inventory-aware simulator.
+- id: funding_rate_carry_btc_perp
+  name: BTC perpetual funding-rate carry
+  family: carry
+  priority: medium
+  implementation_status: implemented_research
+  implemented_as: funding_carry
+  report_name: funding_carry_walk_forward
+  source_type: market_microstructure_pattern
+  sources:
+  - title: OKX funding-rate-history data
+    url: https://www.okx.com/docs-v5/en/
+  logic: Collect favorable funding while controlling delta exposure and margin risk.
+  data_requirements:
+  - perp funding history
+  - swap prices
+  - margin rules
+  - borrow/hedge assumptions
+  signal_construction: rank realized/predicted funding rates over recent periods.
+  entry_rules: Enter only when funding exceeds threshold and liquidity/margin are
+    acceptable.
+  exit_rules: Exit when funding decays, reverses, or margin risk rises.
+  position_sizing: Notional cap by account equity and leverage; preferably delta-neutral.
+  risk_management:
+  - max leverage
+  - margin buffer
+  - funding reversal guard
+  - liquidation distance
+  suitable_market_regimes:
+  - persistent speculative imbalance
+  failure_conditions:
+  - funding flips
+  - basis squeeze
+  - margin shock
+  reproducibility_difficulty: high
+  backtest_status: walk_forward_weak
+  research_pipeline_stage: strategy_research
+  factor_pipeline_status: factor_pipeline_ready
+  strategy_pipeline_status: strategy_validated_weak
+  promotion_status: research_only
+  pipeline_notes: Migrated to FactorBuilder as funding_carry_recent; strategy evidence
+    remains weak and needs margin/execution validation before promotion.
+  recommendation: Research only until margin/execution model is stronger.
+- id: btc_eth_cointegration_pairs
+  name: BTC/ETH cointegration pairs mean reversion
+  family: statistical_arbitrage
+  priority: medium
+  implementation_status: implemented_research
+  implemented_as: btc_eth_cointegration_pairs
+  report_name: btc_eth_cointegration_pairs
+  source_type: research_paper
+  sources:
+  - title: Constructing Cointegrated Cryptocurrency Portfolios for Statistical Arbitrage
+    url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3235890
+  - title: Statistical arbitrage strategies using cointegration analysis in cryptocurrency
+    url: https://ijsra.net/sites/default/files/fulltext_pdf/IJSRA-2026-0283.pdf
+  logic: Trade deviations of a cointegrated BTC/ETH or crypto basket spread from its
+    equilibrium.
+  data_requirements:
+  - synchronized BTC/ETH OHLCV
+  - cointegration test window
+  - fees/slippage
+  signal_construction: rolling hedge ratio and spread z-score.
+  entry_rules: Long spread below negative z threshold, short spread above positive
+    threshold.
+  exit_rules: Exit near zero z-score or when cointegration breaks.
+  position_sizing: Dollar-neutral hedge-ratio sizing with gross exposure cap.
+  risk_management:
+  - cointegration p-value guard
+  - spread stop
+  - gross leverage cap
+  suitable_market_regimes:
+  - stable BTC/ETH relationship
+  - mean-reverting relative value
+  failure_conditions:
+  - structural regime break
+  - exchange-specific dislocation
+  - borrow/margin constraints
+  reproducibility_difficulty: medium
+  backtest_status: partial
+  research_pipeline_stage: strategy_research
+  factor_pipeline_status: factor_pipeline_pending
+  strategy_pipeline_status: strategy_backtested_partial
+  promotion_status: research_only
+  pipeline_notes: Reproduced as independent pairs research; needs walk-forward,
+    cointegration stability gates, and factor-style spread diagnostics.
+  recommendation: Reproduced as a research backtest with rolling hedge ratio, z-score
+    spread signals, confirmed candles, next-bar-open execution, fees and slippage;
+    add walk-forward cointegration stability gates before paper/live use.
+- id: altcoin_btc_arbitrage_factor_reversion
+  name: Altcoin-Bitcoin factor mean reversion
+  family: statistical_arbitrage
+  priority: medium
+  implementation_status: candidate
+  implemented_as: null
+  report_name: null
+  source_type: research_paper_with_code
+  sources:
+  - title: Altcoin-Bitcoin Arbitrage
+    url: https://arxiv.org/abs/1903.06033
+  - title: Cryptoasset Factor Models
+    url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3245641
+  logic: Use BTC or leading crypto factor momentum to find relative mean-reversion
+    opportunities in altcoins.
+  data_requirements:
+  - multi-asset OHLCV
+  - liquidity filters
+  - factor construction
+  signal_construction: residual return versus BTC/factor model; contrarian residual
+    rank.
+  entry_rules: Long underperforming residuals and short outperforming residuals when
+    borrow/shorting is available.
+  exit_rules: Exit on residual normalization or factor instability.
+  position_sizing: Dollar-neutral basket with liquidity and concentration caps.
+  risk_management:
+  - liquidity floor
+  - shorting availability
+  - factor beta cap
+  suitable_market_regimes:
+  - liquid altcoin dispersion
+  - stable factor relationships
+  failure_conditions:
+  - altcoin delistings
+  - meme squeezes
+  - factor regime shifts
+  reproducibility_difficulty: high
+  backtest_status: not_started
+  research_pipeline_stage: factor_research
+  factor_pipeline_status: factor_pipeline_ready
+  strategy_pipeline_status: not_started
+  promotion_status: not_started
+  pipeline_notes: Migrated to FactorBuilder as altcoin_btc_residual_reversion; strategy
+    construction and backtest remain not started.
+  recommendation: Reproduce after pair/cointegration engine exists.
+- id: btc_orderbook_market_making
+  name: BTC order-book market making / queue-aware HFT
+  family: market_microstructure
+  priority: low
+  implementation_status: candidate
+  implemented_as: null
+  report_name: null
+  source_type: open_source_project
+  sources:
+  - title: nkaz001/hftbacktest
+    url: https://github.com/nkaz001/hftbacktest
+  logic: Provide passive liquidity based on order-book imbalance, queue position,
+    and microprice.
+  data_requirements:
+  - L2/L3 order book
+  - trades
+  - latency
+  - fee tier
+  - queue model
+  signal_construction: microprice/imbalance and queue fill probability.
+  entry_rules: Quote bid/ask when expected edge exceeds fees and adverse selection
+    risk.
+  exit_rules: Cancel/reprice on imbalance flip, inventory cap, or latency risk.
+  position_sizing: Inventory-aware quoting with tight max position.
+  risk_management:
+  - latency model
+  - cancel throttles
+  - inventory kill switch
+  - adverse selection filter
+  suitable_market_regimes:
+  - deep liquid order books
+  - maker rebates or low taker fees
+  failure_conditions:
+  - latency disadvantage
+  - toxic flow
+  - API/order throttling
+  reproducibility_difficulty: very_high
+  backtest_status: not_started
+  research_pipeline_stage: not_started
+  factor_pipeline_status: factor_pipeline_not_primary
+  strategy_pipeline_status: not_started
+  promotion_status: not_started
+  pipeline_notes: Order-book and latency-dependent strategy; requires microstructure
+    simulator before factor or strategy pipeline work.
+  recommendation: Do not prioritize for first live system; needs tick/order-book infrastructure.
+- id: btc_volatility_breakout
+  name: BTC volatility breakout
+  family: breakout
+  priority: medium
+  implementation_status: implemented_single_asset
+  implemented_as: btc_volatility_breakout
+  report_name: strategy_sweep
+  source_type: technical_strategy_family
+  sources:
+  - title: Momentum and breakout strategy family
+    url: https://arxiv.org/abs/2009.12155
+  logic: Trade expansion after compressed realized range or ATR breakout.
+  data_requirements:
+  - BTC/USDT OHLCV
+  - ATR/range compression
+  signal_construction: range compression plus close above breakout band.
+  entry_rules: Enter after confirmed breakout from low-volatility range.
+  exit_rules: ATR trailing stop or trend reversal.
+  position_sizing: ATR-risked fixed fractional sizing.
+  risk_management:
+  - ATR stop
+  - false-breakout filter
+  - max daily loss
+  suitable_market_regimes:
+  - post-compression expansions
+  failure_conditions:
+  - fake breakouts
+  - news whipsaws
+  reproducibility_difficulty: low
+  backtest_status: partial
+  research_pipeline_stage: strategy_research
+  factor_pipeline_status: factor_pipeline_pending
+  strategy_pipeline_status: strategy_backtested_partial
+  promotion_status: research_only
+  pipeline_notes: Implemented as BTC single-asset strategy; range-compression and
+    breakout components can become factors after BTC-only diagnostics.
+  recommendation: Newly implemented BTC single-asset candidate; run BTC-only sweep,
+    regime split, and cost sensitivity before paper consideration.
+- id: btc_realized_volatility_targeting
+  name: BTC realized-volatility targeting overlay
+  family: risk_overlay
+  priority: medium
+  implementation_status: implemented_single_asset
+  implemented_as: btc_realized_volatility_targeting
+  report_name: strategy_sweep
+  source_type: foundational_quant_pattern
+  sources:
+  - title: Volatility targeting / trend-following portfolio construction family
+    url: https://arxiv.org/abs/2602.11708
+  logic: Scale BTC exposure inversely to recent realized volatility, optionally combined
+    with trend filter.
+  data_requirements:
+  - BTC/USDT OHLCV
+  - realized volatility window
+  signal_construction: target volatility divided by realized volatility, capped.
+  entry_rules: Allocate when trend or base strategy is active.
+  exit_rules: Reduce to zero when trend filter fails or volatility spike breaches
+    cap.
+  position_sizing: volatility-targeted exposure cap.
+  risk_management:
+  - max leverage
+  - volatility spike guard
+  - drawdown cap
+  suitable_market_regimes:
+  - all regimes as overlay
+  - especially volatile BTC trends
+  failure_conditions:
+  - volatility estimates lag jumps
+  - underexposure in rebounds
+  reproducibility_difficulty: low
+  backtest_status: partial
+  research_pipeline_stage: strategy_research
+  factor_pipeline_status: factor_pipeline_not_primary
+  strategy_pipeline_status: strategy_backtested_partial
+  promotion_status: research_only
+  pipeline_notes: Primarily a risk overlay rather than standalone alpha factor;
+    keep in strategy/risk research layer unless decomposed for diagnostics.
+  recommendation: Newly implemented as a conservative BTC exposure overlay; compare
+    against vol_trend and buy-and-hold.
+- id: external_alpha_factor_ensemble
+  name: External alpha factor transform ensemble
+  family: factor_ensemble
+  priority: medium
+  implementation_status: implemented_research
+  implemented_as: alpha_ensemble
+  report_name: alpha_ensemble
+  source_type: external_strategy_package
+  sources:
+  - title: Crypto CTA factor transform package review
+    url: local_zip_review
+  logic: Convert reusable price, funding, or external alpha factors into bounded
+    CTA-style signals through rolling transforms, then average strategy variants
+    inside groups and combine groups by explicit research weights.
+  data_requirements:
+  - confirmed OKX candles for tradable forward returns
+  - platform factor values or external CSV values with ts, symbol, factor
+  - fee and slippage assumptions
+  signal_construction: Apply ma_diff, z_score, minmax, robust_scaling, box_cox,
+    or rate_of_change transforms to factor values with explicit window, threshold,
+    style, and position type.
+  entry_rules: Research-only signal rows are evaluated against forward tradable
+    returns; no direct entry routing is enabled.
+  exit_rules: Research-only exits are implicit when transformed signal returns to
+    zero or flips sign.
+  position_sizing: Group signals are equal-weighted internally and combined by
+    explicit YAML group weights; no optimizer is used.
+  risk_management:
+  - research-only promotion gate
+  - confirmed data requirement
+  - explicit group weights
+  - existing live gate required before any future promotion
+  suitable_market_regimes:
+  - regimes where alternative factors retain stable predictive content
+  - diversified factor environments
+  failure_conditions:
+  - parameter overfitting
+  - stale or malformed external factor data
+  - weak walk-forward stability
+  reproducibility_difficulty: medium
+  backtest_status: partial
+  research_pipeline_stage: factor_research
+  factor_pipeline_status: factor_pipeline_ready
+  strategy_pipeline_status: research_only
+  promotion_status: research_only
+  pipeline_notes: Added as a research bridge for external alpha packages; it must
+    pass walk-forward, cost sensitivity, shortlist, paper stability, and operator
+    gates before any live consideration.
+  recommendation: Use for alpha discovery and diagnostics only; do not wire into
+    paper/live defaults until separate promotion evidence exists.

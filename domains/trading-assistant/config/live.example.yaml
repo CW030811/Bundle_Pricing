@@ -1,0 +1,21 @@
+mode: live
+okx:
+  domain: global
+  demo_trading: false
+  proxy_url: ""
+  api_key_env: OKX_API_KEY
+  api_secret_env: OKX_API_SECRET
+  passphrase_env: OKX_PASSPHRASE
+  demo_api_key_env: OKX_DEMO_API_KEY
+  demo_api_secret_env: OKX_DEMO_API_SECRET
+  demo_passphrase_env: OKX_DEMO_PASSPHRASE
+execution:
+  live_enabled: false
+  require_confirm_live: true
+  margin_mode: cross
+risk:
+  live_trading_cap_usdt: 50
+  max_risk_per_trade_pct: 0.005
+  max_symbol_exposure_pct: 0.20
+  max_daily_loss_pct: 0.02
+  max_leverage: 1

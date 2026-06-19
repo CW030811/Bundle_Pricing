@@ -1,0 +1,127 @@
+{
+  "count": 12,
+  "symbols": [
+    "OKB/USDT",
+    "FLOKI/USDT",
+    "WLD/USDT",
+    "PEPE/USDT",
+    "LTC/USDT",
+    "NEAR/USDT",
+    "BTC/USDT",
+    "INJ/USDT",
+    "OP/USDT",
+    "ETHW/USDT",
+    "UNI/USDT",
+    "TRUMP/USDT"
+  ],
+  "rows": [
+    {
+      "symbol": "OKB/USDT",
+      "inst_id": "OKB-USDT",
+      "instrument_type": "spot",
+      "quote_volume_24h": 3345536525.829553,
+      "last": 95.5,
+      "base": "OKB",
+      "quote": "USDT"
+    },
+    {
+      "symbol": "FLOKI/USDT",
+      "inst_id": "FLOKI-USDT",
+      "instrument_type": "spot",
+      "quote_volume_24h": 1749495548.4974153,
+      "last": 2.978e-05,
+      "base": "FLOKI",
+      "quote": "USDT"
+    },
+    {
+      "symbol": "WLD/USDT",
+      "inst_id": "WLD-USDT",
+      "instrument_type": "spot",
+      "quote_volume_24h": 1247238509.4964187,
+      "last": 0.386,
+      "base": "WLD",
+      "quote": "USDT"
+    },
+    {
+      "symbol": "PEPE/USDT",
+      "inst_id": "PEPE-USDT",
+      "instrument_type": "spot",
+      "quote_volume_24h": 993835269.8532298,
+      "last": 3.625e-06,
+      "base": "PEPE",
+      "quote": "USDT"
+    },
+    {
+      "symbol": "LTC/USDT",
+      "inst_id": "LTC-USDT",
+      "instrument_type": "spot",
+      "quote_volume_24h": 620390995.4022508,
+      "last": 52.88,
+      "base": "LTC",
+      "quote": "USDT"
+    },
+    {
+      "symbol": "NEAR/USDT",
+      "inst_id": "NEAR-USDT",
+      "instrument_type": "spot",
+      "quote_volume_24h": 611593503.5529318,
+      "last": 2.836,
+      "base": "NEAR",
+      "quote": "USDT"
+    },
+    {
+      "symbol": "BTC/USDT",
+      "inst_id": "BTC-USDT",
+      "instrument_type": "spot",
+      "quote_volume_24h": 529349052.5811089,
+      "last": 77383.3,
+      "base": "BTC",
+      "quote": "USDT"
+    },
+    {
+      "symbol": "INJ/USDT",
+      "inst_id": "INJ-USDT",
+      "instrument_type": "spot",
+      "quote_volume_24h": 323233959.97491044,
+      "last": 5.639,
+      "base": "INJ",
+      "quote": "USDT"
+    },
+    {
+      "symbol": "OP/USDT",
+      "inst_id": "OP-USDT",
+      "instrument_type": "spot",
+      "quote_volume_24h": 292024679.3679108,
+      "last": 0.1333,
+      "base": "OP",
+      "quote": "USDT"
+    },
+    {
+      "symbol": "ETHW/USDT",
+      "inst_id": "ETHW-USDT",
+      "instrument_type": "spot",
+      "quote_volume_24h": 201967029.70371994,
+      "last": 0.2752,
+      "base": "ETHW",
+      "quote": "USDT"
+    },
+    {
+      "symbol": "UNI/USDT",
+      "inst_id": "UNI-USDT",
+      "instrument_type": "spot",
+      "quote_volume_24h": 199897225.8560228,
+      "last": 3.36,
+      "base": "UNI",
+      "quote": "USDT"
+    },
+    {
+      "symbol": "TRUMP/USDT",
+      "inst_id": "TRUMP-USDT",
+      "instrument_type": "spot",
+      "quote_volume_24h": 172193847.82096815,
+      "last": 2.082,
+      "base": "TRUMP",
+      "quote": "USDT"
+    }
+  ]
+}

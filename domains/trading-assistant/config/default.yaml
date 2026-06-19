@@ -1,0 +1,93 @@
+mode: paper
+data_dir: data
+report_dir: reports
+state_dir: state
+log_dir: logs
+
+okx:
+  domain: global
+  demo_trading: true
+  timeout_seconds: 20
+  proxy_url: ""
+  demo_api_key_env: OKX_DEMO_API_KEY
+  demo_api_secret_env: OKX_DEMO_API_SECRET
+  demo_passphrase_env: OKX_DEMO_PASSPHRASE
+  api_key_env: OKX_API_KEY
+  api_secret_env: OKX_API_SECRET
+  passphrase_env: OKX_PASSPHRASE
+
+market:
+  base_currency: USDT
+  bar: 1H
+  symbols:
+    - BTC/USDT
+    - ETH/USDT
+  instrument_types:
+    - spot
+    - swap
+  trade_allowlist: []
+  trade_blocklist: []
+
+strategy:
+  name: trend_mr
+  fast_ema: 12
+  slow_ema: 48
+  rsi_period: 14
+  atr_period: 14
+  bollinger_period: 20
+  bollinger_std: 2.0
+  min_volume: 0
+
+risk:
+  starting_equity: 10000
+  live_trading_cap_usdt: 50
+  max_risk_per_trade_pct: 0.005
+  max_symbol_exposure_pct: 0.20
+  max_daily_loss_pct: 0.02
+  max_consecutive_losses: 3
+  max_leverage: 1
+  max_portfolio_drawdown_pct: 0.05
+  max_turnover_per_rebalance_pct: 0.50
+  kill_switch_file: state/KILL_SWITCH
+
+execution:
+  fee_rate: 0.0008
+  slippage_bps: 2
+  live_enabled: false
+  require_confirm_live: true
+  margin_mode: cross
+  default_order_type: market
+
+backtest:
+  initial_cash: 10000
+  benchmark: BTC/USDT
+
+service:
+  pid_file: state/quant_service.pid
+  watchdog_pid_file: state/quant_watchdog.pid
+  launch_state_file: state/quant_service_launch.json
+  watchdog_launch_state_file: state/quant_watchdog_launch.json
+  stop_file: state/quant_service.stop
+  heartbeat_file: state/quant_service_heartbeat.json
+  watchdog_heartbeat_file: state/quant_watchdog_heartbeat.json
+  log_file: logs/quant_service.log
+  watchdog_log_file: logs/quant_watchdog.log
+  max_consecutive_errors: 5
+  retry_backoff_seconds: 30
+  log_max_bytes: 5000000
+  log_backup_count: 5
+  max_candle_age_seconds: 7200
+  rebalance_cooldown_seconds: 3600
+  watchdog_interval_seconds: 60
+  watchdog_max_heartbeat_age_seconds: 300
+  min_free_disk_bytes: 100000000
+  okx_cancel_all_after_seconds: 0
+  refresh_candles_before_iteration: true
+  refresh_candles_limit: 300
+  event_log_file: logs/quant_events.jsonl
+  notification_log_file: logs/quant_notifications.jsonl
+  notification_webhook_url_env: QUANT_NOTIFICATION_WEBHOOK_URL
+  notification_timeout_seconds: 10
+  notify_on_orders: true
+  notify_on_watchdog_failure: true
+  notify_on_kill_switch: true

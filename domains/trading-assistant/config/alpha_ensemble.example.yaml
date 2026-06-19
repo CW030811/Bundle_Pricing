@@ -1,0 +1,55 @@
+name: external_alpha_factor_ensemble
+version: v1
+symbols:
+  - BTC/USDT
+  - ETH/USDT
+  - SOL/USDT
+instrument_type: spot
+horizon_bars: 1
+min_symbols: 2
+
+groups:
+  - group: btc_time_series_momentum_transforms
+    factor: btc_time_series_momentum_336h
+    weight: 0.25
+    transforms:
+      - model: ma_diff
+        window: 24
+        threshold: 0.02
+        style: momentum
+        position_type: long_only
+      - model: z_score
+        window: 24
+        threshold: 0.5
+        style: momentum
+        position_type: long_only
+
+  - group: volatility_adjusted_btc_trend_transforms
+    factor: volatility_adjusted_btc_trend
+    weight: 0.25
+    transforms:
+      - model: robust_scaling
+        window: 24
+        threshold: 0.5
+        style: momentum
+        position_type: long_only
+
+  - group: funding_carry_transforms
+    factor: funding_carry_recent
+    weight: 0.20
+    transforms:
+      - model: rate_of_change
+        window: 3
+        threshold: 0.05
+        style: momentum
+        position_type: long_short
+
+  - group: cross_sectional_momentum_transforms
+    factor: cross_sectional_momentum_720h
+    weight: 0.30
+    transforms:
+      - model: minmax
+        window: 24
+        threshold: 0.7
+        style: momentum
+        position_type: long_only
