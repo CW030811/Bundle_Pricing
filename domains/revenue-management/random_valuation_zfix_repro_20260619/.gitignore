@@ -1,0 +1,9 @@
+# Regenerable intermediate MB labels (4000 per-instance JSONs, ~33 MB).
+# Recreate with:  python code/relabel_all_zfix.py
+# The fixed manifests (labels/manifest_*__mb_zfix.csv) ARE committed.
+labels/train/*.json
+labels/eval/*.json
+labels/test/*.json
+
+__pycache__/
+*.pyc
