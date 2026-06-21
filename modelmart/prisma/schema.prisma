@@ -1,0 +1,140 @@
+// ModelMart 数据模型
+// 计费单位「额度」: 1 元 = 100000 额度 (见 src/lib/constants.ts)
+// 模型价格以「额度 / 1M tokens」存储
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// ───────────── 用户 (销售/财务核心主体) ─────────────
+model User {
+  id            Int          @id @default(autoincrement())
+  username      String       @unique
+  email         String?      @unique
+  passwordHash  String
+  role          String       @default("user") // user | admin
+  status        String       @default("active") // active | banned
+  balance       Int          @default(0) // 当前额度
+  totalRecharge Int          @default(0) // 累计充值额度
+  totalConsumed Int          @default(0) // 累计消费额度
+  inviteCode    String       @unique
+  invitedById   Int?
+  createdAt     DateTime     @default(now())
+  tokens        Token[]
+  orders        Order[]
+  usageLogs     UsageLog[]
+  redeemed      RedeemCode[] @relation("RedeemedBy")
+}
+
+// ───────────── API 令牌 (对外出售的 sk-xxx) ─────────────
+model Token {
+  id         Int        @id @default(autoincrement())
+  userId     Int
+  user       User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  name       String
+  key        String     @unique // sk-...
+  status     String     @default("active") // active | disabled
+  quotaLimit Int? // null = 不限额; 否则该令牌可用额度上限
+  usedQuota  Int        @default(0)
+  group      String     @default("default")
+  expiresAt  DateTime?
+  lastUsedAt DateTime?
+  createdAt  DateTime   @default(now())
+  usageLogs  UsageLog[]
+}
+
+// ───────────── 渠道 (进货 + 调度: 上游供应商) ─────────────
+model Channel {
+  id        Int      @id @default(autoincrement())
+  name      String
+  provider  String // openai | anthropic | deepseek | google | mock
+  baseUrl   String
+  apiKey    String
+  models    String // 逗号分隔的模型名
+  weight    Int      @default(1) // 加权随机调度权重
+  priority  Int      @default(0) // 优先级, 越大越优先
+  status    String   @default("active") // active | disabled
+  group     String   @default("default")
+  balance   Int      @default(0) // 已知剩余额度 (进货成本观测, 仅展示)
+  createdAt DateTime @default(now())
+}
+
+// ───────────── 模型与定价 (商品 SKU) ─────────────
+model ModelPrice {
+  id          Int      @id @default(autoincrement())
+  name        String   @unique
+  displayName String
+  provider    String
+  category    String   @default("chat") // chat | image | embedding | agent | mcp | skill
+  priceInput  Int // 额度 / 1M tokens (输入)
+  priceOutput Int // 额度 / 1M tokens (输出)
+  costInput   Int      @default(0) // 进货成本额度 / 1M (仅后台/财务可见)
+  costOutput  Int      @default(0)
+  description String   @default("")
+  tag         String   @default("") // 热门 / 新品 / 限时
+  status      String   @default("active") // active | offline
+  sortOrder   Int      @default(0)
+  createdAt   DateTime @default(now())
+}
+
+// ───────────── 订单 (财务: 充值流水) ─────────────
+model Order {
+  id        Int       @id @default(autoincrement())
+  userId    Int
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  orderNo   String    @unique
+  amount    Int // 实付金额 (分)
+  quota     Int // 到账额度
+  payMethod String    @default("mock") // mock | alipay | wechat | redeem
+  status    String    @default("pending") // pending | paid | failed | cancelled
+  createdAt DateTime  @default(now())
+  paidAt    DateTime?
+}
+
+// ───────────── 兑换码 ─────────────
+model RedeemCode {
+  id           Int       @id @default(autoincrement())
+  code         String    @unique
+  quota        Int // 面值额度
+  status       String    @default("unused") // unused | used | disabled
+  redeemedById Int?
+  redeemedBy   User?     @relation("RedeemedBy", fields: [redeemedById], references: [id])
+  redeemedAt   DateTime?
+  createdAt    DateTime  @default(now())
+}
+
+// ───────────── 用量日志 (统计 + 计费明细) ─────────────
+model UsageLog {
+  id               Int      @id @default(autoincrement())
+  userId           Int
+  user             User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tokenId          Int?
+  token            Token?   @relation(fields: [tokenId], references: [id], onDelete: SetNull)
+  modelName        String
+  promptTokens     Int      @default(0)
+  completionTokens Int      @default(0)
+  quotaCost        Int      @default(0)
+  channelName      String   @default("")
+  ip               String   @default("")
+  createdAt        DateTime @default(now())
+}
+
+// ───────────── 公告 ─────────────
+model Announcement {
+  id        Int      @id @default(autoincrement())
+  title     String
+  content   String
+  pinned    Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
+
+// ───────────── 系统设置 (KV) ─────────────
+model Setting {
+  key   String @id
+  value String
+}

@@ -1,0 +1,14 @@
+services:
+  modelmart:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      DATABASE_URL: "file:/app/data/prod.db"
+      AUTH_SECRET: "替换为: openssl rand -hex 32"
+    volumes:
+      - modelmart-data:/app/data # SQLite 持久化
+    restart: unless-stopped
+
+volumes:
+  modelmart-data:
