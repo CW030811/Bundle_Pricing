@@ -1,0 +1,26 @@
+{
+  "setup": {
+    "N": 5,
+    "K_in": 100,
+    "dist": "normal",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost": "hvhm",
+    "time_limit": 600.0,
+    "instances": 5
+  },
+  "status_counts": {
+    "TIME_LIMIT": 5
+  },
+  "runtime_mean": 600.0200254440308,
+  "runtime_median": 600.0200519561768,
+  "objective_raw_mean": 1.4742500194198223,
+  "revenue_in_sample_mean": 1.4672053749837624,
+  "revenue_out_sample_k2000_mean": 1.2162389866155816,
+  "revenue_out_sample_k5000_mean": 1.2103265968968189,
+  "generalization_ratio_k2000_over_in_mean": 0.831547675642174,
+  "generalization_ratio_k5000_over_in_mean": 0.827265401049854,
+  "generalization_drop_k2000_mean": 0.25096638836818047,
+  "generalization_drop_k5000_mean": 0.25687877808694326,
+  "details_csv": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/mb_generalization_compare_v2_t600/mb_k100_t600_details.csv"
+}

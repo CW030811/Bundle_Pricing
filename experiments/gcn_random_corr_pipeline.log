@@ -1,0 +1,608 @@
+Pipeline: random_corr | N=5 K=50 | 4000 instances
+Experiment dir: /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_random_corr_n5
+Model dir: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/models_cpbsd_mb_x_random_corr
+
+============================================================
+STEP 1: Generate 4000 instances (N=5, K=50, cost=random_corr)
+============================================================
+Generated 4000 instances in 0.8s -> /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_random_corr_n5/instances
+
+============================================================
+STEP 2: Write manifest (3000 train / 600 val / 400 test)
+============================================================
+  train: 3000 instances -> /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_random_corr_n5/manifest_train.csv
+  eval: 600 instances -> /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_random_corr_n5/manifest_eval.csv
+  test: 400 instances -> /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_random_corr_n5/manifest_test.csv
+  Full manifest: /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_random_corr_n5/manifest_all.csv
+
+============================================================
+STEP 3: Generate MB labels
+============================================================
+
+>>> /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python -u /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/label_cpbsd_mb_from_manifest.py --manifest /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_random_corr_n5/manifest_train.csv --out-dir /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_random_corr_n5/results --time-limit 300.0
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:302: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:302: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:302: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+Set parameter LicenseID to value 2784353
+[10/3000] labeled cpbsd_instance_010_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=67.0s
+[20/3000] labeled cpbsd_instance_020_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=194.8s
+[30/3000] labeled cpbsd_instance_030_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=266.9s
+[40/3000] labeled cpbsd_instance_040_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=348.2s
+[50/3000] labeled cpbsd_instance_050_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=456.5s
+[60/3000] labeled cpbsd_instance_060_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=510.3s
+[70/3000] labeled cpbsd_instance_070_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=559.9s
+[80/3000] labeled cpbsd_instance_080_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=630.0s
+[90/3000] labeled cpbsd_instance_090_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=707.1s
+[100/3000] labeled cpbsd_instance_100_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=813.2s
+[110/3000] labeled cpbsd_instance_110_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=895.1s
+[120/3000] labeled cpbsd_instance_120_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=958.6s
+[130/3000] labeled cpbsd_instance_130_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=1062.1s
+[140/3000] labeled cpbsd_instance_140_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=1158.2s
+[150/3000] labeled cpbsd_instance_150_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=1266.1s
+[160/3000] labeled cpbsd_instance_160_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=1436.5s
+[170/3000] labeled cpbsd_instance_170_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=1550.9s
+[180/3000] labeled cpbsd_instance_180_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=1702.7s
+[190/3000] labeled cpbsd_instance_190_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=1803.8s
+[200/3000] labeled cpbsd_instance_200_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=1871.9s
+[210/3000] labeled cpbsd_instance_210_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=2008.3s
+[220/3000] labeled cpbsd_instance_220_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=2071.1s
+[230/3000] labeled cpbsd_instance_230_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=2160.4s
+[240/3000] labeled cpbsd_instance_240_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=2254.5s
+[250/3000] labeled cpbsd_instance_250_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=2326.1s
+[260/3000] labeled cpbsd_instance_260_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=2417.4s
+[270/3000] labeled cpbsd_instance_270_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=2549.2s
+[280/3000] labeled cpbsd_instance_280_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=2736.9s
+[290/3000] labeled cpbsd_instance_290_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=2877.0s
+[300/3000] labeled cpbsd_instance_300_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=2955.4s
+[310/3000] labeled cpbsd_instance_310_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=3047.0s
+[320/3000] labeled cpbsd_instance_320_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=3120.3s
+[330/3000] labeled cpbsd_instance_330_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=3213.9s
+[340/3000] labeled cpbsd_instance_340_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=3305.1s
+[350/3000] labeled cpbsd_instance_350_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=3647.8s
+[360/3000] labeled cpbsd_instance_360_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=3758.5s
+[370/3000] labeled cpbsd_instance_370_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=3914.3s
+[380/3000] labeled cpbsd_instance_380_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=4167.8s
+[390/3000] labeled cpbsd_instance_390_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=4258.2s
+[400/3000] labeled cpbsd_instance_400_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=4301.5s
+[410/3000] labeled cpbsd_instance_410_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=4354.5s
+[420/3000] labeled cpbsd_instance_420_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=4506.0s
+[430/3000] labeled cpbsd_instance_430_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=4608.8s
+[440/3000] labeled cpbsd_instance_440_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=4645.0s
+[450/3000] labeled cpbsd_instance_450_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=4747.3s
+[460/3000] labeled cpbsd_instance_460_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=4841.4s
+[470/3000] labeled cpbsd_instance_470_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=5121.3s
+[480/3000] labeled cpbsd_instance_480_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=5169.6s
+[490/3000] labeled cpbsd_instance_490_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=5268.6s
+[500/3000] labeled cpbsd_instance_500_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=5309.3s
+[510/3000] labeled cpbsd_instance_510_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=5438.9s
+[520/3000] labeled cpbsd_instance_520_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=5573.4s
+[530/3000] labeled cpbsd_instance_530_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=5658.4s
+[540/3000] labeled cpbsd_instance_540_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=5703.0s
+[550/3000] labeled cpbsd_instance_550_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=5777.4s
+[560/3000] labeled cpbsd_instance_560_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=5856.5s
+[570/3000] labeled cpbsd_instance_570_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=5919.6s
+[580/3000] labeled cpbsd_instance_580_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=6024.4s
+[590/3000] labeled cpbsd_instance_590_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=6171.2s
+[600/3000] labeled cpbsd_instance_600_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=6271.7s
+[610/3000] labeled cpbsd_instance_610_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=6328.0s
+[620/3000] labeled cpbsd_instance_620_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=6424.6s
+[630/3000] labeled cpbsd_instance_630_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=6540.8s
+[640/3000] labeled cpbsd_instance_640_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=6627.1s
+[650/3000] labeled cpbsd_instance_650_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=6692.7s
+[660/3000] labeled cpbsd_instance_660_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=6819.5s
+[670/3000] labeled cpbsd_instance_670_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=6971.4s
+[680/3000] labeled cpbsd_instance_680_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=7151.0s
+[690/3000] labeled cpbsd_instance_690_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=7195.9s
+[700/3000] labeled cpbsd_instance_700_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=7287.3s
+[710/3000] labeled cpbsd_instance_710_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=7384.1s
+[720/3000] labeled cpbsd_instance_720_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=7467.9s
+[730/3000] labeled cpbsd_instance_730_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=7640.2s
+[740/3000] labeled cpbsd_instance_740_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=7710.1s
+[750/3000] labeled cpbsd_instance_750_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=7824.4s
+[760/3000] labeled cpbsd_instance_760_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=7952.2s
+[770/3000] labeled cpbsd_instance_770_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=7999.4s
+[780/3000] labeled cpbsd_instance_780_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=8164.2s
+[790/3000] labeled cpbsd_instance_790_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=8302.8s
+[800/3000] labeled cpbsd_instance_800_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=8457.6s
+[810/3000] labeled cpbsd_instance_810_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=8509.3s
+[820/3000] labeled cpbsd_instance_820_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=8583.8s
+[830/3000] labeled cpbsd_instance_830_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=8661.0s
+[840/3000] labeled cpbsd_instance_840_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=8722.4s
+[850/3000] labeled cpbsd_instance_850_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=8876.9s
+[860/3000] labeled cpbsd_instance_860_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=8976.0s
+[870/3000] labeled cpbsd_instance_870_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=9046.3s
+[880/3000] labeled cpbsd_instance_880_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=9108.5s
+[890/3000] labeled cpbsd_instance_890_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=9150.1s
+[900/3000] labeled cpbsd_instance_900_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=9220.0s
+[910/3000] labeled cpbsd_instance_910_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=9331.0s
+[920/3000] labeled cpbsd_instance_920_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=9384.4s
+[930/3000] labeled cpbsd_instance_930_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=9460.5s
+[940/3000] labeled cpbsd_instance_940_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=9519.8s
+[950/3000] labeled cpbsd_instance_950_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=9573.5s
+[960/3000] labeled cpbsd_instance_960_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=9634.3s
+[970/3000] labeled cpbsd_instance_970_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=9713.3s
+[980/3000] labeled cpbsd_instance_980_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=9777.6s
+[990/3000] labeled cpbsd_instance_990_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=9843.4s
+[1000/3000] labeled cpbsd_instance_1000_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=9932.6s
+[1010/3000] labeled cpbsd_instance_1010_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=10040.5s
+[1020/3000] labeled cpbsd_instance_1020_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=10100.4s
+[1030/3000] labeled cpbsd_instance_1030_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=10357.9s
+[1040/3000] labeled cpbsd_instance_1040_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=10410.9s
+[1050/3000] labeled cpbsd_instance_1050_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=10489.4s
+[1060/3000] labeled cpbsd_instance_1060_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=10560.3s
+[1070/3000] labeled cpbsd_instance_1070_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=10627.1s
+[1080/3000] labeled cpbsd_instance_1080_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=10685.4s
+[1090/3000] labeled cpbsd_instance_1090_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=10750.9s
+[1100/3000] labeled cpbsd_instance_1100_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=10848.9s
+[1110/3000] labeled cpbsd_instance_1110_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=10888.7s
+[1120/3000] labeled cpbsd_instance_1120_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=10948.1s
+[1130/3000] labeled cpbsd_instance_1130_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=10999.0s
+[1140/3000] labeled cpbsd_instance_1140_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=11061.2s
+[1150/3000] labeled cpbsd_instance_1150_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=11160.1s
+[1160/3000] labeled cpbsd_instance_1160_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=11291.0s
+[1170/3000] labeled cpbsd_instance_1170_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=11401.1s
+[1180/3000] labeled cpbsd_instance_1180_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=11552.8s
+[1190/3000] labeled cpbsd_instance_1190_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=11633.0s
+[1200/3000] labeled cpbsd_instance_1200_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=11678.6s
+[1210/3000] labeled cpbsd_instance_1210_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=11734.7s
+[1220/3000] labeled cpbsd_instance_1220_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=11783.6s
+[1230/3000] labeled cpbsd_instance_1230_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=11855.6s
+[1240/3000] labeled cpbsd_instance_1240_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=11938.5s
+[1250/3000] labeled cpbsd_instance_1250_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=11993.5s
+[1260/3000] labeled cpbsd_instance_1260_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=12134.4s
+[1270/3000] labeled cpbsd_instance_1270_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=12213.0s
+[1280/3000] labeled cpbsd_instance_1280_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=12259.3s
+[1290/3000] labeled cpbsd_instance_1290_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=12316.6s
+[1300/3000] labeled cpbsd_instance_1300_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=12347.3s
+[1310/3000] labeled cpbsd_instance_1310_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=12413.6s
+[1320/3000] labeled cpbsd_instance_1320_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=12451.1s
+[1330/3000] labeled cpbsd_instance_1330_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=12519.2s
+[1340/3000] labeled cpbsd_instance_1340_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=12577.8s
+[1350/3000] labeled cpbsd_instance_1350_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=12646.6s
+[1360/3000] labeled cpbsd_instance_1360_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=12695.4s
+[1370/3000] labeled cpbsd_instance_1370_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=12958.4s
+[1380/3000] labeled cpbsd_instance_1380_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=13147.3s
+[1390/3000] labeled cpbsd_instance_1390_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=13205.6s
+[1400/3000] labeled cpbsd_instance_1400_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=13312.7s
+[1410/3000] labeled cpbsd_instance_1410_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=13363.7s
+[1420/3000] labeled cpbsd_instance_1420_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=13469.7s
+[1430/3000] labeled cpbsd_instance_1430_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=13560.1s
+[1440/3000] labeled cpbsd_instance_1440_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=13662.2s
+[1450/3000] labeled cpbsd_instance_1450_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=13774.0s
+[1460/3000] labeled cpbsd_instance_1460_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=13863.5s
+[1470/3000] labeled cpbsd_instance_1470_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=13993.9s
+[1480/3000] labeled cpbsd_instance_1480_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=14087.0s
+[1490/3000] labeled cpbsd_instance_1490_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=14126.5s
+[1500/3000] labeled cpbsd_instance_1500_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=14236.6s
+[1510/3000] labeled cpbsd_instance_1510_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=14313.3s
+[1520/3000] labeled cpbsd_instance_1520_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=14382.5s
+[1530/3000] labeled cpbsd_instance_1530_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=14593.1s
+[1540/3000] labeled cpbsd_instance_1540_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=14673.8s
+[1550/3000] labeled cpbsd_instance_1550_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=14786.2s
+[1560/3000] labeled cpbsd_instance_1560_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=14824.7s
+[1570/3000] labeled cpbsd_instance_1570_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=14883.7s
+[1580/3000] labeled cpbsd_instance_1580_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=15017.2s
+[1590/3000] labeled cpbsd_instance_1590_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=15107.6s
+[1600/3000] labeled cpbsd_instance_1600_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=15167.6s
+[1610/3000] labeled cpbsd_instance_1610_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=15234.2s
+[1620/3000] labeled cpbsd_instance_1620_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=15350.1s
+[1630/3000] labeled cpbsd_instance_1630_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=15400.1s
+[1640/3000] labeled cpbsd_instance_1640_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=15459.1s
+[1650/3000] labeled cpbsd_instance_1650_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=15517.0s
+[1660/3000] labeled cpbsd_instance_1660_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=15646.3s
+[1670/3000] labeled cpbsd_instance_1670_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=15763.4s
+[1680/3000] labeled cpbsd_instance_1680_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=15927.8s
+[1690/3000] labeled cpbsd_instance_1690_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=16037.4s
+[1700/3000] labeled cpbsd_instance_1700_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=16117.8s
+[1710/3000] labeled cpbsd_instance_1710_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=16193.8s
+[1720/3000] labeled cpbsd_instance_1720_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=16290.2s
+[1730/3000] labeled cpbsd_instance_1730_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=16493.3s
+[1740/3000] labeled cpbsd_instance_1740_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=16607.6s
+[1750/3000] labeled cpbsd_instance_1750_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=16782.6s
+[1760/3000] labeled cpbsd_instance_1760_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=16861.4s
+[1770/3000] labeled cpbsd_instance_1770_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=16963.5s
+[1780/3000] labeled cpbsd_instance_1780_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=17097.3s
+[1790/3000] labeled cpbsd_instance_1790_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=17219.9s
+[1800/3000] labeled cpbsd_instance_1800_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=17304.9s
+[1810/3000] labeled cpbsd_instance_1810_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=17382.7s
+[1820/3000] labeled cpbsd_instance_1820_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=17490.3s
+[1830/3000] labeled cpbsd_instance_1830_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=17566.7s
+[1840/3000] labeled cpbsd_instance_1840_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=17697.7s
+[1850/3000] labeled cpbsd_instance_1850_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=17754.0s
+[1860/3000] labeled cpbsd_instance_1860_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=17859.7s
+[1870/3000] labeled cpbsd_instance_1870_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=17914.6s
+[1880/3000] labeled cpbsd_instance_1880_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=17965.5s
+[1890/3000] labeled cpbsd_instance_1890_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=18097.7s
+[1900/3000] labeled cpbsd_instance_1900_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=18260.2s
+[1910/3000] labeled cpbsd_instance_1910_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=18334.6s
+[1920/3000] labeled cpbsd_instance_1920_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=18480.3s
+[1930/3000] labeled cpbsd_instance_1930_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=18524.4s
+[1940/3000] labeled cpbsd_instance_1940_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=18571.8s
+[1950/3000] labeled cpbsd_instance_1950_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=18618.1s
+[1960/3000] labeled cpbsd_instance_1960_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=18684.1s
+[1970/3000] labeled cpbsd_instance_1970_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=18771.5s
+[1980/3000] labeled cpbsd_instance_1980_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=18846.9s
+[1990/3000] labeled cpbsd_instance_1990_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=18919.7s
+[2000/3000] labeled cpbsd_instance_2000_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=18990.7s
+[2010/3000] labeled cpbsd_instance_2010_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=19034.5s
+[2020/3000] labeled cpbsd_instance_2020_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=19087.7s
+[2030/3000] labeled cpbsd_instance_2030_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=19153.5s
+[2040/3000] labeled cpbsd_instance_2040_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=19204.7s
+[2050/3000] labeled cpbsd_instance_2050_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=19291.1s
+[2060/3000] labeled cpbsd_instance_2060_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=19366.7s
+[2070/3000] labeled cpbsd_instance_2070_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=19437.4s
+[2080/3000] labeled cpbsd_instance_2080_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=19495.5s
+[2090/3000] labeled cpbsd_instance_2090_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=19588.2s
+[2100/3000] labeled cpbsd_instance_2100_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=19672.0s
+[2110/3000] labeled cpbsd_instance_2110_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=19704.9s
+[2120/3000] labeled cpbsd_instance_2120_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=19754.1s
+[2130/3000] labeled cpbsd_instance_2130_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=19875.7s
+[2140/3000] labeled cpbsd_instance_2140_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=19968.3s
+[2150/3000] labeled cpbsd_instance_2150_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=20014.2s
+[2160/3000] labeled cpbsd_instance_2160_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=20108.3s
+[2170/3000] labeled cpbsd_instance_2170_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=20189.7s
+[2180/3000] labeled cpbsd_instance_2180_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=20244.5s
+[2190/3000] labeled cpbsd_instance_2190_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=20307.0s
+[2200/3000] labeled cpbsd_instance_2200_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=20411.2s
+[2210/3000] labeled cpbsd_instance_2210_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=20530.5s
+[2220/3000] labeled cpbsd_instance_2220_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=20586.4s
+[2230/3000] labeled cpbsd_instance_2230_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=20652.1s
+[2240/3000] labeled cpbsd_instance_2240_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=20831.0s
+[2250/3000] labeled cpbsd_instance_2250_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=20863.4s
+[2260/3000] labeled cpbsd_instance_2260_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=20944.2s
+[2270/3000] labeled cpbsd_instance_2270_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=21152.7s
+[2280/3000] labeled cpbsd_instance_2280_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=21462.3s
+[2290/3000] labeled cpbsd_instance_2290_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=21535.6s
+[2300/3000] labeled cpbsd_instance_2300_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=21603.5s
+[2310/3000] labeled cpbsd_instance_2310_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=21649.1s
+[2320/3000] labeled cpbsd_instance_2320_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=21728.8s
+[2330/3000] labeled cpbsd_instance_2330_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=21806.2s
+[2340/3000] labeled cpbsd_instance_2340_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=21852.1s
+[2350/3000] labeled cpbsd_instance_2350_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=21886.0s
+[2360/3000] labeled cpbsd_instance_2360_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=21926.5s
+[2370/3000] labeled cpbsd_instance_2370_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=21981.9s
+[2380/3000] labeled cpbsd_instance_2380_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=22017.3s
+[2390/3000] labeled cpbsd_instance_2390_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=22080.0s
+[2400/3000] labeled cpbsd_instance_2400_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=22132.1s
+[2410/3000] labeled cpbsd_instance_2410_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=22273.6s
+[2420/3000] labeled cpbsd_instance_2420_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=22331.3s
+[2430/3000] labeled cpbsd_instance_2430_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=22529.8s
+[2440/3000] labeled cpbsd_instance_2440_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=22667.7s
+[2450/3000] labeled cpbsd_instance_2450_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=22757.9s
+[2460/3000] labeled cpbsd_instance_2460_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=22891.6s
+[2470/3000] labeled cpbsd_instance_2470_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=22931.1s
+[2480/3000] labeled cpbsd_instance_2480_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=22998.1s
+[2490/3000] labeled cpbsd_instance_2490_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=23078.3s
+[2500/3000] labeled cpbsd_instance_2500_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=23153.6s
+[2510/3000] labeled cpbsd_instance_2510_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=23300.0s
+[2520/3000] labeled cpbsd_instance_2520_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=23398.2s
+[2530/3000] labeled cpbsd_instance_2530_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=23533.0s
+[2540/3000] labeled cpbsd_instance_2540_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=23783.4s
+[2550/3000] labeled cpbsd_instance_2550_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=23902.8s
+[2560/3000] labeled cpbsd_instance_2560_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=23959.5s
+[2570/3000] labeled cpbsd_instance_2570_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=24048.2s
+[2580/3000] labeled cpbsd_instance_2580_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=24120.3s
+[2590/3000] labeled cpbsd_instance_2590_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=24151.8s
+[2600/3000] labeled cpbsd_instance_2600_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=24196.7s
+[2610/3000] labeled cpbsd_instance_2610_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=24228.6s
+[2620/3000] labeled cpbsd_instance_2620_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=24277.1s
+[2630/3000] labeled cpbsd_instance_2630_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=24344.9s
+[2640/3000] labeled cpbsd_instance_2640_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=24451.1s
+[2650/3000] labeled cpbsd_instance_2650_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=24525.1s
+[2660/3000] labeled cpbsd_instance_2660_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=24609.8s
+[2670/3000] labeled cpbsd_instance_2670_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=24674.6s
+[2680/3000] labeled cpbsd_instance_2680_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=24777.4s
+[2690/3000] labeled cpbsd_instance_2690_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=24826.3s
+[2700/3000] labeled cpbsd_instance_2700_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=24877.2s
+[2710/3000] labeled cpbsd_instance_2710_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=24985.1s
+[2720/3000] labeled cpbsd_instance_2720_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=25053.5s
+[2730/3000] labeled cpbsd_instance_2730_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=25095.6s
+[2740/3000] labeled cpbsd_instance_2740_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=25139.3s
+[2750/3000] labeled cpbsd_instance_2750_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=25251.0s
+[2760/3000] labeled cpbsd_instance_2760_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=25312.2s
+[2770/3000] labeled cpbsd_instance_2770_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=25415.4s
+[2780/3000] labeled cpbsd_instance_2780_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=25552.6s
+[2790/3000] labeled cpbsd_instance_2790_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=25594.4s
+[2800/3000] labeled cpbsd_instance_2800_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=25632.4s
+[2810/3000] labeled cpbsd_instance_2810_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=25699.9s
+[2820/3000] labeled cpbsd_instance_2820_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=25745.2s
+[2830/3000] labeled cpbsd_instance_2830_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=25788.6s
+[2840/3000] labeled cpbsd_instance_2840_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=25847.6s
+[2850/3000] labeled cpbsd_instance_2850_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=25949.2s
+[2860/3000] labeled cpbsd_instance_2860_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=26000.5s
+[2870/3000] labeled cpbsd_instance_2870_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=26091.5s
+[2880/3000] labeled cpbsd_instance_2880_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=26171.5s
+[2890/3000] labeled cpbsd_instance_2890_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=26218.7s
+[2900/3000] labeled cpbsd_instance_2900_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=26319.4s
+[2910/3000] labeled cpbsd_instance_2910_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=26486.1s
+[2920/3000] labeled cpbsd_instance_2920_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=26526.3s
+[2930/3000] labeled cpbsd_instance_2930_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=26573.5s
+[2940/3000] labeled cpbsd_instance_2940_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=26693.7s
+[2950/3000] labeled cpbsd_instance_2950_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=26768.9s
+[2960/3000] labeled cpbsd_instance_2960_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=26852.6s
+[2970/3000] labeled cpbsd_instance_2970_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=26911.8s
+[2980/3000] labeled cpbsd_instance_2980_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=26971.0s
+[2990/3000] labeled cpbsd_instance_2990_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=27099.6s
+[3000/3000] labeled cpbsd_instance_3000_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=27154.3s
+{
+  "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_random_corr_n5/manifest_train.csv",
+  "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_random_corr_n5/results",
+  "count": 3000,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "has_solution_count": 3000,
+  "status_counts": {
+    "2": 2999,
+    "9": 1
+  },
+  "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_random_corr_n5/results/manifest_train__mb_results.csv"
+}
+
+============================================================
+STEP 3: Generate MB labels
+============================================================
+
+>>> /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python -u /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/label_cpbsd_mb_from_manifest.py --manifest /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_random_corr_n5/manifest_eval.csv --out-dir /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_random_corr_n5/results --time-limit 300.0
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:302: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:302: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:302: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+Set parameter LicenseID to value 2784353
+[10/600] labeled cpbsd_instance_3010_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=40.8s
+[20/600] labeled cpbsd_instance_3020_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=144.7s
+[30/600] labeled cpbsd_instance_3030_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=220.3s
+[40/600] labeled cpbsd_instance_3040_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=314.2s
+[50/600] labeled cpbsd_instance_3050_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=407.5s
+[60/600] labeled cpbsd_instance_3060_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=461.3s
+[70/600] labeled cpbsd_instance_3070_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=539.7s
+[80/600] labeled cpbsd_instance_3080_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=585.8s
+[90/600] labeled cpbsd_instance_3090_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=672.0s
+[100/600] labeled cpbsd_instance_3100_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=796.0s
+[110/600] labeled cpbsd_instance_3110_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=902.1s
+[120/600] labeled cpbsd_instance_3120_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=1106.9s
+[130/600] labeled cpbsd_instance_3130_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=1170.9s
+[140/600] labeled cpbsd_instance_3140_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=1229.2s
+[150/600] labeled cpbsd_instance_3150_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=1291.7s
+[160/600] labeled cpbsd_instance_3160_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=1386.8s
+[170/600] labeled cpbsd_instance_3170_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=1438.4s
+[180/600] labeled cpbsd_instance_3180_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=1498.0s
+[190/600] labeled cpbsd_instance_3190_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=1567.5s
+[200/600] labeled cpbsd_instance_3200_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=1704.3s
+[210/600] labeled cpbsd_instance_3210_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=1746.3s
+[220/600] labeled cpbsd_instance_3220_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=1862.5s
+[230/600] labeled cpbsd_instance_3230_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=1987.7s
+[240/600] labeled cpbsd_instance_3240_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=2078.0s
+[250/600] labeled cpbsd_instance_3250_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=2117.5s
+[260/600] labeled cpbsd_instance_3260_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=2219.8s
+[270/600] labeled cpbsd_instance_3270_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=2324.3s
+[280/600] labeled cpbsd_instance_3280_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=2418.2s
+[290/600] labeled cpbsd_instance_3290_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=2480.8s
+[300/600] labeled cpbsd_instance_3300_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=2606.3s
+[310/600] labeled cpbsd_instance_3310_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=2662.9s
+[320/600] labeled cpbsd_instance_3320_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=2736.0s
+[330/600] labeled cpbsd_instance_3330_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=2813.2s
+[340/600] labeled cpbsd_instance_3340_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=2909.0s
+[350/600] labeled cpbsd_instance_3350_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=3028.1s
+[360/600] labeled cpbsd_instance_3360_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=3072.4s
+[370/600] labeled cpbsd_instance_3370_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=3157.4s
+[380/600] labeled cpbsd_instance_3380_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=3221.6s
+[390/600] labeled cpbsd_instance_3390_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=3339.2s
+[400/600] labeled cpbsd_instance_3400_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=3418.6s
+[410/600] labeled cpbsd_instance_3410_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=3565.6s
+[420/600] labeled cpbsd_instance_3420_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=3629.1s
+[430/600] labeled cpbsd_instance_3430_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=3693.6s
+[440/600] labeled cpbsd_instance_3440_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=3785.9s
+[450/600] labeled cpbsd_instance_3450_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=3832.6s
+[460/600] labeled cpbsd_instance_3460_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=3903.3s
+[470/600] labeled cpbsd_instance_3470_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=4021.2s
+[480/600] labeled cpbsd_instance_3480_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=4180.5s
+[490/600] labeled cpbsd_instance_3490_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=4260.1s
+[500/600] labeled cpbsd_instance_3500_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=4387.2s
+[510/600] labeled cpbsd_instance_3510_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=4424.8s
+[520/600] labeled cpbsd_instance_3520_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=4510.7s
+[530/600] labeled cpbsd_instance_3530_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=4584.7s
+[540/600] labeled cpbsd_instance_3540_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=4643.3s
+[550/600] labeled cpbsd_instance_3550_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=4750.8s
+[560/600] labeled cpbsd_instance_3560_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=5014.8s
+[570/600] labeled cpbsd_instance_3570_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=5112.2s
+[580/600] labeled cpbsd_instance_3580_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=5164.8s
+[590/600] labeled cpbsd_instance_3590_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=5206.8s
+[600/600] labeled cpbsd_instance_3600_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=5298.7s
+{
+  "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_random_corr_n5/manifest_eval.csv",
+  "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_random_corr_n5/results",
+  "count": 600,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "has_solution_count": 600,
+  "status_counts": {
+    "2": 600
+  },
+  "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_random_corr_n5/results/manifest_eval__mb_results.csv"
+}
+
+============================================================
+STEP 3: Generate MB labels
+============================================================
+
+>>> /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python -u /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/label_cpbsd_mb_from_manifest.py --manifest /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_random_corr_n5/manifest_test.csv --out-dir /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_random_corr_n5/results --time-limit 300.0
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:302: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:302: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:302: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+Set parameter LicenseID to value 2784353
+[10/400] labeled cpbsd_instance_3610_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=70.0s
+[20/400] labeled cpbsd_instance_3620_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=111.4s
+[30/400] labeled cpbsd_instance_3630_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=175.3s
+[40/400] labeled cpbsd_instance_3640_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=223.6s
+[50/400] labeled cpbsd_instance_3650_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=280.6s
+[60/400] labeled cpbsd_instance_3660_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=532.6s
+[70/400] labeled cpbsd_instance_3670_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=677.8s
+[80/400] labeled cpbsd_instance_3680_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=785.7s
+[90/400] labeled cpbsd_instance_3690_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=865.6s
+[100/400] labeled cpbsd_instance_3700_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=901.2s
+[110/400] labeled cpbsd_instance_3710_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=981.6s
+[120/400] labeled cpbsd_instance_3720_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=1150.4s
+[130/400] labeled cpbsd_instance_3730_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=1280.3s
+[140/400] labeled cpbsd_instance_3740_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=1406.2s
+[150/400] labeled cpbsd_instance_3750_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=1477.1s
+[160/400] labeled cpbsd_instance_3760_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=1549.3s
+[170/400] labeled cpbsd_instance_3770_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=1635.8s
+[180/400] labeled cpbsd_instance_3780_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=1724.6s
+[190/400] labeled cpbsd_instance_3790_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=1793.9s
+[200/400] labeled cpbsd_instance_3800_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=2099.9s
+[210/400] labeled cpbsd_instance_3810_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=2161.8s
+[220/400] labeled cpbsd_instance_3820_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=2273.7s
+[230/400] labeled cpbsd_instance_3830_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=2337.0s
+[240/400] labeled cpbsd_instance_3840_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=2445.8s
+[250/400] labeled cpbsd_instance_3850_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=2577.1s
+[260/400] labeled cpbsd_instance_3860_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=2678.0s
+[270/400] labeled cpbsd_instance_3870_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=2777.6s
+[280/400] labeled cpbsd_instance_3880_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=2953.2s
+[290/400] labeled cpbsd_instance_3890_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=3003.3s
+[300/400] labeled cpbsd_instance_3900_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=3092.3s
+[310/400] labeled cpbsd_instance_3910_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=3169.1s
+[320/400] labeled cpbsd_instance_3920_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=3317.4s
+[330/400] labeled cpbsd_instance_3930_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=3364.8s
+[340/400] labeled cpbsd_instance_3940_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=3414.2s
+[350/400] labeled cpbsd_instance_3950_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=3537.4s
+[360/400] labeled cpbsd_instance_3960_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=3610.7s
+[370/400] labeled cpbsd_instance_3970_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=3649.7s
+[380/400] labeled cpbsd_instance_3980_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=3700.1s
+[390/400] labeled cpbsd_instance_3990_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=3784.4s
+[400/400] labeled cpbsd_instance_4000_N5_K50_normal_rho0.0_full_random_corr | status=2 | feasible=True | elapsed=3848.3s
+{
+  "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_random_corr_n5/manifest_test.csv",
+  "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_random_corr_n5/results",
+  "count": 400,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "has_solution_count": 400,
+  "status_counts": {
+    "2": 400
+  },
+  "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_random_corr_n5/results/manifest_test__mb_results.csv"
+}
+
+============================================================
+STEP 4: Train GCN (200 epochs, device=auto)
+============================================================
+
+>>> /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/.venv/bin/python -u /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/Training_multi_layer_cpbsd_mb_x.py --train_manifest /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_random_corr_n5/results/manifest_train__mb_results.csv --eval_manifest /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_random_corr_n5/results/manifest_eval__mb_results.csv --test_manifest /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_random_corr_n5/results/manifest_test__mb_results.csv --model_dir /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/models_cpbsd_mb_x_random_corr --charts_dir /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/charts_cpbsd_mb_x_random_corr --log_dir /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/log_cpbsd_mb_x_random_corr --device auto --epochs 200 --batch_size 32 --num_layers 2 --early_stopping_patience 30 --seed 1000
+✅ Using MPS
+Start reading the CPBSD MB dataset for split=train...
+Loaded data (train): 50/3000
+Loaded data (train): 100/3000
+Loaded data (train): 150/3000
+Loaded data (train): 200/3000
+Loaded data (train): 250/3000
+Loaded data (train): 300/3000
+Loaded data (train): 350/3000
+Loaded data (train): 400/3000
+Loaded data (train): 450/3000
+Loaded data (train): 500/3000
+Loaded data (train): 550/3000
+Loaded data (train): 600/3000
+Loaded data (train): 650/3000
+Loaded data (train): 700/3000
+Loaded data (train): 750/3000
+Loaded data (train): 800/3000
+Loaded data (train): 850/3000
+Loaded data (train): 900/3000
+Loaded data (train): 950/3000
+Loaded data (train): 1000/3000
+Loaded data (train): 1050/3000
+Loaded data (train): 1100/3000
+Loaded data (train): 1150/3000
+Loaded data (train): 1200/3000
+Loaded data (train): 1250/3000
+Loaded data (train): 1300/3000
+Loaded data (train): 1350/3000
+Loaded data (train): 1400/3000
+Loaded data (train): 1450/3000
+Loaded data (train): 1500/3000
+Loaded data (train): 1550/3000
+Loaded data (train): 1600/3000
+Loaded data (train): 1650/3000
+Loaded data (train): 1700/3000
+Loaded data (train): 1750/3000
+Loaded data (train): 1800/3000
+Loaded data (train): 1850/3000
+Loaded data (train): 1900/3000
+Loaded data (train): 1950/3000
+Loaded data (train): 2000/3000
+Loaded data (train): 2050/3000
+Loaded data (train): 2100/3000
+Loaded data (train): 2150/3000
+Loaded data (train): 2200/3000
+Loaded data (train): 2250/3000
+Loaded data (train): 2300/3000
+Loaded data (train): 2350/3000
+Loaded data (train): 2400/3000
+Loaded data (train): 2450/3000
+Loaded data (train): 2500/3000
+Loaded data (train): 2550/3000
+Loaded data (train): 2600/3000
+Loaded data (train): 2650/3000
+Loaded data (train): 2700/3000
+Loaded data (train): 2750/3000
+Loaded data (train): 2800/3000
+Loaded data (train): 2850/3000
+Loaded data (train): 2900/3000
+Loaded data (train): 2950/3000
+Loaded data (train): 3000/3000
+Start reading the CPBSD MB dataset for split=eval...
+Loaded data (eval): 50/600
+Loaded data (eval): 100/600
+Loaded data (eval): 150/600
+Loaded data (eval): 200/600
+Loaded data (eval): 250/600
+Loaded data (eval): 300/600
+Loaded data (eval): 350/600
+Loaded data (eval): 400/600
+Loaded data (eval): 450/600
+Loaded data (eval): 500/600
+Loaded data (eval): 550/600
+Loaded data (eval): 600/600
+Start reading the CPBSD MB dataset for split=test...
+Loaded data (test): 50/400
+Loaded data (test): 100/400
+Loaded data (test): 150/400
+Loaded data (test): 200/400
+Loaded data (test): 250/400
+Loaded data (test): 300/400
+Loaded data (test): 350/400
+Loaded data (test): 400/400
+📦 总计加载 4000 个样本
+📈 全局正边比例(x_kn=1): 0.845557
+  训练集: 3000
+  验证集: 600
+  测试集: 400
+⚖️ 训练集正边比例(x_kn=1): 0.846085, pos_weight=0.182
+
+开始训练 200 轮...
+  🎯 新最佳模型：val_loss=0.140671, val_f1=0.814075 (epoch=0)
+Epoch   0 | train_loss=0.146586 | train_acc=0.7756 | train_f1=0.8483 | val_loss=0.140671 | val_acc=0.7321 | val_f1=0.8141
+Epoch  10 | train_loss=0.062699 | train_acc=0.9011 | train_f1=0.9385 | val_loss=0.406709 | val_acc=0.9012 | val_f1=0.9435
+Epoch  20 | train_loss=0.056550 | train_acc=0.9110 | train_f1=0.9450 | val_loss=0.174062 | val_acc=0.9170 | val_f1=0.9516
+  ⏹️ 触发早停（连续 30 轮无改进）
+
+✅ 训练完成！
+  最终模型: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/models_cpbsd_mb_x_random_corr/model_edge_cpbsd_mb_x_2layer_seed1000.pt
+  指标文件: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/models_cpbsd_mb_x_random_corr/metrics_edge_cpbsd_mb_x_2layer_seed1000.json
+  曲线图: /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/charts_cpbsd_mb_x_random_corr/run_20260423-233553_cpbsd_mb_x_2layer_seed1000/loss_curves_cpbsd_mb_x_2layer_seed1000.png
+
+============================================================
+PIPELINE COMPLETE: random_corr | 607.1 min total
+  Instances: /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_random_corr_n5/instances
+  Results:   /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_random_corr_n5/results
+  Model:     /Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/models_cpbsd_mb_x_random_corr
+============================================================
+Summary: /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_random_corr_n5/pipeline_summary.json

@@ -1,0 +1,26 @@
+{
+  "BSP": {
+    "count": 5,
+    "avg_revenue_in_sample": 9.239469469984936,
+    "avg_revenue_out_sample": 8.046569984664554,
+    "avg_solver_runtime": 208.06324124336243,
+    "avg_ratio_to_bsp": 1.0,
+    "avg_ratio_to_cpbsd_a": 0.8666601076602962
+  },
+  "CPBSD-A": {
+    "count": 5,
+    "avg_revenue_in_sample": 10.673618033940507,
+    "avg_revenue_out_sample": 9.909866512640809,
+    "avg_solver_runtime": 600.4776034832,
+    "avg_ratio_to_bsp": 1.1552507070565499,
+    "avg_ratio_to_cpbsd_a": 1.0
+  },
+  "FCP-pruned-MB": {
+    "count": 5,
+    "avg_revenue_in_sample": 11.982219315915724,
+    "avg_revenue_out_sample": 4.908229653682359,
+    "avg_solver_runtime": 6.6361524105072025,
+    "avg_ratio_to_bsp": 1.296567589776552,
+    "avg_ratio_to_cpbsd_a": 1.1225765520237787
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "instance_id": "cpbsd_instance_001_N10_K50_normal_rho0.0_full_hvhm",
+  "setup_key": "N10_normal_full_hvhm",
+  "n_products": 10,
+  "anchor_count": 36,
+  "full_bundle_count": 1024,
+  "baseline": {
+    "restricted_oos_revenue": 2.399032113204915,
+    "restricted_in_sample_revenue": 3.5618720363522725
+  },
+  "bsp_oos_revenue": 2.3147072865712612,
+  "component_pricing": {
+    "solver_status": 5,
+    "feasible": false,
+    "runtime": 0.0035250186920166016,
+    "wall_time": 0.0036597251892089844,
+    "objective": null,
+    "constraint_count": {
+      "type_c": 133,
+      "type_d": 277,
+      "type_e": 103,
+      "type_f": 2
+    },
+    "model_num_vars": 20,
+    "model_num_constrs": 561,
+    "item_prices": null,
+    "size_discounts": null,
+    "iis_constraints": null
+  },
+  "hybrid_oos": null,
+  "anchor_preserved": null,
+  "subadditivity": null,
+  "iis_constraints": null
+}

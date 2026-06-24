@@ -1,0 +1,37 @@
+[
+  {
+    "k_in": 50,
+    "instances": 5,
+    "status_counts": {
+      "OPTIMAL": 4,
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 116.58668718338012,
+    "runtime_median": 76.30570888519287,
+    "objective_raw_mean": 1.6510766209553716,
+    "revenue_in_sample_mean": 1.651076620955363,
+    "revenue_out_sample_k2000_mean": 1.1429969694015525,
+    "revenue_out_sample_k5000_mean": 1.1400910411532315,
+    "generalization_ratio_k2000_over_in_mean": 0.696230170188968,
+    "generalization_ratio_k5000_over_in_mean": 0.6942999466891583,
+    "generalization_drop_k2000_mean": 0.5080796515538109,
+    "generalization_drop_k5000_mean": 0.5109855798021318
+  },
+  {
+    "k_in": 100,
+    "instances": 5,
+    "status_counts": {
+      "TIME_LIMIT": 5
+    },
+    "runtime_mean": 300.03484597206113,
+    "runtime_median": 300.0217800140381,
+    "objective_raw_mean": 1.4736812547939715,
+    "revenue_in_sample_mean": 1.464679059176984,
+    "revenue_out_sample_k2000_mean": 1.2160828118110767,
+    "revenue_out_sample_k5000_mean": 1.211069202075042,
+    "generalization_ratio_k2000_over_in_mean": 0.832729762809179,
+    "generalization_ratio_k5000_over_in_mean": 0.8291162364766036,
+    "generalization_drop_k2000_mean": 0.2485962473659073,
+    "generalization_drop_k5000_mean": 0.25360985710194195
+  }
+]

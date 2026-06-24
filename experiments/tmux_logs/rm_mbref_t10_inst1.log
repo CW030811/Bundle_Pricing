@@ -1,0 +1,48 @@
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/generate_data_CPBSD.py:106: RuntimeWarning: divide by zero encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/generate_data_CPBSD.py:106: RuntimeWarning: overflow encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/generate_data_CPBSD.py:106: RuntimeWarning: invalid value encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+[START] N=5 instance=n5_inst001
+Set parameter LicenseID to value 2784353
+Set parameter MIPGap to value 0.001
+Set parameter TimeLimit to value 300
+Set parameter MIPGap to value 0.001
+Set parameter TimeLimit to value 300
+[DONE] N=5 instance=n5_inst001
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/generate_data_CPBSD.py:106: RuntimeWarning: divide by zero encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/generate_data_CPBSD.py:106: RuntimeWarning: overflow encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/generate_data_CPBSD.py:106: RuntimeWarning: invalid value encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+[START] N=10 instance=n10_inst001
+Set parameter MIPGap to value 0.001
+Set parameter TimeLimit to value 300
+Set parameter MIPGap to value 0.001
+Set parameter TimeLimit to value 300
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:77: RuntimeWarning: divide by zero encountered in matmul
+  bundle_cost = assortments @ c_n
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:77: RuntimeWarning: overflow encountered in matmul
+  bundle_cost = assortments @ c_n
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:77: RuntimeWarning: invalid value encountered in matmul
+  bundle_cost = assortments @ c_n
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:302: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:302: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:302: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+[DONE] N=10 instance=n10_inst001
+{
+  "comparison_details_json": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_single_setting_mb_ref_normal_rho0.0_full_zero_threads10_n5n10_inst1/comparison_details.json",
+  "comparison_details_csv": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_single_setting_mb_ref_normal_rho0.0_full_zero_threads10_n5n10_inst1/comparison_details.csv",
+  "comparison_summary_json": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_single_setting_mb_ref_normal_rho0.0_full_zero_threads10_n5n10_inst1/comparison_summary.json",
+  "runtime_summary_csv": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_single_setting_mb_ref_normal_rho0.0_full_zero_threads10_n5n10_inst1/runtime_summary.csv",
+  "plot_paths": [
+    "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_single_setting_mb_ref_normal_rho0.0_full_zero_threads10_n5n10_inst1/plots/normal_rho0.0_full_zero/boxplot_ratio_vs_bsp_n10.png",
+    "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_single_setting_mb_ref_normal_rho0.0_full_zero_threads10_n5n10_inst1/plots/normal_rho0.0_full_zero/boxplot_ratio_vs_bsp_n5.png"
+  ],
+  "root": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_single_setting_mb_ref_normal_rho0.0_full_zero_threads10_n5n10_inst1"
+}

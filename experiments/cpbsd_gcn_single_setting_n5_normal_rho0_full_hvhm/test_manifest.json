@@ -1,0 +1,3002 @@
+[
+  {
+    "split": "test",
+    "index_in_split": 1,
+    "filename": "cpbsd_instance_500_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_500_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 2,
+    "filename": "cpbsd_instance_501_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_501_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 3,
+    "filename": "cpbsd_instance_502_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_502_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 4,
+    "filename": "cpbsd_instance_503_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_503_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 5,
+    "filename": "cpbsd_instance_504_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_504_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 6,
+    "filename": "cpbsd_instance_505_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_505_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 7,
+    "filename": "cpbsd_instance_506_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_506_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 8,
+    "filename": "cpbsd_instance_507_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_507_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 9,
+    "filename": "cpbsd_instance_508_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_508_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 10,
+    "filename": "cpbsd_instance_509_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_509_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 11,
+    "filename": "cpbsd_instance_510_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_510_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 12,
+    "filename": "cpbsd_instance_511_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_511_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 13,
+    "filename": "cpbsd_instance_512_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_512_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 14,
+    "filename": "cpbsd_instance_513_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_513_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 15,
+    "filename": "cpbsd_instance_514_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_514_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 16,
+    "filename": "cpbsd_instance_515_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_515_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 17,
+    "filename": "cpbsd_instance_516_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_516_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 18,
+    "filename": "cpbsd_instance_517_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_517_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 19,
+    "filename": "cpbsd_instance_518_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_518_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 20,
+    "filename": "cpbsd_instance_519_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_519_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 21,
+    "filename": "cpbsd_instance_520_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_520_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 22,
+    "filename": "cpbsd_instance_521_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_521_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 23,
+    "filename": "cpbsd_instance_522_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_522_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 24,
+    "filename": "cpbsd_instance_523_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_523_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 25,
+    "filename": "cpbsd_instance_524_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_524_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 26,
+    "filename": "cpbsd_instance_525_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_525_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 27,
+    "filename": "cpbsd_instance_526_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_526_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 28,
+    "filename": "cpbsd_instance_527_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_527_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 29,
+    "filename": "cpbsd_instance_528_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_528_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 30,
+    "filename": "cpbsd_instance_529_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_529_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 31,
+    "filename": "cpbsd_instance_530_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_530_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 32,
+    "filename": "cpbsd_instance_531_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_531_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 33,
+    "filename": "cpbsd_instance_532_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_532_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 34,
+    "filename": "cpbsd_instance_533_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_533_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 35,
+    "filename": "cpbsd_instance_534_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_534_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 36,
+    "filename": "cpbsd_instance_535_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_535_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 37,
+    "filename": "cpbsd_instance_536_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_536_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 38,
+    "filename": "cpbsd_instance_537_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_537_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 39,
+    "filename": "cpbsd_instance_538_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_538_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 40,
+    "filename": "cpbsd_instance_539_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_539_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 41,
+    "filename": "cpbsd_instance_540_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_540_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 42,
+    "filename": "cpbsd_instance_541_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_541_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 43,
+    "filename": "cpbsd_instance_542_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_542_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 44,
+    "filename": "cpbsd_instance_543_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_543_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 45,
+    "filename": "cpbsd_instance_544_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_544_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 46,
+    "filename": "cpbsd_instance_545_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_545_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 47,
+    "filename": "cpbsd_instance_546_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_546_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 48,
+    "filename": "cpbsd_instance_547_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_547_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 49,
+    "filename": "cpbsd_instance_548_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_548_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 50,
+    "filename": "cpbsd_instance_549_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_549_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 51,
+    "filename": "cpbsd_instance_550_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_550_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 52,
+    "filename": "cpbsd_instance_551_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_551_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 53,
+    "filename": "cpbsd_instance_552_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_552_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 54,
+    "filename": "cpbsd_instance_553_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_553_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 55,
+    "filename": "cpbsd_instance_554_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_554_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 56,
+    "filename": "cpbsd_instance_555_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_555_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 57,
+    "filename": "cpbsd_instance_556_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_556_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 58,
+    "filename": "cpbsd_instance_557_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_557_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 59,
+    "filename": "cpbsd_instance_558_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_558_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 60,
+    "filename": "cpbsd_instance_559_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_559_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 61,
+    "filename": "cpbsd_instance_560_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_560_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 62,
+    "filename": "cpbsd_instance_561_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_561_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 63,
+    "filename": "cpbsd_instance_562_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_562_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 64,
+    "filename": "cpbsd_instance_563_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_563_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 65,
+    "filename": "cpbsd_instance_564_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_564_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 66,
+    "filename": "cpbsd_instance_565_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_565_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 67,
+    "filename": "cpbsd_instance_566_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_566_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 68,
+    "filename": "cpbsd_instance_567_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_567_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 69,
+    "filename": "cpbsd_instance_568_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_568_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 70,
+    "filename": "cpbsd_instance_569_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_569_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 71,
+    "filename": "cpbsd_instance_570_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_570_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 72,
+    "filename": "cpbsd_instance_571_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_571_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 73,
+    "filename": "cpbsd_instance_572_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_572_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 74,
+    "filename": "cpbsd_instance_573_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_573_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 75,
+    "filename": "cpbsd_instance_574_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_574_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 76,
+    "filename": "cpbsd_instance_575_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_575_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 77,
+    "filename": "cpbsd_instance_576_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_576_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 78,
+    "filename": "cpbsd_instance_577_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_577_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 79,
+    "filename": "cpbsd_instance_578_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_578_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 80,
+    "filename": "cpbsd_instance_579_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_579_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 81,
+    "filename": "cpbsd_instance_580_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_580_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 82,
+    "filename": "cpbsd_instance_581_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_581_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 83,
+    "filename": "cpbsd_instance_582_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_582_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 84,
+    "filename": "cpbsd_instance_583_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_583_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 85,
+    "filename": "cpbsd_instance_584_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_584_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 86,
+    "filename": "cpbsd_instance_585_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_585_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 87,
+    "filename": "cpbsd_instance_586_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_586_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 88,
+    "filename": "cpbsd_instance_587_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_587_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 89,
+    "filename": "cpbsd_instance_588_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_588_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 90,
+    "filename": "cpbsd_instance_589_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_589_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 91,
+    "filename": "cpbsd_instance_590_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_590_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 92,
+    "filename": "cpbsd_instance_591_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_591_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 93,
+    "filename": "cpbsd_instance_592_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_592_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 94,
+    "filename": "cpbsd_instance_593_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_593_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 95,
+    "filename": "cpbsd_instance_594_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_594_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 96,
+    "filename": "cpbsd_instance_595_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_595_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 97,
+    "filename": "cpbsd_instance_596_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_596_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 98,
+    "filename": "cpbsd_instance_597_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_597_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 99,
+    "filename": "cpbsd_instance_598_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_598_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 100,
+    "filename": "cpbsd_instance_599_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_599_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 101,
+    "filename": "cpbsd_instance_600_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_600_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 102,
+    "filename": "cpbsd_instance_601_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_601_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 103,
+    "filename": "cpbsd_instance_602_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_602_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 104,
+    "filename": "cpbsd_instance_603_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_603_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 105,
+    "filename": "cpbsd_instance_604_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_604_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 106,
+    "filename": "cpbsd_instance_605_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_605_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 107,
+    "filename": "cpbsd_instance_606_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_606_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 108,
+    "filename": "cpbsd_instance_607_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_607_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 109,
+    "filename": "cpbsd_instance_608_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_608_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 110,
+    "filename": "cpbsd_instance_609_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_609_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 111,
+    "filename": "cpbsd_instance_610_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_610_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 112,
+    "filename": "cpbsd_instance_611_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_611_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 113,
+    "filename": "cpbsd_instance_612_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_612_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 114,
+    "filename": "cpbsd_instance_613_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_613_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 115,
+    "filename": "cpbsd_instance_614_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_614_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 116,
+    "filename": "cpbsd_instance_615_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_615_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 117,
+    "filename": "cpbsd_instance_616_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_616_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 118,
+    "filename": "cpbsd_instance_617_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_617_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 119,
+    "filename": "cpbsd_instance_618_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_618_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 120,
+    "filename": "cpbsd_instance_619_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_619_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 121,
+    "filename": "cpbsd_instance_620_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_620_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 122,
+    "filename": "cpbsd_instance_621_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_621_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 123,
+    "filename": "cpbsd_instance_622_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_622_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 124,
+    "filename": "cpbsd_instance_623_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_623_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 125,
+    "filename": "cpbsd_instance_624_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_624_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 126,
+    "filename": "cpbsd_instance_625_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_625_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 127,
+    "filename": "cpbsd_instance_626_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_626_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 128,
+    "filename": "cpbsd_instance_627_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_627_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 129,
+    "filename": "cpbsd_instance_628_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_628_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 130,
+    "filename": "cpbsd_instance_629_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_629_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 131,
+    "filename": "cpbsd_instance_630_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_630_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 132,
+    "filename": "cpbsd_instance_631_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_631_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 133,
+    "filename": "cpbsd_instance_632_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_632_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 134,
+    "filename": "cpbsd_instance_633_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_633_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 135,
+    "filename": "cpbsd_instance_634_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_634_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 136,
+    "filename": "cpbsd_instance_635_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_635_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 137,
+    "filename": "cpbsd_instance_636_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_636_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 138,
+    "filename": "cpbsd_instance_637_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_637_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 139,
+    "filename": "cpbsd_instance_638_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_638_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 140,
+    "filename": "cpbsd_instance_639_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_639_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 141,
+    "filename": "cpbsd_instance_640_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_640_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 142,
+    "filename": "cpbsd_instance_641_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_641_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 143,
+    "filename": "cpbsd_instance_642_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_642_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 144,
+    "filename": "cpbsd_instance_643_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_643_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 145,
+    "filename": "cpbsd_instance_644_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_644_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 146,
+    "filename": "cpbsd_instance_645_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_645_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 147,
+    "filename": "cpbsd_instance_646_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_646_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 148,
+    "filename": "cpbsd_instance_647_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_647_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 149,
+    "filename": "cpbsd_instance_648_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_648_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 150,
+    "filename": "cpbsd_instance_649_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_649_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 151,
+    "filename": "cpbsd_instance_650_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_650_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 152,
+    "filename": "cpbsd_instance_651_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_651_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 153,
+    "filename": "cpbsd_instance_652_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_652_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 154,
+    "filename": "cpbsd_instance_653_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_653_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 155,
+    "filename": "cpbsd_instance_654_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_654_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 156,
+    "filename": "cpbsd_instance_655_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_655_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 157,
+    "filename": "cpbsd_instance_656_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_656_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 158,
+    "filename": "cpbsd_instance_657_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_657_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 159,
+    "filename": "cpbsd_instance_658_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_658_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 160,
+    "filename": "cpbsd_instance_659_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_659_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 161,
+    "filename": "cpbsd_instance_660_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_660_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 162,
+    "filename": "cpbsd_instance_661_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_661_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 163,
+    "filename": "cpbsd_instance_662_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_662_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 164,
+    "filename": "cpbsd_instance_663_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_663_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 165,
+    "filename": "cpbsd_instance_664_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_664_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 166,
+    "filename": "cpbsd_instance_665_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_665_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 167,
+    "filename": "cpbsd_instance_666_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_666_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 168,
+    "filename": "cpbsd_instance_667_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_667_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 169,
+    "filename": "cpbsd_instance_668_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_668_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 170,
+    "filename": "cpbsd_instance_669_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_669_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 171,
+    "filename": "cpbsd_instance_670_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_670_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 172,
+    "filename": "cpbsd_instance_671_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_671_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 173,
+    "filename": "cpbsd_instance_672_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_672_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 174,
+    "filename": "cpbsd_instance_673_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_673_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 175,
+    "filename": "cpbsd_instance_674_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_674_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 176,
+    "filename": "cpbsd_instance_675_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_675_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 177,
+    "filename": "cpbsd_instance_676_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_676_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 178,
+    "filename": "cpbsd_instance_677_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_677_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 179,
+    "filename": "cpbsd_instance_678_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_678_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 180,
+    "filename": "cpbsd_instance_679_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_679_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 181,
+    "filename": "cpbsd_instance_680_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_680_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 182,
+    "filename": "cpbsd_instance_681_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_681_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 183,
+    "filename": "cpbsd_instance_682_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_682_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 184,
+    "filename": "cpbsd_instance_683_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_683_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 185,
+    "filename": "cpbsd_instance_684_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_684_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 186,
+    "filename": "cpbsd_instance_685_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_685_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 187,
+    "filename": "cpbsd_instance_686_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_686_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 188,
+    "filename": "cpbsd_instance_687_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_687_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 189,
+    "filename": "cpbsd_instance_688_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_688_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 190,
+    "filename": "cpbsd_instance_689_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_689_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 191,
+    "filename": "cpbsd_instance_690_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_690_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 192,
+    "filename": "cpbsd_instance_691_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_691_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 193,
+    "filename": "cpbsd_instance_692_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_692_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 194,
+    "filename": "cpbsd_instance_693_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_693_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 195,
+    "filename": "cpbsd_instance_694_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_694_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 196,
+    "filename": "cpbsd_instance_695_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_695_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 197,
+    "filename": "cpbsd_instance_696_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_696_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 198,
+    "filename": "cpbsd_instance_697_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_697_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 199,
+    "filename": "cpbsd_instance_698_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_698_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 200,
+    "filename": "cpbsd_instance_699_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_699_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 201,
+    "filename": "cpbsd_instance_700_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_700_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 202,
+    "filename": "cpbsd_instance_701_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_701_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 203,
+    "filename": "cpbsd_instance_702_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_702_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 204,
+    "filename": "cpbsd_instance_703_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_703_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 205,
+    "filename": "cpbsd_instance_704_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_704_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 206,
+    "filename": "cpbsd_instance_705_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_705_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 207,
+    "filename": "cpbsd_instance_706_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_706_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 208,
+    "filename": "cpbsd_instance_707_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_707_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 209,
+    "filename": "cpbsd_instance_708_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_708_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 210,
+    "filename": "cpbsd_instance_709_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_709_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 211,
+    "filename": "cpbsd_instance_710_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_710_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 212,
+    "filename": "cpbsd_instance_711_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_711_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 213,
+    "filename": "cpbsd_instance_712_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_712_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 214,
+    "filename": "cpbsd_instance_713_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_713_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 215,
+    "filename": "cpbsd_instance_714_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_714_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 216,
+    "filename": "cpbsd_instance_715_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_715_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 217,
+    "filename": "cpbsd_instance_716_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_716_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 218,
+    "filename": "cpbsd_instance_717_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_717_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 219,
+    "filename": "cpbsd_instance_718_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_718_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 220,
+    "filename": "cpbsd_instance_719_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_719_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 221,
+    "filename": "cpbsd_instance_720_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_720_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 222,
+    "filename": "cpbsd_instance_721_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_721_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 223,
+    "filename": "cpbsd_instance_722_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_722_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 224,
+    "filename": "cpbsd_instance_723_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_723_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 225,
+    "filename": "cpbsd_instance_724_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_724_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 226,
+    "filename": "cpbsd_instance_725_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_725_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 227,
+    "filename": "cpbsd_instance_726_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_726_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 228,
+    "filename": "cpbsd_instance_727_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_727_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 229,
+    "filename": "cpbsd_instance_728_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_728_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 230,
+    "filename": "cpbsd_instance_729_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_729_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 231,
+    "filename": "cpbsd_instance_730_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_730_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 232,
+    "filename": "cpbsd_instance_731_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_731_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 233,
+    "filename": "cpbsd_instance_732_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_732_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 234,
+    "filename": "cpbsd_instance_733_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_733_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 235,
+    "filename": "cpbsd_instance_734_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_734_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 236,
+    "filename": "cpbsd_instance_735_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_735_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 237,
+    "filename": "cpbsd_instance_736_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_736_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 238,
+    "filename": "cpbsd_instance_737_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_737_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 239,
+    "filename": "cpbsd_instance_738_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_738_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 240,
+    "filename": "cpbsd_instance_739_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_739_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 241,
+    "filename": "cpbsd_instance_740_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_740_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 242,
+    "filename": "cpbsd_instance_741_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_741_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 243,
+    "filename": "cpbsd_instance_742_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_742_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 244,
+    "filename": "cpbsd_instance_743_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_743_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 245,
+    "filename": "cpbsd_instance_744_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_744_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 246,
+    "filename": "cpbsd_instance_745_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_745_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 247,
+    "filename": "cpbsd_instance_746_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_746_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 248,
+    "filename": "cpbsd_instance_747_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_747_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 249,
+    "filename": "cpbsd_instance_748_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_748_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 250,
+    "filename": "cpbsd_instance_749_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_749_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 251,
+    "filename": "cpbsd_instance_750_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_750_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 252,
+    "filename": "cpbsd_instance_751_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_751_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 253,
+    "filename": "cpbsd_instance_752_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_752_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 254,
+    "filename": "cpbsd_instance_753_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_753_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 255,
+    "filename": "cpbsd_instance_754_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_754_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 256,
+    "filename": "cpbsd_instance_755_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_755_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 257,
+    "filename": "cpbsd_instance_756_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_756_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 258,
+    "filename": "cpbsd_instance_757_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_757_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 259,
+    "filename": "cpbsd_instance_758_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_758_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 260,
+    "filename": "cpbsd_instance_759_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_759_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 261,
+    "filename": "cpbsd_instance_760_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_760_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 262,
+    "filename": "cpbsd_instance_761_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_761_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 263,
+    "filename": "cpbsd_instance_762_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_762_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 264,
+    "filename": "cpbsd_instance_763_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_763_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 265,
+    "filename": "cpbsd_instance_764_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_764_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 266,
+    "filename": "cpbsd_instance_765_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_765_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 267,
+    "filename": "cpbsd_instance_766_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_766_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 268,
+    "filename": "cpbsd_instance_767_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_767_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 269,
+    "filename": "cpbsd_instance_768_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_768_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 270,
+    "filename": "cpbsd_instance_769_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_769_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 271,
+    "filename": "cpbsd_instance_770_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_770_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 272,
+    "filename": "cpbsd_instance_771_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_771_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 273,
+    "filename": "cpbsd_instance_772_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_772_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 274,
+    "filename": "cpbsd_instance_773_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_773_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 275,
+    "filename": "cpbsd_instance_774_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_774_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 276,
+    "filename": "cpbsd_instance_775_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_775_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 277,
+    "filename": "cpbsd_instance_776_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_776_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 278,
+    "filename": "cpbsd_instance_777_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_777_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 279,
+    "filename": "cpbsd_instance_778_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_778_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 280,
+    "filename": "cpbsd_instance_779_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_779_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 281,
+    "filename": "cpbsd_instance_780_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_780_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 282,
+    "filename": "cpbsd_instance_781_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_781_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 283,
+    "filename": "cpbsd_instance_782_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_782_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 284,
+    "filename": "cpbsd_instance_783_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_783_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 285,
+    "filename": "cpbsd_instance_784_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_784_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 286,
+    "filename": "cpbsd_instance_785_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_785_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 287,
+    "filename": "cpbsd_instance_786_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_786_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 288,
+    "filename": "cpbsd_instance_787_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_787_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 289,
+    "filename": "cpbsd_instance_788_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_788_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 290,
+    "filename": "cpbsd_instance_789_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_789_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 291,
+    "filename": "cpbsd_instance_790_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_790_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 292,
+    "filename": "cpbsd_instance_791_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_791_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 293,
+    "filename": "cpbsd_instance_792_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_792_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 294,
+    "filename": "cpbsd_instance_793_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_793_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 295,
+    "filename": "cpbsd_instance_794_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_794_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 296,
+    "filename": "cpbsd_instance_795_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_795_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 297,
+    "filename": "cpbsd_instance_796_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_796_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 298,
+    "filename": "cpbsd_instance_797_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_797_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 299,
+    "filename": "cpbsd_instance_798_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_798_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 300,
+    "filename": "cpbsd_instance_799_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_799_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 301,
+    "filename": "cpbsd_instance_800_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_800_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 302,
+    "filename": "cpbsd_instance_801_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_801_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 303,
+    "filename": "cpbsd_instance_802_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_802_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 304,
+    "filename": "cpbsd_instance_803_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_803_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 305,
+    "filename": "cpbsd_instance_804_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_804_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 306,
+    "filename": "cpbsd_instance_805_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_805_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 307,
+    "filename": "cpbsd_instance_806_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_806_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 308,
+    "filename": "cpbsd_instance_807_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_807_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 309,
+    "filename": "cpbsd_instance_808_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_808_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 310,
+    "filename": "cpbsd_instance_809_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_809_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 311,
+    "filename": "cpbsd_instance_810_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_810_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 312,
+    "filename": "cpbsd_instance_811_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_811_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 313,
+    "filename": "cpbsd_instance_812_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_812_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 314,
+    "filename": "cpbsd_instance_813_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_813_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 315,
+    "filename": "cpbsd_instance_814_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_814_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 316,
+    "filename": "cpbsd_instance_815_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_815_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 317,
+    "filename": "cpbsd_instance_816_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_816_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 318,
+    "filename": "cpbsd_instance_817_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_817_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 319,
+    "filename": "cpbsd_instance_818_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_818_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 320,
+    "filename": "cpbsd_instance_819_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_819_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 321,
+    "filename": "cpbsd_instance_820_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_820_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 322,
+    "filename": "cpbsd_instance_821_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_821_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 323,
+    "filename": "cpbsd_instance_822_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_822_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 324,
+    "filename": "cpbsd_instance_823_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_823_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 325,
+    "filename": "cpbsd_instance_824_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_824_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 326,
+    "filename": "cpbsd_instance_825_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_825_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 327,
+    "filename": "cpbsd_instance_826_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_826_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 328,
+    "filename": "cpbsd_instance_827_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_827_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 329,
+    "filename": "cpbsd_instance_828_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_828_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 330,
+    "filename": "cpbsd_instance_829_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_829_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 331,
+    "filename": "cpbsd_instance_830_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_830_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 332,
+    "filename": "cpbsd_instance_831_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_831_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 333,
+    "filename": "cpbsd_instance_832_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_832_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 334,
+    "filename": "cpbsd_instance_833_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_833_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 335,
+    "filename": "cpbsd_instance_834_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_834_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 336,
+    "filename": "cpbsd_instance_835_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_835_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 337,
+    "filename": "cpbsd_instance_836_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_836_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 338,
+    "filename": "cpbsd_instance_837_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_837_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 339,
+    "filename": "cpbsd_instance_838_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_838_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 340,
+    "filename": "cpbsd_instance_839_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_839_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 341,
+    "filename": "cpbsd_instance_840_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_840_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 342,
+    "filename": "cpbsd_instance_841_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_841_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 343,
+    "filename": "cpbsd_instance_842_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_842_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 344,
+    "filename": "cpbsd_instance_843_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_843_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 345,
+    "filename": "cpbsd_instance_844_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_844_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 346,
+    "filename": "cpbsd_instance_845_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_845_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 347,
+    "filename": "cpbsd_instance_846_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_846_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 348,
+    "filename": "cpbsd_instance_847_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_847_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 349,
+    "filename": "cpbsd_instance_848_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_848_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 350,
+    "filename": "cpbsd_instance_849_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_849_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 351,
+    "filename": "cpbsd_instance_850_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_850_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 352,
+    "filename": "cpbsd_instance_851_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_851_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 353,
+    "filename": "cpbsd_instance_852_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_852_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 354,
+    "filename": "cpbsd_instance_853_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_853_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 355,
+    "filename": "cpbsd_instance_854_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_854_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 356,
+    "filename": "cpbsd_instance_855_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_855_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 357,
+    "filename": "cpbsd_instance_856_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_856_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 358,
+    "filename": "cpbsd_instance_857_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_857_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 359,
+    "filename": "cpbsd_instance_858_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_858_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 360,
+    "filename": "cpbsd_instance_859_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_859_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 361,
+    "filename": "cpbsd_instance_860_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_860_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 362,
+    "filename": "cpbsd_instance_861_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_861_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 363,
+    "filename": "cpbsd_instance_862_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_862_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 364,
+    "filename": "cpbsd_instance_863_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_863_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 365,
+    "filename": "cpbsd_instance_864_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_864_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 366,
+    "filename": "cpbsd_instance_865_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_865_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 367,
+    "filename": "cpbsd_instance_866_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_866_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 368,
+    "filename": "cpbsd_instance_867_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_867_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 369,
+    "filename": "cpbsd_instance_868_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_868_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 370,
+    "filename": "cpbsd_instance_869_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_869_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 371,
+    "filename": "cpbsd_instance_870_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_870_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 372,
+    "filename": "cpbsd_instance_871_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_871_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 373,
+    "filename": "cpbsd_instance_872_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_872_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 374,
+    "filename": "cpbsd_instance_873_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_873_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 375,
+    "filename": "cpbsd_instance_874_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_874_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 376,
+    "filename": "cpbsd_instance_875_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_875_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 377,
+    "filename": "cpbsd_instance_876_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_876_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 378,
+    "filename": "cpbsd_instance_877_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_877_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 379,
+    "filename": "cpbsd_instance_878_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_878_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 380,
+    "filename": "cpbsd_instance_879_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_879_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 381,
+    "filename": "cpbsd_instance_880_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_880_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 382,
+    "filename": "cpbsd_instance_881_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_881_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 383,
+    "filename": "cpbsd_instance_882_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_882_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 384,
+    "filename": "cpbsd_instance_883_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_883_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 385,
+    "filename": "cpbsd_instance_884_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_884_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 386,
+    "filename": "cpbsd_instance_885_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_885_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 387,
+    "filename": "cpbsd_instance_886_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_886_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 388,
+    "filename": "cpbsd_instance_887_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_887_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 389,
+    "filename": "cpbsd_instance_888_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_888_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 390,
+    "filename": "cpbsd_instance_889_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_889_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 391,
+    "filename": "cpbsd_instance_890_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_890_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 392,
+    "filename": "cpbsd_instance_891_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_891_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 393,
+    "filename": "cpbsd_instance_892_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_892_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 394,
+    "filename": "cpbsd_instance_893_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_893_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 395,
+    "filename": "cpbsd_instance_894_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_894_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 396,
+    "filename": "cpbsd_instance_895_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_895_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 397,
+    "filename": "cpbsd_instance_896_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_896_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 398,
+    "filename": "cpbsd_instance_897_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_897_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 399,
+    "filename": "cpbsd_instance_898_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_898_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 400,
+    "filename": "cpbsd_instance_899_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_899_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 401,
+    "filename": "cpbsd_instance_900_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_900_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 402,
+    "filename": "cpbsd_instance_901_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_901_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 403,
+    "filename": "cpbsd_instance_902_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_902_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 404,
+    "filename": "cpbsd_instance_903_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_903_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 405,
+    "filename": "cpbsd_instance_904_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_904_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 406,
+    "filename": "cpbsd_instance_905_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_905_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 407,
+    "filename": "cpbsd_instance_906_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_906_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 408,
+    "filename": "cpbsd_instance_907_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_907_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 409,
+    "filename": "cpbsd_instance_908_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_908_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 410,
+    "filename": "cpbsd_instance_909_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_909_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 411,
+    "filename": "cpbsd_instance_910_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_910_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 412,
+    "filename": "cpbsd_instance_911_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_911_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 413,
+    "filename": "cpbsd_instance_912_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_912_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 414,
+    "filename": "cpbsd_instance_913_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_913_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 415,
+    "filename": "cpbsd_instance_914_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_914_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 416,
+    "filename": "cpbsd_instance_915_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_915_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 417,
+    "filename": "cpbsd_instance_916_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_916_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 418,
+    "filename": "cpbsd_instance_917_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_917_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 419,
+    "filename": "cpbsd_instance_918_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_918_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 420,
+    "filename": "cpbsd_instance_919_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_919_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 421,
+    "filename": "cpbsd_instance_920_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_920_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 422,
+    "filename": "cpbsd_instance_921_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_921_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 423,
+    "filename": "cpbsd_instance_922_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_922_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 424,
+    "filename": "cpbsd_instance_923_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_923_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 425,
+    "filename": "cpbsd_instance_924_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_924_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 426,
+    "filename": "cpbsd_instance_925_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_925_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 427,
+    "filename": "cpbsd_instance_926_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_926_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 428,
+    "filename": "cpbsd_instance_927_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_927_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 429,
+    "filename": "cpbsd_instance_928_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_928_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 430,
+    "filename": "cpbsd_instance_929_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_929_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 431,
+    "filename": "cpbsd_instance_930_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_930_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 432,
+    "filename": "cpbsd_instance_931_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_931_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 433,
+    "filename": "cpbsd_instance_932_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_932_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 434,
+    "filename": "cpbsd_instance_933_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_933_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 435,
+    "filename": "cpbsd_instance_934_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_934_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 436,
+    "filename": "cpbsd_instance_935_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_935_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 437,
+    "filename": "cpbsd_instance_936_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_936_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 438,
+    "filename": "cpbsd_instance_937_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_937_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 439,
+    "filename": "cpbsd_instance_938_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_938_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 440,
+    "filename": "cpbsd_instance_939_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_939_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 441,
+    "filename": "cpbsd_instance_940_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_940_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 442,
+    "filename": "cpbsd_instance_941_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_941_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 443,
+    "filename": "cpbsd_instance_942_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_942_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 444,
+    "filename": "cpbsd_instance_943_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_943_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 445,
+    "filename": "cpbsd_instance_944_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_944_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 446,
+    "filename": "cpbsd_instance_945_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_945_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 447,
+    "filename": "cpbsd_instance_946_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_946_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 448,
+    "filename": "cpbsd_instance_947_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_947_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 449,
+    "filename": "cpbsd_instance_948_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_948_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 450,
+    "filename": "cpbsd_instance_949_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_949_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 451,
+    "filename": "cpbsd_instance_950_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_950_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 452,
+    "filename": "cpbsd_instance_951_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_951_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 453,
+    "filename": "cpbsd_instance_952_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_952_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 454,
+    "filename": "cpbsd_instance_953_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_953_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 455,
+    "filename": "cpbsd_instance_954_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_954_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 456,
+    "filename": "cpbsd_instance_955_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_955_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 457,
+    "filename": "cpbsd_instance_956_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_956_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 458,
+    "filename": "cpbsd_instance_957_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_957_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 459,
+    "filename": "cpbsd_instance_958_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_958_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 460,
+    "filename": "cpbsd_instance_959_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_959_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 461,
+    "filename": "cpbsd_instance_960_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_960_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 462,
+    "filename": "cpbsd_instance_961_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_961_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 463,
+    "filename": "cpbsd_instance_962_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_962_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 464,
+    "filename": "cpbsd_instance_963_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_963_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 465,
+    "filename": "cpbsd_instance_964_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_964_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 466,
+    "filename": "cpbsd_instance_965_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_965_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 467,
+    "filename": "cpbsd_instance_966_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_966_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 468,
+    "filename": "cpbsd_instance_967_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_967_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 469,
+    "filename": "cpbsd_instance_968_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_968_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 470,
+    "filename": "cpbsd_instance_969_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_969_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 471,
+    "filename": "cpbsd_instance_970_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_970_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 472,
+    "filename": "cpbsd_instance_971_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_971_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 473,
+    "filename": "cpbsd_instance_972_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_972_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 474,
+    "filename": "cpbsd_instance_973_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_973_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 475,
+    "filename": "cpbsd_instance_974_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_974_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 476,
+    "filename": "cpbsd_instance_975_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_975_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 477,
+    "filename": "cpbsd_instance_976_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_976_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 478,
+    "filename": "cpbsd_instance_977_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_977_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 479,
+    "filename": "cpbsd_instance_978_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_978_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 480,
+    "filename": "cpbsd_instance_979_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_979_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 481,
+    "filename": "cpbsd_instance_980_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_980_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 482,
+    "filename": "cpbsd_instance_981_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_981_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 483,
+    "filename": "cpbsd_instance_982_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_982_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 484,
+    "filename": "cpbsd_instance_983_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_983_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 485,
+    "filename": "cpbsd_instance_984_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_984_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 486,
+    "filename": "cpbsd_instance_985_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_985_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 487,
+    "filename": "cpbsd_instance_986_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_986_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 488,
+    "filename": "cpbsd_instance_987_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_987_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 489,
+    "filename": "cpbsd_instance_988_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_988_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 490,
+    "filename": "cpbsd_instance_989_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_989_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 491,
+    "filename": "cpbsd_instance_990_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_990_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 492,
+    "filename": "cpbsd_instance_991_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_991_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 493,
+    "filename": "cpbsd_instance_992_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_992_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 494,
+    "filename": "cpbsd_instance_993_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_993_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 495,
+    "filename": "cpbsd_instance_994_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_994_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 496,
+    "filename": "cpbsd_instance_995_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_995_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 497,
+    "filename": "cpbsd_instance_996_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_996_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 498,
+    "filename": "cpbsd_instance_997_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_997_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 499,
+    "filename": "cpbsd_instance_998_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_998_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  },
+  {
+    "split": "test",
+    "index_in_split": 500,
+    "filename": "cpbsd_instance_999_N5_K50_normal_rho0.0_full_hvhm.msgpack",
+    "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_gcn_single_setting_n5_normal_rho0_full_hvhm/all_instances/cpbsd_instance_999_N5_K50_normal_rho0.0_full_hvhm.msgpack"
+  }
+]

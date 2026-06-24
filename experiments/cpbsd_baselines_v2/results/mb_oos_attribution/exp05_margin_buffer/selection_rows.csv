@@ -1,0 +1,6 @@
+instance,selected_param,baseline_out_revenue,variant_out_revenue,delta_out_revenue
+inst001,0.0,1.136169,1.136169,0.0
+inst002,0.0,1.118545,1.118545,0.0
+inst003,0.0,1.223328,1.223321,-7e-06
+inst004,0.0,1.144405,1.144405,0.0
+inst005,0.0,1.176785,1.176785,-0.0

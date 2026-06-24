@@ -1,0 +1,41 @@
+\ Model Phase3_Variant_C_copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+\ Signature: 0x9fa80fca3d412bd4
+Maximize
+ 
+Subject To
+ p_ub_2: p[2] <= 20.35498826711163
+ size_link_5: - p[2] + q[5] = 0
+ size_link_7: - p[3] + q[7] = 0
+ size_link_23: - p[4] + q[23] = 0
+ size_link_31: - p[5] + q[31] = 0
+ size_link_111: - p[6] + q[111] = 0
+ anchor_q_256: q[256] = 2.529292751781912
+ size_link_261: - p[3] + q[261] = 0
+ size_link_263: - p[4] + q[263] = 0
+ size_link_279: - p[5] + q[279] = 0
+ size_link_287: - p[6] + q[287] = 0
+ anchor_q_367: q[367] = 49.005233355717
+ mixed_subadd_261_256_5: - q[5] - q[256] + q[261] <= 0
+ mixed_subadd_263_256_7: - q[7] - q[256] + q[263] <= 0
+ mixed_subadd_279_256_23: - q[23] - q[256] + q[279] <= 0
+ mixed_subadd_287_256_31: - q[31] - q[256] + q[287] <= 0
+ mixed_subadd_367_256_111: - q[111] - q[256] + q[367] <= 0
+Bounds
+ p[2] free
+ p[3] free
+ p[4] free
+ p[5] free
+ p[6] free
+ q[5] free
+ q[7] free
+ q[23] free
+ q[31] free
+ q[111] free
+ q[256] free
+ q[261] free
+ q[263] free
+ q[279] free
+ q[287] free
+ q[367] free
+End

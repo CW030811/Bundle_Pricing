@@ -1,0 +1,12 @@
+{
+  "manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_random_corr_n5/manifest_test.csv",
+  "out_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_random_corr_n5/results",
+  "count": 400,
+  "time_limit": 300.0,
+  "mip_gap": 0.01,
+  "has_solution_count": 400,
+  "status_counts": {
+    "2": 400
+  },
+  "result_manifest": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_random_corr_n5/results/manifest_test__mb_results.csv"
+}

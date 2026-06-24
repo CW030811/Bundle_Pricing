@@ -1,0 +1,31 @@
+
+Gurobi 12.0.2 (win64) logging started Sat Feb  7 07:43:47 2026
+
+Set parameter LogFile to value "gurobi_stats_logs\m20n10\sample_data_37_size_10_FCP.log"
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 0
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 11+.0 (26200.2))
+
+CPU model: AMD Ryzen 7 8845H w/ Radeon 780M Graphics, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  0
+MIPGap  0.01
+
+Optimize a model with 3916 rows, 1640 columns and 26848 nonzeros
+Model fingerprint: 0xa352b368
+Variable types: 1240 continuous, 400 integer (400 binary)
+Coefficient statistics:
+  Matrix range     [5e-01, 2e+00]
+  Objective range  [5e-04, 9e-02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 16 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound -, gap -

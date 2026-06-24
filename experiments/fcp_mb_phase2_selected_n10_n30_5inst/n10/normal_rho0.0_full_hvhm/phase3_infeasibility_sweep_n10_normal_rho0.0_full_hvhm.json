@@ -1,0 +1,47 @@
+[
+  {
+    "seed": "seed_20260413",
+    "instance_id": "cpbsd_instance_001_N10_K50_normal_rho0.0_full_hvhm",
+    "anchor_count": 34,
+    "variant_a_status": 3,
+    "variant_a_feasible": false,
+    "variant_b_status": 3,
+    "variant_b_feasible": false
+  },
+  {
+    "seed": "seed_20260414",
+    "instance_id": "cpbsd_instance_001_N10_K50_normal_rho0.0_full_hvhm",
+    "anchor_count": 38,
+    "variant_a_status": 3,
+    "variant_a_feasible": false,
+    "variant_b_status": 3,
+    "variant_b_feasible": false
+  },
+  {
+    "seed": "seed_20260415",
+    "instance_id": "cpbsd_instance_001_N10_K50_normal_rho0.0_full_hvhm",
+    "anchor_count": 38,
+    "variant_a_status": 3,
+    "variant_a_feasible": false,
+    "variant_b_status": 3,
+    "variant_b_feasible": false
+  },
+  {
+    "seed": "seed_20260416",
+    "instance_id": "cpbsd_instance_001_N10_K50_normal_rho0.0_full_hvhm",
+    "anchor_count": 32,
+    "variant_a_status": 3,
+    "variant_a_feasible": false,
+    "variant_b_status": 3,
+    "variant_b_feasible": false
+  },
+  {
+    "seed": "seed_20260417",
+    "instance_id": "cpbsd_instance_001_N10_K50_normal_rho0.0_full_hvhm",
+    "anchor_count": 36,
+    "variant_a_status": 3,
+    "variant_a_feasible": false,
+    "variant_b_status": 3,
+    "variant_b_feasible": false
+  }
+]

@@ -1,0 +1,1142 @@
+[
+  {
+    "cost": "zero",
+    "instance_id": "cpbsd_instance_001_N5_K50_normal_rho0.0_full_zero",
+    "N": 5,
+    "K": 50,
+    "seed": 20260425,
+    "method": "Joint-FCP-BSP",
+    "in_sample": 25.148817872952545,
+    "oos": 24.02357880882608,
+    "runtime": 1.612083911895752,
+    "choice_summary": {
+      "fcp": 25,
+      "bsp": 25,
+      "outside": 0
+    }
+  },
+  {
+    "cost": "zero",
+    "instance_id": "cpbsd_instance_001_N5_K50_normal_rho0.0_full_zero",
+    "N": 5,
+    "K": 50,
+    "seed": 20260425,
+    "method": "Joint-FCP-BSP-noC12",
+    "in_sample": 25.13740053536123,
+    "oos": 24.03256080504438,
+    "runtime": 2.531744956970215,
+    "choice_summary": {
+      "fcp": 25,
+      "bsp": 25,
+      "outside": 0
+    }
+  },
+  {
+    "cost": "zero",
+    "instance_id": "cpbsd_instance_001_N5_K50_normal_rho0.0_full_zero",
+    "N": 5,
+    "K": 50,
+    "seed": 20260425,
+    "method": "FCP-only",
+    "in_sample": 25.14892183330327,
+    "oos": 24.244220195756583,
+    "runtime": 1.8896739482879639
+  },
+  {
+    "cost": "zero",
+    "instance_id": "cpbsd_instance_001_N5_K50_normal_rho0.0_full_zero",
+    "N": 5,
+    "K": 50,
+    "seed": 20260425,
+    "method": "BSP-only",
+    "in_sample": 25.062481015644945,
+    "oos": 24.455163241801944,
+    "runtime": 0.26062488555908203
+  },
+  {
+    "cost": "zero",
+    "instance_id": "cpbsd_instance_001_N5_K50_normal_rho0.0_full_zero",
+    "N": 5,
+    "K": 50,
+    "seed": 20260425,
+    "method": "CPBSD-A",
+    "in_sample": 25.062481015644984,
+    "oos": 24.435126461070297,
+    "runtime": 0.22797203063964844
+  },
+  {
+    "cost": "zero",
+    "instance_id": "cpbsd_instance_001_N5_K50_normal_rho0.0_full_zero",
+    "N": 5,
+    "K": 50,
+    "seed": 20260425,
+    "method": "PostHoc-Hybrid",
+    "in_sample": null,
+    "oos": 24.244220195756583,
+    "runtime": null
+  },
+  {
+    "cost": "zero",
+    "instance_id": "cpbsd_instance_002_N5_K50_normal_rho0.0_full_zero",
+    "N": 5,
+    "K": 50,
+    "seed": 20260426,
+    "method": "Joint-FCP-BSP",
+    "in_sample": 25.412053940654257,
+    "oos": 23.985246231248826,
+    "runtime": 0.8487133979797363,
+    "choice_summary": {
+      "fcp": 36,
+      "bsp": 14,
+      "outside": 0
+    }
+  },
+  {
+    "cost": "zero",
+    "instance_id": "cpbsd_instance_002_N5_K50_normal_rho0.0_full_zero",
+    "N": 5,
+    "K": 50,
+    "seed": 20260426,
+    "method": "Joint-FCP-BSP-noC12",
+    "in_sample": 25.412053940654257,
+    "oos": 23.985246231248826,
+    "runtime": 0.8180599212646484,
+    "choice_summary": {
+      "fcp": 35,
+      "bsp": 15,
+      "outside": 0
+    }
+  },
+  {
+    "cost": "zero",
+    "instance_id": "cpbsd_instance_002_N5_K50_normal_rho0.0_full_zero",
+    "N": 5,
+    "K": 50,
+    "seed": 20260426,
+    "method": "FCP-only",
+    "in_sample": 25.412053940654257,
+    "oos": 23.985246231248826,
+    "runtime": 0.6707348823547363
+  },
+  {
+    "cost": "zero",
+    "instance_id": "cpbsd_instance_002_N5_K50_normal_rho0.0_full_zero",
+    "N": 5,
+    "K": 50,
+    "seed": 20260426,
+    "method": "BSP-only",
+    "in_sample": 25.127650976077913,
+    "oos": 24.748434453145165,
+    "runtime": 0.1766357421875
+  },
+  {
+    "cost": "zero",
+    "instance_id": "cpbsd_instance_002_N5_K50_normal_rho0.0_full_zero",
+    "N": 5,
+    "K": 50,
+    "seed": 20260426,
+    "method": "CPBSD-A",
+    "in_sample": 25.188034614213706,
+    "oos": 24.434678870746204,
+    "runtime": 0.22812795639038086
+  },
+  {
+    "cost": "zero",
+    "instance_id": "cpbsd_instance_002_N5_K50_normal_rho0.0_full_zero",
+    "N": 5,
+    "K": 50,
+    "seed": 20260426,
+    "method": "PostHoc-Hybrid",
+    "in_sample": null,
+    "oos": 24.73743301662932,
+    "runtime": null
+  },
+  {
+    "cost": "zero",
+    "instance_id": "cpbsd_instance_003_N5_K50_normal_rho0.0_full_zero",
+    "N": 5,
+    "K": 50,
+    "seed": 20260427,
+    "method": "Joint-FCP-BSP",
+    "in_sample": 25.61104386325597,
+    "oos": 22.307900130371404,
+    "runtime": 1.7543919086456299,
+    "choice_summary": {
+      "fcp": 4,
+      "bsp": 46,
+      "outside": 0
+    }
+  },
+  {
+    "cost": "zero",
+    "instance_id": "cpbsd_instance_003_N5_K50_normal_rho0.0_full_zero",
+    "N": 5,
+    "K": 50,
+    "seed": 20260427,
+    "method": "Joint-FCP-BSP-noC12",
+    "in_sample": 25.611043796478278,
+    "oos": 22.191777488005343,
+    "runtime": 1.6938319206237793,
+    "choice_summary": {
+      "fcp": 18,
+      "bsp": 32,
+      "outside": 0
+    }
+  },
+  {
+    "cost": "zero",
+    "instance_id": "cpbsd_instance_003_N5_K50_normal_rho0.0_full_zero",
+    "N": 5,
+    "K": 50,
+    "seed": 20260427,
+    "method": "FCP-only",
+    "in_sample": 25.611043796478246,
+    "oos": 22.288134659664568,
+    "runtime": 1.2826240062713623
+  },
+  {
+    "cost": "zero",
+    "instance_id": "cpbsd_instance_003_N5_K50_normal_rho0.0_full_zero",
+    "N": 5,
+    "K": 50,
+    "seed": 20260427,
+    "method": "BSP-only",
+    "in_sample": 25.585474418206562,
+    "oos": 21.677383262326014,
+    "runtime": 0.18317413330078125
+  },
+  {
+    "cost": "zero",
+    "instance_id": "cpbsd_instance_003_N5_K50_normal_rho0.0_full_zero",
+    "N": 5,
+    "K": 50,
+    "seed": 20260427,
+    "method": "CPBSD-A",
+    "in_sample": 25.611043796479304,
+    "oos": 22.349410641711493,
+    "runtime": 0.27350902557373047
+  },
+  {
+    "cost": "zero",
+    "instance_id": "cpbsd_instance_003_N5_K50_normal_rho0.0_full_zero",
+    "N": 5,
+    "K": 50,
+    "seed": 20260427,
+    "method": "PostHoc-Hybrid",
+    "in_sample": null,
+    "oos": 22.288134659664568,
+    "runtime": null
+  },
+  {
+    "cost": "zero",
+    "instance_id": "cpbsd_instance_004_N5_K50_normal_rho0.0_full_zero",
+    "N": 5,
+    "K": 50,
+    "seed": 20260428,
+    "method": "Joint-FCP-BSP",
+    "in_sample": 25.271886236391556,
+    "oos": 23.515712986774645,
+    "runtime": 1.0296311378479004,
+    "choice_summary": {
+      "fcp": 15,
+      "bsp": 35,
+      "outside": 0
+    }
+  },
+  {
+    "cost": "zero",
+    "instance_id": "cpbsd_instance_004_N5_K50_normal_rho0.0_full_zero",
+    "N": 5,
+    "K": 50,
+    "seed": 20260428,
+    "method": "Joint-FCP-BSP-noC12",
+    "in_sample": 25.332524740394593,
+    "oos": 23.667201219220374,
+    "runtime": 0.9552609920501709,
+    "choice_summary": {
+      "fcp": 23,
+      "bsp": 27,
+      "outside": 0
+    }
+  },
+  {
+    "cost": "zero",
+    "instance_id": "cpbsd_instance_004_N5_K50_normal_rho0.0_full_zero",
+    "N": 5,
+    "K": 50,
+    "seed": 20260428,
+    "method": "FCP-only",
+    "in_sample": 25.33252474039461,
+    "oos": 24.182541161215035,
+    "runtime": 0.8222289085388184
+  },
+  {
+    "cost": "zero",
+    "instance_id": "cpbsd_instance_004_N5_K50_normal_rho0.0_full_zero",
+    "N": 5,
+    "K": 50,
+    "seed": 20260428,
+    "method": "BSP-only",
+    "in_sample": 25.127593936261242,
+    "oos": 24.514993047539686,
+    "runtime": 0.18118882179260254
+  },
+  {
+    "cost": "zero",
+    "instance_id": "cpbsd_instance_004_N5_K50_normal_rho0.0_full_zero",
+    "N": 5,
+    "K": 50,
+    "seed": 20260428,
+    "method": "CPBSD-A",
+    "in_sample": 25.12759393626102,
+    "oos": 24.497964743290037,
+    "runtime": 0.22543001174926758
+  },
+  {
+    "cost": "zero",
+    "instance_id": "cpbsd_instance_004_N5_K50_normal_rho0.0_full_zero",
+    "N": 5,
+    "K": 50,
+    "seed": 20260428,
+    "method": "PostHoc-Hybrid",
+    "in_sample": null,
+    "oos": 24.224274727960275,
+    "runtime": null
+  },
+  {
+    "cost": "zero",
+    "instance_id": "cpbsd_instance_005_N5_K50_normal_rho0.0_full_zero",
+    "N": 5,
+    "K": 50,
+    "seed": 20260429,
+    "method": "Joint-FCP-BSP",
+    "in_sample": 25.32532344592471,
+    "oos": 23.70642404940105,
+    "runtime": 0.931394100189209,
+    "choice_summary": {
+      "fcp": 39,
+      "bsp": 11,
+      "outside": 0
+    }
+  },
+  {
+    "cost": "zero",
+    "instance_id": "cpbsd_instance_005_N5_K50_normal_rho0.0_full_zero",
+    "N": 5,
+    "K": 50,
+    "seed": 20260429,
+    "method": "Joint-FCP-BSP-noC12",
+    "in_sample": 25.338680029389668,
+    "oos": 23.942500279939154,
+    "runtime": 1.3932290077209473,
+    "choice_summary": {
+      "fcp": 23,
+      "bsp": 27,
+      "outside": 0
+    }
+  },
+  {
+    "cost": "zero",
+    "instance_id": "cpbsd_instance_005_N5_K50_normal_rho0.0_full_zero",
+    "N": 5,
+    "K": 50,
+    "seed": 20260429,
+    "method": "FCP-only",
+    "in_sample": 25.404620686404417,
+    "oos": 23.867005282816567,
+    "runtime": 1.3067378997802734
+  },
+  {
+    "cost": "zero",
+    "instance_id": "cpbsd_instance_005_N5_K50_normal_rho0.0_full_zero",
+    "N": 5,
+    "K": 50,
+    "seed": 20260429,
+    "method": "BSP-only",
+    "in_sample": 25.40223128807689,
+    "oos": 24.62721405140711,
+    "runtime": 0.27613306045532227
+  },
+  {
+    "cost": "zero",
+    "instance_id": "cpbsd_instance_005_N5_K50_normal_rho0.0_full_zero",
+    "N": 5,
+    "K": 50,
+    "seed": 20260429,
+    "method": "CPBSD-A",
+    "in_sample": 25.402231288076894,
+    "oos": 24.451617685689868,
+    "runtime": 0.35102200508117676
+  },
+  {
+    "cost": "zero",
+    "instance_id": "cpbsd_instance_005_N5_K50_normal_rho0.0_full_zero",
+    "N": 5,
+    "K": 50,
+    "seed": 20260429,
+    "method": "PostHoc-Hybrid",
+    "in_sample": null,
+    "oos": 24.33434769368708,
+    "runtime": null
+  },
+  {
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_001_N5_K50_normal_rho0.0_full_random_ind",
+    "N": 5,
+    "K": 50,
+    "seed": 20260425,
+    "method": "Joint-FCP-BSP",
+    "in_sample": 11.107526637903073,
+    "oos": 10.670285876393509,
+    "runtime": 2.65037202835083,
+    "choice_summary": {
+      "fcp": 42,
+      "bsp": 6,
+      "outside": 2
+    }
+  },
+  {
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_001_N5_K50_normal_rho0.0_full_random_ind",
+    "N": 5,
+    "K": 50,
+    "seed": 20260425,
+    "method": "Joint-FCP-BSP-noC12",
+    "in_sample": 11.107526645270603,
+    "oos": 10.837519056890752,
+    "runtime": 2.3009302616119385,
+    "choice_summary": {
+      "fcp": 40,
+      "bsp": 8,
+      "outside": 2
+    }
+  },
+  {
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_001_N5_K50_normal_rho0.0_full_random_ind",
+    "N": 5,
+    "K": 50,
+    "seed": 20260425,
+    "method": "FCP-only",
+    "in_sample": 11.100585494554187,
+    "oos": 10.958670298274978,
+    "runtime": 1.6120901107788086
+  },
+  {
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_001_N5_K50_normal_rho0.0_full_random_ind",
+    "N": 5,
+    "K": 50,
+    "seed": 20260425,
+    "method": "BSP-only",
+    "in_sample": 10.925261690782541,
+    "oos": 10.987778562033883,
+    "runtime": 0.3158609867095947
+  },
+  {
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_001_N5_K50_normal_rho0.0_full_random_ind",
+    "N": 5,
+    "K": 50,
+    "seed": 20260425,
+    "method": "CPBSD-A",
+    "in_sample": 11.024420678635861,
+    "oos": 10.774442230740409,
+    "runtime": 0.7037341594696045
+  },
+  {
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_001_N5_K50_normal_rho0.0_full_random_ind",
+    "N": 5,
+    "K": 50,
+    "seed": 20260425,
+    "method": "PostHoc-Hybrid",
+    "in_sample": null,
+    "oos": 11.07188167795131,
+    "runtime": null
+  },
+  {
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_002_N5_K50_normal_rho0.0_full_random_ind",
+    "N": 5,
+    "K": 50,
+    "seed": 20260426,
+    "method": "Joint-FCP-BSP",
+    "in_sample": 3.9425771569588224,
+    "oos": 3.3867472837055788,
+    "runtime": 1.378296136856079,
+    "choice_summary": {
+      "fcp": 47,
+      "bsp": 0,
+      "outside": 3
+    }
+  },
+  {
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_002_N5_K50_normal_rho0.0_full_random_ind",
+    "N": 5,
+    "K": 50,
+    "seed": 20260426,
+    "method": "Joint-FCP-BSP-noC12",
+    "in_sample": 3.916881266968684,
+    "oos": 3.3159785450171047,
+    "runtime": 1.3710172176361084,
+    "choice_summary": {
+      "fcp": 47,
+      "bsp": 0,
+      "outside": 3
+    }
+  },
+  {
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_002_N5_K50_normal_rho0.0_full_random_ind",
+    "N": 5,
+    "K": 50,
+    "seed": 20260426,
+    "method": "FCP-only",
+    "in_sample": 3.926521804633949,
+    "oos": 3.322660309203338,
+    "runtime": 1.0833840370178223
+  },
+  {
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_002_N5_K50_normal_rho0.0_full_random_ind",
+    "N": 5,
+    "K": 50,
+    "seed": 20260426,
+    "method": "BSP-only",
+    "in_sample": 1.9572193071164579,
+    "oos": 1.8083201750807836,
+    "runtime": 0.3733038902282715
+  },
+  {
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_002_N5_K50_normal_rho0.0_full_random_ind",
+    "N": 5,
+    "K": 50,
+    "seed": 20260426,
+    "method": "CPBSD-A",
+    "in_sample": 3.8236413392449666,
+    "oos": 3.4258380035173017,
+    "runtime": 0.7595460414886475
+  },
+  {
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_002_N5_K50_normal_rho0.0_full_random_ind",
+    "N": 5,
+    "K": 50,
+    "seed": 20260426,
+    "method": "PostHoc-Hybrid",
+    "in_sample": null,
+    "oos": 2.6995378549398295,
+    "runtime": null
+  },
+  {
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_003_N5_K50_normal_rho0.0_full_random_ind",
+    "N": 5,
+    "K": 50,
+    "seed": 20260427,
+    "method": "Joint-FCP-BSP",
+    "in_sample": 11.812822510150678,
+    "oos": 11.045536684695534,
+    "runtime": 0.878262996673584,
+    "choice_summary": {
+      "fcp": 50,
+      "bsp": 0,
+      "outside": 0
+    }
+  },
+  {
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_003_N5_K50_normal_rho0.0_full_random_ind",
+    "N": 5,
+    "K": 50,
+    "seed": 20260427,
+    "method": "Joint-FCP-BSP-noC12",
+    "in_sample": 11.812822510150754,
+    "oos": 10.923594595341177,
+    "runtime": 0.8849990367889404,
+    "choice_summary": {
+      "fcp": 50,
+      "bsp": 0,
+      "outside": 0
+    }
+  },
+  {
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_003_N5_K50_normal_rho0.0_full_random_ind",
+    "N": 5,
+    "K": 50,
+    "seed": 20260427,
+    "method": "FCP-only",
+    "in_sample": 11.812822510150678,
+    "oos": 11.153927844872737,
+    "runtime": 0.7887351512908936
+  },
+  {
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_003_N5_K50_normal_rho0.0_full_random_ind",
+    "N": 5,
+    "K": 50,
+    "seed": 20260427,
+    "method": "BSP-only",
+    "in_sample": 9.610266667207336,
+    "oos": 8.99803695269725,
+    "runtime": 0.2776801586151123
+  },
+  {
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_003_N5_K50_normal_rho0.0_full_random_ind",
+    "N": 5,
+    "K": 50,
+    "seed": 20260427,
+    "method": "CPBSD-A",
+    "in_sample": 11.812822510150692,
+    "oos": 11.06920714925605,
+    "runtime": 0.14596986770629883
+  },
+  {
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_003_N5_K50_normal_rho0.0_full_random_ind",
+    "N": 5,
+    "K": 50,
+    "seed": 20260427,
+    "method": "PostHoc-Hybrid",
+    "in_sample": null,
+    "oos": 10.153434595338862,
+    "runtime": null
+  },
+  {
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_004_N5_K50_normal_rho0.0_full_random_ind",
+    "N": 5,
+    "K": 50,
+    "seed": 20260428,
+    "method": "Joint-FCP-BSP",
+    "in_sample": 16.046249821929624,
+    "oos": 14.618814742337388,
+    "runtime": 0.8722319602966309,
+    "choice_summary": {
+      "fcp": 50,
+      "bsp": 0,
+      "outside": 0
+    }
+  },
+  {
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_004_N5_K50_normal_rho0.0_full_random_ind",
+    "N": 5,
+    "K": 50,
+    "seed": 20260428,
+    "method": "Joint-FCP-BSP-noC12",
+    "in_sample": 16.046249821929628,
+    "oos": 14.723761427610015,
+    "runtime": 0.8619210720062256,
+    "choice_summary": {
+      "fcp": 49,
+      "bsp": 1,
+      "outside": 0
+    }
+  },
+  {
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_004_N5_K50_normal_rho0.0_full_random_ind",
+    "N": 5,
+    "K": 50,
+    "seed": 20260428,
+    "method": "FCP-only",
+    "in_sample": 16.047960161595267,
+    "oos": 15.031702268306663,
+    "runtime": 0.7085371017456055
+  },
+  {
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_004_N5_K50_normal_rho0.0_full_random_ind",
+    "N": 5,
+    "K": 50,
+    "seed": 20260428,
+    "method": "BSP-only",
+    "in_sample": 14.442339794335663,
+    "oos": 13.66376216907275,
+    "runtime": 0.19148588180541992
+  },
+  {
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_004_N5_K50_normal_rho0.0_full_random_ind",
+    "N": 5,
+    "K": 50,
+    "seed": 20260428,
+    "method": "CPBSD-A",
+    "in_sample": 15.861911148871354,
+    "oos": 15.204686326545387,
+    "runtime": 0.08301210403442383
+  },
+  {
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_004_N5_K50_normal_rho0.0_full_random_ind",
+    "N": 5,
+    "K": 50,
+    "seed": 20260428,
+    "method": "PostHoc-Hybrid",
+    "in_sample": null,
+    "oos": 14.659507465503303,
+    "runtime": null
+  },
+  {
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_005_N5_K50_normal_rho0.0_full_random_ind",
+    "N": 5,
+    "K": 50,
+    "seed": 20260429,
+    "method": "Joint-FCP-BSP",
+    "in_sample": 8.196933472340039,
+    "oos": 7.010918519537177,
+    "runtime": 10.939618825912476,
+    "choice_summary": {
+      "fcp": 28,
+      "bsp": 18,
+      "outside": 4
+    }
+  },
+  {
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_005_N5_K50_normal_rho0.0_full_random_ind",
+    "N": 5,
+    "K": 50,
+    "seed": 20260429,
+    "method": "Joint-FCP-BSP-noC12",
+    "in_sample": 8.196933472339241,
+    "oos": 6.9480383262099945,
+    "runtime": 8.417947769165039,
+    "choice_summary": {
+      "fcp": 39,
+      "bsp": 7,
+      "outside": 4
+    }
+  },
+  {
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_005_N5_K50_normal_rho0.0_full_random_ind",
+    "N": 5,
+    "K": 50,
+    "seed": 20260429,
+    "method": "FCP-only",
+    "in_sample": 8.19693347233899,
+    "oos": 6.762746241100246,
+    "runtime": 9.554402828216553
+  },
+  {
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_005_N5_K50_normal_rho0.0_full_random_ind",
+    "N": 5,
+    "K": 50,
+    "seed": 20260429,
+    "method": "BSP-only",
+    "in_sample": 8.170364450114286,
+    "oos": 7.790031039344016,
+    "runtime": 0.3806300163269043
+  },
+  {
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_005_N5_K50_normal_rho0.0_full_random_ind",
+    "N": 5,
+    "K": 50,
+    "seed": 20260429,
+    "method": "CPBSD-A",
+    "in_sample": 8.09091532290515,
+    "oos": 7.94675881216764,
+    "runtime": 8.423612117767334
+  },
+  {
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_005_N5_K50_normal_rho0.0_full_random_ind",
+    "N": 5,
+    "K": 50,
+    "seed": 20260429,
+    "method": "PostHoc-Hybrid",
+    "in_sample": null,
+    "oos": 7.75217928246552,
+    "runtime": null
+  },
+  {
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_001_N5_K50_normal_rho0.0_full_random_corr",
+    "N": 5,
+    "K": 50,
+    "seed": 20260425,
+    "method": "Joint-FCP-BSP",
+    "in_sample": 13.3696384151284,
+    "oos": 12.283625518472382,
+    "runtime": 2.7279889583587646,
+    "choice_summary": {
+      "fcp": 15,
+      "bsp": 35,
+      "outside": 0
+    }
+  },
+  {
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_001_N5_K50_normal_rho0.0_full_random_corr",
+    "N": 5,
+    "K": 50,
+    "seed": 20260425,
+    "method": "Joint-FCP-BSP-noC12",
+    "in_sample": 13.367895541707712,
+    "oos": 12.308959995577743,
+    "runtime": 2.618788003921509,
+    "choice_summary": {
+      "fcp": 33,
+      "bsp": 17,
+      "outside": 0
+    }
+  },
+  {
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_001_N5_K50_normal_rho0.0_full_random_corr",
+    "N": 5,
+    "K": 50,
+    "seed": 20260425,
+    "method": "FCP-only",
+    "in_sample": 13.36963841512841,
+    "oos": 12.170315256446292,
+    "runtime": 2.0690510272979736
+  },
+  {
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_001_N5_K50_normal_rho0.0_full_random_corr",
+    "N": 5,
+    "K": 50,
+    "seed": 20260425,
+    "method": "BSP-only",
+    "in_sample": 13.30915891365814,
+    "oos": 12.42154713158255,
+    "runtime": 0.18286371231079102
+  },
+  {
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_001_N5_K50_normal_rho0.0_full_random_corr",
+    "N": 5,
+    "K": 50,
+    "seed": 20260425,
+    "method": "CPBSD-A",
+    "in_sample": 13.155769368777841,
+    "oos": 12.318286444735909,
+    "runtime": 0.2999999523162842
+  },
+  {
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_001_N5_K50_normal_rho0.0_full_random_corr",
+    "N": 5,
+    "K": 50,
+    "seed": 20260425,
+    "method": "PostHoc-Hybrid",
+    "in_sample": null,
+    "oos": 12.171662686332605,
+    "runtime": null
+  },
+  {
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_002_N5_K50_normal_rho0.0_full_random_corr",
+    "N": 5,
+    "K": 50,
+    "seed": 20260426,
+    "method": "Joint-FCP-BSP",
+    "in_sample": 7.774999729500467,
+    "oos": 6.875176919042083,
+    "runtime": 16.809491872787476,
+    "choice_summary": {
+      "fcp": 18,
+      "bsp": 30,
+      "outside": 2
+    }
+  },
+  {
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_002_N5_K50_normal_rho0.0_full_random_corr",
+    "N": 5,
+    "K": 50,
+    "seed": 20260426,
+    "method": "Joint-FCP-BSP-noC12",
+    "in_sample": 7.7749997273578035,
+    "oos": 6.868131522557172,
+    "runtime": 10.8454110622406,
+    "choice_summary": {
+      "fcp": 27,
+      "bsp": 21,
+      "outside": 2
+    }
+  },
+  {
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_002_N5_K50_normal_rho0.0_full_random_corr",
+    "N": 5,
+    "K": 50,
+    "seed": 20260426,
+    "method": "FCP-only",
+    "in_sample": 7.774999702600968,
+    "oos": 6.8326136424187105,
+    "runtime": 9.349542140960693
+  },
+  {
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_002_N5_K50_normal_rho0.0_full_random_corr",
+    "N": 5,
+    "K": 50,
+    "seed": 20260426,
+    "method": "BSP-only",
+    "in_sample": 7.450217926637959,
+    "oos": 6.902917445409592,
+    "runtime": 0.4449269771575928
+  },
+  {
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_002_N5_K50_normal_rho0.0_full_random_corr",
+    "N": 5,
+    "K": 50,
+    "seed": 20260426,
+    "method": "CPBSD-A",
+    "in_sample": 7.604985246420497,
+    "oos": 6.927694884583604,
+    "runtime": 1.7534239292144775
+  },
+  {
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_002_N5_K50_normal_rho0.0_full_random_corr",
+    "N": 5,
+    "K": 50,
+    "seed": 20260426,
+    "method": "PostHoc-Hybrid",
+    "in_sample": null,
+    "oos": 6.8390926014812345,
+    "runtime": null
+  },
+  {
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_003_N5_K50_normal_rho0.0_full_random_corr",
+    "N": 5,
+    "K": 50,
+    "seed": 20260427,
+    "method": "Joint-FCP-BSP",
+    "in_sample": 11.238731622698458,
+    "oos": 9.213733903987073,
+    "runtime": 1.9676241874694824,
+    "choice_summary": {
+      "fcp": 35,
+      "bsp": 15,
+      "outside": 0
+    }
+  },
+  {
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_003_N5_K50_normal_rho0.0_full_random_corr",
+    "N": 5,
+    "K": 50,
+    "seed": 20260427,
+    "method": "Joint-FCP-BSP-noC12",
+    "in_sample": 11.216899550605179,
+    "oos": 9.344769028275278,
+    "runtime": 1.684577226638794,
+    "choice_summary": {
+      "fcp": 29,
+      "bsp": 21,
+      "outside": 0
+    }
+  },
+  {
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_003_N5_K50_normal_rho0.0_full_random_corr",
+    "N": 5,
+    "K": 50,
+    "seed": 20260427,
+    "method": "FCP-only",
+    "in_sample": 11.193547299820727,
+    "oos": 9.547889487874825,
+    "runtime": 2.031322956085205
+  },
+  {
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_003_N5_K50_normal_rho0.0_full_random_corr",
+    "N": 5,
+    "K": 50,
+    "seed": 20260427,
+    "method": "BSP-only",
+    "in_sample": 10.979152967424591,
+    "oos": 9.348206740682208,
+    "runtime": 0.25351667404174805
+  },
+  {
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_003_N5_K50_normal_rho0.0_full_random_corr",
+    "N": 5,
+    "K": 50,
+    "seed": 20260427,
+    "method": "CPBSD-A",
+    "in_sample": 11.088169694413866,
+    "oos": 9.79946457685811,
+    "runtime": 0.9729800224304199
+  },
+  {
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_003_N5_K50_normal_rho0.0_full_random_corr",
+    "N": 5,
+    "K": 50,
+    "seed": 20260427,
+    "method": "PostHoc-Hybrid",
+    "in_sample": null,
+    "oos": 9.563163147149645,
+    "runtime": null
+  },
+  {
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_004_N5_K50_normal_rho0.0_full_random_corr",
+    "N": 5,
+    "K": 50,
+    "seed": 20260428,
+    "method": "Joint-FCP-BSP",
+    "in_sample": 14.245081619379858,
+    "oos": 12.739903469921488,
+    "runtime": 10.859409093856812,
+    "choice_summary": {
+      "fcp": 34,
+      "bsp": 16,
+      "outside": 0
+    }
+  },
+  {
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_004_N5_K50_normal_rho0.0_full_random_corr",
+    "N": 5,
+    "K": 50,
+    "seed": 20260428,
+    "method": "Joint-FCP-BSP-noC12",
+    "in_sample": 14.248515716311296,
+    "oos": 12.988196568453382,
+    "runtime": 12.300604820251465,
+    "choice_summary": {
+      "fcp": 24,
+      "bsp": 26,
+      "outside": 0
+    }
+  },
+  {
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_004_N5_K50_normal_rho0.0_full_random_corr",
+    "N": 5,
+    "K": 50,
+    "seed": 20260428,
+    "method": "FCP-only",
+    "in_sample": 14.245081619379823,
+    "oos": 12.643715657703408,
+    "runtime": 3.413861036300659
+  },
+  {
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_004_N5_K50_normal_rho0.0_full_random_corr",
+    "N": 5,
+    "K": 50,
+    "seed": 20260428,
+    "method": "BSP-only",
+    "in_sample": 14.054864552978506,
+    "oos": 13.658730443883373,
+    "runtime": 0.26744508743286133
+  },
+  {
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_004_N5_K50_normal_rho0.0_full_random_corr",
+    "N": 5,
+    "K": 50,
+    "seed": 20260428,
+    "method": "CPBSD-A",
+    "in_sample": 13.958849104616116,
+    "oos": 13.685344059828724,
+    "runtime": 1.169668197631836
+  },
+  {
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_004_N5_K50_normal_rho0.0_full_random_corr",
+    "N": 5,
+    "K": 50,
+    "seed": 20260428,
+    "method": "PostHoc-Hybrid",
+    "in_sample": null,
+    "oos": 13.37439181842241,
+    "runtime": null
+  },
+  {
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_005_N5_K50_normal_rho0.0_full_random_corr",
+    "N": 5,
+    "K": 50,
+    "seed": 20260429,
+    "method": "Joint-FCP-BSP",
+    "in_sample": 10.315308993296629,
+    "oos": 8.625921783221989,
+    "runtime": 11.62789511680603,
+    "choice_summary": {
+      "fcp": 34,
+      "bsp": 15,
+      "outside": 1
+    }
+  },
+  {
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_005_N5_K50_normal_rho0.0_full_random_corr",
+    "N": 5,
+    "K": 50,
+    "seed": 20260429,
+    "method": "Joint-FCP-BSP-noC12",
+    "in_sample": 10.31530899329658,
+    "oos": 8.73575228842191,
+    "runtime": 27.396483182907104,
+    "choice_summary": {
+      "fcp": 32,
+      "bsp": 17,
+      "outside": 1
+    }
+  },
+  {
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_005_N5_K50_normal_rho0.0_full_random_corr",
+    "N": 5,
+    "K": 50,
+    "seed": 20260429,
+    "method": "FCP-only",
+    "in_sample": 10.315308993296632,
+    "oos": 8.561390990834406,
+    "runtime": 15.651180982589722
+  },
+  {
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_005_N5_K50_normal_rho0.0_full_random_corr",
+    "N": 5,
+    "K": 50,
+    "seed": 20260429,
+    "method": "BSP-only",
+    "in_sample": 10.21069954260037,
+    "oos": 8.841070207716477,
+    "runtime": 0.31433701515197754
+  },
+  {
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_005_N5_K50_normal_rho0.0_full_random_corr",
+    "N": 5,
+    "K": 50,
+    "seed": 20260429,
+    "method": "CPBSD-A",
+    "in_sample": 9.899120661474287,
+    "oos": 9.304262493524156,
+    "runtime": 0.7045140266418457
+  },
+  {
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_005_N5_K50_normal_rho0.0_full_random_corr",
+    "N": 5,
+    "K": 50,
+    "seed": 20260429,
+    "method": "PostHoc-Hybrid",
+    "in_sample": null,
+    "oos": 8.64836039615902,
+    "runtime": null
+  }
+]

@@ -1,0 +1,127 @@
+
+================================================================================
+N=10 / zero (phase2 instances)
+================================================================================
+
+  [1/5] seed_20260413  seed=20260413
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/generate_data_CPBSD.py:121: RuntimeWarning: divide by zero encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/generate_data_CPBSD.py:121: RuntimeWarning: overflow encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/generate_data_CPBSD.py:121: RuntimeWarning: invalid value encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+    BSP:              InS=51.9264  OOS=50.5491
+    FCP:              InS=51.9116  OOS=50.5225
+    CPBSD-A:          InS=51.9754  OOS=50.5343
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_joint_fcp_bsp.py:66: RuntimeWarning: divide by zero encountered in matmul
+  v_ki = v_kn @ assortments.T  # (K, B)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_joint_fcp_bsp.py:66: RuntimeWarning: overflow encountered in matmul
+  v_ki = v_kn @ assortments.T  # (K, B)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_joint_fcp_bsp.py:66: RuntimeWarning: invalid value encountered in matmul
+  v_ki = v_kn @ assortments.T  # (K, B)
+Set parameter LicenseID to value 2784353
+    Joint             InS=51.9317  OOS=50.3443  RT=2.1s  {'fcp': 25, 'bsp': 25, 'outside': 0}
+    Joint-noC12       InS=51.9317  OOS=50.3102  RT=2.0s  {'fcp': 31, 'bsp': 19, 'outside': 0}
+
+  [2/5] seed_20260414  seed=20260414
+    BSP:              InS=51.4520  OOS=50.7428
+    FCP:              InS=51.4877  OOS=50.0372
+    CPBSD-A:          InS=51.4678  OOS=50.8081
+    Joint             InS=51.2858  OOS=49.1144  RT=1.0s  {'fcp': 22, 'bsp': 27, 'outside': 1}
+    Joint-noC12       InS=51.2944  OOS=49.2798  RT=0.9s  {'fcp': 24, 'bsp': 25, 'outside': 1}
+
+  [3/5] seed_20260415  seed=20260415
+    BSP:              InS=52.3070  OOS=50.2461
+    FCP:              InS=52.3637  OOS=49.4120
+    CPBSD-A:          InS=52.3070  OOS=49.8344
+    Joint             InS=52.1692  OOS=49.3860  RT=1.8s  {'fcp': 25, 'bsp': 25, 'outside': 0}
+    Joint-noC12       InS=52.1692  OOS=49.3920  RT=1.7s  {'fcp': 25, 'bsp': 25, 'outside': 0}
+
+  [4/5] seed_20260416  seed=20260416
+    BSP:              InS=51.7006  OOS=50.8424
+    FCP:              InS=51.9723  OOS=50.4452
+    CPBSD-A:          InS=51.7006  OOS=50.8424
+    Joint             InS=51.9231  OOS=49.7288  RT=1.0s  {'fcp': 36, 'bsp': 14, 'outside': 0}
+    Joint-noC12       InS=51.8233  OOS=49.6782  RT=1.0s  {'fcp': 23, 'bsp': 27, 'outside': 0}
+
+  [5/5] seed_20260417  seed=20260417
+    BSP:              InS=52.5963  OOS=48.0259
+    FCP:              InS=52.5265  OOS=48.2042
+    CPBSD-A:          InS=52.5963  OOS=48.0281
+    Joint             InS=52.5193  OOS=47.7497  RT=1.8s  {'fcp': 23, 'bsp': 27, 'outside': 0}
+    Joint-noC12       InS=52.4930  OOS=48.1493  RT=1.9s  {'fcp': 28, 'bsp': 22, 'outside': 0}
+
+================================================================================
+N=30 / zero (phase2 instances)
+================================================================================
+
+  [1/5] seed_20260413  seed=20260413
+    BSP:              InS=159.2785  OOS=155.9869
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:77: RuntimeWarning: divide by zero encountered in matmul
+  bundle_cost = assortments @ c_n
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:77: RuntimeWarning: overflow encountered in matmul
+  bundle_cost = assortments @ c_n
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:77: RuntimeWarning: invalid value encountered in matmul
+  bundle_cost = assortments @ c_n
+    FCP:              InS=155.5395  OOS=148.7519
+    CPBSD-A:          InS=159.3291  OOS=155.9273
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_joint_fcp_bsp.py:67: RuntimeWarning: divide by zero encountered in matmul
+  c_i = assortments @ c_n  # (B,)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_joint_fcp_bsp.py:67: RuntimeWarning: overflow encountered in matmul
+  c_i = assortments @ c_n  # (B,)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_joint_fcp_bsp.py:67: RuntimeWarning: invalid value encountered in matmul
+  c_i = assortments @ c_n  # (B,)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/eval_bsp_fcp_hybrid_oos.py:41: RuntimeWarning: divide by zero encountered in matmul
+  bundle_cost = assortments @ c_n
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/eval_bsp_fcp_hybrid_oos.py:41: RuntimeWarning: overflow encountered in matmul
+  bundle_cost = assortments @ c_n
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/eval_bsp_fcp_hybrid_oos.py:41: RuntimeWarning: invalid value encountered in matmul
+  bundle_cost = assortments @ c_n
+    Joint             InS=158.9793  OOS=155.5543  RT=4.7s  {'fcp': 1, 'bsp': 49, 'outside': 0}
+    Joint-noC12       InS=159.1978  OOS=152.5502  RT=2.7s  {'fcp': 0, 'bsp': 50, 'outside': 0}
+
+  [2/5] seed_20260414  seed=20260414
+    BSP:              InS=157.9128  OOS=156.9969
+    FCP:              InS=154.4659  OOS=141.7883
+    CPBSD-A:          InS=157.9128  OOS=154.3718
+    Joint             InS=158.6236  OOS=145.6489  RT=2.8s  {'fcp': 3, 'bsp': 47, 'outside': 0}
+    Joint-noC12       InS=158.6236  OOS=145.8244  RT=2.7s  {'fcp': 3, 'bsp': 47, 'outside': 0}
+
+  [3/5] seed_20260415  seed=20260415
+    BSP:              InS=159.7925  OOS=155.7977
+    FCP:              InS=159.8310  OOS=154.8145
+    CPBSD-A:          InS=159.7925  OOS=153.7393
+    Joint             InS=159.4072  OOS=153.1248  RT=3.8s  {'fcp': 17, 'bsp': 33, 'outside': 0}
+    Joint-noC12       InS=159.4388  OOS=153.3241  RT=5.4s  {'fcp': 20, 'bsp': 30, 'outside': 0}
+
+  [4/5] seed_20260416  seed=20260416
+    BSP:              InS=158.6685  OOS=156.9799
+    FCP:              InS=155.3034  OOS=151.5231
+    CPBSD-A:          InS=158.6873  OOS=156.9999
+    Joint             InS=158.4158  OOS=155.2443  RT=2.9s  {'fcp': 1, 'bsp': 49, 'outside': 0}
+    Joint-noC12       InS=159.3824  OOS=154.1951  RT=2.8s  {'fcp': 1, 'bsp': 49, 'outside': 0}
+
+  [5/5] seed_20260417  seed=20260417
+    BSP:              InS=159.3900  OOS=155.6496
+    FCP:              InS=160.2623  OOS=147.8577
+    CPBSD-A:          InS=159.5338  OOS=153.8016
+    Joint             InS=159.3944  OOS=153.0791  RT=4.2s  {'fcp': 25, 'bsp': 25, 'outside': 0}
+    Joint-noC12       InS=160.3019  OOS=148.1273  RT=5.3s  {'fcp': 18, 'bsp': 32, 'outside': 0}
+
+Saved 50 rows to /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/joint_rerun_zero_phase2.json
+
+================================================================================
+ZERO-COST AVERAGES (phase2 instances, 5-seed)
+================================================================================
+  N=10 BSP              InS=51.9965  OOS=50.0813  (#=5)
+  N=10 CPBSD-A          InS=52.0094  OOS=50.0095  (#=5)
+  N=10 FCP              InS=52.0524  OOS=49.7242  (#=5)
+  N=10 Joint            InS=51.9658  OOS=49.2647  (#=5)
+  N=10 Joint-noC12      InS=51.9423  OOS=49.3619  (#=5)
+
+  N=30 BSP              InS=159.0085  OOS=156.2822  (#=5)
+  N=30 CPBSD-A          InS=159.0511  OOS=154.9680  (#=5)
+  N=30 FCP              InS=157.0804  OOS=148.9471  (#=5)
+  N=30 Joint            InS=158.9641  OOS=152.5303  (#=5)
+  N=30 Joint-noC12      InS=159.3889  OOS=150.8042  (#=5)
+

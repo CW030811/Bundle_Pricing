@@ -1,0 +1,26 @@
+{
+  "instance_id": "cpbsd_instance_001_N10_K50_normal_rho0.0_full_hvhm",
+  "n_products": 10,
+  "baseline": {
+    "fcp_ins": 3.5618720363522725,
+    "fcp_oos": 2.399032113204915,
+    "bsp_oos": 2.3147072865712612
+  },
+  "extended_menu_size": 53,
+  "anchor_fixed_count": 36,
+  "candidate_count": 16,
+  "solver": {
+    "solver_status": 2,
+    "feasible": true,
+    "runtime": 0.33841490745544434,
+    "wall_time": 0.338486909866333,
+    "mip_gap": 0.009957626234549119,
+    "objective": 3.5618720363522294,
+    "model_num_vars": 10502,
+    "model_num_binvars": 2600,
+    "model_num_constrs": 15606
+  },
+  "extended_ins": 3.5618720363522294,
+  "extended_oos": 2.462165867856122,
+  "anchor_preserved": true
+}

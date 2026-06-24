@@ -1,0 +1,11 @@
+{
+  "solver_status": 2,
+  "feasible": true,
+  "runtime": 0.4215240478515625,
+  "wall_time": 0.4233391284942627,
+  "mip_gap": 0.0,
+  "objective": 161.88049791909418,
+  "size_prices": {
+    "30": 161.8804979190943
+  }
+}

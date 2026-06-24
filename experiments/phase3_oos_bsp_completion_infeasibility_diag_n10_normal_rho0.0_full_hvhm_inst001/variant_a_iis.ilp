@@ -1,0 +1,11 @@
+\ Model Phase3_Anchored_BSP_Projection_A_Diagnostic_copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+\ Signature: 0xf1dc94bea052ede0
+Minimize
+ 
+Subject To
+ global_subadd_67_256: q[3] >= 24.32757407786578
+ global_subadd_129_256: q[3] <= 17.45017397499739
+Bounds
+ q[3] free
+End

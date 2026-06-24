@@ -1,0 +1,269 @@
+
+================================================================================
+N=5 / random_ind
+================================================================================
+
+  [1/5] cpbsd_instance_001_N5_K50_normal_rho0.0_full_random_ind  seed=20260424
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/generate_data_CPBSD.py:121: RuntimeWarning: divide by zero encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/generate_data_CPBSD.py:121: RuntimeWarning: overflow encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/generate_data_CPBSD.py:121: RuntimeWarning: invalid value encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:302: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:302: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:302: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+Set parameter LicenseID to value 2784353
+    FCP:          InS=6.6330  OOS=6.3757  RT=0.8s
+    BSP:          InS=6.6002  OOS=6.4518  RT=0.2s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:      InS=6.6002  OOS=5.4577  RT=0.6s
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_joint_fcp_bsp.py:68: RuntimeWarning: divide by zero encountered in matmul
+  v_ki = v_kn @ assortments.T  # (K, B)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_joint_fcp_bsp.py:68: RuntimeWarning: overflow encountered in matmul
+  v_ki = v_kn @ assortments.T  # (K, B)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_joint_fcp_bsp.py:68: RuntimeWarning: invalid value encountered in matmul
+  v_ki = v_kn @ assortments.T  # (K, B)
+    Joint:        InS=6.6330  OOS=5.3348  RT=1.3s  {'fcp': 16, 'bsp': 33, 'outside': 1}
+    Joint-noC12:  InS=6.6330  OOS=5.3348  RT=1.1s  {'fcp': 23, 'bsp': 26, 'outside': 1}
+
+  [2/5] cpbsd_instance_002_N5_K50_normal_rho0.0_full_random_ind  seed=20260425
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/generate_data_CPBSD.py:121: RuntimeWarning: divide by zero encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/generate_data_CPBSD.py:121: RuntimeWarning: overflow encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/generate_data_CPBSD.py:121: RuntimeWarning: invalid value encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:302: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:302: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:302: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+    FCP:          InS=11.1006  OOS=10.9587  RT=1.6s
+    BSP:          InS=10.9253  OOS=10.9878  RT=0.3s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:      InS=11.0244  OOS=10.7744  RT=0.7s
+    Joint:        InS=11.1075  OOS=10.6703  RT=2.6s  {'fcp': 42, 'bsp': 6, 'outside': 2}
+    Joint-noC12:  InS=11.1075  OOS=10.8375  RT=2.3s  {'fcp': 40, 'bsp': 8, 'outside': 2}
+
+  [3/5] cpbsd_instance_003_N5_K50_normal_rho0.0_full_random_ind  seed=20260426
+    FCP:          InS=3.9265  OOS=3.3227  RT=1.1s
+    BSP:          InS=1.9572  OOS=1.8083  RT=0.4s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:      InS=3.8236  OOS=3.4258  RT=0.8s
+    Joint:        InS=3.9426  OOS=3.3867  RT=1.4s  {'fcp': 47, 'bsp': 0, 'outside': 3}
+    Joint-noC12:  InS=3.9169  OOS=3.3160  RT=1.4s  {'fcp': 47, 'bsp': 0, 'outside': 3}
+
+  [4/5] cpbsd_instance_004_N5_K50_normal_rho0.0_full_random_ind  seed=20260427
+    FCP:          InS=11.8128  OOS=11.1539  RT=0.7s
+    BSP:          InS=9.6103  OOS=8.9980  RT=0.3s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:      InS=11.8128  OOS=11.0692  RT=0.1s
+    Joint:        InS=11.8128  OOS=11.0455  RT=0.9s  {'fcp': 50, 'bsp': 0, 'outside': 0}
+    Joint-noC12:  InS=11.8128  OOS=10.9236  RT=0.9s  {'fcp': 50, 'bsp': 0, 'outside': 0}
+
+  [5/5] cpbsd_instance_005_N5_K50_normal_rho0.0_full_random_ind  seed=20260428
+    FCP:          InS=16.0480  OOS=15.0317  RT=0.7s
+    BSP:          InS=14.4423  OOS=13.6638  RT=0.2s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:      InS=15.8619  OOS=15.2047  RT=0.1s
+    Joint:        InS=16.0462  OOS=14.6188  RT=0.9s  {'fcp': 50, 'bsp': 0, 'outside': 0}
+    Joint-noC12:  InS=16.0462  OOS=14.7238  RT=0.9s  {'fcp': 49, 'bsp': 1, 'outside': 0}
+
+================================================================================
+N=5 / random_corr
+================================================================================
+
+  [1/5] cpbsd_instance_001_N5_K50_normal_rho0.0_full_random_corr  seed=20260424
+    FCP:          InS=7.2392  OOS=6.6355  RT=13.4s
+    BSP:          InS=7.0794  OOS=6.6157  RT=0.9s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:      InS=7.2027  OOS=6.7924  RT=1.0s
+    Joint:        InS=7.2486  OOS=6.6750  RT=20.3s  {'fcp': 34, 'bsp': 16, 'outside': 0}
+    Joint-noC12:  InS=7.2486  OOS=6.7258  RT=22.2s  {'fcp': 31, 'bsp': 19, 'outside': 0}
+
+  [2/5] cpbsd_instance_002_N5_K50_normal_rho0.0_full_random_corr  seed=20260425
+    FCP:          InS=13.3696  OOS=12.1703  RT=2.0s
+    BSP:          InS=13.3092  OOS=12.4215  RT=0.2s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:      InS=13.1558  OOS=12.3183  RT=0.3s
+    Joint:        InS=13.3696  OOS=12.2836  RT=2.7s  {'fcp': 15, 'bsp': 35, 'outside': 0}
+    Joint-noC12:  InS=13.3679  OOS=12.3090  RT=2.6s  {'fcp': 33, 'bsp': 17, 'outside': 0}
+
+  [3/5] cpbsd_instance_003_N5_K50_normal_rho0.0_full_random_corr  seed=20260426
+    FCP:          InS=7.7750  OOS=6.8326  RT=9.4s
+    BSP:          InS=7.4502  OOS=6.9029  RT=0.5s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:      InS=7.6050  OOS=6.9277  RT=1.7s
+    Joint:        InS=7.7750  OOS=6.8752  RT=16.9s  {'fcp': 18, 'bsp': 30, 'outside': 2}
+    Joint-noC12:  InS=7.7750  OOS=6.8681  RT=10.9s  {'fcp': 27, 'bsp': 21, 'outside': 2}
+
+  [4/5] cpbsd_instance_004_N5_K50_normal_rho0.0_full_random_corr  seed=20260427
+    FCP:          InS=11.1935  OOS=9.5479  RT=2.0s
+    BSP:          InS=10.9792  OOS=9.3482  RT=0.3s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:      InS=11.0882  OOS=9.7995  RT=0.9s
+    Joint:        InS=11.2387  OOS=9.2137  RT=2.0s  {'fcp': 35, 'bsp': 15, 'outside': 0}
+    Joint-noC12:  InS=11.2169  OOS=9.3448  RT=1.7s  {'fcp': 29, 'bsp': 21, 'outside': 0}
+
+  [5/5] cpbsd_instance_005_N5_K50_normal_rho0.0_full_random_corr  seed=20260428
+    FCP:          InS=14.2451  OOS=12.6437  RT=3.4s
+    BSP:          InS=14.0549  OOS=13.6587  RT=0.3s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:      InS=13.9588  OOS=13.6853  RT=1.1s
+    Joint:        InS=14.2451  OOS=12.7399  RT=10.9s  {'fcp': 34, 'bsp': 16, 'outside': 0}
+    Joint-noC12:  InS=14.2485  OOS=12.9882  RT=12.3s  {'fcp': 24, 'bsp': 26, 'outside': 0}
+
+================================================================================
+N=10 / random_ind
+================================================================================
+
+  [1/5] cpbsd_instance_001_N10_K50_normal_rho0.0_full_random_ind  seed=20260424
+    FCP:          InS=18.5014  OOS=18.8098  RT=0.1s
+    BSP:          InS=17.5584  OOS=17.1749  RT=0.4s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:      InS=18.4141  OOS=16.9450  RT=2.9s
+    Joint:        InS=18.7833  OOS=17.8914  RT=0.8s  {'fcp': 44, 'bsp': 4, 'outside': 2}
+    Joint-noC12:  InS=18.7084  OOS=17.3014  RT=0.5s  {'fcp': 46, 'bsp': 2, 'outside': 2}
+
+  [2/5] cpbsd_instance_002_N10_K50_normal_rho0.0_full_random_ind  seed=20260425
+    FCP:          InS=10.9061  OOS=10.1868  RT=0.3s
+    BSP:          InS=6.7731  OOS=6.1787  RT=1.5s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:      InS=5.8903  OOS=5.0881  RT=1.2s
+    Joint:        InS=11.1116  OOS=9.9294  RT=0.8s  {'fcp': 47, 'bsp': 1, 'outside': 2}
+    Joint-noC12:  InS=11.0721  OOS=9.9751  RT=1.1s  {'fcp': 47, 'bsp': 1, 'outside': 2}
+
+  [3/5] cpbsd_instance_003_N10_K50_normal_rho0.0_full_random_ind  seed=20260426
+    FCP:          InS=21.3195  OOS=20.6069  RT=0.1s
+    BSP:          InS=20.7981  OOS=19.7172  RT=0.5s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:      InS=17.6419  OOS=17.5740  RT=1.2s
+    Joint:        InS=21.3155  OOS=20.4581  RT=0.6s  {'fcp': 41, 'bsp': 8, 'outside': 1}
+    Joint-noC12:  InS=21.3153  OOS=19.9097  RT=0.6s  {'fcp': 41, 'bsp': 8, 'outside': 1}
+
+  [4/5] cpbsd_instance_004_N10_K50_normal_rho0.0_full_random_ind  seed=20260427
+    FCP:          InS=19.1596  OOS=17.6910  RT=0.2s
+    BSP:          InS=15.9270  OOS=14.6314  RT=1.4s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:      InS=16.3943  OOS=15.9410  RT=2.9s
+    Joint:        InS=19.0251  OOS=17.6237  RT=0.6s  {'fcp': 49, 'bsp': 1, 'outside': 0}
+    Joint-noC12:  InS=19.0251  OOS=17.6237  RT=0.6s  {'fcp': 49, 'bsp': 1, 'outside': 0}
+
+  [5/5] cpbsd_instance_005_N10_K50_normal_rho0.0_full_random_ind  seed=20260428
+    FCP:          InS=15.3188  OOS=14.5743  RT=0.1s
+    BSP:          InS=12.9184  OOS=12.2369  RT=1.0s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:      InS=10.3578  OOS=10.2842  RT=27.9s
+    Joint:        InS=15.3188  OOS=14.5407  RT=0.4s  {'fcp': 50, 'bsp': 0, 'outside': 0}
+    Joint-noC12:  InS=15.3188  OOS=14.5407  RT=0.4s  {'fcp': 50, 'bsp': 0, 'outside': 0}
+
+================================================================================
+N=10 / random_corr
+================================================================================
+
+  [1/5] cpbsd_instance_001_N10_K50_normal_rho0.0_full_random_corr  seed=20260424
+    FCP:          InS=20.0557  OOS=19.5718  RT=1.2s
+    BSP:          InS=19.9859  OOS=19.7213  RT=0.8s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:      InS=20.0722  OOS=20.1586  RT=311.0s
+    Joint:        InS=20.1382  OOS=19.7544  RT=9.9s  {'fcp': 25, 'bsp': 25, 'outside': 0}
+    Joint-noC12:  InS=20.1382  OOS=19.7782  RT=6.5s  {'fcp': 26, 'bsp': 24, 'outside': 0}
+
+  [2/5] cpbsd_instance_002_N10_K50_normal_rho0.0_full_random_corr  seed=20260425
+    FCP:          InS=18.9396  OOS=16.4133  RT=1.4s
+    BSP:          InS=18.9466  OOS=17.1315  RT=0.8s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:      InS=17.7358  OOS=16.0872  RT=22.3s
+    Joint:        InS=19.1442  OOS=16.4427  RT=8.0s  {'fcp': 27, 'bsp': 23, 'outside': 0}
+    Joint-noC12:  InS=19.1447  OOS=16.4276  RT=9.7s  {'fcp': 34, 'bsp': 16, 'outside': 0}
+
+  [3/5] cpbsd_instance_003_N10_K50_normal_rho0.0_full_random_corr  seed=20260426
+    FCP:          InS=21.9754  OOS=20.1148  RT=1.1s
+    BSP:          InS=21.4914  OOS=20.3481  RT=0.7s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:      InS=21.3836  OOS=20.0425  RT=225.9s
+    Joint:        InS=21.9758  OOS=20.1122  RT=1.9s  {'fcp': 30, 'bsp': 20, 'outside': 0}
+    Joint-noC12:  InS=21.9584  OOS=20.1799  RT=1.4s  {'fcp': 34, 'bsp': 16, 'outside': 0}
+
+  [4/5] cpbsd_instance_004_N10_K50_normal_rho0.0_full_random_corr  seed=20260427
+    FCP:          InS=23.6707  OOS=21.2105  RT=1.1s
+    BSP:          InS=23.4977  OOS=20.6765  RT=0.4s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:      InS=23.9311  OOS=21.1847  RT=1.2s
+    Joint:        InS=23.7930  OOS=21.0862  RT=1.2s  {'fcp': 28, 'bsp': 22, 'outside': 0}
+    Joint-noC12:  InS=23.7930  OOS=21.2445  RT=1.2s  {'fcp': 32, 'bsp': 18, 'outside': 0}
+
+  [5/5] cpbsd_instance_005_N10_K50_normal_rho0.0_full_random_corr  seed=20260428
+    FCP:          InS=17.8416  OOS=16.9071  RT=0.6s
+    BSP:          InS=17.6244  OOS=16.9913  RT=0.8s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:      InS=18.1656  OOS=17.2376  RT=20.8s
+    Joint:        InS=18.0603  OOS=17.1196  RT=1.3s  {'fcp': 26, 'bsp': 24, 'outside': 0}
+    Joint-noC12:  InS=18.0579  OOS=17.2002  RT=1.4s  {'fcp': 28, 'bsp': 22, 'outside': 0}
+
+==========================================================================================
+AVERAGES BY SETUP
+==========================================================================================
+
+### N=5 / random_corr
+  Method                  InS      OOS       RT
+  ----------------------------------------------
+  FCP                   10.76     9.57     6.1s
+  BSP                   10.57     9.79     0.4s
+  CPBSD-A               10.60     9.90     1.0s
+  Joint                 10.78     9.56    10.6s
+  Joint-noC12           10.77     9.65     9.9s
+
+### N=5 / random_ind
+  Method                  InS      OOS       RT
+  ----------------------------------------------
+  FCP                    9.90     9.37     1.0s
+  BSP                    8.71     8.38     0.3s
+  CPBSD-A                9.82     9.19     0.5s
+  Joint                  9.91     9.01     1.4s
+  Joint-noC12            9.90     9.03     1.3s
+
+### N=10 / random_corr
+  Method                  InS      OOS       RT
+  ----------------------------------------------
+  FCP                   20.50    18.84     1.1s
+  BSP                   20.31    18.97     0.7s
+  CPBSD-A               20.26    18.94   116.2s
+  Joint                 20.62    18.90     4.5s
+  Joint-noC12           20.62    18.97     4.0s
+
+### N=10 / random_ind
+  Method                  InS      OOS       RT
+  ----------------------------------------------
+  FCP                   17.04    16.37     0.1s
+  BSP                   14.79    13.99     1.0s
+  CPBSD-A               13.74    13.17     7.2s
+  Joint                 17.11    16.09     0.7s
+  Joint-noC12           17.09    15.87     0.6s
+
+Saved: /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/joint_clean_rerun_n5_n10.json

@@ -1,0 +1,260 @@
+
+================================================================================
+N=5 / zero
+================================================================================
+  Found 5 instances
+
+  [1/5] cpbsd_instance_001_N5_K50_normal_rho0.0_full_zero  seed=20260425
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/generate_data_CPBSD.py:121: RuntimeWarning: divide by zero encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/generate_data_CPBSD.py:121: RuntimeWarning: overflow encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/generate_data_CPBSD.py:121: RuntimeWarning: invalid value encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_joint_fcp_bsp.py:66: RuntimeWarning: divide by zero encountered in matmul
+  v_ki = v_kn @ assortments.T  # (K, B)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_joint_fcp_bsp.py:66: RuntimeWarning: overflow encountered in matmul
+  v_ki = v_kn @ assortments.T  # (K, B)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_joint_fcp_bsp.py:66: RuntimeWarning: invalid value encountered in matmul
+  v_ki = v_kn @ assortments.T  # (K, B)
+Set parameter LicenseID to value 2784353
+    Joint (C12-rev)   InS=25.1374  OOS=24.0637  RT=5.3s  {'fcp': 7, 'bsp': 43, 'outside': 0}  constrs=18418
+    Joint (noC12)     InS=25.1374  OOS=24.0315  RT=2.5s  {'fcp': 23, 'bsp': 27, 'outside': 0}  constrs=18387
+
+  [2/5] cpbsd_instance_002_N5_K50_normal_rho0.0_full_zero  seed=20260426
+    Joint (C12-rev)   InS=25.4121  OOS=23.9852  RT=1.0s  {'fcp': 36, 'bsp': 14, 'outside': 0}  constrs=18418
+    Joint (noC12)     InS=25.4121  OOS=23.9852  RT=1.0s  {'fcp': 37, 'bsp': 13, 'outside': 0}  constrs=18387
+
+  [3/5] cpbsd_instance_003_N5_K50_normal_rho0.0_full_zero  seed=20260427
+    Joint (C12-rev)   InS=25.6110  OOS=22.1547  RT=2.5s  {'fcp': 25, 'bsp': 25, 'outside': 0}  constrs=18418
+    Joint (noC12)     InS=25.6110  OOS=22.1135  RT=2.3s  {'fcp': 24, 'bsp': 26, 'outside': 0}  constrs=18387
+
+  [4/5] cpbsd_instance_004_N5_K50_normal_rho0.0_full_zero  seed=20260428
+    Joint (C12-rev)   InS=25.3179  OOS=23.2292  RT=1.2s  {'fcp': 30, 'bsp': 20, 'outside': 0}  constrs=18418
+    Joint (noC12)     InS=25.3325  OOS=24.2724  RT=1.2s  {'fcp': 33, 'bsp': 17, 'outside': 0}  constrs=18387
+
+  [5/5] cpbsd_instance_005_N5_K50_normal_rho0.0_full_zero  seed=20260429
+    Joint (C12-rev)   InS=25.3369  OOS=23.8522  RT=2.1s  {'fcp': 31, 'bsp': 19, 'outside': 0}  constrs=18418
+    Joint (noC12)     InS=25.3673  OOS=23.8970  RT=1.2s  {'fcp': 25, 'bsp': 25, 'outside': 0}  constrs=18387
+
+================================================================================
+N=5 / random_ind
+================================================================================
+  Found 5 instances
+
+  [1/5] cpbsd_instance_001_N5_K50_normal_rho0.0_full_random_ind  seed=20260424
+    Joint (C12-rev)   InS=6.6330  OOS=5.4371  RT=1.5s  {'fcp': 15, 'bsp': 34, 'outside': 1}  constrs=18418
+    Joint (noC12)     InS=6.6330  OOS=5.3348  RT=1.5s  {'fcp': 15, 'bsp': 34, 'outside': 1}  constrs=18387
+
+  [2/5] cpbsd_instance_002_N5_K50_normal_rho0.0_full_random_ind  seed=20260425
+    Joint (C12-rev)   InS=11.1075  OOS=10.9173  RT=2.2s  {'fcp': 42, 'bsp': 6, 'outside': 2}  constrs=18418
+    Joint (noC12)     InS=11.1075  OOS=10.9171  RT=2.4s  {'fcp': 40, 'bsp': 8, 'outside': 2}  constrs=18387
+
+  [3/5] cpbsd_instance_003_N5_K50_normal_rho0.0_full_random_ind  seed=20260426
+    Joint (C12-rev)   InS=3.9360  OOS=3.3034  RT=1.8s  {'fcp': 47, 'bsp': 0, 'outside': 3}  constrs=18418
+    Joint (noC12)     InS=3.9360  OOS=3.1603  RT=1.3s  {'fcp': 47, 'bsp': 0, 'outside': 3}  constrs=18387
+
+  [4/5] cpbsd_instance_004_N5_K50_normal_rho0.0_full_random_ind  seed=20260427
+    Joint (C12-rev)   InS=11.8128  OOS=10.5757  RT=1.0s  {'fcp': 50, 'bsp': 0, 'outside': 0}  constrs=18418
+    Joint (noC12)     InS=11.8079  OOS=10.8258  RT=1.2s  {'fcp': 50, 'bsp': 0, 'outside': 0}  constrs=18387
+
+  [5/5] cpbsd_instance_005_N5_K50_normal_rho0.0_full_random_ind  seed=20260428
+    Joint (C12-rev)   InS=16.0462  OOS=14.9842  RT=1.1s  {'fcp': 49, 'bsp': 1, 'outside': 0}  constrs=18418
+    Joint (noC12)     InS=16.0462  OOS=15.0305  RT=1.1s  {'fcp': 49, 'bsp': 1, 'outside': 0}  constrs=18387
+
+================================================================================
+N=5 / random_corr
+================================================================================
+  Found 5 instances
+
+  [1/5] cpbsd_instance_001_N5_K50_normal_rho0.0_full_random_corr  seed=20260424
+    Joint (C12-rev)   InS=7.2486  OOS=6.7837  RT=65.5s  {'fcp': 35, 'bsp': 15, 'outside': 0}  constrs=18418
+    Joint (noC12)     InS=7.2392  OOS=6.6841  RT=64.9s  {'fcp': 36, 'bsp': 13, 'outside': 1}  constrs=18387
+
+  [2/5] cpbsd_instance_002_N5_K50_normal_rho0.0_full_random_corr  seed=20260425
+    Joint (C12-rev)   InS=13.3696  OOS=12.2982  RT=3.5s  {'fcp': 41, 'bsp': 9, 'outside': 0}  constrs=18418
+    Joint (noC12)     InS=13.3673  OOS=12.1425  RT=3.3s  {'fcp': 33, 'bsp': 17, 'outside': 0}  constrs=18387
+
+  [3/5] cpbsd_instance_003_N5_K50_normal_rho0.0_full_random_corr  seed=20260426
+    Joint (C12-rev)   InS=7.7750  OOS=6.8724  RT=27.3s  {'fcp': 36, 'bsp': 12, 'outside': 2}  constrs=18418
+    Joint (noC12)     InS=7.7750  OOS=6.7965  RT=14.4s  {'fcp': 23, 'bsp': 25, 'outside': 2}  constrs=18387
+
+  [4/5] cpbsd_instance_004_N5_K50_normal_rho0.0_full_random_corr  seed=20260427
+    Joint (C12-rev)   InS=11.2315  OOS=9.3564  RT=1.8s  {'fcp': 33, 'bsp': 17, 'outside': 0}  constrs=18418
+    Joint (noC12)     InS=11.2239  OOS=9.3837  RT=1.8s  {'fcp': 28, 'bsp': 22, 'outside': 0}  constrs=18387
+
+  [5/5] cpbsd_instance_005_N5_K50_normal_rho0.0_full_random_corr  seed=20260428
+    Joint (C12-rev)   InS=14.2485  OOS=13.3324  RT=15.2s  {'fcp': 19, 'bsp': 31, 'outside': 0}  constrs=18418
+    Joint (noC12)     InS=14.2485  OOS=13.4866  RT=10.4s  {'fcp': 41, 'bsp': 9, 'outside': 0}  constrs=18387
+
+================================================================================
+N=10 / zero
+================================================================================
+  Found 3 instances
+
+  [1/3] cpbsd_instance_001_N10_K50_normal_rho0.0_full_zero  seed=20270331
+    Joint (C12-rev)   InS=52.7266  OOS=47.3193  RT=1.4s  {'fcp': 35, 'bsp': 15, 'outside': 0}  constrs=12920
+    Joint (noC12)     InS=52.6459  OOS=49.1551  RT=0.9s  {'fcp': 18, 'bsp': 32, 'outside': 0}  constrs=12899
+
+  [2/3] cpbsd_instance_002_N10_K50_normal_rho0.0_full_zero  seed=20270332
+    Joint (C12-rev)   InS=52.8339  OOS=47.9130  RT=1.0s  {'fcp': 32, 'bsp': 18, 'outside': 0}  constrs=14731
+    Joint (noC12)     InS=52.8339  OOS=47.8683  RT=0.9s  {'fcp': 31, 'bsp': 19, 'outside': 0}  constrs=14707
+
+  [3/3] cpbsd_instance_003_N10_K50_normal_rho0.0_full_zero  seed=20270333
+    Joint (C12-rev)   InS=51.1266  OOS=49.8615  RT=1.6s  {'fcp': 30, 'bsp': 20, 'outside': 0}  constrs=12818
+    Joint (noC12)     InS=51.1266  OOS=49.4423  RT=1.3s  {'fcp': 25, 'bsp': 25, 'outside': 0}  constrs=12797
+
+================================================================================
+N=10 / random_ind
+================================================================================
+  Found 5 instances
+
+  [1/5] cpbsd_instance_001_N10_K50_normal_rho0.0_full_random_ind  seed=20260424
+    Joint (C12-rev)   InS=18.7833  OOS=17.8914  RT=0.8s  {'fcp': 44, 'bsp': 4, 'outside': 2}  constrs=5337
+    Joint (noC12)     InS=18.7084  OOS=17.3014  RT=0.5s  {'fcp': 46, 'bsp': 2, 'outside': 2}  constrs=5336
+
+  [2/5] cpbsd_instance_002_N10_K50_normal_rho0.0_full_random_ind  seed=20260425
+    Joint (C12-rev)   InS=11.1116  OOS=9.2571  RT=0.6s  {'fcp': 47, 'bsp': 1, 'outside': 2}  constrs=6103
+    Joint (noC12)     InS=11.0721  OOS=9.2997  RT=1.0s  {'fcp': 47, 'bsp': 1, 'outside': 2}  constrs=6099
+
+  [3/5] cpbsd_instance_003_N10_K50_normal_rho0.0_full_random_ind  seed=20260426
+    Joint (C12-rev)   InS=21.3155  OOS=20.4581  RT=0.6s  {'fcp': 41, 'bsp': 8, 'outside': 1}  constrs=5589
+    Joint (noC12)     InS=21.3153  OOS=19.9097  RT=0.5s  {'fcp': 41, 'bsp': 8, 'outside': 1}  constrs=5587
+
+  [4/5] cpbsd_instance_004_N10_K50_normal_rho0.0_full_random_ind  seed=20260427
+    Joint (C12-rev)   InS=19.0406  OOS=17.5490  RT=0.6s  {'fcp': 49, 'bsp': 1, 'outside': 0}  constrs=6103
+    Joint (noC12)     InS=19.0856  OOS=17.5809  RT=0.5s  {'fcp': 50, 'bsp': 0, 'outside': 0}  constrs=6099
+
+  [5/5] cpbsd_instance_005_N10_K50_normal_rho0.0_full_random_ind  seed=20260428
+    Joint (C12-rev)   InS=15.3188  OOS=14.5407  RT=0.4s  {'fcp': 50, 'bsp': 0, 'outside': 0}  constrs=5589
+    Joint (noC12)     InS=15.3188  OOS=14.5407  RT=0.4s  {'fcp': 50, 'bsp': 0, 'outside': 0}  constrs=5587
+
+================================================================================
+N=10 / random_corr
+================================================================================
+  Found 5 instances
+
+  [1/5] cpbsd_instance_001_N10_K50_normal_rho0.0_full_random_corr  seed=20260424
+    Joint (C12-rev)   InS=20.1382  OOS=19.6435  RT=7.5s  {'fcp': 22, 'bsp': 28, 'outside': 0}  constrs=9752
+    Joint (noC12)     InS=20.1382  OOS=19.6362  RT=5.8s  {'fcp': 18, 'bsp': 32, 'outside': 0}  constrs=9737
+
+  [2/5] cpbsd_instance_002_N10_K50_normal_rho0.0_full_random_corr  seed=20260425
+    Joint (C12-rev)   InS=19.1442  OOS=16.4315  RT=8.9s  {'fcp': 17, 'bsp': 33, 'outside': 0}  constrs=11041
+    Joint (noC12)     InS=19.1442  OOS=16.4159  RT=10.2s  {'fcp': 27, 'bsp': 23, 'outside': 0}  constrs=11023
+
+  [3/5] cpbsd_instance_003_N10_K50_normal_rho0.0_full_random_corr  seed=20260426
+    Joint (C12-rev)   InS=21.9708  OOS=20.1723  RT=1.4s  {'fcp': 31, 'bsp': 19, 'outside': 0}  constrs=12213
+    Joint (noC12)     InS=21.9708  OOS=20.1959  RT=1.3s  {'fcp': 31, 'bsp': 19, 'outside': 0}  constrs=12193
+
+  [4/5] cpbsd_instance_004_N10_K50_normal_rho0.0_full_random_corr  seed=20260427
+    Joint (C12-rev)   InS=23.7930  OOS=21.1286  RT=1.0s  {'fcp': 35, 'bsp': 15, 'outside': 0}  constrs=12026
+    Joint (noC12)     InS=23.7484  OOS=21.1108  RT=1.1s  {'fcp': 38, 'bsp': 12, 'outside': 0}  constrs=12006
+
+  [5/5] cpbsd_instance_005_N10_K50_normal_rho0.0_full_random_corr  seed=20260428
+    Joint (C12-rev)   InS=18.0603  OOS=17.1561  RT=1.4s  {'fcp': 25, 'bsp': 25, 'outside': 0}  constrs=11707
+    Joint (noC12)     InS=18.0579  OOS=17.1637  RT=1.3s  {'fcp': 28, 'bsp': 22, 'outside': 0}  constrs=11688
+
+================================================================================
+N=30 / zero
+================================================================================
+  Found 3 instances
+
+  [1/3] cpbsd_instance_001_N30_K50_normal_rho0.0_full_zero  seed=20290331
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_joint_fcp_bsp.py:67: RuntimeWarning: divide by zero encountered in matmul
+  c_i = assortments @ c_n  # (B,)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_joint_fcp_bsp.py:67: RuntimeWarning: overflow encountered in matmul
+  c_i = assortments @ c_n  # (B,)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_joint_fcp_bsp.py:67: RuntimeWarning: invalid value encountered in matmul
+  c_i = assortments @ c_n  # (B,)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/eval_bsp_fcp_hybrid_oos.py:41: RuntimeWarning: divide by zero encountered in matmul
+  bundle_cost = assortments @ c_n
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/eval_bsp_fcp_hybrid_oos.py:41: RuntimeWarning: overflow encountered in matmul
+  bundle_cost = assortments @ c_n
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/eval_bsp_fcp_hybrid_oos.py:41: RuntimeWarning: invalid value encountered in matmul
+  bundle_cost = assortments @ c_n
+    Joint (C12-rev)   InS=160.5931  OOS=150.6026  RT=4.5s  {'fcp': 22, 'bsp': 28, 'outside': 0}  constrs=47021
+    Joint (noC12)     InS=160.5931  OOS=150.6931  RT=4.0s  {'fcp': 25, 'bsp': 25, 'outside': 0}  constrs=46971
+
+  [2/3] cpbsd_instance_002_N30_K50_normal_rho0.0_full_zero  seed=20290332
+    Joint (C12-rev)   InS=160.4650  OOS=151.6724  RT=6.1s  {'fcp': 14, 'bsp': 36, 'outside': 0}  constrs=46045
+    Joint (noC12)     InS=160.4003  OOS=151.4671  RT=6.4s  {'fcp': 31, 'bsp': 19, 'outside': 0}  constrs=45996
+
+  [3/3] cpbsd_instance_003_N30_K50_normal_rho0.0_full_zero  seed=20290333
+    Joint (C12-rev)   InS=160.0743  OOS=150.8733  RT=2.8s  {'fcp': 5, 'bsp': 45, 'outside': 0}  constrs=47873
+    Joint (noC12)     InS=159.6190  OOS=150.0023  RT=3.7s  {'fcp': 3, 'bsp': 47, 'outside': 0}  constrs=47824
+
+================================================================================
+N=30 / random_ind
+================================================================================
+  Found 5 instances
+
+  [1/5] cpbsd_instance_001_N30_K50_normal_rho0.0_full_random_ind  seed=20260424
+    Joint (C12-rev)   InS=62.0355  OOS=61.5573  RT=1.0s  {'fcp': 50, 'bsp': 0, 'outside': 0}  constrs=11590
+    Joint (noC12)     InS=62.1844  OOS=61.5998  RT=1.3s  {'fcp': 50, 'bsp': 0, 'outside': 0}  constrs=11585
+
+  [2/5] cpbsd_instance_002_N30_K50_normal_rho0.0_full_random_ind  seed=20260425
+    Joint (C12-rev)   InS=54.7355  OOS=44.9914  RT=3.7s  {'fcp': 49, 'bsp': 1, 'outside': 0}  constrs=14114
+    Joint (noC12)     InS=54.7190  OOS=43.6150  RT=3.6s  {'fcp': 49, 'bsp': 1, 'outside': 0}  constrs=14101
+
+  [3/5] cpbsd_instance_003_N30_K50_normal_rho0.0_full_random_ind  seed=20260426
+    Joint (C12-rev)   InS=65.0500  OOS=57.5491  RT=2.6s  {'fcp': 47, 'bsp': 3, 'outside': 0}  constrs=12719
+    Joint (noC12)     InS=65.0500  OOS=56.5484  RT=3.0s  {'fcp': 47, 'bsp': 3, 'outside': 0}  constrs=12710
+
+  [4/5] cpbsd_instance_004_N30_K50_normal_rho0.0_full_random_ind  seed=20260427
+    Joint (C12-rev)   InS=52.8498  OOS=47.2593  RT=2.2s  {'fcp': 49, 'bsp': 1, 'outside': 0}  constrs=12151
+    Joint (noC12)     InS=52.8459  OOS=47.4102  RT=1.6s  {'fcp': 49, 'bsp': 1, 'outside': 0}  constrs=12144
+
+  [5/5] cpbsd_instance_005_N30_K50_normal_rho0.0_full_random_ind  seed=20260428
+    Joint (C12-rev)   InS=51.7010  OOS=50.4797  RT=2.1s  {'fcp': 49, 'bsp': 1, 'outside': 0}  constrs=13742
+    Joint (noC12)     InS=51.7109  OOS=50.2059  RT=2.0s  {'fcp': 49, 'bsp': 1, 'outside': 0}  constrs=13730
+
+================================================================================
+N=30 / random_corr
+================================================================================
+  Found 5 instances
+
+  [1/5] cpbsd_instance_001_N30_K50_normal_rho0.0_full_random_corr  seed=20260424
+    Joint (C12-rev)   InS=74.9360  OOS=71.2127  RT=13.3s  {'fcp': 8, 'bsp': 42, 'outside': 0}  constrs=41638
+    Joint (noC12)     InS=74.9638  OOS=70.5424  RT=12.6s  {'fcp': 8, 'bsp': 42, 'outside': 0}  constrs=41589
+
+  [2/5] cpbsd_instance_002_N30_K50_normal_rho0.0_full_random_corr  seed=20260425
+    Joint (C12-rev)   InS=63.9444  OOS=57.8494  RT=55.6s  {'fcp': 9, 'bsp': 41, 'outside': 0}  constrs=44482
+    Joint (noC12)     InS=63.9125  OOS=57.4542  RT=41.5s  {'fcp': 7, 'bsp': 43, 'outside': 0}  constrs=44433
+
+  [3/5] cpbsd_instance_003_N30_K50_normal_rho0.0_full_random_corr  seed=20260426
+    Joint (C12-rev)   InS=68.7172  OOS=66.6014  RT=15.4s  {'fcp': 3, 'bsp': 47, 'outside': 0}  constrs=39906
+    Joint (noC12)     InS=68.5754  OOS=66.5576  RT=10.7s  {'fcp': 2, 'bsp': 48, 'outside': 0}  constrs=39856
+
+  [4/5] cpbsd_instance_004_N30_K50_normal_rho0.0_full_random_corr  seed=20260427
+    Joint (C12-rev)   InS=58.1903  OOS=49.0506  RT=44.3s  {'fcp': 15, 'bsp': 35, 'outside': 0}  constrs=39222
+    Joint (noC12)     InS=58.1098  OOS=51.9730  RT=48.4s  {'fcp': 7, 'bsp': 43, 'outside': 0}  constrs=39173
+
+  [5/5] cpbsd_instance_005_N30_K50_normal_rho0.0_full_random_corr  seed=20260428
+    Joint (C12-rev)   InS=65.1025  OOS=62.2578  RT=13.1s  {'fcp': 7, 'bsp': 43, 'outside': 0}  constrs=41663
+    Joint (noC12)     InS=65.1453  OOS=62.1479  RT=10.3s  {'fcp': 4, 'bsp': 46, 'outside': 0}  constrs=41614
+
+================================================================================
+Saved 82 rows to /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/joint_rerun_all_setups.json
+
+================================================================================
+OOS Summary (avg per setup)
+================================================================================
+Setup                          Method                  InS        OOS       RT #inst
+N= 5/random_corr         Joint               10.7747     9.7286    22.7s     5
+N= 5/random_corr         Joint-noC12         10.7708     9.6987    19.0s     5
+N= 5/random_ind          Joint                9.9071     9.0435     1.5s     5
+N= 5/random_ind          Joint-noC12          9.9061     9.0537     1.5s     5
+N= 5/zero                Joint               25.3631    23.4570     2.4s     5
+N= 5/zero                Joint-noC12         25.3721    23.6599     1.6s     5
+N=10/random_corr         Joint               20.6213    18.9064     4.0s     5
+N=10/random_corr         Joint-noC12         20.6119    18.9045     4.0s     5
+N=10/random_ind          Joint               17.1139    15.9393     0.6s     5
+N=10/random_ind          Joint-noC12         17.1001    15.7265     0.6s     5
+N=10/zero                Joint               52.2290    48.3646     1.3s     3
+N=10/zero                Joint-noC12         52.2021    48.8219     1.1s     3
+N=30/random_corr         Joint               66.1781    61.3944    28.3s     5
+N=30/random_corr         Joint-noC12         66.1413    61.7350    24.7s     5
+N=30/random_ind          Joint               57.2744    52.3674     2.3s     5
+N=30/random_ind          Joint-noC12         57.3020    51.8759     2.3s     5
+N=30/zero                Joint              160.3775   151.0494     4.5s     3
+N=30/zero                Joint-noC12        160.2041   150.7208     4.7s     3

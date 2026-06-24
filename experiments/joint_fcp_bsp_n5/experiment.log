@@ -1,0 +1,229 @@
+
+======================================================================
+Cost scenario: zero
+======================================================================
+
+  Instance 1/5: cpbsd_instance_001_N5_K50_normal_rho0.0_full_zero
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/generate_data_CPBSD.py:121: RuntimeWarning: divide by zero encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/generate_data_CPBSD.py:121: RuntimeWarning: overflow encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/generate_data_CPBSD.py:121: RuntimeWarning: invalid value encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_joint_fcp_bsp.py:68: RuntimeWarning: divide by zero encountered in matmul
+  v_ki = v_kn @ assortments.T  # (K, B)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_joint_fcp_bsp.py:68: RuntimeWarning: overflow encountered in matmul
+  v_ki = v_kn @ assortments.T  # (K, B)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_joint_fcp_bsp.py:68: RuntimeWarning: invalid value encountered in matmul
+  v_ki = v_kn @ assortments.T  # (K, B)
+Set parameter LicenseID to value 2784353
+    Joint:    InS=25.1488  OOS=24.0236  RT=1.6s  {'fcp': 25, 'bsp': 25, 'outside': 0}
+    Joint-noC12: InS=25.1374  OOS=24.0326  RT=2.5s  {'fcp': 25, 'bsp': 25, 'outside': 0}
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:302: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:302: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:302: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+    FCP:      InS=25.1489  OOS=24.2442  RT=1.9s
+    BSP:      InS=25.0625  OOS=24.4552  RT=0.3s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:  InS=25.0625  OOS=24.4351  RT=0.2s
+    PostHoc:  OOS=24.2442
+
+  Instance 2/5: cpbsd_instance_002_N5_K50_normal_rho0.0_full_zero
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/generate_data_CPBSD.py:121: RuntimeWarning: divide by zero encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/generate_data_CPBSD.py:121: RuntimeWarning: overflow encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/generate_data_CPBSD.py:121: RuntimeWarning: invalid value encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_joint_fcp_bsp.py:68: RuntimeWarning: divide by zero encountered in matmul
+  v_ki = v_kn @ assortments.T  # (K, B)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_joint_fcp_bsp.py:68: RuntimeWarning: overflow encountered in matmul
+  v_ki = v_kn @ assortments.T  # (K, B)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_joint_fcp_bsp.py:68: RuntimeWarning: invalid value encountered in matmul
+  v_ki = v_kn @ assortments.T  # (K, B)
+    Joint:    InS=25.4121  OOS=23.9852  RT=0.8s  {'fcp': 36, 'bsp': 14, 'outside': 0}
+    Joint-noC12: InS=25.4121  OOS=23.9852  RT=0.8s  {'fcp': 35, 'bsp': 15, 'outside': 0}
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:302: RuntimeWarning: divide by zero encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:302: RuntimeWarning: overflow encountered in matmul
+  revenues = v_kn @ assortments.T
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/solve_mb_bsp_on_cpbsd_v2.py:302: RuntimeWarning: invalid value encountered in matmul
+  revenues = v_kn @ assortments.T
+    FCP:      InS=25.4121  OOS=23.9852  RT=0.7s
+    BSP:      InS=25.1277  OOS=24.7484  RT=0.2s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:  InS=25.1880  OOS=24.4347  RT=0.2s
+    PostHoc:  OOS=24.7374
+
+  Instance 3/5: cpbsd_instance_003_N5_K50_normal_rho0.0_full_zero
+    Joint:    InS=25.6110  OOS=22.3079  RT=1.8s  {'fcp': 4, 'bsp': 46, 'outside': 0}
+    Joint-noC12: InS=25.6110  OOS=22.1918  RT=1.7s  {'fcp': 18, 'bsp': 32, 'outside': 0}
+    FCP:      InS=25.6110  OOS=22.2881  RT=1.3s
+    BSP:      InS=25.5855  OOS=21.6774  RT=0.2s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:  InS=25.6110  OOS=22.3494  RT=0.3s
+    PostHoc:  OOS=22.2881
+
+  Instance 4/5: cpbsd_instance_004_N5_K50_normal_rho0.0_full_zero
+    Joint:    InS=25.2719  OOS=23.5157  RT=1.0s  {'fcp': 15, 'bsp': 35, 'outside': 0}
+    Joint-noC12: InS=25.3325  OOS=23.6672  RT=1.0s  {'fcp': 23, 'bsp': 27, 'outside': 0}
+    FCP:      InS=25.3325  OOS=24.1825  RT=0.8s
+    BSP:      InS=25.1276  OOS=24.5150  RT=0.2s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:  InS=25.1276  OOS=24.4980  RT=0.2s
+    PostHoc:  OOS=24.2243
+
+  Instance 5/5: cpbsd_instance_005_N5_K50_normal_rho0.0_full_zero
+    Joint:    InS=25.3253  OOS=23.7064  RT=0.9s  {'fcp': 39, 'bsp': 11, 'outside': 0}
+    Joint-noC12: InS=25.3387  OOS=23.9425  RT=1.4s  {'fcp': 23, 'bsp': 27, 'outside': 0}
+    FCP:      InS=25.4046  OOS=23.8670  RT=1.3s
+    BSP:      InS=25.4022  OOS=24.6272  RT=0.3s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:  InS=25.4022  OOS=24.4516  RT=0.4s
+    PostHoc:  OOS=24.3343
+
+======================================================================
+Cost scenario: random_ind
+======================================================================
+
+  Instance 1/5: cpbsd_instance_001_N5_K50_normal_rho0.0_full_random_ind
+    Joint:    InS=11.1075  OOS=10.6703  RT=2.7s  {'fcp': 42, 'bsp': 6, 'outside': 2}
+    Joint-noC12: InS=11.1075  OOS=10.8375  RT=2.3s  {'fcp': 40, 'bsp': 8, 'outside': 2}
+    FCP:      InS=11.1006  OOS=10.9587  RT=1.6s
+    BSP:      InS=10.9253  OOS=10.9878  RT=0.3s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:  InS=11.0244  OOS=10.7744  RT=0.7s
+    PostHoc:  OOS=11.0719
+
+  Instance 2/5: cpbsd_instance_002_N5_K50_normal_rho0.0_full_random_ind
+    Joint:    InS=3.9426  OOS=3.3867  RT=1.4s  {'fcp': 47, 'bsp': 0, 'outside': 3}
+    Joint-noC12: InS=3.9169  OOS=3.3160  RT=1.4s  {'fcp': 47, 'bsp': 0, 'outside': 3}
+    FCP:      InS=3.9265  OOS=3.3227  RT=1.1s
+    BSP:      InS=1.9572  OOS=1.8083  RT=0.4s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:  InS=3.8236  OOS=3.4258  RT=0.8s
+    PostHoc:  OOS=2.6995
+
+  Instance 3/5: cpbsd_instance_003_N5_K50_normal_rho0.0_full_random_ind
+    Joint:    InS=11.8128  OOS=11.0455  RT=0.9s  {'fcp': 50, 'bsp': 0, 'outside': 0}
+    Joint-noC12: InS=11.8128  OOS=10.9236  RT=0.9s  {'fcp': 50, 'bsp': 0, 'outside': 0}
+    FCP:      InS=11.8128  OOS=11.1539  RT=0.8s
+    BSP:      InS=9.6103  OOS=8.9980  RT=0.3s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:  InS=11.8128  OOS=11.0692  RT=0.1s
+    PostHoc:  OOS=10.1534
+
+  Instance 4/5: cpbsd_instance_004_N5_K50_normal_rho0.0_full_random_ind
+    Joint:    InS=16.0462  OOS=14.6188  RT=0.9s  {'fcp': 50, 'bsp': 0, 'outside': 0}
+    Joint-noC12: InS=16.0462  OOS=14.7238  RT=0.9s  {'fcp': 49, 'bsp': 1, 'outside': 0}
+    FCP:      InS=16.0480  OOS=15.0317  RT=0.7s
+    BSP:      InS=14.4423  OOS=13.6638  RT=0.2s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:  InS=15.8619  OOS=15.2047  RT=0.1s
+    PostHoc:  OOS=14.6595
+
+  Instance 5/5: cpbsd_instance_005_N5_K50_normal_rho0.0_full_random_ind
+    Joint:    InS=8.1969  OOS=7.0109  RT=10.9s  {'fcp': 28, 'bsp': 18, 'outside': 4}
+    Joint-noC12: InS=8.1969  OOS=6.9480  RT=8.4s  {'fcp': 39, 'bsp': 7, 'outside': 4}
+    FCP:      InS=8.1969  OOS=6.7627  RT=9.6s
+    BSP:      InS=8.1704  OOS=7.7900  RT=0.4s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:  InS=8.0909  OOS=7.9468  RT=8.4s
+    PostHoc:  OOS=7.7522
+
+======================================================================
+Cost scenario: random_corr
+======================================================================
+
+  Instance 1/5: cpbsd_instance_001_N5_K50_normal_rho0.0_full_random_corr
+    Joint:    InS=13.3696  OOS=12.2836  RT=2.7s  {'fcp': 15, 'bsp': 35, 'outside': 0}
+    Joint-noC12: InS=13.3679  OOS=12.3090  RT=2.6s  {'fcp': 33, 'bsp': 17, 'outside': 0}
+    FCP:      InS=13.3696  OOS=12.1703  RT=2.1s
+    BSP:      InS=13.3092  OOS=12.4215  RT=0.2s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:  InS=13.1558  OOS=12.3183  RT=0.3s
+    PostHoc:  OOS=12.1717
+
+  Instance 2/5: cpbsd_instance_002_N5_K50_normal_rho0.0_full_random_corr
+    Joint:    InS=7.7750  OOS=6.8752  RT=16.8s  {'fcp': 18, 'bsp': 30, 'outside': 2}
+    Joint-noC12: InS=7.7750  OOS=6.8681  RT=10.8s  {'fcp': 27, 'bsp': 21, 'outside': 2}
+    FCP:      InS=7.7750  OOS=6.8326  RT=9.3s
+    BSP:      InS=7.4502  OOS=6.9029  RT=0.4s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:  InS=7.6050  OOS=6.9277  RT=1.8s
+    PostHoc:  OOS=6.8391
+
+  Instance 3/5: cpbsd_instance_003_N5_K50_normal_rho0.0_full_random_corr
+    Joint:    InS=11.2387  OOS=9.2137  RT=2.0s  {'fcp': 35, 'bsp': 15, 'outside': 0}
+    Joint-noC12: InS=11.2169  OOS=9.3448  RT=1.7s  {'fcp': 29, 'bsp': 21, 'outside': 0}
+    FCP:      InS=11.1935  OOS=9.5479  RT=2.0s
+    BSP:      InS=10.9792  OOS=9.3482  RT=0.3s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:  InS=11.0882  OOS=9.7995  RT=1.0s
+    PostHoc:  OOS=9.5632
+
+  Instance 4/5: cpbsd_instance_004_N5_K50_normal_rho0.0_full_random_corr
+    Joint:    InS=14.2451  OOS=12.7399  RT=10.9s  {'fcp': 34, 'bsp': 16, 'outside': 0}
+    Joint-noC12: InS=14.2485  OOS=12.9882  RT=12.3s  {'fcp': 24, 'bsp': 26, 'outside': 0}
+    FCP:      InS=14.2451  OOS=12.6437  RT=3.4s
+    BSP:      InS=14.0549  OOS=13.6587  RT=0.3s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:  InS=13.9588  OOS=13.6853  RT=1.2s
+    PostHoc:  OOS=13.3744
+
+  Instance 5/5: cpbsd_instance_005_N5_K50_normal_rho0.0_full_random_corr
+    Joint:    InS=10.3153  OOS=8.6259  RT=11.6s  {'fcp': 34, 'bsp': 15, 'outside': 1}
+    Joint-noC12: InS=10.3153  OOS=8.7358  RT=27.4s  {'fcp': 32, 'bsp': 17, 'outside': 1}
+    FCP:      InS=10.3153  OOS=8.5614  RT=15.7s
+    BSP:      InS=10.2107  OOS=8.8411  RT=0.3s
+Set parameter MIPGap to value 0.01
+Set parameter TimeLimit to value 600
+    CPBSD-A:  InS=9.8991  OOS=9.3043  RT=0.7s
+    PostHoc:  OOS=8.6484
+
+==========================================================================================
+AVERAGES (per cost scenario)
+==========================================================================================
+
+  zero:
+    Joint-FCP-BSP     : OOS=23.5078  (n=5)
+    Joint-FCP-BSP-noC12: OOS=23.5639  (n=5)
+    FCP-only          : OOS=23.7134  (n=5)
+    BSP-only          : OOS=24.0046  (n=5)
+    CPBSD-A           : OOS=24.0338  (n=5)
+    PostHoc-Hybrid    : OOS=23.9657  (n=5)
+
+  random_ind:
+    Joint-FCP-BSP     : OOS=9.3465  (n=5)
+    Joint-FCP-BSP-noC12: OOS=9.3498  (n=5)
+    FCP-only          : OOS=9.4459  (n=5)
+    BSP-only          : OOS=8.6496  (n=5)
+    CPBSD-A           : OOS=9.6842  (n=5)
+    PostHoc-Hybrid    : OOS=9.2673  (n=5)
+
+  random_corr:
+    Joint-FCP-BSP     : OOS=9.9477  (n=5)
+    Joint-FCP-BSP-noC12: OOS=10.0492  (n=5)
+    FCP-only          : OOS=9.9512  (n=5)
+    BSP-only          : OOS=10.2345  (n=5)
+    CPBSD-A           : OOS=10.4070  (n=5)
+    PostHoc-Hybrid    : OOS=10.1193  (n=5)
+
+Results saved to: /Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/joint_fcp_bsp_n5/joint_fcp_bsp_comparison.json

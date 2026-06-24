@@ -1,0 +1,4322 @@
+[
+  {
+    "n": 5,
+    "dist_family": "exponential",
+    "rho": -0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 77.39281606674194,
+    "drop_mean": 0.3968760809525492,
+    "drop_median": 0.3968760809525492,
+    "ratio_mean": 0.6031239190474508,
+    "ratio_median": 0.6031239190474508
+  },
+  {
+    "n": 5,
+    "dist_family": "exponential",
+    "rho": -0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 132.72649693489075,
+    "drop_mean": 0.47233525431636336,
+    "drop_median": 0.47233525431636336,
+    "ratio_mean": 0.5276647456836366,
+    "ratio_median": 0.5276647456836366
+  },
+  {
+    "n": 5,
+    "dist_family": "exponential",
+    "rho": -0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.2320339679718,
+    "drop_mean": 0.1892308273501182,
+    "drop_median": 0.1892308273501182,
+    "ratio_mean": 0.8107691726498818,
+    "ratio_median": 0.8107691726498818
+  },
+  {
+    "n": 5,
+    "dist_family": "exponential",
+    "rho": -0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 87.6998119354248,
+    "drop_mean": 0.48063127371332715,
+    "drop_median": 0.48063127371332715,
+    "ratio_mean": 0.5193687262866729,
+    "ratio_median": 0.5193687262866729
+  },
+  {
+    "n": 5,
+    "dist_family": "exponential",
+    "rho": -0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 132.6125409603119,
+    "drop_mean": 0.2134290784532683,
+    "drop_median": 0.2134290784532683,
+    "ratio_mean": 0.7865709215467317,
+    "ratio_median": 0.7865709215467317
+  },
+  {
+    "n": 5,
+    "dist_family": "exponential",
+    "rho": -0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.15392804145813,
+    "drop_mean": 0.15257001862274333,
+    "drop_median": 0.15257001862274333,
+    "ratio_mean": 0.8474299813772567,
+    "ratio_median": 0.8474299813772567
+  },
+  {
+    "n": 5,
+    "dist_family": "exponential",
+    "rho": -0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 17.603790998458862,
+    "drop_mean": 0.35295602290928796,
+    "drop_median": 0.35295602290928796,
+    "ratio_mean": 0.647043977090712,
+    "ratio_median": 0.647043977090712
+  },
+  {
+    "n": 5,
+    "dist_family": "exponential",
+    "rho": -0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 277.31815099716187,
+    "drop_mean": 0.3342034970243618,
+    "drop_median": 0.3342034970243618,
+    "ratio_mean": 0.6657965029756382,
+    "ratio_median": 0.6657965029756382
+  },
+  {
+    "n": 5,
+    "dist_family": "exponential",
+    "rho": -0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.18118381500244,
+    "drop_mean": 0.15173426400241485,
+    "drop_median": 0.15173426400241485,
+    "ratio_mean": 0.8482657359975851,
+    "ratio_median": 0.8482657359975851
+  },
+  {
+    "n": 5,
+    "dist_family": "exponential",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 91.0208969116211,
+    "drop_mean": 0.43837625706327854,
+    "drop_median": 0.43837625706327854,
+    "ratio_mean": 0.5616237429367215,
+    "ratio_median": 0.5616237429367215
+  },
+  {
+    "n": 5,
+    "dist_family": "exponential",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 138.5801351070404,
+    "drop_mean": 0.6085978239210903,
+    "drop_median": 0.6085978239210903,
+    "ratio_mean": 0.39140217607890976,
+    "ratio_median": 0.39140217607890976
+  },
+  {
+    "n": 5,
+    "dist_family": "exponential",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.1163761615753,
+    "drop_mean": 0.298293040095049,
+    "drop_median": 0.298293040095049,
+    "ratio_mean": 0.701706959904951,
+    "ratio_median": 0.701706959904951
+  },
+  {
+    "n": 5,
+    "dist_family": "exponential",
+    "rho": 0.0,
+    "heterogeneity": "none",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 278.70734691619873,
+    "drop_mean": 0.29736610424491894,
+    "drop_median": 0.29736610424491894,
+    "ratio_mean": 0.7026338957550811,
+    "ratio_median": 0.7026338957550811
+  },
+  {
+    "n": 5,
+    "dist_family": "exponential",
+    "rho": 0.0,
+    "heterogeneity": "none",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.0523929595947,
+    "drop_mean": 0.43594692216266195,
+    "drop_median": 0.43594692216266195,
+    "ratio_mean": 0.564053077837338,
+    "ratio_median": 0.564053077837338
+  },
+  {
+    "n": 5,
+    "dist_family": "exponential",
+    "rho": 0.0,
+    "heterogeneity": "none",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.3185968399048,
+    "drop_mean": 0.24212218469135283,
+    "drop_median": 0.24212218469135283,
+    "ratio_mean": 0.7578778153086472,
+    "ratio_median": 0.7578778153086472
+  },
+  {
+    "n": 5,
+    "dist_family": "exponential",
+    "rho": 0.0,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 99.7326591014862,
+    "drop_mean": 0.3828992311732162,
+    "drop_median": 0.3828992311732162,
+    "ratio_mean": 0.6171007688267838,
+    "ratio_median": 0.6171007688267838
+  },
+  {
+    "n": 5,
+    "dist_family": "exponential",
+    "rho": 0.0,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 127.73664498329163,
+    "drop_mean": 0.31716771458747983,
+    "drop_median": 0.31716771458747983,
+    "ratio_mean": 0.6828322854125202,
+    "ratio_median": 0.6828322854125202
+  },
+  {
+    "n": 5,
+    "dist_family": "exponential",
+    "rho": 0.0,
+    "heterogeneity": "partial",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.1658329963684,
+    "drop_mean": 0.08409819080841363,
+    "drop_median": 0.08409819080841363,
+    "ratio_mean": 0.9159018091915864,
+    "ratio_median": 0.9159018091915864
+  },
+  {
+    "n": 5,
+    "dist_family": "exponential",
+    "rho": 0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 58.69462609291077,
+    "drop_mean": 0.331180360167475,
+    "drop_median": 0.331180360167475,
+    "ratio_mean": 0.668819639832525,
+    "ratio_median": 0.668819639832525
+  },
+  {
+    "n": 5,
+    "dist_family": "exponential",
+    "rho": 0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 45.75686001777649,
+    "drop_mean": 0.4610395153366632,
+    "drop_median": 0.4610395153366632,
+    "ratio_mean": 0.5389604846633368,
+    "ratio_median": 0.5389604846633368
+  },
+  {
+    "n": 5,
+    "dist_family": "exponential",
+    "rho": 0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.208801984787,
+    "drop_mean": 0.25404369329521137,
+    "drop_median": 0.25404369329521137,
+    "ratio_mean": 0.7459563067047886,
+    "ratio_median": 0.7459563067047886
+  },
+  {
+    "n": 5,
+    "dist_family": "exponential",
+    "rho": 0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 80.52341389656067,
+    "drop_mean": 0.4398443345913793,
+    "drop_median": 0.4398443345913793,
+    "ratio_mean": 0.5601556654086207,
+    "ratio_median": 0.5601556654086207
+  },
+  {
+    "n": 5,
+    "dist_family": "exponential",
+    "rho": 0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 172.05958700180054,
+    "drop_mean": 0.26595846264209044,
+    "drop_median": 0.26595846264209044,
+    "ratio_mean": 0.7340415373579096,
+    "ratio_median": 0.7340415373579096
+  },
+  {
+    "n": 5,
+    "dist_family": "exponential",
+    "rho": 0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.0161290168762,
+    "drop_mean": 0.299276809946618,
+    "drop_median": 0.299276809946618,
+    "ratio_mean": 0.700723190053382,
+    "ratio_median": 0.700723190053382
+  },
+  {
+    "n": 5,
+    "dist_family": "exponential",
+    "rho": 0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 85.55546593666077,
+    "drop_mean": 0.5048229347201147,
+    "drop_median": 0.5048229347201147,
+    "ratio_mean": 0.4951770652798853,
+    "ratio_median": 0.4951770652798853
+  },
+  {
+    "n": 5,
+    "dist_family": "exponential",
+    "rho": 0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 86.37245297431946,
+    "drop_mean": 0.5584770094497005,
+    "drop_median": 0.5584770094497005,
+    "ratio_mean": 0.4415229905502995,
+    "ratio_median": 0.4415229905502995
+  },
+  {
+    "n": 5,
+    "dist_family": "exponential",
+    "rho": 0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.1266529560089,
+    "drop_mean": 0.35763848634739814,
+    "drop_median": 0.35763848634739814,
+    "ratio_mean": 0.6423615136526019,
+    "ratio_median": 0.6423615136526019
+  },
+  {
+    "n": 5,
+    "dist_family": "logit",
+    "rho": -0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 301.07833909988403,
+    "drop_mean": 0.16136814677205202,
+    "drop_median": 0.16136814677205202,
+    "ratio_mean": 0.838631853227948,
+    "ratio_median": 0.838631853227948
+  },
+  {
+    "n": 5,
+    "dist_family": "logit",
+    "rho": -0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 31.135630130767822,
+    "drop_mean": 0.15903881326172553,
+    "drop_median": 0.15903881326172553,
+    "ratio_mean": 0.8409611867382745,
+    "ratio_median": 0.8409611867382745
+  },
+  {
+    "n": 5,
+    "dist_family": "logit",
+    "rho": -0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 0.5950930118560791,
+    "drop_mean": 0.08816326530607521,
+    "drop_median": 0.08816326530607521,
+    "ratio_mean": 0.9118367346939248,
+    "ratio_median": 0.9118367346939248
+  },
+  {
+    "n": 5,
+    "dist_family": "logit",
+    "rho": -0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.2774200439453,
+    "drop_mean": 0.3428921801718282,
+    "drop_median": 0.3428921801718282,
+    "ratio_mean": 0.6571078198281718,
+    "ratio_median": 0.6571078198281718
+  },
+  {
+    "n": 5,
+    "dist_family": "logit",
+    "rho": -0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 18.014145851135254,
+    "drop_mean": 0.10200678569842891,
+    "drop_median": 0.10200678569842891,
+    "ratio_mean": 0.8979932143015711,
+    "ratio_median": 0.8979932143015711
+  },
+  {
+    "n": 5,
+    "dist_family": "logit",
+    "rho": -0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 11.511719942092896,
+    "drop_mean": 0.09465898431890896,
+    "drop_median": 0.09465898431890896,
+    "ratio_mean": 0.905341015681091,
+    "ratio_median": 0.905341015681091
+  },
+  {
+    "n": 5,
+    "dist_family": "logit",
+    "rho": -0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 148.08957600593567,
+    "drop_mean": 0.09758461669353491,
+    "drop_median": 0.09758461669353491,
+    "ratio_mean": 0.9024153833064651,
+    "ratio_median": 0.9024153833064651
+  },
+  {
+    "n": 5,
+    "dist_family": "logit",
+    "rho": -0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 24.518434047698975,
+    "drop_mean": 0.12463908136071888,
+    "drop_median": 0.12463908136071888,
+    "ratio_mean": 0.8753609186392811,
+    "ratio_median": 0.8753609186392811
+  },
+  {
+    "n": 5,
+    "dist_family": "logit",
+    "rho": -0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 1.2032990455627441,
+    "drop_mean": 0.03789461000043559,
+    "drop_median": 0.03789461000043559,
+    "ratio_mean": 0.9621053899995644,
+    "ratio_median": 0.9621053899995644
+  },
+  {
+    "n": 5,
+    "dist_family": "logit",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.08957290649414,
+    "drop_mean": 0.19392139387150698,
+    "drop_median": 0.19392139387150698,
+    "ratio_mean": 0.806078606128493,
+    "ratio_median": 0.806078606128493
+  },
+  {
+    "n": 5,
+    "dist_family": "logit",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 50.90693497657776,
+    "drop_mean": 0.14683510470460903,
+    "drop_median": 0.14683510470460903,
+    "ratio_mean": 0.853164895295391,
+    "ratio_median": 0.853164895295391
+  },
+  {
+    "n": 5,
+    "dist_family": "logit",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 1.1482939720153809,
+    "drop_mean": 0.03881392561766106,
+    "drop_median": 0.03881392561766106,
+    "ratio_mean": 0.9611860743823389,
+    "ratio_median": 0.9611860743823389
+  },
+  {
+    "n": 5,
+    "dist_family": "logit",
+    "rho": 0.0,
+    "heterogeneity": "none",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 203.27574110031128,
+    "drop_mean": 0.4016252082087176,
+    "drop_median": 0.4016252082087176,
+    "ratio_mean": 0.5983747917912824,
+    "ratio_median": 0.5983747917912824
+  },
+  {
+    "n": 5,
+    "dist_family": "logit",
+    "rho": 0.0,
+    "heterogeneity": "none",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 61.895183086395264,
+    "drop_mean": 0.3261328670988267,
+    "drop_median": 0.3261328670988267,
+    "ratio_mean": 0.6738671329011733,
+    "ratio_median": 0.6738671329011733
+  },
+  {
+    "n": 5,
+    "dist_family": "logit",
+    "rho": 0.0,
+    "heterogeneity": "none",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 42.974663972854614,
+    "drop_mean": 0.1281910114261604,
+    "drop_median": 0.1281910114261604,
+    "ratio_mean": 0.8718089885738396,
+    "ratio_median": 0.8718089885738396
+  },
+  {
+    "n": 5,
+    "dist_family": "logit",
+    "rho": 0.0,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 139.59641408920288,
+    "drop_mean": 0.11066667899786908,
+    "drop_median": 0.11066667899786908,
+    "ratio_mean": 0.8893333210021309,
+    "ratio_median": 0.8893333210021309
+  },
+  {
+    "n": 5,
+    "dist_family": "logit",
+    "rho": 0.0,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 130.88082194328308,
+    "drop_mean": 0.08548272337611185,
+    "drop_median": 0.08548272337611185,
+    "ratio_mean": 0.9145172766238882,
+    "ratio_median": 0.9145172766238882
+  },
+  {
+    "n": 5,
+    "dist_family": "logit",
+    "rho": 0.0,
+    "heterogeneity": "partial",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 2.5766680240631104,
+    "drop_mean": 0.07236905627632095,
+    "drop_median": 0.07236905627632095,
+    "ratio_mean": 0.927630943723679,
+    "ratio_median": 0.927630943723679
+  },
+  {
+    "n": 5,
+    "dist_family": "logit",
+    "rho": 0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.1909658908844,
+    "drop_mean": 0.2270264562778882,
+    "drop_median": 0.2270264562778882,
+    "ratio_mean": 0.7729735437221118,
+    "ratio_median": 0.7729735437221118
+  },
+  {
+    "n": 5,
+    "dist_family": "logit",
+    "rho": 0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 33.94233798980713,
+    "drop_mean": 0.20918539861916552,
+    "drop_median": 0.20918539861916552,
+    "ratio_mean": 0.7908146013808345,
+    "ratio_median": 0.7908146013808345
+  },
+  {
+    "n": 5,
+    "dist_family": "logit",
+    "rho": 0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 1.5503959655761719,
+    "drop_mean": 0.02647922705047734,
+    "drop_median": 0.02647922705047734,
+    "ratio_mean": 0.9735207729495227,
+    "ratio_median": 0.9735207729495227
+  },
+  {
+    "n": 5,
+    "dist_family": "logit",
+    "rho": 0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.1819689273834,
+    "drop_mean": 0.4415404234732737,
+    "drop_median": 0.4415404234732737,
+    "ratio_mean": 0.5584595765267263,
+    "ratio_median": 0.5584595765267263
+  },
+  {
+    "n": 5,
+    "dist_family": "logit",
+    "rho": 0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 31.881397008895874,
+    "drop_mean": 0.13571587664315732,
+    "drop_median": 0.13571587664315732,
+    "ratio_mean": 0.8642841233568427,
+    "ratio_median": 0.8642841233568427
+  },
+  {
+    "n": 5,
+    "dist_family": "logit",
+    "rho": 0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 29.551840782165527,
+    "drop_mean": 0.15642261796280932,
+    "drop_median": 0.15642261796280932,
+    "ratio_mean": 0.8435773820371907,
+    "ratio_median": 0.8435773820371907
+  },
+  {
+    "n": 5,
+    "dist_family": "logit",
+    "rho": 0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.10457587242126,
+    "drop_mean": 0.15235840951863766,
+    "drop_median": 0.15235840951863766,
+    "ratio_mean": 0.8476415904813623,
+    "ratio_median": 0.8476415904813623
+  },
+  {
+    "n": 5,
+    "dist_family": "logit",
+    "rho": 0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 23.739614009857178,
+    "drop_mean": 0.21682676677827672,
+    "drop_median": 0.21682676677827672,
+    "ratio_mean": 0.7831732332217233,
+    "ratio_median": 0.7831732332217233
+  },
+  {
+    "n": 5,
+    "dist_family": "logit",
+    "rho": 0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 2.2989790439605713,
+    "drop_mean": 0.023821442053416075,
+    "drop_median": 0.023821442053416075,
+    "ratio_mean": 0.9761785579465839,
+    "ratio_median": 0.9761785579465839
+  },
+  {
+    "n": 5,
+    "dist_family": "lognormal",
+    "rho": -0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 47.74730396270752,
+    "drop_mean": 0.11876259093795716,
+    "drop_median": 0.11876259093795716,
+    "ratio_mean": 0.8812374090620428,
+    "ratio_median": 0.8812374090620428
+  },
+  {
+    "n": 5,
+    "dist_family": "lognormal",
+    "rho": -0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 253.12877297401428,
+    "drop_mean": 0.4026175665806455,
+    "drop_median": 0.4026175665806455,
+    "ratio_mean": 0.5973824334193545,
+    "ratio_median": 0.5973824334193545
+  },
+  {
+    "n": 5,
+    "dist_family": "lognormal",
+    "rho": -0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 120.1338369846344,
+    "drop_mean": 0.15211281726839654,
+    "drop_median": 0.15211281726839654,
+    "ratio_mean": 0.8478871827316035,
+    "ratio_median": 0.8478871827316035
+  },
+  {
+    "n": 5,
+    "dist_family": "lognormal",
+    "rho": -0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.2277150154114,
+    "drop_mean": 0.4159893876309384,
+    "drop_median": 0.4159893876309384,
+    "ratio_mean": 0.5840106123690616,
+    "ratio_median": 0.5840106123690616
+  },
+  {
+    "n": 5,
+    "dist_family": "lognormal",
+    "rho": -0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 26.90056014060974,
+    "drop_mean": 0.12039682634266047,
+    "drop_median": 0.12039682634266047,
+    "ratio_mean": 0.8796031736573395,
+    "ratio_median": 0.8796031736573395
+  },
+  {
+    "n": 5,
+    "dist_family": "lognormal",
+    "rho": -0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 65.47292804718018,
+    "drop_mean": 0.06804045353104538,
+    "drop_median": 0.06804045353104538,
+    "ratio_mean": 0.9319595464689546,
+    "ratio_median": 0.9319595464689546
+  },
+  {
+    "n": 5,
+    "dist_family": "lognormal",
+    "rho": -0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.21517992019653,
+    "drop_mean": 0.2922860751059818,
+    "drop_median": 0.2922860751059818,
+    "ratio_mean": 0.7077139248940182,
+    "ratio_median": 0.7077139248940182
+  },
+  {
+    "n": 5,
+    "dist_family": "lognormal",
+    "rho": -0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 205.6742298603058,
+    "drop_mean": 0.1769548363738963,
+    "drop_median": 0.1769548363738963,
+    "ratio_mean": 0.8230451636261037,
+    "ratio_median": 0.8230451636261037
+  },
+  {
+    "n": 5,
+    "dist_family": "lognormal",
+    "rho": -0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.25269389152527,
+    "drop_mean": 0.06897528856587876,
+    "drop_median": 0.06897528856587876,
+    "ratio_mean": 0.9310247114341212,
+    "ratio_median": 0.9310247114341212
+  },
+  {
+    "n": 5,
+    "dist_family": "lognormal",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 188.79097700119019,
+    "drop_mean": 0.4779195879998932,
+    "drop_median": 0.4779195879998932,
+    "ratio_mean": 0.5220804120001068,
+    "ratio_median": 0.5220804120001068
+  },
+  {
+    "n": 5,
+    "dist_family": "lognormal",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 151.49201488494873,
+    "drop_mean": 0.37030690898897944,
+    "drop_median": 0.37030690898897944,
+    "ratio_mean": 0.6296930910110206,
+    "ratio_median": 0.6296930910110206
+  },
+  {
+    "n": 5,
+    "dist_family": "lognormal",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 153.69619297981262,
+    "drop_mean": 0.19588837468913833,
+    "drop_median": 0.19588837468913833,
+    "ratio_mean": 0.8041116253108617,
+    "ratio_median": 0.8041116253108617
+  },
+  {
+    "n": 5,
+    "dist_family": "lognormal",
+    "rho": 0.0,
+    "heterogeneity": "none",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.28336906433105,
+    "drop_mean": 0.4490248281149919,
+    "drop_median": 0.4490248281149919,
+    "ratio_mean": 0.5509751718850081,
+    "ratio_median": 0.5509751718850081
+  },
+  {
+    "n": 5,
+    "dist_family": "lognormal",
+    "rho": 0.0,
+    "heterogeneity": "none",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 201.86691403388977,
+    "drop_mean": 0.1529886517051211,
+    "drop_median": 0.1529886517051211,
+    "ratio_mean": 0.8470113482948789,
+    "ratio_median": 0.8470113482948789
+  },
+  {
+    "n": 5,
+    "dist_family": "lognormal",
+    "rho": 0.0,
+    "heterogeneity": "none",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.2118058204651,
+    "drop_mean": 0.2139738391144559,
+    "drop_median": 0.2139738391144559,
+    "ratio_mean": 0.7860261608855441,
+    "ratio_median": 0.7860261608855441
+  },
+  {
+    "n": 5,
+    "dist_family": "lognormal",
+    "rho": 0.0,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.23798298835754,
+    "drop_mean": 0.554420301487654,
+    "drop_median": 0.554420301487654,
+    "ratio_mean": 0.445579698512346,
+    "ratio_median": 0.445579698512346
+  },
+  {
+    "n": 5,
+    "dist_family": "lognormal",
+    "rho": 0.0,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.2871868610382,
+    "drop_mean": 0.37780383345510493,
+    "drop_median": 0.37780383345510493,
+    "ratio_mean": 0.6221961665448951,
+    "ratio_median": 0.6221961665448951
+  },
+  {
+    "n": 5,
+    "dist_family": "lognormal",
+    "rho": 0.0,
+    "heterogeneity": "partial",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.2600359916687,
+    "drop_mean": 0.08974296696974804,
+    "drop_median": 0.08974296696974804,
+    "ratio_mean": 0.910257033030252,
+    "ratio_median": 0.910257033030252
+  },
+  {
+    "n": 5,
+    "dist_family": "lognormal",
+    "rho": 0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 65.77592706680298,
+    "drop_mean": 0.42624474484921027,
+    "drop_median": 0.42624474484921027,
+    "ratio_mean": 0.5737552551507897,
+    "ratio_median": 0.5737552551507897
+  },
+  {
+    "n": 5,
+    "dist_family": "lognormal",
+    "rho": 0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 142.59799599647522,
+    "drop_mean": 0.24462716839791598,
+    "drop_median": 0.24462716839791598,
+    "ratio_mean": 0.755372831602084,
+    "ratio_median": 0.755372831602084
+  },
+  {
+    "n": 5,
+    "dist_family": "lognormal",
+    "rho": 0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 130.9139449596405,
+    "drop_mean": 0.18633509702696538,
+    "drop_median": 0.18633509702696538,
+    "ratio_mean": 0.8136649029730346,
+    "ratio_median": 0.8136649029730346
+  },
+  {
+    "n": 5,
+    "dist_family": "lognormal",
+    "rho": 0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.3254659175873,
+    "drop_mean": 0.43892345429203816,
+    "drop_median": 0.43892345429203816,
+    "ratio_mean": 0.5610765457079618,
+    "ratio_median": 0.5610765457079618
+  },
+  {
+    "n": 5,
+    "dist_family": "lognormal",
+    "rho": 0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.17991185188293,
+    "drop_mean": 0.29260530340095137,
+    "drop_median": 0.29260530340095137,
+    "ratio_mean": 0.7073946965990486,
+    "ratio_median": 0.7073946965990486
+  },
+  {
+    "n": 5,
+    "dist_family": "lognormal",
+    "rho": 0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.2137129306793,
+    "drop_mean": 0.12710705671688094,
+    "drop_median": 0.12710705671688094,
+    "ratio_mean": 0.8728929432831191,
+    "ratio_median": 0.8728929432831191
+  },
+  {
+    "n": 5,
+    "dist_family": "lognormal",
+    "rho": 0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.22762393951416,
+    "drop_mean": 0.5330587435591854,
+    "drop_median": 0.5330587435591854,
+    "ratio_mean": 0.46694125644081463,
+    "ratio_median": 0.46694125644081463
+  },
+  {
+    "n": 5,
+    "dist_family": "lognormal",
+    "rho": 0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 126.72269105911255,
+    "drop_mean": 0.3938600533542844,
+    "drop_median": 0.3938600533542844,
+    "ratio_mean": 0.6061399466457156,
+    "ratio_median": 0.6061399466457156
+  },
+  {
+    "n": 5,
+    "dist_family": "lognormal",
+    "rho": 0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 29.88918399810791,
+    "drop_mean": 0.1519273915958358,
+    "drop_median": 0.1519273915958358,
+    "ratio_mean": 0.8480726084041642,
+    "ratio_median": 0.8480726084041642
+  },
+  {
+    "n": 5,
+    "dist_family": "normal",
+    "rho": -0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 26.469883918762207,
+    "drop_mean": 0.3164213436475063,
+    "drop_median": 0.3164213436475063,
+    "ratio_mean": 0.6835786563524937,
+    "ratio_median": 0.6835786563524937
+  },
+  {
+    "n": 5,
+    "dist_family": "normal",
+    "rho": -0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 111.5933051109314,
+    "drop_mean": 0.3004449144081881,
+    "drop_median": 0.3004449144081881,
+    "ratio_mean": 0.6995550855918119,
+    "ratio_median": 0.6995550855918119
+  },
+  {
+    "n": 5,
+    "dist_family": "normal",
+    "rho": -0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 1.318315029144287,
+    "drop_mean": 0.13778247146756917,
+    "drop_median": 0.13778247146756917,
+    "ratio_mean": 0.8622175285324308,
+    "ratio_median": 0.8622175285324308
+  },
+  {
+    "n": 5,
+    "dist_family": "normal",
+    "rho": -0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 8.64713978767395,
+    "drop_mean": 0.43544646312282165,
+    "drop_median": 0.43544646312282165,
+    "ratio_mean": 0.5645535368771784,
+    "ratio_median": 0.5645535368771784
+  },
+  {
+    "n": 5,
+    "dist_family": "normal",
+    "rho": -0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 16.53170108795166,
+    "drop_mean": 0.28284334225047414,
+    "drop_median": 0.28284334225047414,
+    "ratio_mean": 0.7171566577495259,
+    "ratio_median": 0.7171566577495259
+  },
+  {
+    "n": 5,
+    "dist_family": "normal",
+    "rho": -0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 46.77820086479187,
+    "drop_mean": 0.18242690095800151,
+    "drop_median": 0.18242690095800151,
+    "ratio_mean": 0.8175730990419985,
+    "ratio_median": 0.8175730990419985
+  },
+  {
+    "n": 5,
+    "dist_family": "normal",
+    "rho": -0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.24440908432007,
+    "drop_mean": 0.2452102512190023,
+    "drop_median": 0.2452102512190023,
+    "ratio_mean": 0.7547897487809977,
+    "ratio_median": 0.7547897487809977
+  },
+  {
+    "n": 5,
+    "dist_family": "normal",
+    "rho": -0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 41.914581060409546,
+    "drop_mean": 0.11439853691083968,
+    "drop_median": 0.11439853691083968,
+    "ratio_mean": 0.8856014630891603,
+    "ratio_median": 0.8856014630891603
+  },
+  {
+    "n": 5,
+    "dist_family": "normal",
+    "rho": -0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 1.1234400272369385,
+    "drop_mean": 0.06199408249273797,
+    "drop_median": 0.06199408249273797,
+    "ratio_mean": 0.938005917507262,
+    "ratio_median": 0.938005917507262
+  },
+  {
+    "n": 5,
+    "dist_family": "normal",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.2261600494385,
+    "drop_mean": 0.2739227434873972,
+    "drop_median": 0.2739227434873972,
+    "ratio_mean": 0.7260772565126028,
+    "ratio_median": 0.7260772565126028
+  },
+  {
+    "n": 5,
+    "dist_family": "normal",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 29.693592071533203,
+    "drop_mean": 0.2159070087751569,
+    "drop_median": 0.2159070087751569,
+    "ratio_mean": 0.7840929912248431,
+    "ratio_median": 0.7840929912248431
+  },
+  {
+    "n": 5,
+    "dist_family": "normal",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 1.7987902164459229,
+    "drop_mean": 0.17455589324266774,
+    "drop_median": 0.17455589324266774,
+    "ratio_mean": 0.8254441067573323,
+    "ratio_median": 0.8254441067573323
+  },
+  {
+    "n": 5,
+    "dist_family": "normal",
+    "rho": 0.0,
+    "heterogeneity": "none",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 181.43951416015625,
+    "drop_mean": 0.297313125249391,
+    "drop_median": 0.297313125249391,
+    "ratio_mean": 0.702686874750609,
+    "ratio_median": 0.702686874750609
+  },
+  {
+    "n": 5,
+    "dist_family": "normal",
+    "rho": 0.0,
+    "heterogeneity": "none",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 59.40918016433716,
+    "drop_mean": 0.3881247395272056,
+    "drop_median": 0.3881247395272056,
+    "ratio_mean": 0.6118752604727944,
+    "ratio_median": 0.6118752604727944
+  },
+  {
+    "n": 5,
+    "dist_family": "normal",
+    "rho": 0.0,
+    "heterogeneity": "none",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 140.89795684814453,
+    "drop_mean": 0.27845798279172607,
+    "drop_median": 0.27845798279172607,
+    "ratio_mean": 0.7215420172082739,
+    "ratio_median": 0.7215420172082739
+  },
+  {
+    "n": 5,
+    "dist_family": "normal",
+    "rho": 0.0,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 53.078591108322144,
+    "drop_mean": 0.32972808692707567,
+    "drop_median": 0.32972808692707567,
+    "ratio_mean": 0.6702719130729243,
+    "ratio_median": 0.6702719130729243
+  },
+  {
+    "n": 5,
+    "dist_family": "normal",
+    "rho": 0.0,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 228.76376581192017,
+    "drop_mean": 0.1570795485944727,
+    "drop_median": 0.1570795485944727,
+    "ratio_mean": 0.8429204514055273,
+    "ratio_median": 0.8429204514055273
+  },
+  {
+    "n": 5,
+    "dist_family": "normal",
+    "rho": 0.0,
+    "heterogeneity": "partial",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 4.012409925460815,
+    "drop_mean": 0.08664330502102535,
+    "drop_median": 0.08664330502102535,
+    "ratio_mean": 0.9133566949789746,
+    "ratio_median": 0.9133566949789746
+  },
+  {
+    "n": 5,
+    "dist_family": "normal",
+    "rho": 0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.0944809913635,
+    "drop_mean": 0.21709486775952624,
+    "drop_median": 0.21709486775952624,
+    "ratio_mean": 0.7829051322404738,
+    "ratio_median": 0.7829051322404738
+  },
+  {
+    "n": 5,
+    "dist_family": "normal",
+    "rho": 0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 108.54341888427734,
+    "drop_mean": 0.37607571865488043,
+    "drop_median": 0.37607571865488043,
+    "ratio_mean": 0.6239242813451196,
+    "ratio_median": 0.6239242813451196
+  },
+  {
+    "n": 5,
+    "dist_family": "normal",
+    "rho": 0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 1.5204169750213623,
+    "drop_mean": 0.08366377016606641,
+    "drop_median": 0.08366377016606641,
+    "ratio_mean": 0.9163362298339336,
+    "ratio_median": 0.9163362298339336
+  },
+  {
+    "n": 5,
+    "dist_family": "normal",
+    "rho": 0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.1486608982086,
+    "drop_mean": 0.2896669750269104,
+    "drop_median": 0.2896669750269104,
+    "ratio_mean": 0.7103330249730896,
+    "ratio_median": 0.7103330249730896
+  },
+  {
+    "n": 5,
+    "dist_family": "normal",
+    "rho": 0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.21220803260803,
+    "drop_mean": 0.21394547019175925,
+    "drop_median": 0.21394547019175925,
+    "ratio_mean": 0.7860545298082408,
+    "ratio_median": 0.7860545298082408
+  },
+  {
+    "n": 5,
+    "dist_family": "normal",
+    "rho": 0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.188805103302,
+    "drop_mean": 0.17076640028756052,
+    "drop_median": 0.17076640028756052,
+    "ratio_mean": 0.8292335997124395,
+    "ratio_median": 0.8292335997124395
+  },
+  {
+    "n": 5,
+    "dist_family": "normal",
+    "rho": 0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.2583508491516,
+    "drop_mean": 0.30451005300238465,
+    "drop_median": 0.30451005300238465,
+    "ratio_mean": 0.6954899469976153,
+    "ratio_median": 0.6954899469976153
+  },
+  {
+    "n": 5,
+    "dist_family": "normal",
+    "rho": 0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 139.7120270729065,
+    "drop_mean": 0.24999376021300068,
+    "drop_median": 0.24999376021300068,
+    "ratio_mean": 0.7500062397869993,
+    "ratio_median": 0.7500062397869993
+  },
+  {
+    "n": 5,
+    "dist_family": "normal",
+    "rho": 0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 3.8458268642425537,
+    "drop_mean": 0.06625898381814277,
+    "drop_median": 0.06625898381814277,
+    "ratio_mean": 0.9337410161818572,
+    "ratio_median": 0.9337410161818572
+  },
+  {
+    "n": 5,
+    "dist_family": "uniform",
+    "rho": -0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 105.3358302116394,
+    "drop_mean": 0.16308920604139676,
+    "drop_median": 0.16308920604139676,
+    "ratio_mean": 0.8369107939586032,
+    "ratio_median": 0.8369107939586032
+  },
+  {
+    "n": 5,
+    "dist_family": "uniform",
+    "rho": -0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 13.33606219291687,
+    "drop_mean": 0.3375853771614923,
+    "drop_median": 0.3375853771614923,
+    "ratio_mean": 0.6624146228385077,
+    "ratio_median": 0.6624146228385077
+  },
+  {
+    "n": 5,
+    "dist_family": "uniform",
+    "rho": -0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 1.5503149032592773,
+    "drop_mean": 0.04352512591867752,
+    "drop_median": 0.04352512591867752,
+    "ratio_mean": 0.9564748740813225,
+    "ratio_median": 0.9564748740813225
+  },
+  {
+    "n": 5,
+    "dist_family": "uniform",
+    "rho": -0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 34.067221879959106,
+    "drop_mean": 0.4112849615575571,
+    "drop_median": 0.4112849615575571,
+    "ratio_mean": 0.5887150384424429,
+    "ratio_median": 0.5887150384424429
+  },
+  {
+    "n": 5,
+    "dist_family": "uniform",
+    "rho": -0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 26.550534963607788,
+    "drop_mean": 0.22956399494675028,
+    "drop_median": 0.22956399494675028,
+    "ratio_mean": 0.7704360050532497,
+    "ratio_median": 0.7704360050532497
+  },
+  {
+    "n": 5,
+    "dist_family": "uniform",
+    "rho": -0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 49.75639605522156,
+    "drop_mean": 0.07599228838169969,
+    "drop_median": 0.07599228838169969,
+    "ratio_mean": 0.9240077116183003,
+    "ratio_median": 0.9240077116183003
+  },
+  {
+    "n": 5,
+    "dist_family": "uniform",
+    "rho": -0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 149.6009078025818,
+    "drop_mean": 0.26396914499788093,
+    "drop_median": 0.26396914499788093,
+    "ratio_mean": 0.7360308550021191,
+    "ratio_median": 0.7360308550021191
+  },
+  {
+    "n": 5,
+    "dist_family": "uniform",
+    "rho": -0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 139.38320517539978,
+    "drop_mean": 0.25543270599257506,
+    "drop_median": 0.25543270599257506,
+    "ratio_mean": 0.7445672940074249,
+    "ratio_median": 0.7445672940074249
+  },
+  {
+    "n": 5,
+    "dist_family": "uniform",
+    "rho": -0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 5.242999076843262,
+    "drop_mean": 0.2196456819402619,
+    "drop_median": 0.2196456819402619,
+    "ratio_mean": 0.7803543180597381,
+    "ratio_median": 0.7803543180597381
+  },
+  {
+    "n": 5,
+    "dist_family": "uniform",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 35.019684076309204,
+    "drop_mean": 0.4127862104013693,
+    "drop_median": 0.4127862104013693,
+    "ratio_mean": 0.5872137895986307,
+    "ratio_median": 0.5872137895986307
+  },
+  {
+    "n": 5,
+    "dist_family": "uniform",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 107.35807490348816,
+    "drop_mean": 0.2924528017300678,
+    "drop_median": 0.2924528017300678,
+    "ratio_mean": 0.7075471982699322,
+    "ratio_median": 0.7075471982699322
+  },
+  {
+    "n": 5,
+    "dist_family": "uniform",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 2.1743810176849365,
+    "drop_mean": 0.10126815006636558,
+    "drop_median": 0.10126815006636558,
+    "ratio_mean": 0.8987318499336344,
+    "ratio_median": 0.8987318499336344
+  },
+  {
+    "n": 5,
+    "dist_family": "uniform",
+    "rho": 0.0,
+    "heterogeneity": "none",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 77.76368117332458,
+    "drop_mean": 0.362930163403835,
+    "drop_median": 0.362930163403835,
+    "ratio_mean": 0.637069836596165,
+    "ratio_median": 0.637069836596165
+  },
+  {
+    "n": 5,
+    "dist_family": "uniform",
+    "rho": 0.0,
+    "heterogeneity": "none",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 26.69387197494507,
+    "drop_mean": 0.27552975350738673,
+    "drop_median": 0.27552975350738673,
+    "ratio_mean": 0.7244702464926133,
+    "ratio_median": 0.7244702464926133
+  },
+  {
+    "n": 5,
+    "dist_family": "uniform",
+    "rho": 0.0,
+    "heterogeneity": "none",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.20588088035583,
+    "drop_mean": 0.26588447373509194,
+    "drop_median": 0.26588447373509194,
+    "ratio_mean": 0.7341155262649081,
+    "ratio_median": 0.7341155262649081
+  },
+  {
+    "n": 5,
+    "dist_family": "uniform",
+    "rho": 0.0,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 41.77486991882324,
+    "drop_mean": 0.2881204455433932,
+    "drop_median": 0.2881204455433932,
+    "ratio_mean": 0.7118795544566068,
+    "ratio_median": 0.7118795544566068
+  },
+  {
+    "n": 5,
+    "dist_family": "uniform",
+    "rho": 0.0,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 122.12910795211792,
+    "drop_mean": 0.34099942628840785,
+    "drop_median": 0.34099942628840785,
+    "ratio_mean": 0.6590005737115922,
+    "ratio_median": 0.6590005737115922
+  },
+  {
+    "n": 5,
+    "dist_family": "uniform",
+    "rho": 0.0,
+    "heterogeneity": "partial",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 4.473675966262817,
+    "drop_mean": 0.09117906742059945,
+    "drop_median": 0.09117906742059945,
+    "ratio_mean": 0.9088209325794006,
+    "ratio_median": 0.9088209325794006
+  },
+  {
+    "n": 5,
+    "dist_family": "uniform",
+    "rho": 0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 198.0842068195343,
+    "drop_mean": 0.2725573524215815,
+    "drop_median": 0.2725573524215815,
+    "ratio_mean": 0.7274426475784185,
+    "ratio_median": 0.7274426475784185
+  },
+  {
+    "n": 5,
+    "dist_family": "uniform",
+    "rho": 0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 146.73775100708008,
+    "drop_mean": 0.3208623364635359,
+    "drop_median": 0.3208623364635359,
+    "ratio_mean": 0.6791376635364641,
+    "ratio_median": 0.6791376635364641
+  },
+  {
+    "n": 5,
+    "dist_family": "uniform",
+    "rho": 0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 3.4692020416259766,
+    "drop_mean": 0.12710356889838914,
+    "drop_median": 0.12710356889838914,
+    "ratio_mean": 0.8728964311016109,
+    "ratio_median": 0.8728964311016109
+  },
+  {
+    "n": 5,
+    "dist_family": "uniform",
+    "rho": 0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 93.67791986465454,
+    "drop_mean": 0.42621232125080555,
+    "drop_median": 0.42621232125080555,
+    "ratio_mean": 0.5737876787491945,
+    "ratio_median": 0.5737876787491945
+  },
+  {
+    "n": 5,
+    "dist_family": "uniform",
+    "rho": 0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 25.091318130493164,
+    "drop_mean": 0.49606928264848404,
+    "drop_median": 0.49606928264848404,
+    "ratio_mean": 0.503930717351516,
+    "ratio_median": 0.503930717351516
+  },
+  {
+    "n": 5,
+    "dist_family": "uniform",
+    "rho": 0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 173.07438611984253,
+    "drop_mean": 0.25097850825352397,
+    "drop_median": 0.25097850825352397,
+    "ratio_mean": 0.749021491746476,
+    "ratio_median": 0.749021491746476
+  },
+  {
+    "n": 5,
+    "dist_family": "uniform",
+    "rho": 0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 208.71757197380066,
+    "drop_mean": 0.2823227268446338,
+    "drop_median": 0.2823227268446338,
+    "ratio_mean": 0.7176772731553662,
+    "ratio_median": 0.7176772731553662
+  },
+  {
+    "n": 5,
+    "dist_family": "uniform",
+    "rho": 0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 258.9974789619446,
+    "drop_mean": 0.3378405361081117,
+    "drop_median": 0.3378405361081117,
+    "ratio_mean": 0.6621594638918883,
+    "ratio_median": 0.6621594638918883
+  },
+  {
+    "n": 5,
+    "dist_family": "uniform",
+    "rho": 0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 10.330719947814941,
+    "drop_mean": 0.1514830720901218,
+    "drop_median": 0.1514830720901218,
+    "ratio_mean": 0.8485169279098782,
+    "ratio_median": 0.8485169279098782
+  },
+  {
+    "n": 10,
+    "dist_family": "exponential",
+    "rho": -0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.2388961315155,
+    "drop_mean": 0.3912816500913392,
+    "drop_median": 0.3912816500913392,
+    "ratio_mean": 0.6087183499086608,
+    "ratio_median": 0.6087183499086608
+  },
+  {
+    "n": 10,
+    "dist_family": "exponential",
+    "rho": -0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.22556614875793,
+    "drop_mean": 0.6744970791472529,
+    "drop_median": 0.6744970791472529,
+    "ratio_mean": 0.3255029208527472,
+    "ratio_median": 0.3255029208527472
+  },
+  {
+    "n": 10,
+    "dist_family": "exponential",
+    "rho": -0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 301.06092500686646,
+    "drop_mean": -0.8400000000000054,
+    "drop_median": -0.8400000000000054,
+    "ratio_mean": 1.8400000000000054,
+    "ratio_median": 1.8400000000000054
+  },
+  {
+    "n": 10,
+    "dist_family": "exponential",
+    "rho": -0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.6796419620514,
+    "drop_mean": 0.6584113840258674,
+    "drop_median": 0.6584113840258674,
+    "ratio_mean": 0.34158861597413254,
+    "ratio_median": 0.34158861597413254
+  },
+  {
+    "n": 10,
+    "dist_family": "exponential",
+    "rho": -0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.71664905548096,
+    "drop_mean": 0.4232055112448875,
+    "drop_median": 0.4232055112448875,
+    "ratio_mean": 0.5767944887551125,
+    "ratio_median": 0.5767944887551125
+  },
+  {
+    "n": 10,
+    "dist_family": "exponential",
+    "rho": -0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 301.15066599845886,
+    "drop_mean": 0.30000000000000004,
+    "drop_median": 0.30000000000000004,
+    "ratio_mean": 0.7,
+    "ratio_median": 0.7
+  },
+  {
+    "n": 10,
+    "dist_family": "exponential",
+    "rho": -0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.4776020050049,
+    "drop_mean": 0.5122349046720984,
+    "drop_median": 0.5122349046720984,
+    "ratio_mean": 0.4877650953279016,
+    "ratio_median": 0.4877650953279016
+  },
+  {
+    "n": 10,
+    "dist_family": "exponential",
+    "rho": -0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.3721420764923,
+    "drop_mean": 0.5068928039872607,
+    "drop_median": 0.5068928039872607,
+    "ratio_mean": 0.4931071960127394,
+    "ratio_median": 0.4931071960127394
+  },
+  {
+    "n": 10,
+    "dist_family": "exponential",
+    "rho": -0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 301.05041003227234,
+    "drop_mean": 0.24885481676523213,
+    "drop_median": 0.24885481676523213,
+    "ratio_mean": 0.7511451832347679,
+    "ratio_median": 0.7511451832347679
+  },
+  {
+    "n": 10,
+    "dist_family": "exponential",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.1461260318756,
+    "drop_mean": 0.5399817744770521,
+    "drop_median": 0.5399817744770521,
+    "ratio_mean": 0.46001822552294797,
+    "ratio_median": 0.46001822552294797
+  },
+  {
+    "n": 10,
+    "dist_family": "exponential",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.1478159427643,
+    "drop_mean": 0.44768690037904446,
+    "drop_median": 0.44768690037904446,
+    "ratio_mean": 0.5523130996209555,
+    "ratio_median": 0.5523130996209555
+  },
+  {
+    "n": 10,
+    "dist_family": "exponential",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.2238028049469,
+    "drop_mean": 0.74,
+    "drop_median": 0.74,
+    "ratio_mean": 0.26000000000000006,
+    "ratio_median": 0.26000000000000006
+  },
+  {
+    "n": 10,
+    "dist_family": "exponential",
+    "rho": 0.0,
+    "heterogeneity": "none",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.15899300575256,
+    "drop_mean": 0.5393161442754228,
+    "drop_median": 0.5393161442754228,
+    "ratio_mean": 0.46068385572457715,
+    "ratio_median": 0.46068385572457715
+  },
+  {
+    "n": 10,
+    "dist_family": "exponential",
+    "rho": 0.0,
+    "heterogeneity": "none",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.33681201934814,
+    "drop_mean": 0.370490898656877,
+    "drop_median": 0.370490898656877,
+    "ratio_mean": 0.629509101343123,
+    "ratio_median": 0.629509101343123
+  },
+  {
+    "n": 10,
+    "dist_family": "exponential",
+    "rho": 0.0,
+    "heterogeneity": "none",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.5337588787079,
+    "drop_mean": -0.5299999999999958,
+    "drop_median": -0.5299999999999958,
+    "ratio_mean": 1.5299999999999958,
+    "ratio_median": 1.5299999999999958
+  },
+  {
+    "n": 10,
+    "dist_family": "exponential",
+    "rho": 0.0,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 301.3163869380951,
+    "drop_mean": 0.305207749766067,
+    "drop_median": 0.305207749766067,
+    "ratio_mean": 0.694792250233933,
+    "ratio_median": 0.694792250233933
+  },
+  {
+    "n": 10,
+    "dist_family": "exponential",
+    "rho": 0.0,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.48204493522644,
+    "drop_mean": 0.4902566756639698,
+    "drop_median": 0.4902566756639698,
+    "ratio_mean": 0.5097433243360302,
+    "ratio_median": 0.5097433243360302
+  },
+  {
+    "n": 10,
+    "dist_family": "exponential",
+    "rho": 0.0,
+    "heterogeneity": "partial",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 302.6718759536743,
+    "drop_mean": 0.40999999999999903,
+    "drop_median": 0.40999999999999903,
+    "ratio_mean": 0.590000000000001,
+    "ratio_median": 0.590000000000001
+  },
+  {
+    "n": 10,
+    "dist_family": "exponential",
+    "rho": 0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.52115297317505,
+    "drop_mean": 0.4421528826871447,
+    "drop_median": 0.4421528826871447,
+    "ratio_mean": 0.5578471173128553,
+    "ratio_median": 0.5578471173128553
+  },
+  {
+    "n": 10,
+    "dist_family": "exponential",
+    "rho": 0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.5976998806,
+    "drop_mean": 0.5235621099543613,
+    "drop_median": 0.5235621099543613,
+    "ratio_mean": 0.4764378900456387,
+    "ratio_median": 0.4764378900456387
+  },
+  {
+    "n": 10,
+    "dist_family": "exponential",
+    "rho": 0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 301.05225110054016,
+    "drop_mean": -0.8500000000000008,
+    "drop_median": -0.8500000000000008,
+    "ratio_mean": 1.8500000000000008,
+    "ratio_median": 1.8500000000000008
+  },
+  {
+    "n": 10,
+    "dist_family": "exponential",
+    "rho": 0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.166424036026,
+    "drop_mean": 0.42678915954515106,
+    "drop_median": 0.42678915954515106,
+    "ratio_mean": 0.5732108404548489,
+    "ratio_median": 0.5732108404548489
+  },
+  {
+    "n": 10,
+    "dist_family": "exponential",
+    "rho": 0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.6185350418091,
+    "drop_mean": 0.34629799084434365,
+    "drop_median": 0.34629799084434365,
+    "ratio_mean": 0.6537020091556563,
+    "ratio_median": 0.6537020091556563
+  },
+  {
+    "n": 10,
+    "dist_family": "exponential",
+    "rho": 0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.1366219520569,
+    "drop_mean": 0.8099999999999999,
+    "drop_median": 0.8099999999999999,
+    "ratio_mean": 0.19000000000000009,
+    "ratio_median": 0.19000000000000009
+  },
+  {
+    "n": 10,
+    "dist_family": "exponential",
+    "rho": 0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.56136894226074,
+    "drop_mean": 0.4807524476020216,
+    "drop_median": 0.4807524476020216,
+    "ratio_mean": 0.5192475523979784,
+    "ratio_median": 0.5192475523979784
+  },
+  {
+    "n": 10,
+    "dist_family": "exponential",
+    "rho": 0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.23033595085144,
+    "drop_mean": 0.5315944935390862,
+    "drop_median": 0.5315944935390862,
+    "ratio_mean": 0.4684055064609139,
+    "ratio_median": 0.4684055064609139
+  },
+  {
+    "n": 10,
+    "dist_family": "exponential",
+    "rho": 0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 301.5523600578308,
+    "drop_mean": 0.3400000000000004,
+    "drop_median": 0.3400000000000004,
+    "ratio_mean": 0.6599999999999996,
+    "ratio_median": 0.6599999999999996
+  },
+  {
+    "n": 10,
+    "dist_family": "logit",
+    "rho": -0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 301.664892911911,
+    "drop_mean": 0.29859544927203263,
+    "drop_median": 0.29859544927203263,
+    "ratio_mean": 0.7014045507279674,
+    "ratio_median": 0.7014045507279674
+  },
+  {
+    "n": 10,
+    "dist_family": "logit",
+    "rho": -0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 307.62345910072327,
+    "drop_mean": 0.37980858929012085,
+    "drop_median": 0.37980858929012085,
+    "ratio_mean": 0.6201914107098792,
+    "ratio_median": 0.6201914107098792
+  },
+  {
+    "n": 10,
+    "dist_family": "logit",
+    "rho": -0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 176.01285982131958,
+    "drop_mean": 0.028999999999952508,
+    "drop_median": 0.028999999999952508,
+    "ratio_mean": 0.9710000000000475,
+    "ratio_median": 0.9710000000000475
+  },
+  {
+    "n": 10,
+    "dist_family": "logit",
+    "rho": -0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.4978311061859,
+    "drop_mean": 0.4309663111830081,
+    "drop_median": 0.4309663111830081,
+    "ratio_mean": 0.5690336888169919,
+    "ratio_median": 0.5690336888169919
+  },
+  {
+    "n": 10,
+    "dist_family": "logit",
+    "rho": -0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.42412400245667,
+    "drop_mean": 0.4250847478304228,
+    "drop_median": 0.4250847478304228,
+    "ratio_mean": 0.5749152521695772,
+    "ratio_median": 0.5749152521695772
+  },
+  {
+    "n": 10,
+    "dist_family": "logit",
+    "rho": -0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.4613997936249,
+    "drop_mean": 0.13851953493341096,
+    "drop_median": 0.13851953493341096,
+    "ratio_mean": 0.861480465066589,
+    "ratio_median": 0.861480465066589
+  },
+  {
+    "n": 10,
+    "dist_family": "logit",
+    "rho": -0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.9967041015625,
+    "drop_mean": 0.7400000000000002,
+    "drop_median": 0.7400000000000002,
+    "ratio_mean": 0.25999999999999984,
+    "ratio_median": 0.25999999999999984
+  },
+  {
+    "n": 10,
+    "dist_family": "logit",
+    "rho": -0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 301.349720954895,
+    "drop_mean": 0.39001101442961006,
+    "drop_median": 0.39001101442961006,
+    "ratio_mean": 0.6099889855703899,
+    "ratio_median": 0.6099889855703899
+  },
+  {
+    "n": 10,
+    "dist_family": "logit",
+    "rho": -0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 301.2187650203705,
+    "drop_mean": 0.0906250000000004,
+    "drop_median": 0.0906250000000004,
+    "ratio_mean": 0.9093749999999996,
+    "ratio_median": 0.9093749999999996
+  },
+  {
+    "n": 10,
+    "dist_family": "logit",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.41018891334534,
+    "drop_mean": 0.03610079091018048,
+    "drop_median": 0.03610079091018048,
+    "ratio_mean": 0.9638992090898195,
+    "ratio_median": 0.9638992090898195
+  },
+  {
+    "n": 10,
+    "dist_family": "logit",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.54194498062134,
+    "drop_mean": 0.1867213254532727,
+    "drop_median": 0.1867213254532727,
+    "ratio_mean": 0.8132786745467273,
+    "ratio_median": 0.8132786745467273
+  },
+  {
+    "n": 10,
+    "dist_family": "logit",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.54498505592346,
+    "drop_mean": 0.011278043974195184,
+    "drop_median": 0.011278043974195184,
+    "ratio_mean": 0.9887219560258048,
+    "ratio_median": 0.9887219560258048
+  },
+  {
+    "n": 10,
+    "dist_family": "logit",
+    "rho": 0.0,
+    "heterogeneity": "none",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.5585300922394,
+    "drop_mean": 0.27696337739099663,
+    "drop_median": 0.27696337739099663,
+    "ratio_mean": 0.7230366226090034,
+    "ratio_median": 0.7230366226090034
+  },
+  {
+    "n": 10,
+    "dist_family": "logit",
+    "rho": 0.0,
+    "heterogeneity": "none",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.7298049926758,
+    "drop_mean": 0.3079228848181089,
+    "drop_median": 0.3079228848181089,
+    "ratio_mean": 0.6920771151818911,
+    "ratio_median": 0.6920771151818911
+  },
+  {
+    "n": 10,
+    "dist_family": "logit",
+    "rho": 0.0,
+    "heterogeneity": "none",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.7153580188751,
+    "drop_mean": 0.14621855676434448,
+    "drop_median": 0.14621855676434448,
+    "ratio_mean": 0.8537814432356555,
+    "ratio_median": 0.8537814432356555
+  },
+  {
+    "n": 10,
+    "dist_family": "logit",
+    "rho": 0.0,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.92071890830994,
+    "drop_mean": 0.16771973152041997,
+    "drop_median": 0.16771973152041997,
+    "ratio_mean": 0.83228026847958,
+    "ratio_median": 0.83228026847958
+  },
+  {
+    "n": 10,
+    "dist_family": "logit",
+    "rho": 0.0,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.44111704826355,
+    "drop_mean": 0.3576696037090392,
+    "drop_median": 0.3576696037090392,
+    "ratio_mean": 0.6423303962909608,
+    "ratio_median": 0.6423303962909608
+  },
+  {
+    "n": 10,
+    "dist_family": "logit",
+    "rho": 0.0,
+    "heterogeneity": "partial",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 244.652086019516,
+    "drop_mean": 0.07872162550651451,
+    "drop_median": 0.07872162550651451,
+    "ratio_mean": 0.9212783744934855,
+    "ratio_median": 0.9212783744934855
+  },
+  {
+    "n": 10,
+    "dist_family": "logit",
+    "rho": 0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.56410121917725,
+    "drop_mean": 0.16788460658416093,
+    "drop_median": 0.16788460658416093,
+    "ratio_mean": 0.8321153934158391,
+    "ratio_median": 0.8321153934158391
+  },
+  {
+    "n": 10,
+    "dist_family": "logit",
+    "rho": 0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.5813000202179,
+    "drop_mean": -0.19016424643157603,
+    "drop_median": -0.19016424643157603,
+    "ratio_mean": 1.190164246431576,
+    "ratio_median": 1.190164246431576
+  },
+  {
+    "n": 10,
+    "dist_family": "logit",
+    "rho": 0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 201.31573295593262,
+    "drop_mean": 0.012651340499818753,
+    "drop_median": 0.012651340499818753,
+    "ratio_mean": 0.9873486595001812,
+    "ratio_median": 0.9873486595001812
+  },
+  {
+    "n": 10,
+    "dist_family": "logit",
+    "rho": 0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.3229269981384,
+    "drop_mean": 0.5528668971961871,
+    "drop_median": 0.5528668971961871,
+    "ratio_mean": 0.4471331028038129,
+    "ratio_median": 0.4471331028038129
+  },
+  {
+    "n": 10,
+    "dist_family": "logit",
+    "rho": 0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 301.67752408981323,
+    "drop_mean": 0.17348661745403038,
+    "drop_median": 0.17348661745403038,
+    "ratio_mean": 0.8265133825459696,
+    "ratio_median": 0.8265133825459696
+  },
+  {
+    "n": 10,
+    "dist_family": "logit",
+    "rho": 0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.3889420032501,
+    "drop_mean": 0.14571415148441558,
+    "drop_median": 0.14571415148441558,
+    "ratio_mean": 0.8542858485155844,
+    "ratio_median": 0.8542858485155844
+  },
+  {
+    "n": 10,
+    "dist_family": "logit",
+    "rho": 0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.3608820438385,
+    "drop_mean": 0.1647651003113504,
+    "drop_median": 0.1647651003113504,
+    "ratio_mean": 0.8352348996886496,
+    "ratio_median": 0.8352348996886496
+  },
+  {
+    "n": 10,
+    "dist_family": "logit",
+    "rho": 0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.4420690536499,
+    "drop_mean": -0.15276352582979036,
+    "drop_median": -0.15276352582979036,
+    "ratio_mean": 1.1527635258297904,
+    "ratio_median": 1.1527635258297904
+  },
+  {
+    "n": 10,
+    "dist_family": "logit",
+    "rho": 0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.5004630088806,
+    "drop_mean": 0.06283972165614204,
+    "drop_median": 0.06283972165614204,
+    "ratio_mean": 0.937160278343858,
+    "ratio_median": 0.937160278343858
+  },
+  {
+    "n": 10,
+    "dist_family": "lognormal",
+    "rho": -0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.3707928657532,
+    "drop_mean": 0.8400000000000001,
+    "drop_median": 0.8400000000000001,
+    "ratio_mean": 0.15999999999999992,
+    "ratio_median": 0.15999999999999992
+  },
+  {
+    "n": 10,
+    "dist_family": "lognormal",
+    "rho": -0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.34092712402344,
+    "drop_mean": 0.4289581736321748,
+    "drop_median": 0.4289581736321748,
+    "ratio_mean": 0.5710418263678252,
+    "ratio_median": 0.5710418263678252
+  },
+  {
+    "n": 10,
+    "dist_family": "lognormal",
+    "rho": -0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 301.6182279586792,
+    "drop_mean": 0.7499999999999999,
+    "drop_median": 0.7499999999999999,
+    "ratio_mean": 0.2500000000000001,
+    "ratio_median": 0.2500000000000001
+  },
+  {
+    "n": 10,
+    "dist_family": "lognormal",
+    "rho": -0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.6734368801117,
+    "drop_mean": 0.4564817189384759,
+    "drop_median": 0.4564817189384759,
+    "ratio_mean": 0.5435182810615241,
+    "ratio_median": 0.5435182810615241
+  },
+  {
+    "n": 10,
+    "dist_family": "lognormal",
+    "rho": -0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 302.4956109523773,
+    "drop_mean": 0.3781965245768021,
+    "drop_median": 0.3781965245768021,
+    "ratio_mean": 0.6218034754231979,
+    "ratio_median": 0.6218034754231979
+  },
+  {
+    "n": 10,
+    "dist_family": "lognormal",
+    "rho": -0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.60631799697876,
+    "drop_mean": 0.11833097504636969,
+    "drop_median": 0.11833097504636969,
+    "ratio_mean": 0.8816690249536303,
+    "ratio_median": 0.8816690249536303
+  },
+  {
+    "n": 10,
+    "dist_family": "lognormal",
+    "rho": -0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.1480870246887,
+    "drop_mean": 0.46115021789150235,
+    "drop_median": 0.46115021789150235,
+    "ratio_mean": 0.5388497821084977,
+    "ratio_median": 0.5388497821084977
+  },
+  {
+    "n": 10,
+    "dist_family": "lognormal",
+    "rho": -0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.6644208431244,
+    "drop_mean": 0.221090116243974,
+    "drop_median": 0.221090116243974,
+    "ratio_mean": 0.778909883756026,
+    "ratio_median": 0.778909883756026
+  },
+  {
+    "n": 10,
+    "dist_family": "lognormal",
+    "rho": -0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.2034840583801,
+    "drop_mean": 0.05840164328242392,
+    "drop_median": 0.05840164328242392,
+    "ratio_mean": 0.9415983567175761,
+    "ratio_median": 0.9415983567175761
+  },
+  {
+    "n": 10,
+    "dist_family": "lognormal",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.9696578979492,
+    "drop_mean": 0.5793605893179331,
+    "drop_median": 0.5793605893179331,
+    "ratio_mean": 0.4206394106820669,
+    "ratio_median": 0.4206394106820669
+  },
+  {
+    "n": 10,
+    "dist_family": "lognormal",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.5353260040283,
+    "drop_mean": 0.5317055231190917,
+    "drop_median": 0.5317055231190917,
+    "ratio_mean": 0.46829447688090825,
+    "ratio_median": 0.46829447688090825
+  },
+  {
+    "n": 10,
+    "dist_family": "lognormal",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.8566620349884,
+    "drop_mean": 0.2618690301559251,
+    "drop_median": 0.2618690301559251,
+    "ratio_mean": 0.7381309698440749,
+    "ratio_median": 0.7381309698440749
+  },
+  {
+    "n": 10,
+    "dist_family": "lognormal",
+    "rho": 0.0,
+    "heterogeneity": "none",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.52107191085815,
+    "drop_mean": 0.6162992422012947,
+    "drop_median": 0.6162992422012947,
+    "ratio_mean": 0.38370075779870527,
+    "ratio_median": 0.38370075779870527
+  },
+  {
+    "n": 10,
+    "dist_family": "lognormal",
+    "rho": 0.0,
+    "heterogeneity": "none",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.3239850997925,
+    "drop_mean": 0.46647063563130997,
+    "drop_median": 0.46647063563130997,
+    "ratio_mean": 0.53352936436869,
+    "ratio_median": 0.53352936436869
+  },
+  {
+    "n": 10,
+    "dist_family": "lognormal",
+    "rho": 0.0,
+    "heterogeneity": "none",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 301.6874680519104,
+    "drop_mean": 0.06600880537928999,
+    "drop_median": 0.06600880537928999,
+    "ratio_mean": 0.93399119462071,
+    "ratio_median": 0.93399119462071
+  },
+  {
+    "n": 10,
+    "dist_family": "lognormal",
+    "rho": 0.0,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.58601999282837,
+    "drop_mean": 0.5155093864082778,
+    "drop_median": 0.5155093864082778,
+    "ratio_mean": 0.4844906135917222,
+    "ratio_median": 0.4844906135917222
+  },
+  {
+    "n": 10,
+    "dist_family": "lognormal",
+    "rho": 0.0,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.2362148761749,
+    "drop_mean": 0.43089345563545,
+    "drop_median": 0.43089345563545,
+    "ratio_mean": 0.56910654436455,
+    "ratio_median": 0.56910654436455
+  },
+  {
+    "n": 10,
+    "dist_family": "lognormal",
+    "rho": 0.0,
+    "heterogeneity": "partial",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.3701241016388,
+    "drop_mean": 0.15609901790795544,
+    "drop_median": 0.15609901790795544,
+    "ratio_mean": 0.8439009820920446,
+    "ratio_median": 0.8439009820920446
+  },
+  {
+    "n": 10,
+    "dist_family": "lognormal",
+    "rho": 0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.6067340373993,
+    "drop_mean": 0.4397987985745938,
+    "drop_median": 0.4397987985745938,
+    "ratio_mean": 0.5602012014254062,
+    "ratio_median": 0.5602012014254062
+  },
+  {
+    "n": 10,
+    "dist_family": "lognormal",
+    "rho": 0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.5082359313965,
+    "drop_mean": 0.5261329149682894,
+    "drop_median": 0.5261329149682894,
+    "ratio_mean": 0.47386708503171066,
+    "ratio_median": 0.47386708503171066
+  },
+  {
+    "n": 10,
+    "dist_family": "lognormal",
+    "rho": 0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.3453209400177,
+    "drop_mean": 0.88,
+    "drop_median": 0.88,
+    "ratio_mean": 0.12000000000000002,
+    "ratio_median": 0.12000000000000002
+  },
+  {
+    "n": 10,
+    "dist_family": "lognormal",
+    "rho": 0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.7529389858246,
+    "drop_mean": 0.561100048879285,
+    "drop_median": 0.561100048879285,
+    "ratio_mean": 0.438899951120715,
+    "ratio_median": 0.438899951120715
+  },
+  {
+    "n": 10,
+    "dist_family": "lognormal",
+    "rho": 0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.5618441104889,
+    "drop_mean": 0.38361605404509214,
+    "drop_median": 0.38361605404509214,
+    "ratio_mean": 0.6163839459549079,
+    "ratio_median": 0.6163839459549079
+  },
+  {
+    "n": 10,
+    "dist_family": "lognormal",
+    "rho": 0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.4960961341858,
+    "drop_mean": 0.40868858462385793,
+    "drop_median": 0.40868858462385793,
+    "ratio_mean": 0.5913114153761421,
+    "ratio_median": 0.5913114153761421
+  },
+  {
+    "n": 10,
+    "dist_family": "lognormal",
+    "rho": 0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.347293138504,
+    "drop_mean": 0.40882370586810435,
+    "drop_median": 0.40882370586810435,
+    "ratio_mean": 0.5911762941318957,
+    "ratio_median": 0.5911762941318957
+  },
+  {
+    "n": 10,
+    "dist_family": "lognormal",
+    "rho": 0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.5133259296417,
+    "drop_mean": 0.5117973074541116,
+    "drop_median": 0.5117973074541116,
+    "ratio_mean": 0.4882026925458884,
+    "ratio_median": 0.4882026925458884
+  },
+  {
+    "n": 10,
+    "dist_family": "lognormal",
+    "rho": 0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 302.65218710899353,
+    "drop_mean": 0.16621623813294184,
+    "drop_median": 0.16621623813294184,
+    "ratio_mean": 0.8337837618670582,
+    "ratio_median": 0.8337837618670582
+  },
+  {
+    "n": 10,
+    "dist_family": "normal",
+    "rho": -0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.4853341579437,
+    "drop_mean": 0.2629332311940942,
+    "drop_median": 0.2629332311940942,
+    "ratio_mean": 0.7370667688059058,
+    "ratio_median": 0.7370667688059058
+  },
+  {
+    "n": 10,
+    "dist_family": "normal",
+    "rho": -0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.4446430206299,
+    "drop_mean": 0.34369727261997185,
+    "drop_median": 0.34369727261997185,
+    "ratio_mean": 0.6563027273800282,
+    "ratio_median": 0.6563027273800282
+  },
+  {
+    "n": 10,
+    "dist_family": "normal",
+    "rho": -0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.5439200401306,
+    "drop_mean": -0.06490796789529085,
+    "drop_median": -0.06490796789529085,
+    "ratio_mean": 1.0649079678952909,
+    "ratio_median": 1.0649079678952909
+  },
+  {
+    "n": 10,
+    "dist_family": "normal",
+    "rho": -0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.35355401039124,
+    "drop_mean": 0.5152042666861512,
+    "drop_median": 0.5152042666861512,
+    "ratio_mean": 0.4847957333138488,
+    "ratio_median": 0.4847957333138488
+  },
+  {
+    "n": 10,
+    "dist_family": "normal",
+    "rho": -0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.9200749397278,
+    "drop_mean": 0.38103671421519225,
+    "drop_median": 0.38103671421519225,
+    "ratio_mean": 0.6189632857848077,
+    "ratio_median": 0.6189632857848077
+  },
+  {
+    "n": 10,
+    "dist_family": "normal",
+    "rho": -0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.33555006980896,
+    "drop_mean": 0.2089550018487265,
+    "drop_median": 0.2089550018487265,
+    "ratio_mean": 0.7910449981512735,
+    "ratio_median": 0.7910449981512735
+  },
+  {
+    "n": 10,
+    "dist_family": "normal",
+    "rho": -0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.55454993247986,
+    "drop_mean": 0.46419549823631145,
+    "drop_median": 0.46419549823631145,
+    "ratio_mean": 0.5358045017636885,
+    "ratio_median": 0.5358045017636885
+  },
+  {
+    "n": 10,
+    "dist_family": "normal",
+    "rho": -0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.57160806655884,
+    "drop_mean": 0.22838924110062198,
+    "drop_median": 0.22838924110062198,
+    "ratio_mean": 0.771610758899378,
+    "ratio_median": 0.771610758899378
+  },
+  {
+    "n": 10,
+    "dist_family": "normal",
+    "rho": -0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.5865559577942,
+    "drop_mean": -0.010222860639476528,
+    "drop_median": -0.010222860639476528,
+    "ratio_mean": 1.0102228606394765,
+    "ratio_median": 1.0102228606394765
+  },
+  {
+    "n": 10,
+    "dist_family": "normal",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.465754032135,
+    "drop_mean": 0.33841680350835934,
+    "drop_median": 0.33841680350835934,
+    "ratio_mean": 0.6615831964916407,
+    "ratio_median": 0.6615831964916407
+  },
+  {
+    "n": 10,
+    "dist_family": "normal",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.73494696617126,
+    "drop_mean": 0.32327079331853703,
+    "drop_median": 0.32327079331853703,
+    "ratio_mean": 0.676729206681463,
+    "ratio_median": 0.676729206681463
+  },
+  {
+    "n": 10,
+    "dist_family": "normal",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "OPTIMAL": 1
+    },
+    "runtime_mean": 292.1359751224518,
+    "drop_mean": 0.019946008002184712,
+    "drop_median": 0.019946008002184712,
+    "ratio_mean": 0.9800539919978153,
+    "ratio_median": 0.9800539919978153
+  },
+  {
+    "n": 10,
+    "dist_family": "normal",
+    "rho": 0.0,
+    "heterogeneity": "none",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.42938208580017,
+    "drop_mean": 0.4592164887411534,
+    "drop_median": 0.4592164887411534,
+    "ratio_mean": 0.5407835112588466,
+    "ratio_median": 0.5407835112588466
+  },
+  {
+    "n": 10,
+    "dist_family": "normal",
+    "rho": 0.0,
+    "heterogeneity": "none",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.54209208488464,
+    "drop_mean": 0.40466776564290874,
+    "drop_median": 0.40466776564290874,
+    "ratio_mean": 0.5953322343570913,
+    "ratio_median": 0.5953322343570913
+  },
+  {
+    "n": 10,
+    "dist_family": "normal",
+    "rho": 0.0,
+    "heterogeneity": "none",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.8135869503021,
+    "drop_mean": -0.8699999999999988,
+    "drop_median": -0.8699999999999988,
+    "ratio_mean": 1.8699999999999988,
+    "ratio_median": 1.8699999999999988
+  },
+  {
+    "n": 10,
+    "dist_family": "normal",
+    "rho": 0.0,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.4952321052551,
+    "drop_mean": 0.45692963280395693,
+    "drop_median": 0.45692963280395693,
+    "ratio_mean": 0.5430703671960431,
+    "ratio_median": 0.5430703671960431
+  },
+  {
+    "n": 10,
+    "dist_family": "normal",
+    "rho": 0.0,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.6856110095978,
+    "drop_mean": 0.2025146781962629,
+    "drop_median": 0.2025146781962629,
+    "ratio_mean": 0.7974853218037371,
+    "ratio_median": 0.7974853218037371
+  },
+  {
+    "n": 10,
+    "dist_family": "normal",
+    "rho": 0.0,
+    "heterogeneity": "partial",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.48853611946106,
+    "drop_mean": 0.26262858449206095,
+    "drop_median": 0.26262858449206095,
+    "ratio_mean": 0.737371415507939,
+    "ratio_median": 0.737371415507939
+  },
+  {
+    "n": 10,
+    "dist_family": "normal",
+    "rho": 0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.5319719314575,
+    "drop_mean": 0.4583292739855199,
+    "drop_median": 0.4583292739855199,
+    "ratio_mean": 0.5416707260144801,
+    "ratio_median": 0.5416707260144801
+  },
+  {
+    "n": 10,
+    "dist_family": "normal",
+    "rho": 0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.54710698127747,
+    "drop_mean": 0.3040006897677011,
+    "drop_median": 0.3040006897677011,
+    "ratio_mean": 0.6959993102322989,
+    "ratio_median": 0.6959993102322989
+  },
+  {
+    "n": 10,
+    "dist_family": "normal",
+    "rho": 0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.6939630508423,
+    "drop_mean": 0.047405839761279656,
+    "drop_median": 0.047405839761279656,
+    "ratio_mean": 0.9525941602387203,
+    "ratio_median": 0.9525941602387203
+  },
+  {
+    "n": 10,
+    "dist_family": "normal",
+    "rho": 0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.3588979244232,
+    "drop_mean": 0.32205138982004444,
+    "drop_median": 0.32205138982004444,
+    "ratio_mean": 0.6779486101799556,
+    "ratio_median": 0.6779486101799556
+  },
+  {
+    "n": 10,
+    "dist_family": "normal",
+    "rho": 0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.47258400917053,
+    "drop_mean": 0.26993257051245034,
+    "drop_median": 0.26993257051245034,
+    "ratio_mean": 0.7300674294875497,
+    "ratio_median": 0.7300674294875497
+  },
+  {
+    "n": 10,
+    "dist_family": "normal",
+    "rho": 0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.58947801589966,
+    "drop_mean": 0.0917504492515101,
+    "drop_median": 0.0917504492515101,
+    "ratio_mean": 0.9082495507484899,
+    "ratio_median": 0.9082495507484899
+  },
+  {
+    "n": 10,
+    "dist_family": "normal",
+    "rho": 0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.6044180393219,
+    "drop_mean": 0.34856773850851164,
+    "drop_median": 0.34856773850851164,
+    "ratio_mean": 0.6514322614914884,
+    "ratio_median": 0.6514322614914884
+  },
+  {
+    "n": 10,
+    "dist_family": "normal",
+    "rho": 0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.45525002479553,
+    "drop_mean": 0.40124189902652374,
+    "drop_median": 0.40124189902652374,
+    "ratio_mean": 0.5987581009734763,
+    "ratio_median": 0.5987581009734763
+  },
+  {
+    "n": 10,
+    "dist_family": "normal",
+    "rho": 0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.8025019168854,
+    "drop_mean": 0.046876709147354645,
+    "drop_median": 0.046876709147354645,
+    "ratio_mean": 0.9531232908526454,
+    "ratio_median": 0.9531232908526454
+  },
+  {
+    "n": 10,
+    "dist_family": "uniform",
+    "rho": -0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.56984782218933,
+    "drop_mean": 0.36082018950268413,
+    "drop_median": 0.36082018950268413,
+    "ratio_mean": 0.6391798104973159,
+    "ratio_median": 0.6391798104973159
+  },
+  {
+    "n": 10,
+    "dist_family": "uniform",
+    "rho": -0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.60884499549866,
+    "drop_mean": 0.4206406158531236,
+    "drop_median": 0.4206406158531236,
+    "ratio_mean": 0.5793593841468764,
+    "ratio_median": 0.5793593841468764
+  },
+  {
+    "n": 10,
+    "dist_family": "uniform",
+    "rho": -0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.46296215057373,
+    "drop_mean": 0.20174910553578884,
+    "drop_median": 0.20174910553578884,
+    "ratio_mean": 0.7982508944642112,
+    "ratio_median": 0.7982508944642112
+  },
+  {
+    "n": 10,
+    "dist_family": "uniform",
+    "rho": -0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.5030529499054,
+    "drop_mean": 0.5034183789893079,
+    "drop_median": 0.5034183789893079,
+    "ratio_mean": 0.4965816210106922,
+    "ratio_median": 0.4965816210106922
+  },
+  {
+    "n": 10,
+    "dist_family": "uniform",
+    "rho": -0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.7138350009918,
+    "drop_mean": 0.4755850560211884,
+    "drop_median": 0.4755850560211884,
+    "ratio_mean": 0.5244149439788116,
+    "ratio_median": 0.5244149439788116
+  },
+  {
+    "n": 10,
+    "dist_family": "uniform",
+    "rho": -0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.7198941707611,
+    "drop_mean": 0.3415521871448386,
+    "drop_median": 0.3415521871448386,
+    "ratio_mean": 0.6584478128551614,
+    "ratio_median": 0.6584478128551614
+  },
+  {
+    "n": 10,
+    "dist_family": "uniform",
+    "rho": -0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 301.92742395401,
+    "drop_mean": 0.4198910822494013,
+    "drop_median": 0.4198910822494013,
+    "ratio_mean": 0.5801089177505987,
+    "ratio_median": 0.5801089177505987
+  },
+  {
+    "n": 10,
+    "dist_family": "uniform",
+    "rho": -0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.47222685813904,
+    "drop_mean": 0.3448940857190207,
+    "drop_median": 0.3448940857190207,
+    "ratio_mean": 0.6551059142809793,
+    "ratio_median": 0.6551059142809793
+  },
+  {
+    "n": 10,
+    "dist_family": "uniform",
+    "rho": -0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.5666780471802,
+    "drop_mean": -0.26426054049889847,
+    "drop_median": -0.26426054049889847,
+    "ratio_mean": 1.2642605404988985,
+    "ratio_median": 1.2642605404988985
+  },
+  {
+    "n": 10,
+    "dist_family": "uniform",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.51462483406067,
+    "drop_mean": 0.4502689251884804,
+    "drop_median": 0.4502689251884804,
+    "ratio_mean": 0.5497310748115196,
+    "ratio_median": 0.5497310748115196
+  },
+  {
+    "n": 10,
+    "dist_family": "uniform",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.37642192840576,
+    "drop_mean": 0.5498109921436194,
+    "drop_median": 0.5498109921436194,
+    "ratio_mean": 0.45018900785638055,
+    "ratio_median": 0.45018900785638055
+  },
+  {
+    "n": 10,
+    "dist_family": "uniform",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.6556398868561,
+    "drop_mean": 0.026686690281241376,
+    "drop_median": 0.026686690281241376,
+    "ratio_mean": 0.9733133097187586,
+    "ratio_median": 0.9733133097187586
+  },
+  {
+    "n": 10,
+    "dist_family": "uniform",
+    "rho": 0.0,
+    "heterogeneity": "none",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.5129668712616,
+    "drop_mean": 0.6682348192378929,
+    "drop_median": 0.6682348192378929,
+    "ratio_mean": 0.3317651807621071,
+    "ratio_median": 0.3317651807621071
+  },
+  {
+    "n": 10,
+    "dist_family": "uniform",
+    "rho": 0.0,
+    "heterogeneity": "none",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.64722204208374,
+    "drop_mean": 0.5636986421296355,
+    "drop_median": 0.5636986421296355,
+    "ratio_mean": 0.4363013578703645,
+    "ratio_median": 0.4363013578703645
+  },
+  {
+    "n": 10,
+    "dist_family": "uniform",
+    "rho": 0.0,
+    "heterogeneity": "none",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.508309841156,
+    "drop_mean": 0.46212140983025063,
+    "drop_median": 0.46212140983025063,
+    "ratio_mean": 0.5378785901697494,
+    "ratio_median": 0.5378785901697494
+  },
+  {
+    "n": 10,
+    "dist_family": "uniform",
+    "rho": 0.0,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.4060070514679,
+    "drop_mean": 0.3132326707906389,
+    "drop_median": 0.3132326707906389,
+    "ratio_mean": 0.6867673292093611,
+    "ratio_median": 0.6867673292093611
+  },
+  {
+    "n": 10,
+    "dist_family": "uniform",
+    "rho": 0.0,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.33991503715515,
+    "drop_mean": 0.45266932600363263,
+    "drop_median": 0.45266932600363263,
+    "ratio_mean": 0.5473306739963674,
+    "ratio_median": 0.5473306739963674
+  },
+  {
+    "n": 10,
+    "dist_family": "uniform",
+    "rho": 0.0,
+    "heterogeneity": "partial",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.64334201812744,
+    "drop_mean": 0.047618471045610344,
+    "drop_median": 0.047618471045610344,
+    "ratio_mean": 0.9523815289543897,
+    "ratio_median": 0.9523815289543897
+  },
+  {
+    "n": 10,
+    "dist_family": "uniform",
+    "rho": 0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.2429530620575,
+    "drop_mean": 0.4291939066338122,
+    "drop_median": 0.4291939066338122,
+    "ratio_mean": 0.5708060933661878,
+    "ratio_median": 0.5708060933661878
+  },
+  {
+    "n": 10,
+    "dist_family": "uniform",
+    "rho": 0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 301.19516682624817,
+    "drop_mean": 0.483131826583184,
+    "drop_median": 0.483131826583184,
+    "ratio_mean": 0.516868173416816,
+    "ratio_median": 0.516868173416816
+  },
+  {
+    "n": 10,
+    "dist_family": "uniform",
+    "rho": 0.5,
+    "heterogeneity": "full",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.38698410987854,
+    "drop_mean": 0.09910744720812192,
+    "drop_median": 0.09910744720812192,
+    "ratio_mean": 0.9008925527918781,
+    "ratio_median": 0.9008925527918781
+  },
+  {
+    "n": 10,
+    "dist_family": "uniform",
+    "rho": 0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.65219712257385,
+    "drop_mean": 0.5422541697540787,
+    "drop_median": 0.5422541697540787,
+    "ratio_mean": 0.4577458302459213,
+    "ratio_median": 0.4577458302459213
+  },
+  {
+    "n": 10,
+    "dist_family": "uniform",
+    "rho": 0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.78265404701233,
+    "drop_mean": -0.8200000000000067,
+    "drop_median": -0.8200000000000067,
+    "ratio_mean": 1.8200000000000067,
+    "ratio_median": 1.8200000000000067
+  },
+  {
+    "n": 10,
+    "dist_family": "uniform",
+    "rho": 0.5,
+    "heterogeneity": "none",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.4830379486084,
+    "drop_mean": 0.2941922756283055,
+    "drop_median": 0.2941922756283055,
+    "ratio_mean": 0.7058077243716945,
+    "ratio_median": 0.7058077243716945
+  },
+  {
+    "n": 10,
+    "dist_family": "uniform",
+    "rho": 0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvhm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.5205409526825,
+    "drop_mean": 0.41836697966358805,
+    "drop_median": 0.41836697966358805,
+    "ratio_mean": 0.581633020336412,
+    "ratio_median": 0.581633020336412
+  },
+  {
+    "n": 10,
+    "dist_family": "uniform",
+    "rho": 0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "hvlm",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.77959990501404,
+    "drop_mean": 0.2861557733211918,
+    "drop_median": 0.2861557733211918,
+    "ratio_mean": 0.7138442266788082,
+    "ratio_median": 0.7138442266788082
+  },
+  {
+    "n": 10,
+    "dist_family": "uniform",
+    "rho": 0.5,
+    "heterogeneity": "partial",
+    "cost_scenario": "zero",
+    "instances": 1,
+    "status_counts": {
+      "TIME_LIMIT": 1
+    },
+    "runtime_mean": 300.5896329879761,
+    "drop_mean": -0.5400000000000036,
+    "drop_median": -0.5400000000000036,
+    "ratio_mean": 1.5400000000000036,
+    "ratio_median": 1.5400000000000036
+  }
+]

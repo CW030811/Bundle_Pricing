@@ -1,0 +1,2 @@
+instances,mean_delta_in_sample,mean_delta_out_sample,mean_objective_delta,mean_price_l1_distance,mean_price_linf_distance,literal_better_in_count,literal_better_out_count,same_status_count
+5,-0.01848336220260629,-0.05649067942595809,-0.005886694320961139,153.8455236587276,21.26864449560421,0,2,2

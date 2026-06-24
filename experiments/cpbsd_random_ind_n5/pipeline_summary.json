@@ -1,0 +1,14 @@
+{
+  "cost_scenario": "random_ind",
+  "N": 5,
+  "K": 50,
+  "instances": 4000,
+  "splits": {
+    "train": 3000,
+    "val": 600,
+    "test": 400
+  },
+  "experiment_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_random_ind_n5",
+  "model_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/models_cpbsd_mb_x_random_ind",
+  "elapsed_minutes": 157.6
+}

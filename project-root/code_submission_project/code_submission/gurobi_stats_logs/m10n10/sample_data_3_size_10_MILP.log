@@ -1,0 +1,29 @@
+
+Gurobi 12.0.2 (win64) logging started Sat Feb  7 07:37:09 2026
+
+Set parameter LogFile to value "gurobi_stats_logs\m10n10\sample_data_3_size_10_MILP.log"
+Set parameter TimeLimit to value 0
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (win64 - Windows 11+.0 (26200.2))
+
+CPU model: AMD Ryzen 7 8845H w/ Radeon 780M Graphics, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  0
+
+Optimize a model with 84307 rows, 41994 columns and 457341 nonzeros
+Model fingerprint: 0x016a8bfa
+Variable types: 31754 continuous, 10240 integer (10240 binary)
+Coefficient statistics:
+  Matrix range     [5e-02, 3e+00]
+  Objective range  [1e-02, 2e-01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-01, 3e+00]
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 16 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound -, gap -

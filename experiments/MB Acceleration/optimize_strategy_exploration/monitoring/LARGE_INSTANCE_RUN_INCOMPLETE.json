@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-03-28T14:35:17.086844+08:00",
+  "state": "incomplete",
+  "raw_state": {
+    "original_mb_full": {
+      "scenario_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/MB Acceleration/optimize_strategy_exploration/raw/original_mb_full",
+      "existing_variants": [],
+      "missing_variants": [
+        "current",
+        "current_no_self_envy",
+        "lean_no_aux",
+        "lean_no_aux_no_self_envy"
+      ],
+      "complete": false
+    },
+    "original_mb_full_hard_tail": {
+      "scenario_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/MB Acceleration/optimize_strategy_exploration/raw/original_mb_full_hard_tail",
+      "existing_variants": [],
+      "missing_variants": [
+        "current",
+        "current_no_self_envy",
+        "lean_no_aux",
+        "lean_no_aux_no_self_envy"
+      ],
+      "complete": false
+    },
+    "gcn_candidate_restricted_mb": {
+      "scenario_dir": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/MB Acceleration/optimize_strategy_exploration/raw/gcn_candidate_restricted_mb",
+      "existing_variants": [
+        "lean_no_aux",
+        "lean_no_aux_no_self_envy"
+      ],
+      "missing_variants": [
+        "current",
+        "current_no_self_envy"
+      ],
+      "complete": false
+    }
+  },
+  "summary_exists": true,
+  "report_exists": true
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "N": 10,
+    "seed": 20260413,
+    "instance_id": "cpbsd_instance_001_N10_K50_normal_rho0.0_full_hvhm",
+    "fcp_oos": 2.200927661817409,
+    "bsp_oos": 2.3022805249552345,
+    "cpbsd_a_oos": 2.8092028620405793,
+    "anchored_oos": 2.200927661817421,
+    "delta_anchored_fcp": 1.199040866595169e-14,
+    "delta_anchored_bsp": -0.10135286313781355,
+    "delta_anchored_cpbsd_a": -0.6082752002231584,
+    "anchored_feasible": true,
+    "anchored_status": 2,
+    "anchored_ins_objective": 3.2455122984617653,
+    "anchored_runtime": 0.02313518524169922,
+    "anchored_wall_time_total": 0.2057631015777588,
+    "protected_customer_count": 45,
+    "protection_constraint_count": 450,
+    "strict_protection_constraint_count": 450,
+    "protected_bsp_choice_count": 0,
+    "anchored_oos_fcp": 3557,
+    "anchored_oos_bsp": 0,
+    "anchored_oos_outside": 1443
+  }
+]

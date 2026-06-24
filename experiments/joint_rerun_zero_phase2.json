@@ -1,0 +1,592 @@
+[
+  {
+    "N": 10,
+    "cost": "zero",
+    "seed_dir": "seed_20260413",
+    "seed": 20260413,
+    "method": "BSP",
+    "in_sample": 51.92644997524129,
+    "oos": 50.54914458657176
+  },
+  {
+    "N": 10,
+    "cost": "zero",
+    "seed_dir": "seed_20260413",
+    "seed": 20260413,
+    "method": "FCP",
+    "in_sample": 51.91159475890631,
+    "oos": 50.52246831473237
+  },
+  {
+    "N": 10,
+    "cost": "zero",
+    "seed_dir": "seed_20260413",
+    "seed": 20260413,
+    "method": "CPBSD-A",
+    "in_sample": 51.975433176803755,
+    "oos": 50.534264935361094
+  },
+  {
+    "N": 10,
+    "cost": "zero",
+    "seed_dir": "seed_20260413",
+    "seed": 20260413,
+    "method": "Joint",
+    "cross_mode": "bsp_ge_fcp",
+    "in_sample": 51.93167974020035,
+    "oos": 50.344348466832834,
+    "runtime": 2.0737781524658203,
+    "choice": {
+      "fcp": 25,
+      "bsp": 25,
+      "outside": 0
+    }
+  },
+  {
+    "N": 10,
+    "cost": "zero",
+    "seed_dir": "seed_20260413",
+    "seed": 20260413,
+    "method": "Joint-noC12",
+    "cross_mode": "none",
+    "in_sample": 51.93167974020049,
+    "oos": 50.31024948085969,
+    "runtime": 2.0309669971466064,
+    "choice": {
+      "fcp": 31,
+      "bsp": 19,
+      "outside": 0
+    }
+  },
+  {
+    "N": 10,
+    "cost": "zero",
+    "seed_dir": "seed_20260414",
+    "seed": 20260414,
+    "method": "BSP",
+    "in_sample": 51.45204501343212,
+    "oos": 50.742837614546865
+  },
+  {
+    "N": 10,
+    "cost": "zero",
+    "seed_dir": "seed_20260414",
+    "seed": 20260414,
+    "method": "FCP",
+    "in_sample": 51.487696553319644,
+    "oos": 50.037229533445796
+  },
+  {
+    "N": 10,
+    "cost": "zero",
+    "seed_dir": "seed_20260414",
+    "seed": 20260414,
+    "method": "CPBSD-A",
+    "in_sample": 51.46782547787456,
+    "oos": 50.80809999797634
+  },
+  {
+    "N": 10,
+    "cost": "zero",
+    "seed_dir": "seed_20260414",
+    "seed": 20260414,
+    "method": "Joint",
+    "cross_mode": "bsp_ge_fcp",
+    "in_sample": 51.285817021647524,
+    "oos": 49.11444926546453,
+    "runtime": 0.972465991973877,
+    "choice": {
+      "fcp": 22,
+      "bsp": 27,
+      "outside": 1
+    }
+  },
+  {
+    "N": 10,
+    "cost": "zero",
+    "seed_dir": "seed_20260414",
+    "seed": 20260414,
+    "method": "Joint-noC12",
+    "cross_mode": "none",
+    "in_sample": 51.2943569503221,
+    "oos": 49.27975839052311,
+    "runtime": 0.9430909156799316,
+    "choice": {
+      "fcp": 24,
+      "bsp": 25,
+      "outside": 1
+    }
+  },
+  {
+    "N": 10,
+    "cost": "zero",
+    "seed_dir": "seed_20260415",
+    "seed": 20260415,
+    "method": "BSP",
+    "in_sample": 52.30700136145481,
+    "oos": 50.24610550780944
+  },
+  {
+    "N": 10,
+    "cost": "zero",
+    "seed_dir": "seed_20260415",
+    "seed": 20260415,
+    "method": "FCP",
+    "in_sample": 52.36369453912208,
+    "oos": 49.4120365586876
+  },
+  {
+    "N": 10,
+    "cost": "zero",
+    "seed_dir": "seed_20260415",
+    "seed": 20260415,
+    "method": "CPBSD-A",
+    "in_sample": 52.307001361455036,
+    "oos": 49.83444536458927
+  },
+  {
+    "N": 10,
+    "cost": "zero",
+    "seed_dir": "seed_20260415",
+    "seed": 20260415,
+    "method": "Joint",
+    "cross_mode": "bsp_ge_fcp",
+    "in_sample": 52.16916356062746,
+    "oos": 49.38604418796145,
+    "runtime": 1.785254955291748,
+    "choice": {
+      "fcp": 25,
+      "bsp": 25,
+      "outside": 0
+    }
+  },
+  {
+    "N": 10,
+    "cost": "zero",
+    "seed_dir": "seed_20260415",
+    "seed": 20260415,
+    "method": "Joint-noC12",
+    "cross_mode": "none",
+    "in_sample": 52.16916356062787,
+    "oos": 49.39201391973718,
+    "runtime": 1.7257609367370605,
+    "choice": {
+      "fcp": 25,
+      "bsp": 25,
+      "outside": 0
+    }
+  },
+  {
+    "N": 10,
+    "cost": "zero",
+    "seed_dir": "seed_20260416",
+    "seed": 20260416,
+    "method": "BSP",
+    "in_sample": 51.700612429514294,
+    "oos": 50.84238226317659
+  },
+  {
+    "N": 10,
+    "cost": "zero",
+    "seed_dir": "seed_20260416",
+    "seed": 20260416,
+    "method": "FCP",
+    "in_sample": 51.972322305616444,
+    "oos": 50.44518130828603
+  },
+  {
+    "N": 10,
+    "cost": "zero",
+    "seed_dir": "seed_20260416",
+    "seed": 20260416,
+    "method": "CPBSD-A",
+    "in_sample": 51.70061242951207,
+    "oos": 50.84238226317762
+  },
+  {
+    "N": 10,
+    "cost": "zero",
+    "seed_dir": "seed_20260416",
+    "seed": 20260416,
+    "method": "Joint",
+    "cross_mode": "bsp_ge_fcp",
+    "in_sample": 51.92312368146624,
+    "oos": 49.72880902901705,
+    "runtime": 0.997917890548706,
+    "choice": {
+      "fcp": 36,
+      "bsp": 14,
+      "outside": 0
+    }
+  },
+  {
+    "N": 10,
+    "cost": "zero",
+    "seed_dir": "seed_20260416",
+    "seed": 20260416,
+    "method": "Joint-noC12",
+    "cross_mode": "none",
+    "in_sample": 51.823277672011805,
+    "oos": 49.67815608332405,
+    "runtime": 0.9657649993896484,
+    "choice": {
+      "fcp": 23,
+      "bsp": 27,
+      "outside": 0
+    }
+  },
+  {
+    "N": 10,
+    "cost": "zero",
+    "seed_dir": "seed_20260417",
+    "seed": 20260417,
+    "method": "BSP",
+    "in_sample": 52.5962716651566,
+    "oos": 48.02594293599609
+  },
+  {
+    "N": 10,
+    "cost": "zero",
+    "seed_dir": "seed_20260417",
+    "seed": 20260417,
+    "method": "FCP",
+    "in_sample": 52.52645536312597,
+    "oos": 48.2041792668543
+  },
+  {
+    "N": 10,
+    "cost": "zero",
+    "seed_dir": "seed_20260417",
+    "seed": 20260417,
+    "method": "CPBSD-A",
+    "in_sample": 52.596271665154916,
+    "oos": 48.02808755164586
+  },
+  {
+    "N": 10,
+    "cost": "zero",
+    "seed_dir": "seed_20260417",
+    "seed": 20260417,
+    "method": "Joint",
+    "cross_mode": "bsp_ge_fcp",
+    "in_sample": 52.51934001378285,
+    "oos": 47.74968547119684,
+    "runtime": 1.814319133758545,
+    "choice": {
+      "fcp": 23,
+      "bsp": 27,
+      "outside": 0
+    }
+  },
+  {
+    "N": 10,
+    "cost": "zero",
+    "seed_dir": "seed_20260417",
+    "seed": 20260417,
+    "method": "Joint-noC12",
+    "cross_mode": "none",
+    "in_sample": 52.49297079461537,
+    "oos": 48.149288840504674,
+    "runtime": 1.8776829242706299,
+    "choice": {
+      "fcp": 28,
+      "bsp": 22,
+      "outside": 0
+    }
+  },
+  {
+    "N": 30,
+    "cost": "zero",
+    "seed_dir": "seed_20260413",
+    "seed": 20260413,
+    "method": "BSP",
+    "in_sample": 159.2784993174886,
+    "oos": 155.98691243926584
+  },
+  {
+    "N": 30,
+    "cost": "zero",
+    "seed_dir": "seed_20260413",
+    "seed": 20260413,
+    "method": "FCP",
+    "in_sample": 155.53954773534537,
+    "oos": 148.75193236340064
+  },
+  {
+    "N": 30,
+    "cost": "zero",
+    "seed_dir": "seed_20260413",
+    "seed": 20260413,
+    "method": "CPBSD-A",
+    "in_sample": 159.32912286713702,
+    "oos": 155.9272547313658
+  },
+  {
+    "N": 30,
+    "cost": "zero",
+    "seed_dir": "seed_20260413",
+    "seed": 20260413,
+    "method": "Joint",
+    "cross_mode": "bsp_ge_fcp",
+    "in_sample": 158.97925967058785,
+    "oos": 155.55434234361212,
+    "runtime": 4.677186727523804,
+    "choice": {
+      "fcp": 1,
+      "bsp": 49,
+      "outside": 0
+    }
+  },
+  {
+    "N": 30,
+    "cost": "zero",
+    "seed_dir": "seed_20260413",
+    "seed": 20260413,
+    "method": "Joint-noC12",
+    "cross_mode": "none",
+    "in_sample": 159.19781652316667,
+    "oos": 152.5502103471546,
+    "runtime": 2.7174978256225586,
+    "choice": {
+      "fcp": 0,
+      "bsp": 50,
+      "outside": 0
+    }
+  },
+  {
+    "N": 30,
+    "cost": "zero",
+    "seed_dir": "seed_20260414",
+    "seed": 20260414,
+    "method": "BSP",
+    "in_sample": 157.91275762157935,
+    "oos": 156.99686362737756
+  },
+  {
+    "N": 30,
+    "cost": "zero",
+    "seed_dir": "seed_20260414",
+    "seed": 20260414,
+    "method": "FCP",
+    "in_sample": 154.465883035032,
+    "oos": 141.7882735135103
+  },
+  {
+    "N": 30,
+    "cost": "zero",
+    "seed_dir": "seed_20260414",
+    "seed": 20260414,
+    "method": "CPBSD-A",
+    "in_sample": 157.91275762157838,
+    "oos": 154.37178544341128
+  },
+  {
+    "N": 30,
+    "cost": "zero",
+    "seed_dir": "seed_20260414",
+    "seed": 20260414,
+    "method": "Joint",
+    "cross_mode": "bsp_ge_fcp",
+    "in_sample": 158.62359603167883,
+    "oos": 145.64888208133303,
+    "runtime": 2.7579541206359863,
+    "choice": {
+      "fcp": 3,
+      "bsp": 47,
+      "outside": 0
+    }
+  },
+  {
+    "N": 30,
+    "cost": "zero",
+    "seed_dir": "seed_20260414",
+    "seed": 20260414,
+    "method": "Joint-noC12",
+    "cross_mode": "none",
+    "in_sample": 158.62359603178032,
+    "oos": 145.8243677857673,
+    "runtime": 2.730396032333374,
+    "choice": {
+      "fcp": 3,
+      "bsp": 47,
+      "outside": 0
+    }
+  },
+  {
+    "N": 30,
+    "cost": "zero",
+    "seed_dir": "seed_20260415",
+    "seed": 20260415,
+    "method": "BSP",
+    "in_sample": 159.79251677432848,
+    "oos": 155.79770385487745
+  },
+  {
+    "N": 30,
+    "cost": "zero",
+    "seed_dir": "seed_20260415",
+    "seed": 20260415,
+    "method": "FCP",
+    "in_sample": 159.83102379662327,
+    "oos": 154.81450308783658
+  },
+  {
+    "N": 30,
+    "cost": "zero",
+    "seed_dir": "seed_20260415",
+    "seed": 20260415,
+    "method": "CPBSD-A",
+    "in_sample": 159.79251677421811,
+    "oos": 153.73926793331023
+  },
+  {
+    "N": 30,
+    "cost": "zero",
+    "seed_dir": "seed_20260415",
+    "seed": 20260415,
+    "method": "Joint",
+    "cross_mode": "bsp_ge_fcp",
+    "in_sample": 159.4072096520873,
+    "oos": 153.124811822878,
+    "runtime": 3.838223934173584,
+    "choice": {
+      "fcp": 17,
+      "bsp": 33,
+      "outside": 0
+    }
+  },
+  {
+    "N": 30,
+    "cost": "zero",
+    "seed_dir": "seed_20260415",
+    "seed": 20260415,
+    "method": "Joint-noC12",
+    "cross_mode": "none",
+    "in_sample": 159.4388240997554,
+    "oos": 153.32414443717258,
+    "runtime": 5.421694993972778,
+    "choice": {
+      "fcp": 20,
+      "bsp": 30,
+      "outside": 0
+    }
+  },
+  {
+    "N": 30,
+    "cost": "zero",
+    "seed_dir": "seed_20260416",
+    "seed": 20260416,
+    "method": "BSP",
+    "in_sample": 158.66854541914856,
+    "oos": 156.9799432282676
+  },
+  {
+    "N": 30,
+    "cost": "zero",
+    "seed_dir": "seed_20260416",
+    "seed": 20260416,
+    "method": "FCP",
+    "in_sample": 155.30344844914896,
+    "oos": 151.52310560740597
+  },
+  {
+    "N": 30,
+    "cost": "zero",
+    "seed_dir": "seed_20260416",
+    "seed": 20260416,
+    "method": "CPBSD-A",
+    "in_sample": 158.68732250413012,
+    "oos": 156.9998892105781
+  },
+  {
+    "N": 30,
+    "cost": "zero",
+    "seed_dir": "seed_20260416",
+    "seed": 20260416,
+    "method": "Joint",
+    "cross_mode": "bsp_ge_fcp",
+    "in_sample": 158.4157746383079,
+    "oos": 155.24433883833734,
+    "runtime": 2.8627898693084717,
+    "choice": {
+      "fcp": 1,
+      "bsp": 49,
+      "outside": 0
+    }
+  },
+  {
+    "N": 30,
+    "cost": "zero",
+    "seed_dir": "seed_20260416",
+    "seed": 20260416,
+    "method": "Joint-noC12",
+    "cross_mode": "none",
+    "in_sample": 159.38235163756244,
+    "oos": 154.19510060181202,
+    "runtime": 2.7839879989624023,
+    "choice": {
+      "fcp": 1,
+      "bsp": 49,
+      "outside": 0
+    }
+  },
+  {
+    "N": 30,
+    "cost": "zero",
+    "seed_dir": "seed_20260417",
+    "seed": 20260417,
+    "method": "BSP",
+    "in_sample": 159.3900291491743,
+    "oos": 155.6495586351736
+  },
+  {
+    "N": 30,
+    "cost": "zero",
+    "seed_dir": "seed_20260417",
+    "seed": 20260417,
+    "method": "FCP",
+    "in_sample": 160.26231219069336,
+    "oos": 147.85768001449293
+  },
+  {
+    "N": 30,
+    "cost": "zero",
+    "seed_dir": "seed_20260417",
+    "seed": 20260417,
+    "method": "CPBSD-A",
+    "in_sample": 159.53375141338984,
+    "oos": 153.8016319025683
+  },
+  {
+    "N": 30,
+    "cost": "zero",
+    "seed_dir": "seed_20260417",
+    "seed": 20260417,
+    "method": "Joint",
+    "cross_mode": "bsp_ge_fcp",
+    "in_sample": 159.3944419634096,
+    "oos": 153.07905767702985,
+    "runtime": 4.179143905639648,
+    "choice": {
+      "fcp": 25,
+      "bsp": 25,
+      "outside": 0
+    }
+  },
+  {
+    "N": 30,
+    "cost": "zero",
+    "seed_dir": "seed_20260417",
+    "seed": 20260417,
+    "method": "Joint-noC12",
+    "cross_mode": "none",
+    "in_sample": 160.3018680867314,
+    "oos": 148.12728619830872,
+    "runtime": 5.349299907684326,
+    "choice": {
+      "fcp": 18,
+      "bsp": 32,
+      "outside": 0
+    }
+  }
+]

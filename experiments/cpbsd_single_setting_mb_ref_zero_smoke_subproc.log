@@ -1,0 +1,23 @@
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/generate_data_CPBSD.py:106: RuntimeWarning: divide by zero encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/generate_data_CPBSD.py:106: RuntimeWarning: overflow encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+/Users/sensen/.openclaw/workspace/domains/revenue-management/project-root/code_submission_project/code_submission/src/data/generate_data_CPBSD.py:106: RuntimeWarning: invalid value encountered in matmul
+  z = rng.multivariate_normal(mean=np.zeros(n), cov=corr, size=k)
+[START] N=5 instance=n5_inst001
+Set parameter LicenseID to value 2784353
+Set parameter MIPGap to value 0.001
+Set parameter TimeLimit to value 20
+Set parameter MIPGap to value 0.001
+Set parameter TimeLimit to value 20
+[DONE] N=5 instance=n5_inst001
+{
+  "comparison_details_json": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_single_setting_mb_ref_zero_smoke_subproc/comparison_details.json",
+  "comparison_details_csv": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_single_setting_mb_ref_zero_smoke_subproc/comparison_details.csv",
+  "comparison_summary_json": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_single_setting_mb_ref_zero_smoke_subproc/comparison_summary.json",
+  "runtime_summary_csv": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_single_setting_mb_ref_zero_smoke_subproc/runtime_summary.csv",
+  "plot_paths": [
+    "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_single_setting_mb_ref_zero_smoke_subproc/plots/normal_rho0.0_full_zero/boxplot_ratio_vs_mb_n5.png"
+  ],
+  "root": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_single_setting_mb_ref_zero_smoke_subproc"
+}

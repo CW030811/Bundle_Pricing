@@ -1,0 +1,2 @@
+N,seed_count,fcp_oos_mean,bsp_oos_mean,cpbsd_a_oos_mean,anchored_oos_mean,delta_anchored_fcp_mean,delta_anchored_bsp_mean,delta_anchored_cpbsd_a_mean,anchored_beats_fcp_count
+10,1,2.200927661817409,2.3022805249552345,2.8092028620405793,2.200927661817421,1.199040866595169e-14,-0.10135286313781355,-0.6082752002231584,0

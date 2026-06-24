@@ -1,0 +1,57 @@
+[
+  {
+    "experiment": "exp01_haircut",
+    "title": "Experiment 01: Size-4/5 Margin Haircut",
+    "selected": 1.0,
+    "mean_revenue_in": 1.611976,
+    "mean_revenue_out": 1.159846,
+    "mean_drop_pct": 27.834536,
+    "mean_ratio_out_to_bsp": 1.059728,
+    "report_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_baselines_v2/results/mb_oos_attribution/exp01_haircut/REPORT.md",
+    "plot_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_baselines_v2/results/mb_oos_attribution/exp01_haircut/boxplot_ratio_vs_bsp_n5.png"
+  },
+  {
+    "experiment": "exp02_shrinkage",
+    "title": "Experiment 02: MB-to-BSP Price Shrinkage",
+    "selected": 1.0,
+    "mean_revenue_in": 1.611976,
+    "mean_revenue_out": 1.159846,
+    "mean_drop_pct": 27.834536,
+    "mean_ratio_out_to_bsp": 1.059728,
+    "report_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_baselines_v2/results/mb_oos_attribution/exp02_shrinkage/REPORT.md",
+    "plot_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_baselines_v2/results/mb_oos_attribution/exp02_shrinkage/boxplot_ratio_vs_bsp_n5.png"
+  },
+  {
+    "experiment": "exp03_support_smoothing",
+    "title": "Experiment 03: Support-Aware Price Smoothing",
+    "selected": 0,
+    "mean_revenue_in": 1.603703,
+    "mean_revenue_out": 1.150299,
+    "mean_drop_pct": 28.044358,
+    "mean_ratio_out_to_bsp": 1.05091,
+    "report_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_baselines_v2/results/mb_oos_attribution/exp03_support_smoothing/REPORT.md",
+    "plot_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_baselines_v2/results/mb_oos_attribution/exp03_support_smoothing/boxplot_ratio_vs_bsp_n5.png"
+  },
+  {
+    "experiment": "exp04_validation_selection",
+    "title": "Experiment 04: Validation-Based Candidate Selection",
+    "selected": "per-instance CV",
+    "mean_revenue_in": 1.611976,
+    "mean_revenue_out": 1.159846,
+    "mean_drop_pct": 27.834536,
+    "mean_ratio_out_to_bsp": 1.059728,
+    "report_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_baselines_v2/results/mb_oos_attribution/exp04_validation_selection/REPORT.md",
+    "plot_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_baselines_v2/results/mb_oos_attribution/exp04_validation_selection/boxplot_ratio_vs_bsp_n5.png"
+  },
+  {
+    "experiment": "exp05_margin_buffer",
+    "title": "Experiment 05: Minimum Surplus Margin Buffer",
+    "selected": 0.0,
+    "mean_revenue_in": 1.610006,
+    "mean_revenue_out": 1.159845,
+    "mean_drop_pct": 27.742772,
+    "mean_ratio_out_to_bsp": 1.059727,
+    "report_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_baselines_v2/results/mb_oos_attribution/exp05_margin_buffer/REPORT.md",
+    "plot_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_baselines_v2/results/mb_oos_attribution/exp05_margin_buffer/boxplot_ratio_vs_bsp_n5.png"
+  }
+]

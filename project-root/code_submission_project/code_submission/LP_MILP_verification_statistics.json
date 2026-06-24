@@ -1,0 +1,249 @@
+{
+  "by_dataset": {
+    "m10_n10_sample_100": {
+      "total_improvements": 38,
+      "successful_translations": 36,
+      "translation_rate": 0.9473684210526315,
+      "samples_with_all_translated": 8,
+      "total_samples": 10,
+      "sample_success_rate": 0.8
+    },
+    "m20_n10_sample_100": {
+      "total_improvements": 40,
+      "successful_translations": 39,
+      "translation_rate": 0.975,
+      "samples_with_all_translated": 9,
+      "total_samples": 10,
+      "sample_success_rate": 0.9
+    },
+    "m30_n10_sample_100": {
+      "total_improvements": 51,
+      "successful_translations": 48,
+      "translation_rate": 0.9411764705882353,
+      "samples_with_all_translated": 8,
+      "total_samples": 10,
+      "sample_success_rate": 0.8
+    },
+    "test_BSP_m10n15": {
+      "total_improvements": 128,
+      "successful_translations": 127,
+      "translation_rate": 0.9921875,
+      "samples_with_all_translated": 9,
+      "total_samples": 10,
+      "sample_success_rate": 0.9
+    },
+    "test_BSP_m10n20": {
+      "total_improvements": 172,
+      "successful_translations": 168,
+      "translation_rate": 0.9767441860465116,
+      "samples_with_all_translated": 7,
+      "total_samples": 10,
+      "sample_success_rate": 0.7
+    },
+    "test_BSP_m10n25": {
+      "total_improvements": 180,
+      "successful_translations": 176,
+      "translation_rate": 0.9777777777777777,
+      "samples_with_all_translated": 8,
+      "total_samples": 10,
+      "sample_success_rate": 0.8
+    }
+  },
+  "by_step": {
+    "1": {
+      "success": 57,
+      "total": 57,
+      "rate": 1.0
+    },
+    "2": {
+      "success": 57,
+      "total": 57,
+      "rate": 1.0
+    },
+    "3": {
+      "success": 50,
+      "total": 53,
+      "rate": 0.9433962264150944
+    },
+    "4": {
+      "success": 47,
+      "total": 49,
+      "rate": 0.9591836734693877
+    },
+    "5": {
+      "success": 38,
+      "total": 41,
+      "rate": 0.926829268292683
+    },
+    "6": {
+      "success": 35,
+      "total": 35,
+      "rate": 1.0
+    },
+    "7": {
+      "success": 32,
+      "total": 32,
+      "rate": 1.0
+    },
+    "8": {
+      "success": 31,
+      "total": 32,
+      "rate": 0.96875
+    },
+    "9": {
+      "success": 24,
+      "total": 24,
+      "rate": 1.0
+    },
+    "10": {
+      "success": 19,
+      "total": 23,
+      "rate": 0.8260869565217391
+    },
+    "11": {
+      "success": 22,
+      "total": 22,
+      "rate": 1.0
+    },
+    "12": {
+      "success": 21,
+      "total": 21,
+      "rate": 1.0
+    },
+    "13": {
+      "success": 20,
+      "total": 20,
+      "rate": 1.0
+    },
+    "14": {
+      "success": 18,
+      "total": 18,
+      "rate": 1.0
+    },
+    "15": {
+      "success": 12,
+      "total": 13,
+      "rate": 0.9230769230769231
+    },
+    "16": {
+      "success": 11,
+      "total": 11,
+      "rate": 1.0
+    },
+    "17": {
+      "success": 11,
+      "total": 11,
+      "rate": 1.0
+    },
+    "18": {
+      "success": 11,
+      "total": 11,
+      "rate": 1.0
+    },
+    "19": {
+      "success": 10,
+      "total": 10,
+      "rate": 1.0
+    },
+    "20": {
+      "success": 9,
+      "total": 9,
+      "rate": 1.0
+    },
+    "21": {
+      "success": 8,
+      "total": 8,
+      "rate": 1.0
+    },
+    "22": {
+      "success": 7,
+      "total": 7,
+      "rate": 1.0
+    },
+    "23": {
+      "success": 5,
+      "total": 5,
+      "rate": 1.0
+    },
+    "24": {
+      "success": 4,
+      "total": 5,
+      "rate": 0.8
+    },
+    "25": {
+      "success": 5,
+      "total": 5,
+      "rate": 1.0
+    },
+    "26": {
+      "success": 5,
+      "total": 5,
+      "rate": 1.0
+    },
+    "27": {
+      "success": 5,
+      "total": 5,
+      "rate": 1.0
+    },
+    "28": {
+      "success": 4,
+      "total": 4,
+      "rate": 1.0
+    },
+    "29": {
+      "success": 4,
+      "total": 4,
+      "rate": 1.0
+    },
+    "30": {
+      "success": 3,
+      "total": 3,
+      "rate": 1.0
+    },
+    "31": {
+      "success": 2,
+      "total": 2,
+      "rate": 1.0
+    },
+    "32": {
+      "success": 1,
+      "total": 1,
+      "rate": 1.0
+    },
+    "33": {
+      "success": 1,
+      "total": 1,
+      "rate": 1.0
+    },
+    "34": {
+      "success": 1,
+      "total": 1,
+      "rate": 1.0
+    },
+    "35": {
+      "success": 1,
+      "total": 1,
+      "rate": 1.0
+    },
+    "36": {
+      "success": 1,
+      "total": 1,
+      "rate": 1.0
+    },
+    "37": {
+      "success": 1,
+      "total": 1,
+      "rate": 1.0
+    },
+    "38": {
+      "success": 1,
+      "total": 1,
+      "rate": 1.0
+    }
+  },
+  "overall": {
+    "total": 609,
+    "success": 594,
+    "translation_rate": 0.9753694581280788
+  }
+}

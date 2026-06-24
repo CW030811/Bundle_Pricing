@@ -1,0 +1,67 @@
+{
+  "instance_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_fcp_pruned_mb_compare_n10k50_strict300/instances/cpbsd_instance_001_N10_K50_normal_rho0.0_full_hvhm.msgpack",
+  "bsp_result_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_fcp_pruned_mb_compare_n10k50_strict300/results/cpbsd_instance_001_N10_K50_normal_rho0.0_full_hvhm__bsp.json",
+  "fcp_result_path": "/Users/sensen/.openclaw/workspace/domains/revenue-management/experiments/cpbsd_fcp_pruned_mb_compare_n10k50_strict300/results/cpbsd_instance_001_N10_K50_normal_rho0.0_full_hvhm__fcp_pruned_mb.json",
+  "setup": {
+    "n_products": 10,
+    "k_samples": 50,
+    "dist_family": "normal",
+    "rho": 0.0,
+    "heterogeneity": "full",
+    "cost_scenario": "hvhm",
+    "seed": 20260321
+  },
+  "bsp_size_support": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "fcp_bundle_space_size": 37,
+  "fcp_price_count_full": 37,
+  "fcp_size_support": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "in_sample": {
+    "customer_count": 50,
+    "bsp_avg_profit": 2.8784300540367576,
+    "fcp_avg_profit": 3.561872036352229,
+    "bsp_purchase_count": 44,
+    "fcp_purchase_count": 47,
+    "bsp_purchase_fcp_no_purchase": 0,
+    "bsp_exact_bundle_not_in_fcp_menu_count": 11,
+    "same_bundle_count": 11,
+    "same_size_count": 14,
+    "fcp_profit_gt_bsp_count": 38,
+    "bsp_profit_gt_fcp_count": 9
+  },
+  "oos": {
+    "customer_count": 5000,
+    "bsp_avg_profit": 2.4505357569549258,
+    "fcp_avg_profit": 2.399032113204915,
+    "bsp_purchase_count": 3790,
+    "fcp_purchase_count": 3456,
+    "bsp_purchase_fcp_no_purchase": 533,
+    "bsp_exact_bundle_not_in_fcp_menu_count": 1186,
+    "same_bundle_count": 1503,
+    "same_size_count": 1763,
+    "fcp_profit_gt_bsp_count": 2584,
+    "bsp_profit_gt_fcp_count": 1405
+  }
+}

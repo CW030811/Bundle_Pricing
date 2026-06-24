@@ -1,0 +1,14 @@
+[
+  {
+    "N": 10,
+    "seed_count": 1,
+    "fcp_oos_mean": 2.200927661817409,
+    "bsp_oos_mean": 2.3022805249552345,
+    "cpbsd_a_oos_mean": 2.8092028620405793,
+    "anchored_oos_mean": 2.200927661817421,
+    "delta_anchored_fcp_mean": 1.199040866595169e-14,
+    "delta_anchored_bsp_mean": -0.10135286313781355,
+    "delta_anchored_cpbsd_a_mean": -0.6082752002231584,
+    "anchored_beats_fcp_count": 0
+  }
+]

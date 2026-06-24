@@ -1,0 +1,722 @@
+[
+  {
+    "N": 5,
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_001_N5_K50_normal_rho0.0_full_random_ind",
+    "seed": 20260424,
+    "method": "Joint-C12rev",
+    "cross_mode": "bsp_ge_fcp",
+    "in_sample": 6.632975921647924,
+    "oos": 5.334817542605813,
+    "runtime": 1.258559226989746,
+    "choice": {
+      "fcp": 16,
+      "bsp": 33,
+      "outside": 1
+    },
+    "size_prices": {
+      "0": 0.0,
+      "1": 9.389484370404215,
+      "2": 16.82772619070671,
+      "3": 22.996487887227246,
+      "4": 26.353285499995945,
+      "5": 28.73703771805475
+    }
+  },
+  {
+    "N": 5,
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_001_N5_K50_normal_rho0.0_full_random_ind",
+    "seed": 20260424,
+    "method": "Joint-C12orig",
+    "cross_mode": "fcp_le_bsp",
+    "in_sample": 6.632975921647924,
+    "oos": 5.334817542605813,
+    "runtime": 1.2379701137542725,
+    "choice": {
+      "fcp": 16,
+      "bsp": 33,
+      "outside": 1
+    },
+    "size_prices": {
+      "0": 0.0,
+      "1": 9.389484370404215,
+      "2": 16.82772619070671,
+      "3": 22.996487887227246,
+      "4": 26.353285499995945,
+      "5": 28.73703771805475
+    }
+  },
+  {
+    "N": 5,
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_001_N5_K50_normal_rho0.0_full_random_ind",
+    "seed": 20260424,
+    "method": "Joint-noC12",
+    "cross_mode": "none",
+    "in_sample": 6.632975921648223,
+    "oos": 5.334817542605934,
+    "runtime": 1.1759538650512695,
+    "choice": {
+      "fcp": 23,
+      "bsp": 26,
+      "outside": 1
+    },
+    "size_prices": {
+      "0": 0.0,
+      "1": 9.389484370404276,
+      "2": 16.827726190706272,
+      "3": 22.996487887227843,
+      "4": 26.341637896070466,
+      "5": 30.483408168643905
+    }
+  },
+  {
+    "N": 5,
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_002_N5_K50_normal_rho0.0_full_random_ind",
+    "seed": 20260425,
+    "method": "Joint-C12rev",
+    "cross_mode": "bsp_ge_fcp",
+    "in_sample": 11.107526637903073,
+    "oos": 10.670285876393509,
+    "runtime": 2.5905141830444336,
+    "choice": {
+      "fcp": 42,
+      "bsp": 6,
+      "outside": 2
+    },
+    "size_prices": {
+      "0": 0.0,
+      "1": 16.663588000123447,
+      "2": 16.76779339120387,
+      "3": 30.353055066875072,
+      "4": 30.353055066875072,
+      "5": 30.353055066875072
+    }
+  },
+  {
+    "N": 5,
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_002_N5_K50_normal_rho0.0_full_random_ind",
+    "seed": 20260425,
+    "method": "Joint-C12orig",
+    "cross_mode": "fcp_le_bsp",
+    "in_sample": 11.107526637903073,
+    "oos": 10.670285876393509,
+    "runtime": 2.5890653133392334,
+    "choice": {
+      "fcp": 42,
+      "bsp": 6,
+      "outside": 2
+    },
+    "size_prices": {
+      "0": 0.0,
+      "1": 16.663588000123447,
+      "2": 16.76779339120387,
+      "3": 30.353055066875072,
+      "4": 30.353055066875072,
+      "5": 30.353055066875072
+    }
+  },
+  {
+    "N": 5,
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_002_N5_K50_normal_rho0.0_full_random_ind",
+    "seed": 20260425,
+    "method": "Joint-noC12",
+    "cross_mode": "none",
+    "in_sample": 11.107526645270603,
+    "oos": 10.837519056890752,
+    "runtime": 2.282055139541626,
+    "choice": {
+      "fcp": 40,
+      "bsp": 8,
+      "outside": 2
+    },
+    "size_prices": {
+      "0": 0.0,
+      "1": 16.767793391203867,
+      "2": 16.767793391203867,
+      "3": 23.178919069440532,
+      "4": 30.353055066875072,
+      "5": 30.353055066875072
+    }
+  },
+  {
+    "N": 5,
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_003_N5_K50_normal_rho0.0_full_random_ind",
+    "seed": 20260426,
+    "method": "Joint-C12rev",
+    "cross_mode": "bsp_ge_fcp",
+    "in_sample": 3.9425771569588224,
+    "oos": 3.3867472837055788,
+    "runtime": 1.3524291515350342,
+    "choice": {
+      "fcp": 47,
+      "bsp": 0,
+      "outside": 3
+    },
+    "size_prices": {
+      "0": 0.0,
+      "1": 12.72953055995458,
+      "2": 22.70367609394151,
+      "3": 27.766933891247316,
+      "4": 27.766933891247316,
+      "5": 29.376158475976872
+    }
+  },
+  {
+    "N": 5,
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_003_N5_K50_normal_rho0.0_full_random_ind",
+    "seed": 20260426,
+    "method": "Joint-C12orig",
+    "cross_mode": "fcp_le_bsp",
+    "in_sample": 3.9425771569588224,
+    "oos": 3.3867472837055788,
+    "runtime": 1.3803420066833496,
+    "choice": {
+      "fcp": 47,
+      "bsp": 0,
+      "outside": 3
+    },
+    "size_prices": {
+      "0": 0.0,
+      "1": 12.72953055995458,
+      "2": 22.70367609394151,
+      "3": 27.766933891247316,
+      "4": 27.766933891247316,
+      "5": 29.376158475976872
+    }
+  },
+  {
+    "N": 5,
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_003_N5_K50_normal_rho0.0_full_random_ind",
+    "seed": 20260426,
+    "method": "Joint-noC12",
+    "cross_mode": "none",
+    "in_sample": 3.916881266968684,
+    "oos": 3.3159785450171047,
+    "runtime": 1.3250501155853271,
+    "choice": {
+      "fcp": 47,
+      "bsp": 0,
+      "outside": 3
+    },
+    "size_prices": {
+      "0": 0.0,
+      "1": 10.341758350219301,
+      "2": 18.267371295908426,
+      "3": 23.54214109111917,
+      "4": 26.92240825931942,
+      "5": 30.376158475976872
+    }
+  },
+  {
+    "N": 5,
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_004_N5_K50_normal_rho0.0_full_random_ind",
+    "seed": 20260427,
+    "method": "Joint-C12rev",
+    "cross_mode": "bsp_ge_fcp",
+    "in_sample": 11.812822510150678,
+    "oos": 11.045536684695534,
+    "runtime": 0.872960090637207,
+    "choice": {
+      "fcp": 50,
+      "bsp": 0,
+      "outside": 0
+    },
+    "size_prices": {
+      "0": 0.0,
+      "1": 11.824717088141284,
+      "2": 23.64943417628257,
+      "3": 26.09385645688811,
+      "4": 30.916871732664674,
+      "5": 31.275047545767794
+    }
+  },
+  {
+    "N": 5,
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_004_N5_K50_normal_rho0.0_full_random_ind",
+    "seed": 20260427,
+    "method": "Joint-C12orig",
+    "cross_mode": "fcp_le_bsp",
+    "in_sample": 11.812822510150678,
+    "oos": 11.045536684695534,
+    "runtime": 0.8721909523010254,
+    "choice": {
+      "fcp": 50,
+      "bsp": 0,
+      "outside": 0
+    },
+    "size_prices": {
+      "0": 0.0,
+      "1": 11.824717088141284,
+      "2": 23.64943417628257,
+      "3": 26.09385645688811,
+      "4": 30.916871732664674,
+      "5": 31.275047545767794
+    }
+  },
+  {
+    "N": 5,
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_004_N5_K50_normal_rho0.0_full_random_ind",
+    "seed": 20260427,
+    "method": "Joint-noC12",
+    "cross_mode": "none",
+    "in_sample": 11.812822510150754,
+    "oos": 10.923594595341177,
+    "runtime": 0.8723089694976807,
+    "choice": {
+      "fcp": 50,
+      "bsp": 0,
+      "outside": 0
+    },
+    "size_prices": {
+      "0": 0.0,
+      "1": 24.089911264469176,
+      "2": 24.089911264469176,
+      "3": 24.089911264469176,
+      "4": 30.916871732665,
+      "5": 31.275047545767794
+    }
+  },
+  {
+    "N": 5,
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_005_N5_K50_normal_rho0.0_full_random_ind",
+    "seed": 20260428,
+    "method": "Joint-C12rev",
+    "cross_mode": "bsp_ge_fcp",
+    "in_sample": 16.046249821929624,
+    "oos": 14.618814742337388,
+    "runtime": 0.877479076385498,
+    "choice": {
+      "fcp": 50,
+      "bsp": 0,
+      "outside": 0
+    },
+    "size_prices": {
+      "0": 0.0,
+      "1": 26.26072015385935,
+      "2": 28.027894029263393,
+      "3": 28.027894029263393,
+      "4": 28.027894029263393,
+      "5": 28.027894029263393
+    }
+  },
+  {
+    "N": 5,
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_005_N5_K50_normal_rho0.0_full_random_ind",
+    "seed": 20260428,
+    "method": "Joint-C12orig",
+    "cross_mode": "fcp_le_bsp",
+    "in_sample": 16.046249821929624,
+    "oos": 14.618814742337388,
+    "runtime": 0.8615512847900391,
+    "choice": {
+      "fcp": 50,
+      "bsp": 0,
+      "outside": 0
+    },
+    "size_prices": {
+      "0": 0.0,
+      "1": 26.26072015385935,
+      "2": 28.027894029263393,
+      "3": 28.027894029263393,
+      "4": 28.027894029263393,
+      "5": 28.027894029263393
+    }
+  },
+  {
+    "N": 5,
+    "cost": "random_ind",
+    "instance_id": "cpbsd_instance_005_N5_K50_normal_rho0.0_full_random_ind",
+    "seed": 20260428,
+    "method": "Joint-noC12",
+    "cross_mode": "none",
+    "in_sample": 16.046249821929628,
+    "oos": 14.723761427610015,
+    "runtime": 0.869610071182251,
+    "choice": {
+      "fcp": 49,
+      "bsp": 1,
+      "outside": 0
+    },
+    "size_prices": {
+      "0": 0.0,
+      "1": 26.25853478366258,
+      "2": 26.25853478366258,
+      "3": 26.25853478366258,
+      "4": 26.25853478366258,
+      "5": 27.830700895422982
+    }
+  },
+  {
+    "N": 5,
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_001_N5_K50_normal_rho0.0_full_random_corr",
+    "seed": 20260424,
+    "method": "Joint-C12rev",
+    "cross_mode": "bsp_ge_fcp",
+    "in_sample": 7.2485825924954925,
+    "oos": 6.674966137099218,
+    "runtime": 20.583622932434082,
+    "choice": {
+      "fcp": 34,
+      "bsp": 16,
+      "outside": 0
+    },
+    "size_prices": {
+      "0": 0.0,
+      "1": 9.730252871612981,
+      "2": 17.198203558429395,
+      "3": 23.095814793974434,
+      "4": 26.04573728209966,
+      "5": 26.208654200134625
+    }
+  },
+  {
+    "N": 5,
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_001_N5_K50_normal_rho0.0_full_random_corr",
+    "seed": 20260424,
+    "method": "Joint-C12orig",
+    "cross_mode": "fcp_le_bsp",
+    "in_sample": 7.2485825924954925,
+    "oos": 6.674966137099218,
+    "runtime": 20.728179931640625,
+    "choice": {
+      "fcp": 34,
+      "bsp": 16,
+      "outside": 0
+    },
+    "size_prices": {
+      "0": 0.0,
+      "1": 9.730252871612981,
+      "2": 17.198203558429395,
+      "3": 23.095814793974434,
+      "4": 26.04573728209966,
+      "5": 26.208654200134625
+    }
+  },
+  {
+    "N": 5,
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_001_N5_K50_normal_rho0.0_full_random_corr",
+    "seed": 20260424,
+    "method": "Joint-noC12",
+    "cross_mode": "none",
+    "in_sample": 7.2485825923338725,
+    "oos": 6.725791875036311,
+    "runtime": 22.547022104263306,
+    "choice": {
+      "fcp": 31,
+      "bsp": 19,
+      "outside": 0
+    },
+    "size_prices": {
+      "0": 0.0,
+      "1": 26.045737282095615,
+      "2": 26.045737282095615,
+      "3": 26.045737282095615,
+      "4": 26.045737282095615,
+      "5": 26.208654200130585
+    }
+  },
+  {
+    "N": 5,
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_002_N5_K50_normal_rho0.0_full_random_corr",
+    "seed": 20260425,
+    "method": "Joint-C12rev",
+    "cross_mode": "bsp_ge_fcp",
+    "in_sample": 13.3696384151284,
+    "oos": 12.283625518472382,
+    "runtime": 2.750492811203003,
+    "choice": {
+      "fcp": 15,
+      "bsp": 35,
+      "outside": 0
+    },
+    "size_prices": {
+      "0": 0.0,
+      "1": 22.149813598506682,
+      "2": 22.52188580611461,
+      "3": 22.52666459121771,
+      "4": 25.935771898301557,
+      "5": 26.050592828198322
+    }
+  },
+  {
+    "N": 5,
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_002_N5_K50_normal_rho0.0_full_random_corr",
+    "seed": 20260425,
+    "method": "Joint-C12orig",
+    "cross_mode": "fcp_le_bsp",
+    "in_sample": 13.3696384151284,
+    "oos": 12.283625518472382,
+    "runtime": 2.770989179611206,
+    "choice": {
+      "fcp": 15,
+      "bsp": 35,
+      "outside": 0
+    },
+    "size_prices": {
+      "0": 0.0,
+      "1": 22.149813598506682,
+      "2": 22.52188580611461,
+      "3": 22.52666459121771,
+      "4": 25.935771898301557,
+      "5": 26.050592828198322
+    }
+  },
+  {
+    "N": 5,
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_002_N5_K50_normal_rho0.0_full_random_corr",
+    "seed": 20260425,
+    "method": "Joint-noC12",
+    "cross_mode": "none",
+    "in_sample": 13.367895541707712,
+    "oos": 12.308959995577743,
+    "runtime": 2.6303889751434326,
+    "choice": {
+      "fcp": 33,
+      "bsp": 17,
+      "outside": 0
+    },
+    "size_prices": {
+      "0": 0.0,
+      "1": 22.469546625263472,
+      "2": 22.52666459121822,
+      "3": 22.52666459121822,
+      "4": 26.06212095774536,
+      "5": 26.062120957745364
+    }
+  },
+  {
+    "N": 5,
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_003_N5_K50_normal_rho0.0_full_random_corr",
+    "seed": 20260426,
+    "method": "Joint-C12rev",
+    "cross_mode": "bsp_ge_fcp",
+    "in_sample": 7.774999729500467,
+    "oos": 6.875176919042083,
+    "runtime": 16.922339916229248,
+    "choice": {
+      "fcp": 18,
+      "bsp": 30,
+      "outside": 2
+    },
+    "size_prices": {
+      "0": 0.0,
+      "1": 22.418809912346294,
+      "2": 22.418809912346294,
+      "3": 23.14694899904468,
+      "4": 25.783452560470867,
+      "5": 26.727609874736423
+    }
+  },
+  {
+    "N": 5,
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_003_N5_K50_normal_rho0.0_full_random_corr",
+    "seed": 20260426,
+    "method": "Joint-C12orig",
+    "cross_mode": "fcp_le_bsp",
+    "in_sample": 7.774999729500467,
+    "oos": 6.875176919042083,
+    "runtime": 16.930199146270752,
+    "choice": {
+      "fcp": 18,
+      "bsp": 30,
+      "outside": 2
+    },
+    "size_prices": {
+      "0": 0.0,
+      "1": 22.418809912346294,
+      "2": 22.418809912346294,
+      "3": 23.14694899904468,
+      "4": 25.783452560470867,
+      "5": 26.727609874736423
+    }
+  },
+  {
+    "N": 5,
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_003_N5_K50_normal_rho0.0_full_random_corr",
+    "seed": 20260426,
+    "method": "Joint-noC12",
+    "cross_mode": "none",
+    "in_sample": 7.7749997273578035,
+    "oos": 6.868131522557172,
+    "runtime": 10.962941884994507,
+    "choice": {
+      "fcp": 27,
+      "bsp": 21,
+      "outside": 2
+    },
+    "size_prices": {
+      "0": 0.0,
+      "1": 22.729872357111336,
+      "2": 25.783452481466888,
+      "3": 25.783452481466885,
+      "4": 25.78345248146688,
+      "5": 26.727609928779692
+    }
+  },
+  {
+    "N": 5,
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_004_N5_K50_normal_rho0.0_full_random_corr",
+    "seed": 20260427,
+    "method": "Joint-C12rev",
+    "cross_mode": "bsp_ge_fcp",
+    "in_sample": 11.238731622698458,
+    "oos": 9.213733903987073,
+    "runtime": 1.9771251678466797,
+    "choice": {
+      "fcp": 35,
+      "bsp": 15,
+      "outside": 0
+    },
+    "size_prices": {
+      "0": 0.0,
+      "1": 11.589131136851876,
+      "2": 23.178262273703755,
+      "3": 23.178262273703755,
+      "4": 26.393864420887493,
+      "5": 26.70848112087245
+    }
+  },
+  {
+    "N": 5,
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_004_N5_K50_normal_rho0.0_full_random_corr",
+    "seed": 20260427,
+    "method": "Joint-C12orig",
+    "cross_mode": "fcp_le_bsp",
+    "in_sample": 11.238731622698458,
+    "oos": 9.213733903987073,
+    "runtime": 1.9646189212799072,
+    "choice": {
+      "fcp": 35,
+      "bsp": 15,
+      "outside": 0
+    },
+    "size_prices": {
+      "0": 0.0,
+      "1": 11.589131136851876,
+      "2": 23.178262273703755,
+      "3": 23.178262273703755,
+      "4": 26.393864420887493,
+      "5": 26.70848112087245
+    }
+  },
+  {
+    "N": 5,
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_004_N5_K50_normal_rho0.0_full_random_corr",
+    "seed": 20260427,
+    "method": "Joint-noC12",
+    "cross_mode": "none",
+    "in_sample": 11.216899550605179,
+    "oos": 9.344769028275278,
+    "runtime": 1.7322227954864502,
+    "choice": {
+      "fcp": 29,
+      "bsp": 21,
+      "outside": 0
+    },
+    "size_prices": {
+      "0": 0.0,
+      "1": 13.196932210443723,
+      "2": 26.393864420887446,
+      "3": 26.393864420887443,
+      "4": 26.393864420887443,
+      "5": 26.67267084731064
+    }
+  },
+  {
+    "N": 5,
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_005_N5_K50_normal_rho0.0_full_random_corr",
+    "seed": 20260428,
+    "method": "Joint-C12rev",
+    "cross_mode": "bsp_ge_fcp",
+    "in_sample": 14.245081619379858,
+    "oos": 12.739903469921488,
+    "runtime": 10.915794134140015,
+    "choice": {
+      "fcp": 34,
+      "bsp": 16,
+      "outside": 0
+    },
+    "size_prices": {
+      "0": 0.0,
+      "1": 10.667402830965269,
+      "2": 18.025917619812784,
+      "3": 25.74081271150682,
+      "4": 25.74081271150682,
+      "5": 26.007908641430248
+    }
+  },
+  {
+    "N": 5,
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_005_N5_K50_normal_rho0.0_full_random_corr",
+    "seed": 20260428,
+    "method": "Joint-C12orig",
+    "cross_mode": "fcp_le_bsp",
+    "in_sample": 14.245081619379858,
+    "oos": 12.739903469921488,
+    "runtime": 10.886449813842773,
+    "choice": {
+      "fcp": 34,
+      "bsp": 16,
+      "outside": 0
+    },
+    "size_prices": {
+      "0": 0.0,
+      "1": 10.667402830965269,
+      "2": 18.025917619812784,
+      "3": 25.74081271150682,
+      "4": 25.74081271150682,
+      "5": 26.007908641430248
+    }
+  },
+  {
+    "N": 5,
+    "cost": "random_corr",
+    "instance_id": "cpbsd_instance_005_N5_K50_normal_rho0.0_full_random_corr",
+    "seed": 20260428,
+    "method": "Joint-noC12",
+    "cross_mode": "none",
+    "in_sample": 14.248515716311296,
+    "oos": 12.988196568453382,
+    "runtime": 12.322926044464111,
+    "choice": {
+      "fcp": 24,
+      "bsp": 26,
+      "outside": 0
+    },
+    "size_prices": {
+      "0": 0.0,
+      "1": 25.636479076955734,
+      "2": 25.636479076955734,
+      "3": 25.636479076955734,
+      "4": 25.63647907695572,
+      "5": 25.66454115093154
+    }
+  }
+]

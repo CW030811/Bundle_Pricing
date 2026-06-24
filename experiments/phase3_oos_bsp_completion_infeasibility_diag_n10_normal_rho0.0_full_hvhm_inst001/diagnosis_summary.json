@@ -1,0 +1,24 @@
+{
+  "instance_id": "cpbsd_instance_001_N10_K50_normal_rho0.0_full_hvhm",
+  "variant_a": {
+    "solver_status": 3,
+    "iis_constraints": [
+      "global_subadd_67_256",
+      "global_subadd_129_256"
+    ],
+    "iis_summary": {
+      "global_subadd": 2
+    }
+  },
+  "variant_b": {
+    "solver_status": 3,
+    "iis_constraints": [
+      "anchor_pair_129_256",
+      "subset_anchor_131_0"
+    ],
+    "iis_summary": {
+      "anchor_pair": 1,
+      "subset_anchor": 1
+    }
+  }
+}
